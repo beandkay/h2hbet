@@ -1,9 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { spawn } = require('child_process');
 
 const PORT = 3000;
-const PUBLIC_DIR = path.join(__dirname, 'public');
+const PUBLIC_DIR = __dirname; // Files were moved to root
 
 const mimeTypes = {
     '.html': 'text/html',
@@ -48,5 +49,13 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`🚀 Live Dashboard running on http://localhost:${PORT}`);
+    console.log(`\n🚀 Local dashboard running at http://localhost:${PORT}`);
+    console.log(`🤖 Starting background data fetcher...`);
+    
+    // Start auto_fetch.js as a background process
+    const fetcher = spawn('node', ['auto_fetch.js'], { stdio: 'inherit' });
+    
+    fetcher.on('close', (code) => {
+        console.log(`Fetcher process exited with code ${code}`);
+    });
 });

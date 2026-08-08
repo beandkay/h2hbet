@@ -441,9 +441,9 @@ try {
         playerStats: playerStats,
         h2hData: h2hArr.slice(0, 10)
     };
-    const outputPath = path.join(__dirname, 'public', 'dashboard_data.json');
+    const outputPath = path.join(__dirname, 'dashboard_data.json');
     fs.writeFileSync(outputPath, JSON.stringify(dashboardData, null, 2));
-    console.log("Dashboard JSON written to public/dashboard_data.json");
+    console.log("Dashboard JSON written to dashboard_data.json");
 } catch(e) {
     console.error("Failed to write dashboard_data.json:", e);
 }
