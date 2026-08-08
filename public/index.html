@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2HBet Live Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob red-blob"></div>
+        <div class="blob blue-blob"></div>
+    </div>
+
+    <header class="glass-panel header">
+        <div class="logo">
+            <h1>H2H<span class="highlight">Bet</span></h1>
+            <p class="subtitle">Live Predictions & Analytics</p>
+        </div>
+        <div class="status-indicator">
+            <div class="dot pulse"></div>
+            <span id="last-updated">Waiting for data...</span>
+        </div>
+    </header>
+
+    <main class="dashboard-grid">
+        <!-- Top Matches Section -->
+        <section class="glass-panel main-section">
+            <div class="section-header">
+                <h2>🔥 Premium Plays</h2>
+                <div class="badge">Value Edge Only</div>
+            </div>
+            
+            <div id="premium-plays" class="cards-container">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+        </section>
+
+        <!-- Stats & Backtest Sidebar -->
+        <aside class="sidebar">
+            <div class="glass-panel stat-card parlay-card">
+                <h3>🏆 AI Winner Parlay</h3>
+                <div id="winner-parlay">
+                    <p class="loading-text">Analyzing models...</p>
+                </div>
+            </div>
+
+            <div class="glass-panel stat-card backtest-card">
+                <h3>📈 Live Backtest (Today)</h3>
+                <pre id="backtest-output" class="code-block">Loading backtest data...</pre>
+            </div>
+            
+            <div class="glass-panel stat-card league-card">
+                <h3>📊 League Context</h3>
+                <div class="big-number" id="league-avg">--</div>
+                <p>Avg Goals Per Team</p>
+            </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Data Tables Section -->
+    <div class="tables-container">
+        <section class="glass-panel main-section">
+            <div class="section-header">
+                <h2>👤 Player Pattern Analysis</h2>
+                <div class="badge">Latest Data</div>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="player-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Style</th>
+                            <th>Matches</th>
+                            <th>Win %</th>
+                            <th>Avg Scored</th>
+                            <th>Avg Conceded</th>
+                            <th>Form (All Matches)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="7" class="loading-text" style="text-align: center;">Loading player data...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="glass-panel main-section" style="margin-top: 2rem;">
+            <div class="section-header">
+                <h2>⚔️ Most Dominant H2H Pairs</h2>
+                <div class="badge">Current Rotation</div>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="h2h-table">
+                    <thead>
+                        <tr>
+                            <th>Matchup</th>
+                            <th>Matches</th>
+                            <th>Dominant Player</th>
+                            <th>Win Rate</th>
+                            <th>Breakdown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5" class="loading-text" style="text-align: center;">Loading H2H data...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

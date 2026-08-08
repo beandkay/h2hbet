@@ -1,0 +1,33 @@
+name: Auto Fetch Data and Deploy
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Runs every 10 minutes
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Important: allows the action to push to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Fetch and Analyze Data
+        run: node github_fetch.js
+
+      - name: Commit updated JSON
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/dashboard_data.json esoccer_analysis.md api_data_*.json
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update dashboard data"
+          git push
