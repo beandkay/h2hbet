@@ -1,79 +1,7 @@
 {
-  "updatedAt": "2026-08-08T04:18:50.526Z",
-  "leagueAvgScored": 1.5357142857142858,
+  "updatedAt": "2026-08-08T04:23:50.011Z",
+  "leagueAvgScored": 1.5318471337579618,
   "upcoming": [
-    {
-      "externalId": "FI066080826",
-      "startDate": "2026-08-08T04:12:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "REAL MADRID",
-      "participantAName": "DANTE",
-      "participantBName": "ENT",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "computedTotalXG": 0,
-      "computedHomeStyle": "Aggressive",
-      "computedAwayStyle": "Defensive",
-      "computedPrediction": "*SKIP (Not a Value Edge)*",
-      "computedHome": "DANTE",
-      "computedAway": "ENT",
-      "computedHomeUnc": 30,
-      "computedAwayUnc": 10,
-      "ouPrediction": "*SKIP (Neutral XG)*",
-      "isOUPick": false
-    },
-    {
-      "externalId": "FI067080826",
-      "startDate": "2026-08-08T04:16:00Z",
-      "isCancelled": false,
-      "teamAName": "SPAIN",
-      "teamBName": "FRANCE",
-      "participantAName": "SALAMANDER",
-      "participantBName": "ASHE",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "computedTotalXG": 0,
-      "computedHomeStyle": "Defensive",
-      "computedAwayStyle": "Aggressive",
-      "computedPrediction": "*SKIP (Not a Value Edge)*",
-      "computedHome": "SALAMANDER",
-      "computedAway": "ASHE",
-      "computedHomeUnc": 0,
-      "computedAwayUnc": 0,
-      "ouPrediction": "*SKIP (Neutral XG)*",
-      "isOUPick": false
-    },
-    {
-      "externalId": "FI068080826",
-      "startDate": "2026-08-08T04:20:00Z",
-      "isCancelled": false,
-      "teamAName": "ARSENAL",
-      "teamBName": "NEWCASTLE UTD",
-      "participantAName": "ATLAS",
-      "participantBName": "CROWN",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "computedTotalXG": 0,
-      "computedHomeStyle": "Defensive",
-      "computedAwayStyle": "Defensive",
-      "computedPrediction": "**CROWN wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]",
-      "computedHome": "ATLAS",
-      "computedAway": "CROWN",
-      "computedHomeUnc": 10,
-      "computedAwayUnc": 10,
-      "ouPrediction": "**UNDER 2.5 Goals**",
-      "isOUPick": true
-    },
     {
       "externalId": "FI308080826",
       "startDate": "2026-08-08T04:23:00Z",
@@ -88,15 +16,15 @@
       "teamAScore": null,
       "teamBScore": null,
       "computedTotalXG": 0,
-      "computedHomeStyle": "Defensive",
+      "computedHomeStyle": "Aggressive",
       "computedAwayStyle": "Aggressive",
       "computedPrediction": "*SKIP (Not a Value Edge)*",
       "computedHome": "HOLLYWOOD",
       "computedAway": "FORCE",
-      "computedHomeUnc": 0,
+      "computedHomeUnc": 10,
       "computedAwayUnc": 10,
-      "ouPrediction": "*SKIP (Neutral XG)*",
-      "isOUPick": false
+      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
+      "isOUPick": true
     },
     {
       "externalId": "FI309080826",
@@ -166,7 +94,7 @@
       "computedHome": "ATLAS",
       "computedAway": "HAPPY HOUR",
       "computedHomeUnc": 10,
-      "computedAwayUnc": 10,
+      "computedAwayUnc": 0,
       "ouPrediction": "**UNDER 2.5 Goals**",
       "isOUPick": true
     },
@@ -189,7 +117,7 @@
       "computedPrediction": "*SKIP (Not a Value Edge)*",
       "computedHome": "AGENT",
       "computedAway": "INFERNO",
-      "computedHomeUnc": 0,
+      "computedHomeUnc": 10,
       "computedAwayUnc": 80,
       "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
       "isOUPick": true
@@ -262,7 +190,7 @@
       "computedHome": "CROWN",
       "computedAway": "STORM",
       "computedHomeUnc": 10,
-      "computedAwayUnc": 10,
+      "computedAwayUnc": 0,
       "ouPrediction": "**UNDER 2.5 Goals**",
       "isOUPick": true
     },
@@ -281,14 +209,14 @@
       "teamBScore": null,
       "computedTotalXG": 0,
       "computedHomeStyle": "Aggressive",
-      "computedAwayStyle": "Defensive",
-      "computedPrediction": "**INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
       "computedHome": "INFERNO",
       "computedAway": "HOLLYWOOD",
       "computedHomeUnc": 80,
-      "computedAwayUnc": 0,
-      "ouPrediction": "*SKIP (Neutral XG)*",
-      "isOUPick": false
+      "computedAwayUnc": 10,
+      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
+      "isOUPick": true
     },
     {
       "externalId": "FI312080826",
@@ -306,7 +234,7 @@
       "computedTotalXG": 0,
       "computedHomeStyle": "Defensive",
       "computedAwayStyle": "Aggressive",
-      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedPrediction": "**DANTE wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]",
       "computedHome": "ENT",
       "computedAway": "DANTE",
       "computedHomeUnc": 10,
@@ -357,7 +285,7 @@
       "computedPrediction": "*SKIP (Not a Value Edge)*",
       "computedHome": "STORM",
       "computedAway": "ATLAS",
-      "computedHomeUnc": 10,
+      "computedHomeUnc": 0,
       "computedAwayUnc": 10,
       "ouPrediction": "**UNDER 2.5 Goals**",
       "isOUPick": true
@@ -382,19 +310,65 @@
       "computedHome": "FORCE",
       "computedAway": "AGENT",
       "computedHomeUnc": 10,
+      "computedAwayUnc": 10,
+      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI314080826",
+      "startDate": "2026-08-08T05:12:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BAYERN MUNCHEN",
+      "teamBName": "PARIS SG",
+      "participantAName": "DANTE",
+      "participantBName": "EDEN",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "DANTE",
+      "computedAway": "EDEN",
+      "computedHomeUnc": 30,
+      "computedAwayUnc": 30,
+      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI083080826",
+      "startDate": "2026-08-08T05:16:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "FRANCE",
+      "participantAName": "DECIMATOR",
+      "participantBName": "ASHE",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "DECIMATOR",
+      "computedAway": "ASHE",
+      "computedHomeUnc": 10,
       "computedAwayUnc": 0,
       "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
       "isOUPick": true
-    }
-  ],
-  "winnerParlay": [
+    },
     {
-      "externalId": "FI068080826",
-      "startDate": "2026-08-08T04:20:00Z",
+      "externalId": "FI084080826",
+      "startDate": "2026-08-08T05:20:00Z",
       "isCancelled": false,
-      "teamAName": "ARSENAL",
+      "teamAName": "SPURS",
       "teamBName": "NEWCASTLE UTD",
-      "participantAName": "ATLAS",
+      "participantAName": "HAPPY HOUR",
       "participantBName": "CROWN",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
@@ -404,16 +378,17 @@
       "computedTotalXG": 0,
       "computedHomeStyle": "Defensive",
       "computedAwayStyle": "Defensive",
-      "computedPrediction": "**CROWN wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]",
-      "computedHome": "ATLAS",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "HAPPY HOUR",
       "computedAway": "CROWN",
-      "computedHomeUnc": 10,
+      "computedHomeUnc": 0,
       "computedAwayUnc": 10,
       "ouPrediction": "**UNDER 2.5 Goals**",
       "isOUPick": true
     }
   ],
-  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 154\nDecisive Matches Evaluated: 92\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 40 | Incorrect: 29 | Pushed: 23 | Accuracy: 57.97% (Excl. Pushes)\nWagered: $1355 | Returned: $1272 | Profit: $-83.00\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 27 | Incorrect: 14 | Accuracy: 65.85%\nWagered: $410 | Returned: $407.5 | Profit: $-2.50\n\n-- Overall Totals --\nTotal Wagered: $1765\nTotal Returned: $1679.5\nProfit/Loss: $-85.50\n",
+  "winnerParlay": [],
+  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 157\nDecisive Matches Evaluated: 95\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 42 | Incorrect: 29 | Pushed: 24 | Accuracy: 59.15% (Excl. Pushes)\nWagered: $1390 | Returned: $1323.5 | Profit: $-66.50\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 27 | Incorrect: 14 | Accuracy: 65.85%\nWagered: $410 | Returned: $407.5 | Profit: $-2.50\n\n-- Overall Totals --\nTotal Wagered: $1800\nTotal Returned: $1731\nProfit/Loss: $-69.00\n",
   "playerStats": {
     "KINGSLAYER": {
       "matches": 20,
@@ -571,12 +546,12 @@
       "recentForm": "L-D-D-D-W-L-W-W-W-D-W-W-W-D-L-L-D-D-W"
     },
     "STORM": {
-      "matches": 20,
+      "matches": 21,
       "wins": 8,
-      "draws": 4,
+      "draws": 5,
       "losses": 8,
-      "goalsScored": 27,
-      "goalsConceded": 28,
+      "goalsScored": 28,
+      "goalsConceded": 29,
       "streak": [
         "D",
         "L",
@@ -597,7 +572,8 @@
         "L",
         "W",
         "W",
-        "L"
+        "L",
+        "D"
       ],
       "goalsList": [
         0,
@@ -619,7 +595,8 @@
         0,
         1,
         4,
-        0
+        0,
+        1
       ],
       "concededList": [
         0,
@@ -641,13 +618,14 @@
         1,
         0,
         1,
-        3
+        3,
+        1
       ],
-      "winRate": "40.0",
-      "avgScored": "1.35",
-      "avgConceded": "1.40",
+      "winRate": "38.1",
+      "avgScored": "1.33",
+      "avgConceded": "1.38",
       "style": "Defensive",
-      "recentForm": "D-L-D-W-L-L-D-W-W-W-L-L-W-D-W-L-L-W-W-L"
+      "recentForm": "D-L-D-W-L-L-D-W-W-W-L-L-W-D-W-L-L-W-W-L-D"
     },
     "CROWN": {
       "matches": 20,
@@ -905,12 +883,12 @@
       "recentForm": "W-L-W-L-W-L-W-W-W-W-D-D-D-D-W-L-D-W-W-W-W-W"
     },
     "HOLLYWOOD": {
-      "matches": 19,
+      "matches": 20,
       "wins": 7,
       "draws": 6,
-      "losses": 6,
-      "goalsScored": 29,
-      "goalsConceded": 28,
+      "losses": 7,
+      "goalsScored": 31,
+      "goalsConceded": 31,
       "streak": [
         "W",
         "W",
@@ -929,6 +907,7 @@
         "L",
         "L",
         "D",
+        "L",
         "L",
         "L"
       ],
@@ -951,7 +930,8 @@
         3,
         2,
         0,
-        1
+        1,
+        2
       ],
       "concededList": [
         1,
@@ -972,20 +952,21 @@
         4,
         2,
         2,
-        2
+        2,
+        3
       ],
-      "winRate": "36.8",
-      "avgScored": "1.53",
-      "avgConceded": "1.47",
-      "style": "Defensive",
-      "recentForm": "W-W-W-W-W-W-D-D-D-W-L-D-L-D-L-L-D-L-L"
+      "winRate": "35.0",
+      "avgScored": "1.55",
+      "avgConceded": "1.55",
+      "style": "Aggressive",
+      "recentForm": "W-W-W-W-W-W-D-D-D-W-L-D-L-D-L-L-D-L-L-L"
     },
     "DANTE": {
-      "matches": 20,
-      "wins": 10,
+      "matches": 21,
+      "wins": 11,
       "draws": 2,
       "losses": 8,
-      "goalsScored": 38,
+      "goalsScored": 39,
       "goalsConceded": 25,
       "streak": [
         "L",
@@ -1007,7 +988,8 @@
         "W",
         "W",
         "W",
-        "D"
+        "D",
+        "W"
       ],
       "goalsList": [
         1,
@@ -1029,7 +1011,8 @@
         4,
         3,
         2,
-        2
+        2,
+        1
       ],
       "concededList": [
         3,
@@ -1051,13 +1034,14 @@
         0,
         1,
         0,
-        2
+        2,
+        0
       ],
-      "winRate": "50.0",
-      "avgScored": "1.90",
-      "avgConceded": "1.25",
+      "winRate": "52.4",
+      "avgScored": "1.86",
+      "avgConceded": "1.19",
       "style": "Aggressive",
-      "recentForm": "L-L-W-L-W-L-D-W-L-W-L-W-L-W-W-L-W-W-W-D"
+      "recentForm": "L-L-W-L-W-L-D-W-L-W-L-W-L-W-W-L-W-W-W-D-W"
     },
     "DECIMATOR": {
       "matches": 21,
@@ -1221,12 +1205,12 @@
       "recentForm": "L-L-D-L-W-W-W-W-L-W-L-L-L-W-W-L-W-D-L-L"
     },
     "HAPPY HOUR": {
-      "matches": 20,
+      "matches": 21,
       "wins": 9,
-      "draws": 5,
+      "draws": 6,
       "losses": 6,
-      "goalsScored": 31,
-      "goalsConceded": 15,
+      "goalsScored": 32,
+      "goalsConceded": 16,
       "streak": [
         "W",
         "L",
@@ -1247,7 +1231,8 @@
         "D",
         "L",
         "W",
-        "L"
+        "L",
+        "D"
       ],
       "goalsList": [
         2,
@@ -1269,7 +1254,8 @@
         1,
         0,
         1,
-        0
+        0,
+        1
       ],
       "concededList": [
         1,
@@ -1291,13 +1277,14 @@
         1,
         1,
         0,
+        1,
         1
       ],
-      "winRate": "45.0",
-      "avgScored": "1.55",
-      "avgConceded": "0.75",
+      "winRate": "42.9",
+      "avgScored": "1.52",
+      "avgConceded": "0.76",
       "style": "Defensive",
-      "recentForm": "W-L-D-W-W-W-D-L-L-W-D-W-W-D-L-W-D-L-W-L"
+      "recentForm": "W-L-D-W-W-W-D-L-L-W-D-W-W-D-L-W-D-L-W-L-D"
     },
     "ATLAS": {
       "matches": 20,
@@ -1379,12 +1366,12 @@
       "recentForm": "L-W-L-L-W-L-D-L-L-L-W-L-L-D-L-L-W-L-L-W"
     },
     "AGENT": {
-      "matches": 22,
-      "wins": 11,
+      "matches": 23,
+      "wins": 12,
       "draws": 6,
       "losses": 5,
-      "goalsScored": 48,
-      "goalsConceded": 36,
+      "goalsScored": 51,
+      "goalsConceded": 38,
       "streak": [
         "W",
         "W",
@@ -1407,6 +1394,7 @@
         "W",
         "D",
         "L",
+        "W",
         "W"
       ],
       "goalsList": [
@@ -1431,7 +1419,8 @@
         4,
         2,
         2,
-        4
+        4,
+        3
       ],
       "concededList": [
         1,
@@ -1455,21 +1444,22 @@
         0,
         2,
         3,
+        2,
         2
       ],
-      "winRate": "50.0",
-      "avgScored": "2.18",
-      "avgConceded": "1.64",
+      "winRate": "52.2",
+      "avgScored": "2.22",
+      "avgConceded": "1.65",
       "style": "Aggressive",
-      "recentForm": "W-W-L-W-W-W-L-L-W-L-W-D-W-D-D-W-D-D-W-D-L-W"
+      "recentForm": "W-W-L-W-W-W-L-L-W-L-W-D-W-D-D-W-D-D-W-D-L-W-W"
     },
     "ENT": {
-      "matches": 20,
+      "matches": 21,
       "wins": 6,
       "draws": 5,
-      "losses": 9,
+      "losses": 10,
       "goalsScored": 26,
-      "goalsConceded": 30,
+      "goalsConceded": 31,
       "streak": [
         "L",
         "L",
@@ -1488,6 +1478,7 @@
         "D",
         "W",
         "D",
+        "L",
         "L",
         "L",
         "L"
@@ -1512,7 +1503,8 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ],
       "concededList": [
         2,
@@ -1534,13 +1526,14 @@
         0,
         3,
         2,
-        2
+        2,
+        1
       ],
-      "winRate": "30.0",
-      "avgScored": "1.30",
-      "avgConceded": "1.50",
+      "winRate": "28.6",
+      "avgScored": "1.24",
+      "avgConceded": "1.48",
       "style": "Defensive",
-      "recentForm": "L-L-L-L-W-W-D-L-D-W-W-D-W-L-D-W-D-L-L-L"
+      "recentForm": "L-L-L-L-W-W-D-L-D-W-W-D-W-L-D-W-D-L-L-L-L"
     },
     "EDEN": {
       "matches": 21,
@@ -1676,6 +1669,13 @@
       "breakdown": "DANTE: 5W | EDEN: 2W | Draws: 1"
     },
     {
+      "matchup": "DANTE vs ENT",
+      "matches": 8,
+      "dominantPlayer": "DANTE",
+      "winRate": 62.5,
+      "breakdown": "DANTE: 5W | ENT: 3W | Draws: 0"
+    },
+    {
       "matchup": "DANTE vs HOLLYWOOD",
       "matches": 5,
       "dominantPlayer": "HOLLYWOOD",
@@ -1688,13 +1688,6 @@
       "dominantPlayer": "STORM",
       "winRate": 57.14285714285714,
       "breakdown": "CROWN: 1W | STORM: 4W | Draws: 2"
-    },
-    {
-      "matchup": "ASHE vs DECIMATOR",
-      "matches": 7,
-      "dominantPlayer": "ASHE",
-      "winRate": 57.14285714285714,
-      "breakdown": "ASHE: 4W | DECIMATOR: 1W | Draws: 2"
     }
   ]
 }
