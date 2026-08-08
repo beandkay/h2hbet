@@ -1,38 +1,109 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.52
+**League Average Goals Per Match (Per Team):** 1.61
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-
-## Most Dominant H2H Pairs (Current Rotation)
-
-| Matchup | Matches | Dominant Player | Win Rate | Breakdown |
-|---|---|---|---|---|
-| **ATLAS vs CROWN** | 7 | CROWN | 100.0% | ATLAS: 0W | CROWN: 7W | Draws: 0 |
-| **FORCE vs HOLLYWOOD** | 3 | FORCE | 100.0% | FORCE: 3W | HOLLYWOOD: 0W | Draws: 0 |
-| **HOLLYWOOD vs INFERNO** | 3 | INFERNO | 100.0% | HOLLYWOOD: 0W | INFERNO: 3W | Draws: 0 |
-| **FORCE vs INFERNO** | 12 | INFERNO | 75.0% | FORCE: 1W | INFERNO: 9W | Draws: 2 |
-| **AGENT vs FORCE** | 12 | AGENT | 75.0% | AGENT: 9W | FORCE: 2W | Draws: 1 |
-| **ATLAS vs HAPPY HOUR** | 8 | HAPPY HOUR | 75.0% | ATLAS: 0W | HAPPY HOUR: 6W | Draws: 2 |
-| **ATLAS vs STORM** | 8 | ATLAS | 75.0% | ATLAS: 6W | STORM: 1W | Draws: 1 |
-| **CROWN vs STORM** | 8 | STORM | 62.5% | CROWN: 1W | STORM: 5W | Draws: 2 |
-| **DECIMATOR vs SALAMANDER** | 8 | DECIMATOR | 62.5% | DECIMATOR: 5W | SALAMANDER: 3W | Draws: 0 |
-| **DANTE vs EDEN** | 10 | DANTE | 60.0% | DANTE: 6W | EDEN: 3W | Draws: 1 |
+| **MAGICIAN** | Aggressive | 2 | 100.0% | 3.00 | 1.50 | W-W |
+| **ARCTIC** | Aggressive | 2 | 100.0% | 3.00 | 0.50 | W-W |
+| **LAVA** | Aggressive | 1 | 100.0% | 4.00 | 2.00 | W |
+| **TUSK** | Defensive | 1 | 100.0% | 2.00 | 1.00 | W |
+| **EXECUTOR** | Aggressive | 2 | 50.0% | 3.00 | 1.00 | W-L |
+| **BULLFROG** | Defensive | 2 | 50.0% | 1.00 | 0.50 | D-W |
+| **HORIZON** | Defensive | 2 | 50.0% | 1.50 | 0.50 | W-D |
+| **VENUS** | Defensive | 2 | 50.0% | 0.50 | 1.00 | L-W |
+| **HANDLER** | Aggressive | 2 | 50.0% | 1.50 | 2.00 | L-W |
+| **PHENOM** | Defensive | 2 | 0.0% | 1.00 | 1.50 | D-L |
+| **PLUTO** | Defensive | 2 | 0.0% | 1.50 | 1.50 | D-D |
+| **MATRIX** | Aggressive | 2 | 0.0% | 0.00 | 4.00 | L-L |
+| **GUARDIAN** | Aggressive | 2 | 0.0% | 1.50 | 2.50 | D-L |
+| **EXILE** | Aggressive | 2 | 0.0% | 1.50 | 3.00 | L-L |
+| **CHAOS** | Defensive | 1 | 0.0% | 0.00 | 1.00 | L |
+| **CRUSADER** | Defensive | 1 | 0.0% | 1.00 | 2.00 | L |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. LAVA (Unknown) vs CHAOS (Unknown) [Aug 8, 03:53 PM AEST]
+### 1. MATRIX (Aggressive) vs HANDLER (Aggressive) [Aug 8, 05:05 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 2. TUSK (Unknown) vs CRUSADER (Unknown) [Aug 8, 03:57 PM AEST]
+### 2. CHAOS (Defensive) vs GUARDIAN (Aggressive) [Aug 8, 05:08 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 3. CRUSADER (Defensive) vs EXILE (Aggressive) [Aug 8, 05:12 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 4. PLUTO (Defensive) vs VENUS (Defensive) [Aug 8, 05:16 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 5. EXECUTOR (Aggressive) vs ARCTIC (Aggressive) [Aug 8, 05:20 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 6. CHAOS (Defensive) vs LAVA (Aggressive) [Aug 8, 05:23 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 7. CRUSADER (Defensive) vs TUSK (Defensive) [Aug 8, 05:27 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 8. PLUTO (Defensive) vs PHENOM (Defensive) [Aug 8, 05:31 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 9. EXECUTOR (Aggressive) vs MATRIX (Aggressive) [Aug 8, 05:35 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 10. GUARDIAN (Aggressive) vs BULLFROG (Defensive) [Aug 8, 05:38 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 11. EXILE (Aggressive) vs MAGICIAN (Aggressive) [Aug 8, 05:42 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 12. VENUS (Defensive) vs HORIZON (Defensive) [Aug 8, 05:46 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 13. ARCTIC (Aggressive) vs HANDLER (Aggressive) [Aug 8, 05:50 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 14. BULLFROG (Defensive) vs CHAOS (Defensive) [Aug 8, 05:53 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 15. MAGICIAN (Aggressive) vs CRUSADER (Defensive) [Aug 8, 05:57 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 16. HORIZON (Defensive) vs PLUTO (Defensive) [Aug 8, 06:01 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -50,20 +121,20 @@
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 181
-Decisive Matches Evaluated: 115
+Total Matches Played Today: 14
+Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 50 | Incorrect: 39 | Pushed: 26 | Accuracy: 56.18% (Excl. Pushes)
-Wagered: $1660 | Returned: $1536 | Profit: $-124.00
+Correct: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Over 2.5 Goals (Selective) --
-Correct: 33 | Incorrect: 17 | Accuracy: 66.00%
-Wagered: $500 | Returned: $498 | Profit: $-2.00
+Correct: 0 | Incorrect: 0 | Accuracy: 0%
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Overall Totals --
-Total Wagered: $2160
-Total Returned: $2034
-Profit/Loss: $-126.00
+Total Wagered: $0
+Total Returned: $0
+Profit/Loss: $0.00
 
 ```
