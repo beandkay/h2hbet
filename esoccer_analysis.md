@@ -6,121 +6,116 @@
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **INFERNO** | Aggressive | 22 | 59.1% | 2.27 | 1.14 | W-L-W-L-W-L-W-W-W-W-D-D-D-D-W-L-D-W-W-W-W-W |
-| **DANTE** | Aggressive | 21 | 52.4% | 1.86 | 1.19 | L-L-W-L-W-L-D-W-L-W-L-W-L-W-W-L-W-W-W-D-W |
-| **AGENT** | Aggressive | 23 | 52.2% | 2.22 | 1.65 | W-W-L-W-W-W-L-L-W-L-W-D-W-D-D-W-D-D-W-D-L-W-W |
-| **CROWN** | Defensive | 20 | 50.0% | 1.20 | 0.95 | D-W-W-L-L-W-D-W-W-L-D-W-L-D-W-W-D-W-L-W |
-| **DECIMATOR** | Aggressive | 21 | 47.6% | 1.81 | 1.43 | W-D-D-W-L-L-L-L-L-L-L-W-W-D-W-W-W-W-W-L-W |
-| **HAPPY HOUR** | Defensive | 21 | 42.9% | 1.52 | 0.76 | W-L-D-W-W-W-D-L-L-W-D-W-W-D-L-W-D-L-W-L-D |
-| **ASHE** | Aggressive | 19 | 42.1% | 1.68 | 1.42 | L-D-D-D-W-L-W-W-W-D-W-W-W-D-L-L-D-D-W |
-| **SALAMANDER** | Defensive | 20 | 40.0% | 1.30 | 1.65 | L-L-D-L-W-W-W-W-L-W-L-L-L-W-W-L-W-D-L-L |
-| **STORM** | Defensive | 21 | 38.1% | 1.33 | 1.38 | D-L-D-W-L-L-D-W-W-W-L-L-W-D-W-L-L-W-W-L-D |
-| **HOLLYWOOD** | Aggressive | 20 | 35.0% | 1.55 | 1.55 | W-W-W-W-W-W-D-D-D-W-L-D-L-D-L-L-D-L-L-L |
-| **KINGSLAYER** | Defensive | 20 | 30.0% | 1.30 | 1.60 | W-W-D-D-L-W-L-L-W-D-W-L-L-L-L-L-L-D-W-L |
-| **ENT** | Defensive | 21 | 28.6% | 1.24 | 1.48 | L-L-L-L-W-W-D-L-D-W-W-D-W-L-D-W-D-L-L-L-L |
-| **ATLAS** | Defensive | 20 | 25.0% | 0.95 | 1.95 | L-W-L-L-W-L-D-L-L-L-W-L-L-D-L-L-W-L-L-W |
-| **EDEN** | Aggressive | 21 | 23.8% | 1.33 | 2.10 | W-L-W-L-L-L-D-D-L-D-D-W-L-L-D-L-D-L-W-D-W |
-| **FORCE** | Aggressive | 24 | 20.8% | 1.29 | 2.58 | L-L-L-W-L-L-L-W-L-L-D-L-D-L-L-D-L-W-W-L-L-W-L-L |
+| **INFERNO** | Aggressive | 23 | 56.5% | 2.22 | 1.22 | W-L-W-L-W-L-W-W-W-W-D-D-D-D-W-L-D-W-W-W-W-W-L |
+| **DANTE** | Aggressive | 22 | 54.5% | 1.91 | 1.18 | L-L-W-L-W-L-D-W-L-W-L-W-L-W-W-L-W-W-W-D-W-W |
+| **AGENT** | Aggressive | 24 | 54.2% | 2.25 | 1.63 | W-W-L-W-W-W-L-L-W-L-W-D-W-D-D-W-D-D-W-D-L-W-W-W |
+| **CROWN** | Defensive | 22 | 50.0% | 1.32 | 0.95 | D-W-W-L-L-W-D-W-W-L-D-W-L-D-W-W-D-W-L-W-W-L |
+| **DECIMATOR** | Aggressive | 22 | 45.5% | 1.82 | 1.50 | W-D-D-W-L-L-L-L-L-L-L-W-W-D-W-W-W-W-W-L-W-L |
+| **ASHE** | Defensive | 21 | 42.9% | 1.62 | 1.38 | L-D-D-D-W-L-W-W-W-D-W-W-W-D-L-L-D-D-W-W-L |
+| **STORM** | Defensive | 22 | 40.9% | 1.36 | 1.36 | D-L-D-W-L-L-D-W-W-W-L-L-W-D-W-L-L-W-W-L-D-W |
+| **SALAMANDER** | Defensive | 22 | 40.9% | 1.32 | 1.64 | L-L-D-L-W-W-W-W-L-W-L-L-L-W-W-L-W-D-L-L-L-W |
+| **HAPPY HOUR** | Defensive | 22 | 40.9% | 1.50 | 0.77 | W-L-D-W-W-W-D-L-L-W-D-W-W-D-L-W-D-L-W-L-D-D |
+| **KINGSLAYER** | Defensive | 21 | 33.3% | 1.33 | 1.57 | W-W-D-D-L-W-L-L-W-D-W-L-L-L-L-L-L-D-W-L-W |
+| **HOLLYWOOD** | Defensive | 21 | 33.3% | 1.48 | 1.52 | W-W-W-W-W-W-D-D-D-W-L-D-L-D-L-L-D-L-L-L-L |
+| **ENT** | Defensive | 22 | 31.8% | 1.27 | 1.45 | L-L-L-L-W-W-D-L-D-W-W-D-W-L-D-W-D-L-L-L-L-W |
+| **FORCE** | Aggressive | 25 | 24.0% | 1.28 | 2.48 | L-L-L-W-L-L-L-W-L-L-D-L-D-L-L-D-L-W-W-L-L-W-L-L-W |
+| **ATLAS** | Defensive | 22 | 22.7% | 0.91 | 2.00 | L-W-L-L-W-L-D-L-L-L-W-L-L-D-L-L-W-L-L-W-L-D |
+| **EDEN** | Aggressive | 23 | 21.7% | 1.30 | 2.13 | W-L-W-L-L-L-D-D-L-D-D-W-L-L-D-L-D-L-W-D-W-L-L |
 
 ## Most Dominant H2H Pairs (Current Rotation)
 
 | Matchup | Matches | Dominant Player | Win Rate | Breakdown |
 |---|---|---|---|---|
-| **ATLAS vs CROWN** | 6 | CROWN | 100.0% | ATLAS: 0W | CROWN: 6W | Draws: 0 |
-| **ATLAS vs HAPPY HOUR** | 7 | HAPPY HOUR | 85.7% | ATLAS: 0W | HAPPY HOUR: 6W | Draws: 1 |
+| **ATLAS vs CROWN** | 7 | CROWN | 100.0% | ATLAS: 0W | CROWN: 7W | Draws: 0 |
+| **FORCE vs HOLLYWOOD** | 3 | FORCE | 100.0% | FORCE: 3W | HOLLYWOOD: 0W | Draws: 0 |
+| **ATLAS vs HAPPY HOUR** | 8 | HAPPY HOUR | 75.0% | ATLAS: 0W | HAPPY HOUR: 6W | Draws: 2 |
 | **FORCE vs INFERNO** | 11 | INFERNO | 72.7% | FORCE: 1W | INFERNO: 8W | Draws: 2 |
 | **AGENT vs FORCE** | 11 | AGENT | 72.7% | AGENT: 8W | FORCE: 2W | Draws: 1 |
-| **DECIMATOR vs SALAMANDER** | 7 | DECIMATOR | 71.4% | DECIMATOR: 5W | SALAMANDER: 2W | Draws: 0 |
 | **ATLAS vs STORM** | 7 | ATLAS | 71.4% | ATLAS: 5W | STORM: 1W | Draws: 1 |
-| **DANTE vs EDEN** | 8 | DANTE | 62.5% | DANTE: 5W | EDEN: 2W | Draws: 1 |
+| **DANTE vs EDEN** | 9 | DANTE | 66.7% | DANTE: 6W | EDEN: 2W | Draws: 1 |
+| **CROWN vs STORM** | 8 | STORM | 62.5% | CROWN: 1W | STORM: 5W | Draws: 2 |
+| **DECIMATOR vs SALAMANDER** | 8 | DECIMATOR | 62.5% | DECIMATOR: 5W | SALAMANDER: 3W | Draws: 0 |
 | **DANTE vs ENT** | 8 | DANTE | 62.5% | DANTE: 5W | ENT: 3W | Draws: 0 |
-| **DANTE vs HOLLYWOOD** | 5 | HOLLYWOOD | 60.0% | DANTE: 1W | HOLLYWOOD: 3W | Draws: 1 |
-| **CROWN vs STORM** | 7 | STORM | 57.1% | CROWN: 1W | STORM: 4W | Draws: 2 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. HOLLYWOOD (Aggressive) vs FORCE (Aggressive) [Aug 8, 02:23 PM AEST]
-- **Analysis**: Total Expected Goals: 4.01 (2.40 to 1.61).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 2. DANTE (Aggressive) vs EDEN (Aggressive) [Aug 8, 02:27 PM AEST]
-- **Analysis**: Total Expected Goals: 3.92 (2.40 to 1.52).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 3. SALAMANDER (Defensive) vs DECIMATOR (Aggressive) [Aug 8, 02:31 PM AEST]
-- **Analysis**: Total Expected Goals: 3.81 (1.69 to 2.12).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 4. ATLAS (Defensive) vs HAPPY HOUR (Defensive) [Aug 8, 02:35 PM AEST]
-- **Analysis**: Total Expected Goals: 3.20 (1.07 to 2.13).
+### 1. STORM (Defensive) vs ATLAS (Defensive) [Aug 8, 03:05 PM AEST]
+- **Analysis**: Total Expected Goals: 3.38 (2.04 to 1.34).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 5. AGENT (Aggressive) vs INFERNO (Aggressive) [Aug 8, 02:38 PM AEST]
-- **Analysis**: Total Expected Goals: 4.60 (2.14 to 2.46).
+### 2. FORCE (Aggressive) vs AGENT (Aggressive) [Aug 8, 03:08 PM AEST]
+- **Analysis**: Total Expected Goals: 4.50 (1.67 to 2.83).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 6. ENT (Defensive) vs EDEN (Aggressive) [Aug 8, 02:42 PM AEST]
-- **Analysis**: Total Expected Goals: 3.61 (1.94 to 1.67).
+### 3. DANTE (Aggressive) vs EDEN (Aggressive) [Aug 8, 03:12 PM AEST]
+- **Analysis**: Total Expected Goals: 3.93 (2.45 to 1.48).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
+
+### 4. DECIMATOR (Aggressive) vs ASHE (Defensive) [Aug 8, 03:16 PM AEST]
+- **Analysis**: Total Expected Goals: 3.94 (1.98 to 1.96).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: *SKIP (Neutral XG)*
 
-### 7. ASHE (Aggressive) vs KINGSLAYER (Defensive) [Aug 8, 02:46 PM AEST]
-- **Analysis**: Total Expected Goals: 3.68 (2.05 to 1.63).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 8. CROWN (Defensive) vs STORM (Defensive) [Aug 8, 02:50 PM AEST]
-- **Analysis**: Total Expected Goals: 3.21 (1.73 to 1.49).
+### 5. HAPPY HOUR (Defensive) vs CROWN (Defensive) [Aug 8, 03:20 PM AEST]
+- **Analysis**: Total Expected Goals: 3.09 (1.61 to 1.48).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 9. INFERNO (Aggressive) vs HOLLYWOOD (Aggressive) [Aug 8, 02:53 PM AEST]
-- **Analysis**: Total Expected Goals: 4.09 (2.41 to 1.68).
+### 6. INFERNO (Aggressive) vs FORCE (Aggressive) [Aug 8, 03:23 PM AEST]
+- **Analysis**: Total Expected Goals: 4.29 (2.83 to 1.46).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 10. ENT (Defensive) vs DANTE (Aggressive) [Aug 8, 02:57 PM AEST]
-- **Analysis**: Total Expected Goals: 3.58 (1.49 to 2.09).
+### 7. EDEN (Aggressive) vs ENT (Defensive) [Aug 8, 03:27 PM AEST]
+- **Analysis**: Total Expected Goals: 3.61 (1.61 to 2.00).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: *SKIP (Neutral XG)*
+
+### 8. KINGSLAYER (Defensive) vs DECIMATOR (Aggressive) [Aug 8, 03:31 PM AEST]
+- **Analysis**: Total Expected Goals: 3.78 (1.71 to 2.07).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: *SKIP (Neutral XG)*
+
+### 9. STORM (Defensive) vs HAPPY HOUR (Defensive) [Aug 8, 03:35 PM AEST]
+- **Analysis**: Total Expected Goals: 3.25 (1.43 to 1.82).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 10. AGENT (Aggressive) vs HOLLYWOOD (Defensive) [Aug 8, 03:38 PM AEST]
+- **Analysis**: Total Expected Goals: 4.23 (2.35 to 1.88).
+- **Prediction**: **AGENT wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
+- **Totals**: *SKIP (Neutral XG)*
+
+### 11. ENT (Defensive) vs DANTE (Aggressive) [Aug 8, 03:42 PM AEST]
+- **Analysis**: Total Expected Goals: 3.63 (1.52 to 2.11).
 - **Prediction**: **DANTE wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
 - **Totals**: *SKIP (Neutral XG)*
 
-### 11. KINGSLAYER (Defensive) vs SALAMANDER (Defensive) [Aug 8, 03:01 PM AEST]
-- **Analysis**: Total Expected Goals: 3.53 (1.75 to 1.78).
+### 12. ASHE (Defensive) vs SALAMANDER (Defensive) [Aug 8, 03:46 PM AEST]
+- **Analysis**: Total Expected Goals: 3.71 (2.03 to 1.68).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 12. STORM (Defensive) vs ATLAS (Defensive) [Aug 8, 03:05 PM AEST]
-- **Analysis**: Total Expected Goals: 3.36 (1.99 to 1.38).
-- **Prediction**: *SKIP (Not a Value Edge)*
+### 13. CROWN (Defensive) vs ATLAS (Defensive) [Aug 8, 03:50 PM AEST]
+- **Analysis**: Total Expected Goals: 3.23 (2.09 to 1.13).
+- **Prediction**: **CROWN wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 13. FORCE (Aggressive) vs AGENT (Aggressive) [Aug 8, 03:08 PM AEST]
-- **Analysis**: Total Expected Goals: 4.51 (1.66 to 2.86).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
+### 14. LAVA (Unknown) vs CHAOS (Unknown) [Aug 8, 03:53 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
 
-### 14. DANTE (Aggressive) vs EDEN (Aggressive) [Aug 8, 03:12 PM AEST]
-- **Analysis**: Total Expected Goals: 3.92 (2.40 to 1.52).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 15. DECIMATOR (Aggressive) vs ASHE (Aggressive) [Aug 8, 03:16 PM AEST]
-- **Analysis**: Total Expected Goals: 3.97 (2.01 to 1.96).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 16. HAPPY HOUR (Defensive) vs CROWN (Defensive) [Aug 8, 03:20 PM AEST]
-- **Analysis**: Total Expected Goals: 3.05 (1.63 to 1.42).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
+### 15. TUSK (Unknown) vs CRUSADER (Unknown) [Aug 8, 03:57 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
 
 
 ## 💡 AI Parlay Recommendations
@@ -135,20 +130,20 @@
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 157
-Decisive Matches Evaluated: 95
+Total Matches Played Today: 167
+Decisive Matches Evaluated: 104
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 42 | Incorrect: 29 | Pushed: 24 | Accuracy: 59.15% (Excl. Pushes)
-Wagered: $1390 | Returned: $1323.5 | Profit: $-66.50
+Correct: 46 | Incorrect: 33 | Pushed: 25 | Accuracy: 58.23% (Excl. Pushes)
+Wagered: $1505 | Returned: $1422 | Profit: $-83.00
 
 -- Over 2.5 Goals (Selective) --
-Correct: 27 | Incorrect: 14 | Accuracy: 65.85%
-Wagered: $410 | Returned: $407.5 | Profit: $-2.50
+Correct: 30 | Incorrect: 15 | Accuracy: 66.67%
+Wagered: $450 | Returned: $453 | Profit: $3.00
 
 -- Overall Totals --
-Total Wagered: $1800
-Total Returned: $1731
-Profit/Loss: $-69.00
+Total Wagered: $1955
+Total Returned: $1875
+Profit/Loss: $-80.00
 
 ```
