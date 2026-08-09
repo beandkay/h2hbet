@@ -6,116 +6,121 @@
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **ARCTIC** | Defensive | 23 | 65.2% | 1.87 | 1.09 | W-W-L-L-D-W-W-L-L-W-L-W-W-W-W-W-L-W-W-D-W-W-W |
+| **ARCTIC** | Defensive | 24 | 66.7% | 1.88 | 1.04 | W-W-L-L-D-W-W-L-L-W-L-W-W-W-W-W-L-W-W-D-W-W-W-W |
 | **DEZZY** | Defensive | 20 | 55.0% | 1.45 | 1.10 | W-L-W-D-W-L-W-W-L-W-W-L-W-W-L-W-W-D-L-L |
-| **AGONY** | Aggressive | 19 | 52.6% | 1.68 | 1.37 | W-W-L-L-D-D-W-L-L-W-L-D-L-W-W-W-W-W-W |
-| **SPARTAN** | Defensive | 17 | 47.1% | 1.35 | 0.94 | W-D-D-D-W-L-W-D-W-W-L-W-W-D-W-L-D |
-| **PLUTO** | Defensive | 19 | 42.1% | 1.11 | 0.95 | W-L-W-L-D-L-W-W-L-L-W-W-W-L-W-L-L-D-D |
-| **GUARDIAN** | Defensive | 18 | 38.9% | 1.17 | 1.22 | D-L-L-L-W-D-W-W-W-L-W-D-D-W-D-W-D-L |
-| **BULLFROG** | Defensive | 19 | 36.8% | 1.21 | 1.05 | D-W-D-D-W-L-W-L-D-L-D-W-L-L-L-W-W-W-D |
-| **EXECUTOR** | Defensive | 22 | 31.8% | 1.14 | 1.32 | L-W-W-W-D-L-L-D-W-D-W-D-W-L-D-L-W-L-D-D-L-L |
-| **MAGICIAN** | Defensive | 19 | 31.6% | 1.32 | 1.58 | L-D-W-W-D-D-L-W-W-W-D-D-L-L-L-W-L-L-D |
-| **FRANCHISE** | Aggressive | 19 | 31.6% | 1.74 | 1.89 | L-D-W-D-W-D-L-L-D-L-W-W-L-D-L-L-L-W-W |
-| **BLITZ** | Aggressive | 19 | 31.6% | 1.47 | 1.68 | L-D-L-W-D-W-L-L-W-L-D-L-W-W-L-L-W-D-L |
-| **TUSK** | Defensive | 17 | 29.4% | 1.41 | 1.47 | L-W-D-L-W-W-W-D-L-D-D-W-D-D-L-D-D |
-| **LAVA** | Defensive | 19 | 26.3% | 1.21 | 1.37 | W-L-W-L-D-D-L-D-L-L-L-D-L-W-D-L-L-W-W |
+| **AGONY** | Defensive | 20 | 55.0% | 1.65 | 1.30 | W-W-L-L-D-D-W-L-L-W-L-D-L-W-W-W-W-W-W-W |
+| **SPARTAN** | Defensive | 18 | 50.0% | 1.50 | 0.89 | W-D-D-D-W-L-W-D-W-W-L-W-W-D-W-L-D-W |
+| **PLUTO** | Defensive | 20 | 40.0% | 1.05 | 0.95 | W-L-W-L-D-L-W-W-L-L-W-W-W-L-W-L-L-D-D-L |
+| **BULLFROG** | Defensive | 20 | 40.0% | 1.25 | 1.05 | D-W-D-D-W-L-W-L-D-L-D-W-L-L-L-W-W-W-D-W |
+| **GUARDIAN** | Defensive | 19 | 36.8% | 1.11 | 1.32 | D-L-L-L-W-D-W-W-W-L-W-D-D-W-D-W-D-L-L |
+| **FRANCHISE** | Aggressive | 21 | 33.3% | 1.86 | 1.86 | L-D-W-D-W-D-L-L-D-L-W-W-L-D-L-L-L-W-W-W-D |
+| **EXECUTOR** | Defensive | 23 | 30.4% | 1.09 | 1.35 | L-W-W-W-D-L-L-D-W-D-W-D-W-L-D-L-W-L-D-D-L-L-L |
+| **MAGICIAN** | Defensive | 20 | 30.0% | 1.30 | 1.55 | L-D-W-W-D-D-L-W-W-W-D-D-L-L-L-W-L-L-D-D |
+| **BLITZ** | Aggressive | 20 | 30.0% | 1.45 | 1.65 | L-D-L-W-D-W-L-L-W-L-D-L-W-W-L-L-W-D-L-D |
+| **TUSK** | Defensive | 18 | 27.8% | 1.39 | 1.50 | L-W-D-L-W-W-W-D-L-D-D-W-D-D-L-D-D-L |
+| **LAVA** | Defensive | 20 | 25.0% | 1.30 | 1.45 | W-L-W-L-D-D-L-D-L-L-L-D-L-W-D-L-L-W-W-D |
 | **MATRIX** | Defensive | 23 | 21.7% | 1.00 | 1.61 | L-L-W-L-L-W-W-D-L-D-L-D-L-L-L-D-W-L-L-D-L-W-L |
-| **CRUSADER** | Defensive | 19 | 10.5% | 0.89 | 1.37 | D-L-L-D-D-L-L-L-D-W-L-D-W-L-D-L-L-D-D |
+| **CRUSADER** | Defensive | 20 | 10.0% | 0.85 | 1.50 | D-L-L-D-D-L-L-L-D-W-L-D-W-L-D-L-L-D-D-L |
 
 ## Most Dominant H2H Pairs (Current Rotation)
 
 | Matchup | Matches | Dominant Player | Win Rate | Breakdown |
 |---|---|---|---|---|
-| **CRUSADER vs SPARTAN** | 6 | SPARTAN | 83.3% | CRUSADER: 0W | SPARTAN: 5W | Draws: 1 |
+| **CRUSADER vs SPARTAN** | 7 | SPARTAN | 85.7% | CRUSADER: 0W | SPARTAN: 6W | Draws: 1 |
 | **ARCTIC vs MATRIX** | 12 | ARCTIC | 75.0% | ARCTIC: 9W | MATRIX: 3W | Draws: 0 |
 | **DEZZY vs FRANCHISE** | 7 | DEZZY | 71.4% | DEZZY: 5W | FRANCHISE: 1W | Draws: 1 |
 | **AGONY vs BLITZ** | 7 | AGONY | 71.4% | AGONY: 5W | BLITZ: 2W | Draws: 0 |
 | **DEZZY vs LAVA** | 7 | DEZZY | 71.4% | DEZZY: 5W | LAVA: 2W | Draws: 0 |
 | **DEZZY vs GUARDIAN** | 6 | GUARDIAN | 66.7% | DEZZY: 1W | GUARDIAN: 4W | Draws: 1 |
-| **ARCTIC vs EXECUTOR** | 11 | ARCTIC | 54.5% | ARCTIC: 6W | EXECUTOR: 3W | Draws: 2 |
-| **BULLFROG vs TUSK** | 6 | BULLFROG | 50.0% | BULLFROG: 3W | TUSK: 2W | Draws: 1 |
-| **AGONY vs PLUTO** | 6 | AGONY | 50.0% | AGONY: 3W | PLUTO: 2W | Draws: 1 |
-| **FRANCHISE vs LAVA** | 6 | FRANCHISE | 50.0% | FRANCHISE: 3W | LAVA: 1W | Draws: 2 |
+| **ARCTIC vs EXECUTOR** | 12 | ARCTIC | 58.3% | ARCTIC: 7W | EXECUTOR: 3W | Draws: 2 |
+| **BULLFROG vs TUSK** | 7 | BULLFROG | 57.1% | BULLFROG: 4W | TUSK: 2W | Draws: 1 |
+| **AGONY vs PLUTO** | 7 | AGONY | 57.1% | AGONY: 4W | PLUTO: 2W | Draws: 1 |
+| **BLITZ vs PLUTO** | 6 | PLUTO | 50.0% | BLITZ: 2W | PLUTO: 3W | Draws: 1 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. GUARDIAN (Defensive) vs FRANCHISE (Aggressive) [Aug 10, 01:38 AM AEST]
-- **Analysis**: Total Expected Goals: 3.69 (1.90 to 1.78).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 2. SPARTAN (Defensive) vs CRUSADER (Defensive) [Aug 10, 01:42 AM AEST]
-- **Analysis**: Total Expected Goals: 2.90 (1.80 to 1.10).
-- **Prediction**: **SPARTAN wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
+### 1. MATRIX (Defensive) vs ARCTIC (Defensive) [Aug 10, 02:05 AM AEST]
+- **Analysis**: Total Expected Goals: 3.50 (1.24 to 2.27).
+- **Prediction**: **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 3. MAGICIAN (Defensive) vs BLITZ (Aggressive) [Aug 10, 01:46 AM AEST]
-- **Analysis**: Total Expected Goals: 3.63 (1.82 to 1.81).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 4. ARCTIC (Defensive) vs EXECUTOR (Defensive) [Aug 10, 01:50 AM AEST]
-- **Analysis**: Total Expected Goals: 3.54 (2.11 to 1.43).
-- **Prediction**: **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 5. FRANCHISE (Aggressive) vs LAVA (Defensive) [Aug 10, 01:53 AM AEST]
-- **Analysis**: Total Expected Goals: 3.67 (1.86 to 1.81).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 6. CRUSADER (Defensive) vs TUSK (Defensive) [Aug 10, 01:57 AM AEST]
-- **Analysis**: Total Expected Goals: 3.09 (1.36 to 1.73).
+### 2. DEZZY (Defensive) vs GUARDIAN (Defensive) [Aug 10, 02:08 AM AEST]
+- **Analysis**: Total Expected Goals: 3.28 (1.82 to 1.46).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 7. BLITZ (Aggressive) vs PLUTO (Defensive) [Aug 10, 02:01 AM AEST]
-- **Analysis**: Total Expected Goals: 3.25 (1.50 to 1.75).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 8. MATRIX (Defensive) vs ARCTIC (Defensive) [Aug 10, 02:05 AM AEST]
-- **Analysis**: Total Expected Goals: 3.51 (1.26 to 2.25).
-- **Prediction**: **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 9. DEZZY (Defensive) vs GUARDIAN (Defensive) [Aug 10, 02:08 AM AEST]
-- **Analysis**: Total Expected Goals: 3.28 (1.77 to 1.51).
+### 3. BULLFROG (Defensive) vs SPARTAN (Defensive) [Aug 10, 02:12 AM AEST]
+- **Analysis**: Total Expected Goals: 3.18 (1.45 to 1.73).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 10. BULLFROG (Defensive) vs SPARTAN (Defensive) [Aug 10, 02:12 AM AEST]
-- **Analysis**: Total Expected Goals: 3.07 (1.43 to 1.64).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 11. AGONY (Aggressive) vs MAGICIAN (Defensive) [Aug 10, 02:16 AM AEST]
-- **Analysis**: Total Expected Goals: 3.73 (2.06 to 1.66).
+### 4. AGONY (Defensive) vs MAGICIAN (Defensive) [Aug 10, 02:16 AM AEST]
+- **Analysis**: Total Expected Goals: 3.66 (2.05 to 1.61).
 - **Prediction**: **AGONY wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
-- **Totals**: *SKIP (Neutral XG)*
+- **Totals**: **UNDER 2.5 Goals**
 
-### 12. MATRIX (Defensive) vs EXECUTOR (Defensive) [Aug 10, 02:20 AM AEST]
-- **Analysis**: Total Expected Goals: 3.07 (1.38 to 1.69).
+### 5. MATRIX (Defensive) vs EXECUTOR (Defensive) [Aug 10, 02:20 AM AEST]
+- **Analysis**: Total Expected Goals: 3.05 (1.39 to 1.65).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 13. DEZZY (Defensive) vs FRANCHISE (Aggressive) [Aug 10, 02:23 AM AEST]
-- **Analysis**: Total Expected Goals: 3.83 (2.11 to 1.72).
+### 6. DEZZY (Defensive) vs FRANCHISE (Aggressive) [Aug 10, 02:23 AM AEST]
+- **Analysis**: Total Expected Goals: 3.89 (2.09 to 1.80).
 - **Prediction**: **DEZZY wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
 - **Totals**: *SKIP (Neutral XG)*
 
-### 14. BULLFROG (Defensive) vs CRUSADER (Defensive) [Aug 10, 02:27 AM AEST]
-- **Analysis**: Total Expected Goals: 2.80 (1.65 to 1.15).
+### 7. BULLFROG (Defensive) vs CRUSADER (Defensive) [Aug 10, 02:27 AM AEST]
+- **Analysis**: Total Expected Goals: 2.88 (1.75 to 1.13).
 - **Prediction**: **BULLFROG wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 15. AGONY (Aggressive) vs BLITZ (Aggressive) [Aug 10, 02:31 AM AEST]
-- **Analysis**: Total Expected Goals: 3.82 (2.11 to 1.71).
+### 8. AGONY (Defensive) vs BLITZ (Aggressive) [Aug 10, 02:31 AM AEST]
+- **Analysis**: Total Expected Goals: 3.76 (2.10 to 1.66).
+- **Prediction**: **AGONY wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
+- **Totals**: *SKIP (Neutral XG)*
+
+### 9. EXECUTOR (Defensive) vs ARCTIC (Defensive) [Aug 10, 02:35 AM AEST]
+- **Analysis**: Total Expected Goals: 3.51 (1.37 to 2.14).
+- **Prediction**: **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 10. GUARDIAN (Defensive) vs LAVA (Defensive) [Aug 10, 02:38 AM AEST]
+- **Analysis**: Total Expected Goals: 3.21 (1.64 to 1.57).
 - **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 11. SPARTAN (Defensive) vs TUSK (Defensive) [Aug 10, 02:42 AM AEST]
+- **Analysis**: Total Expected Goals: 3.42 (1.96 to 1.46).
+- **Prediction**: **SPARTAN wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 12. MAGICIAN (Defensive) vs PLUTO (Defensive) [Aug 10, 02:46 AM AEST]
+- **Analysis**: Total Expected Goals: 3.08 (1.44 to 1.64).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 13. MATRIX (Defensive) vs ARCTIC (Defensive) [Aug 10, 02:50 AM AEST]
+- **Analysis**: Total Expected Goals: 3.50 (1.24 to 2.27).
+- **Prediction**: **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 14. LAVA (Defensive) vs DEZZY (Defensive) [Aug 10, 02:53 AM AEST]
+- **Analysis**: Total Expected Goals: 3.35 (1.46 to 1.89).
+- **Prediction**: **DEZZY wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 15. TUSK (Defensive) vs BULLFROG (Defensive) [Aug 10, 02:57 AM AEST]
+- **Analysis**: Total Expected Goals: 3.29 (1.54 to 1.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 16. PLUTO (Defensive) vs AGONY (Defensive) [Aug 10, 03:01 AM AEST]
+- **Analysis**: Total Expected Goals: 3.26 (1.51 to 1.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
 
 
 ## 💡 AI Parlay Recommendations
@@ -126,27 +131,27 @@
 ### 🏆 Winner Parlay (2 Legs)
 > **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
 
-1. **SPARTAN** to beat CRUSADER -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
-2. **DEZZY** to beat FRANCHISE -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
+1. **DEZZY** to beat FRANCHISE -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
+2. **SPARTAN** to beat TUSK -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 146
-Decisive Matches Evaluated: 71
+Total Matches Played Today: 153
+Decisive Matches Evaluated: 73
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 26 | Incorrect: 26 | Pushed: 19 | Accuracy: 50.00% (Excl. Pushes)
-Wagered: $850 | Returned: $747 | Profit: $-103.00
+Correct: 28 | Incorrect: 26 | Pushed: 19 | Accuracy: 51.85% (Excl. Pushes)
+Wagered: $880 | Returned: $795 | Profit: $-85.00
 
 -- Over 2.5 Goals (Selective) --
-Correct: 11 | Incorrect: 8 | Accuracy: 57.89%
-Wagered: $190 | Returned: $187 | Profit: $-3.00
+Correct: 12 | Incorrect: 9 | Accuracy: 57.14%
+Wagered: $210 | Returned: $203 | Profit: $-7.00
 
 -- Overall Totals --
-Total Wagered: $1040
-Total Returned: $934
-Profit/Loss: $-106.00
+Total Wagered: $1090
+Total Returned: $998
+Profit/Loss: $-92.00
 
 ```
