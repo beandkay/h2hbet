@@ -1,24 +1,24 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.26
+**League Average Goals Per Match (Per Team):** 1.38
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **ASHE** | Defensive | 3 | 100.0% | 2.00 | 0.33 | W-W-W |
-| **DUSK** | Aggressive | 3 | 100.0% | 3.00 | 1.33 | W-W-W |
-| **RIFT** | Defensive | 4 | 50.0% | 1.50 | 0.50 | D-W-L-W |
+| **DUSK** | Aggressive | 4 | 100.0% | 3.25 | 1.75 | W-W-W-W |
+| **ASHE** | Defensive | 4 | 75.0% | 1.75 | 0.50 | W-W-W-D |
+| **DANTE** | Aggressive | 3 | 66.7% | 2.67 | 2.00 | L-W-W |
+| **RIFT** | Defensive | 5 | 60.0% | 1.60 | 0.60 | D-W-L-W-W |
+| **THREAT** | Defensive | 4 | 50.0% | 1.25 | 1.25 | L-W-L-W |
 | **ENT** | Defensive | 4 | 50.0% | 1.25 | 1.50 | L-W-L-W |
-| **GLORY** | Defensive | 2 | 50.0% | 1.00 | 0.50 | D-W |
-| **DANTE** | Aggressive | 2 | 50.0% | 2.50 | 2.50 | L-W |
-| **NAVY** | Defensive | 3 | 33.3% | 1.00 | 2.00 | L-L-W |
-| **CATALYST** | Defensive | 3 | 33.3% | 1.00 | 2.00 | L-L-W |
-| **GREED** | Defensive | 3 | 33.3% | 1.33 | 1.33 | W-D-L |
-| **THREAT** | Defensive | 3 | 33.3% | 1.00 | 1.33 | L-W-L |
 | **RIVAL** | Defensive | 3 | 33.3% | 0.67 | 0.33 | D-W-L |
 | **REALIST** | Defensive | 3 | 33.3% | 1.67 | 1.33 | W-L-D |
-| **CHASER** | Defensive | 4 | 25.0% | 0.75 | 1.50 | D-L-W-L |
+| **GLORY** | Defensive | 3 | 33.3% | 1.00 | 1.33 | D-W-L |
+| **NAVY** | Defensive | 4 | 25.0% | 1.00 | 1.75 | L-L-W-D |
+| **CATALYST** | Aggressive | 4 | 25.0% | 1.50 | 2.50 | L-L-W-L |
+| **GREED** | Defensive | 4 | 25.0% | 1.25 | 1.50 | W-D-L-L |
+| **CHASER** | Defensive | 5 | 20.0% | 0.80 | 1.60 | D-L-W-L-L |
 | **HAPPY HOUR** | Defensive | 3 | 0.0% | 0.33 | 1.33 | D-L-L |
 | **TEMPEST** | Defensive | 3 | 0.0% | 0.33 | 1.33 | L-L-D |
 
@@ -27,82 +27,82 @@
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. ASHE (Defensive) vs NAVY (Defensive) [Aug 10, 05:35 AM AEST]
+### 1. GREED (Defensive) vs GLORY (Defensive) [Aug 10, 05:57 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 2. DUSK (Aggressive) vs CATALYST (Defensive) [Aug 10, 05:38 AM AEST]
+### 2. CHASER (Defensive) vs ENT (Defensive) [Aug 10, 06:01 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 3. THREAT (Defensive) vs GREED (Defensive) [Aug 10, 05:42 AM AEST]
+### 3. HAPPY HOUR (Defensive) vs ASHE (Defensive) [Aug 10, 06:05 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 4. ENT (Defensive) vs RIFT (Defensive) [Aug 10, 05:46 AM AEST]
+### 4. TEMPEST (Defensive) vs DUSK (Aggressive) [Aug 10, 06:08 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 5. RIVAL (Defensive) vs HAPPY HOUR (Defensive) [Aug 10, 05:50 AM AEST]
+### 5. DANTE (Aggressive) vs THREAT (Defensive) [Aug 10, 06:12 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 6. CATALYST (Defensive) vs REALIST (Defensive) [Aug 10, 05:53 AM AEST]
+### 6. RIFT (Defensive) vs CHASER (Defensive) [Aug 10, 06:16 AM AEST]
+- **Analysis**: Total Expected Goals: 3.00 (2.10 to 0.90).
+- **Prediction**: **RIFT wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 7. NAVY (Defensive) vs RIVAL (Defensive) [Aug 10, 06:20 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 7. GREED (Defensive) vs GLORY (Defensive) [Aug 10, 05:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 8. CHASER (Defensive) vs ENT (Defensive) [Aug 10, 06:01 AM AEST]
+### 8. CATALYST (Aggressive) vs TEMPEST (Defensive) [Aug 10, 06:23 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 9. HAPPY HOUR (Defensive) vs ASHE (Defensive) [Aug 10, 06:05 AM AEST]
+### 9. GREED (Defensive) vs DANTE (Aggressive) [Aug 10, 06:27 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 10. TEMPEST (Defensive) vs DUSK (Aggressive) [Aug 10, 06:08 AM AEST]
+### 10. ENT (Defensive) vs RIFT (Defensive) [Aug 10, 06:31 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 11. DANTE (Aggressive) vs THREAT (Defensive) [Aug 10, 06:12 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 12. RIFT (Defensive) vs CHASER (Defensive) [Aug 10, 06:16 AM AEST]
+### 11. HAPPY HOUR (Defensive) vs NAVY (Defensive) [Aug 10, 06:35 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 13. NAVY (Defensive) vs RIVAL (Defensive) [Aug 10, 06:20 AM AEST]
+### 12. DUSK (Aggressive) vs REALIST (Defensive) [Aug 10, 06:38 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 14. CATALYST (Defensive) vs TEMPEST (Defensive) [Aug 10, 06:23 AM AEST]
+### 13. THREAT (Defensive) vs GLORY (Defensive) [Aug 10, 06:42 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 15. GREED (Defensive) vs DANTE (Aggressive) [Aug 10, 06:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 14. CHASER (Defensive) vs ENT (Defensive) [Aug 10, 06:46 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 16. ENT (Defensive) vs RIFT (Defensive) [Aug 10, 06:31 AM AEST]
+### 15. RIVAL (Defensive) vs ASHE (Defensive) [Aug 10, 06:50 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 16. DUSK (Aggressive) vs CATALYST (Aggressive) [Aug 10, 06:53 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -117,7 +117,7 @@
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 19. DUSK (Aggressive) vs CATALYST (Defensive) [Aug 10, 10:08 AM AEST]
+### 19. DUSK (Aggressive) vs CATALYST (Aggressive) [Aug 10, 10:08 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -143,27 +143,27 @@
 - **Totals**: *SKIP*
 
 ### 24. DANTE (Aggressive) vs THREAT (Defensive) [Aug 10, 10:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
 ### 25. RIFT (Defensive) vs CHASER (Defensive) [Aug 10, 10:31 AM AEST]
-- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+- **Analysis**: Total Expected Goals: 3.00 (2.10 to 0.90).
+- **Prediction**: **RIFT wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
+- **Totals**: **UNDER 2.5 Goals**
 
 ### 26. NAVY (Defensive) vs RIVAL (Defensive) [Aug 10, 10:35 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 27. CATALYST (Defensive) vs REALIST (Defensive) [Aug 10, 10:38 AM AEST]
+### 27. CATALYST (Aggressive) vs REALIST (Defensive) [Aug 10, 10:38 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
 ### 28. GREED (Defensive) vs GLORY (Defensive) [Aug 10, 10:42 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -183,7 +183,7 @@
 - **Totals**: *SKIP*
 
 ### 32. GLORY (Defensive) vs THREAT (Defensive) [Aug 10, 10:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -197,20 +197,20 @@
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 35. TEMPEST (Defensive) vs CATALYST (Defensive) [Aug 10, 11:08 AM AEST]
+### 35. TEMPEST (Defensive) vs CATALYST (Aggressive) [Aug 10, 11:08 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
 ### 36. DANTE (Aggressive) vs GREED (Defensive) [Aug 10, 11:12 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
 ### 37. RIFT (Defensive) vs CHASER (Defensive) [Aug 10, 11:16 AM AEST]
-- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+- **Analysis**: Total Expected Goals: 3.00 (2.10 to 0.90).
+- **Prediction**: **RIFT wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
+- **Totals**: **UNDER 2.5 Goals**
 
 ### 38. NAVY (Defensive) vs HAPPY HOUR (Defensive) [Aug 10, 11:20 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
@@ -223,7 +223,7 @@
 - **Totals**: *SKIP*
 
 ### 40. DANTE (Aggressive) vs GLORY (Defensive) [Aug 10, 11:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -237,7 +237,7 @@
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 43. CATALYST (Defensive) vs DUSK (Aggressive) [Aug 10, 11:38 AM AEST]
+### 43. CATALYST (Aggressive) vs DUSK (Aggressive) [Aug 10, 11:38 AM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -263,14 +263,14 @@
 - **Totals**: *SKIP*
 
 ### 48. THREAT (Defensive) vs DANTE (Aggressive) [Aug 10, 11:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
 ### 49. CHASER (Defensive) vs RIFT (Defensive) [Aug 10, 12:01 PM AEST]
-- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+- **Analysis**: Total Expected Goals: 3.00 (0.90 to 2.10).
+- **Prediction**: **RIFT wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
+- **Totals**: **UNDER 2.5 Goals**
 
 ### 50. RIVAL (Defensive) vs NAVY (Defensive) [Aug 10, 12:05 PM AEST]
 - **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
@@ -283,14 +283,16 @@
 ### ⚽ Over 2.5 Goals Parlay
 *No highly confident Over 2.5 matches (Aggressive vs Aggressive > 4.00 XG) found in this rotation.*
 
-### 🏆 Winner Parlay
-*No extremely safe Draw No Bet favorites (Uncertainty <= 10) found in this rotation.*
+### 🏆 Winner Parlay (1 Legs)
+> **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
+
+1. **RIFT** to beat CHASER -> **Play: Draw No Bet** *[Uncertainty: 10/100]*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 23
+Total Matches Played Today: 28
 Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
