@@ -1,102 +1,109 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.25
+**League Average Goals Per Match (Per Team):** 1.33
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **PLUTO** | Defensive | 1 | 100.0% | 1.00 | 0.00 | W |
-| **ARCTIC** | Defensive | 1 | 100.0% | 2.00 | 1.00 | W |
-| **DEZZY** | Defensive | 1 | 100.0% | 2.00 | 0.00 | W |
-| **MAGICIAN** | Defensive | 1 | 0.0% | 0.00 | 1.00 | L |
-| **EXECUTOR** | Defensive | 1 | 0.0% | 1.00 | 2.00 | L |
-| **FRANCHISE** | Defensive | 1 | 0.0% | 0.00 | 2.00 | L |
-| **CRUSADER** | Aggressive | 1 | 0.0% | 2.00 | 2.00 | D |
-| **BULLFROG** | Aggressive | 1 | 0.0% | 2.00 | 2.00 | D |
+| **EXECUTOR** | Aggressive | 4 | 75.0% | 2.25 | 1.50 | L-W-W-W |
+| **PLUTO** | Defensive | 3 | 66.7% | 1.00 | 0.67 | W-L-W |
+| **DEZZY** | Defensive | 3 | 66.7% | 1.33 | 0.67 | W-L-W |
+| **AGONY** | Defensive | 3 | 66.7% | 1.33 | 1.00 | W-W-L |
+| **LAVA** | Aggressive | 3 | 66.7% | 2.00 | 1.33 | W-L-W |
+| **ARCTIC** | Defensive | 4 | 50.0% | 1.25 | 1.25 | W-W-L-L |
+| **SPARTAN** | Defensive | 2 | 50.0% | 1.00 | 0.50 | W-D |
+| **TUSK** | Aggressive | 2 | 50.0% | 2.50 | 2.50 | L-W |
+| **MAGICIAN** | Defensive | 3 | 33.3% | 0.67 | 0.67 | L-D-W |
+| **FRANCHISE** | Aggressive | 3 | 33.3% | 1.67 | 1.67 | L-D-W |
+| **BULLFROG** | Defensive | 3 | 33.3% | 1.67 | 1.33 | D-W-D |
+| **MATRIX** | Defensive | 4 | 25.0% | 0.75 | 1.50 | L-L-W-L |
+| **CRUSADER** | Aggressive | 3 | 0.0% | 1.67 | 2.33 | D-L-L |
+| **BLITZ** | Defensive | 3 | 0.0% | 0.67 | 1.33 | L-D-L |
+| **GUARDIAN** | Defensive | 3 | 0.0% | 0.33 | 1.67 | D-L-L |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. SPARTAN (Unknown) vs CRUSADER (Aggressive) [Aug 9, 04:27 PM AEST]
+### 1. EXECUTOR (Aggressive) vs ARCTIC (Defensive) [Aug 9, 05:35 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 2. DEZZY (Defensive) vs FRANCHISE (Aggressive) [Aug 9, 05:38 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 3. BULLFROG (Defensive) vs CRUSADER (Aggressive) [Aug 9, 05:42 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 4. AGONY (Defensive) vs BLITZ (Defensive) [Aug 9, 05:46 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 5. ARCTIC (Defensive) vs MATRIX (Defensive) [Aug 9, 05:50 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 6. FRANCHISE (Aggressive) vs GUARDIAN (Defensive) [Aug 9, 05:53 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 7. CRUSADER (Aggressive) vs SPARTAN (Defensive) [Aug 9, 05:57 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 2. MAGICIAN (Defensive) vs BLITZ (Unknown) [Aug 9, 04:31 PM AEST]
+### 8. BLITZ (Defensive) vs MAGICIAN (Defensive) [Aug 9, 06:01 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 9. MATRIX (Defensive) vs EXECUTOR (Aggressive) [Aug 9, 06:05 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 10. LAVA (Aggressive) vs DEZZY (Defensive) [Aug 9, 06:08 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 11. TUSK (Aggressive) vs BULLFROG (Defensive) [Aug 9, 06:12 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 3. EXECUTOR (Defensive) vs MATRIX (Unknown) [Aug 9, 04:35 PM AEST]
+### 12. PLUTO (Defensive) vs AGONY (Defensive) [Aug 9, 06:16 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 13. ARCTIC (Defensive) vs EXECUTOR (Aggressive) [Aug 9, 06:20 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 14. FRANCHISE (Aggressive) vs LAVA (Aggressive) [Aug 9, 06:23 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 15. CRUSADER (Aggressive) vs TUSK (Aggressive) [Aug 9, 06:27 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 4. DEZZY (Defensive) vs LAVA (Unknown) [Aug 9, 04:38 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 5. BULLFROG (Aggressive) vs TUSK (Unknown) [Aug 9, 04:42 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 6. AGONY (Unknown) vs PLUTO (Defensive) [Aug 9, 04:46 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 7. EXECUTOR (Defensive) vs ARCTIC (Defensive) [Aug 9, 04:50 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 8. LAVA (Unknown) vs FRANCHISE (Defensive) [Aug 9, 04:53 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 9. TUSK (Unknown) vs CRUSADER (Aggressive) [Aug 9, 04:57 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 10. PLUTO (Defensive) vs BLITZ (Unknown) [Aug 9, 05:01 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 11. ARCTIC (Defensive) vs MATRIX (Unknown) [Aug 9, 05:05 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 12. GUARDIAN (Unknown) vs DEZZY (Defensive) [Aug 9, 05:08 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 13. SPARTAN (Unknown) vs BULLFROG (Aggressive) [Aug 9, 05:12 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 14. MAGICIAN (Defensive) vs AGONY (Unknown) [Aug 9, 05:16 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 15. EXECUTOR (Defensive) vs MATRIX (Unknown) [Aug 9, 05:20 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 16. GUARDIAN (Unknown) vs LAVA (Unknown) [Aug 9, 05:23 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 16. BLITZ (Defensive) vs PLUTO (Defensive) [Aug 9, 06:31 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -113,7 +120,7 @@
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 4
+Total Matches Played Today: 23
 Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
