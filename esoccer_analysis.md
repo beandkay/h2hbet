@@ -1,59 +1,109 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.50
+**League Average Goals Per Match (Per Team):** 1.36
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
+| **INSTINCT** | Defensive | 3 | 100.0% | 1.67 | 0.00 | W-W-W |
+| **MJ** | Defensive | 3 | 66.7% | 1.00 | 0.67 | W-W-L |
+| **VAPOR** | Defensive | 3 | 66.7% | 2.00 | 1.00 | D-W-W |
+| **ZT** | Defensive | 3 | 66.7% | 1.67 | 1.33 | W-L-W |
+| **COSMOS** | Defensive | 4 | 50.0% | 1.25 | 0.75 | D-W-W-D |
+| **CRUSADER** | Aggressive | 2 | 50.0% | 2.00 | 1.50 | W-D |
+| **HORIZON** | Aggressive | 3 | 33.3% | 2.33 | 1.67 | W-D-D |
+| **ARCTIC** | Defensive | 3 | 33.3% | 1.33 | 1.00 | D-W-D |
+| **BULLFROG** | Defensive | 3 | 33.3% | 0.67 | 1.00 | L-L-W |
+| **TUSK** | Aggressive | 3 | 33.3% | 1.33 | 2.00 | W-L-D |
+| **PLUTO** | Aggressive | 3 | 0.0% | 1.33 | 2.33 | L-L-D |
+| **SPARTAN** | Defensive | 4 | 0.0% | 0.50 | 1.50 | L-L-L-L |
+| **MADNESS** | Aggressive | 3 | 0.0% | 1.33 | 2.00 | D-D-L |
+| **VENUS** | Aggressive | 3 | 0.0% | 1.33 | 2.33 | L-L-L |
+| **BUTCHER** | Defensive | 1 | 0.0% | 1.00 | 2.00 | L |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. COSMOS (Unknown) vs ARCTIC (Unknown) [Aug 10, 04:05 PM AEST]
+### 1. MADNESS (Aggressive) vs PLUTO (Aggressive) [Aug 10, 06:01 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 2. VENUS (Aggressive) vs ARCTIC (Defensive) [Aug 10, 06:05 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 3. BUTCHER (Defensive) vs MJ (Defensive) [Aug 10, 06:08 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 2. BULLFROG (Unknown) vs MJ (Unknown) [Aug 10, 04:08 PM AEST]
+### 4. CRUSADER (Aggressive) vs INSTINCT (Defensive) [Aug 10, 06:12 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 3. SPARTAN (Unknown) vs INSTINCT (Unknown) [Aug 10, 04:12 PM AEST]
+### 5. HORIZON (Aggressive) vs VAPOR (Defensive) [Aug 10, 06:16 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 6. ARCTIC (Defensive) vs COSMOS (Defensive) [Aug 10, 06:20 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 7. BULLFROG (Defensive) vs BUTCHER (Defensive) [Aug 10, 06:23 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 4. MADNESS (Unknown) vs VAPOR (Unknown) [Aug 10, 04:16 PM AEST]
+### 8. SPARTAN (Defensive) vs CRUSADER (Aggressive) [Aug 10, 06:27 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 5. VENUS (Unknown) vs COSMOS (Unknown) [Aug 10, 04:20 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 9. MADNESS (Aggressive) vs HORIZON (Aggressive) [Aug 10, 06:31 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 6. ZT (Unknown) vs BULLFROG (Unknown) [Aug 10, 04:23 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 10. VENUS (Aggressive) vs COSMOS (Defensive) [Aug 10, 06:35 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 7. TUSK (Unknown) vs SPARTAN (Unknown) [Aug 10, 04:27 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 11. MJ (Defensive) vs ZT (Defensive) [Aug 10, 06:38 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 8. CRUSADER (Unknown) vs SPARTAN (Unknown) [Aug 10, 04:57 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 12. INSTINCT (Defensive) vs TUSK (Aggressive) [Aug 10, 06:42 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 9. HORIZON (Unknown) vs MADNESS (Unknown) [Aug 10, 05:01 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 13. VAPOR (Defensive) vs PLUTO (Aggressive) [Aug 10, 06:46 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 14. VENUS (Aggressive) vs ARCTIC (Defensive) [Aug 10, 06:50 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 15. MJ (Defensive) vs BULLFROG (Defensive) [Aug 10, 06:53 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 16. INSTINCT (Defensive) vs SPARTAN (Defensive) [Aug 10, 06:57 PM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -70,7 +120,7 @@
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 0
+Total Matches Played Today: 22
 Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
