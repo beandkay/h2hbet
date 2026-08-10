@@ -1,108 +1,263 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.39
+**League Average Goals Per Match (Per Team):** 1.50
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **ZT** | Defensive | 21 | 52.4% | 1.38 | 0.90 | W-L-W-D-D-W-D-W-D-D-L-W-W-W-D-W-L-W-W-W-L |
-| **INSTINCT** | Defensive | 22 | 50.0% | 1.45 | 1.18 | W-W-W-W-W-D-W-L-L-W-W-L-W-D-L-D-W-W-L-L-D-L |
-| **CRUSADER** | Aggressive | 21 | 47.6% | 1.71 | 1.38 | W-D-L-W-L-L-L-W-L-L-W-L-D-W-D-L-W-W-W-W-W |
-| **VENUS** | Aggressive | 27 | 40.7% | 1.78 | 1.44 | L-L-L-D-L-L-D-W-W-W-W-D-W-D-W-W-D-W-W-L-L-W-D-L-W-L-L |
-| **BUTCHER** | Defensive | 20 | 40.0% | 1.30 | 1.35 | L-L-W-L-D-W-D-W-W-L-W-D-D-L-D-L-L-W-W-W |
-| **HORIZON** | Defensive | 21 | 38.1% | 1.38 | 1.48 | W-D-D-D-W-L-D-L-W-L-W-W-W-W-W-L-L-L-L-L-D |
-| **VAPOR** | Defensive | 21 | 38.1% | 1.48 | 1.19 | D-W-W-D-W-L-D-D-L-W-D-D-L-D-L-W-L-W-W-D-W |
-| **MJ** | Defensive | 22 | 36.4% | 1.41 | 1.32 | W-W-L-W-D-L-D-L-L-L-W-D-L-L-D-W-W-W-W-L-L-L |
-| **SPARTAN** | Defensive | 22 | 36.4% | 1.23 | 1.41 | L-L-L-L-D-L-D-L-W-W-W-W-W-W-D-W-D-W-L-L-L-D |
-| **ARCTIC** | Defensive | 24 | 33.3% | 1.33 | 1.50 | D-W-D-W-W-D-D-L-L-L-W-L-L-D-D-W-L-D-W-W-D-L-L-W |
-| **MADNESS** | Defensive | 21 | 33.3% | 1.29 | 1.48 | D-D-L-L-L-W-L-W-W-L-L-D-D-L-W-W-W-L-D-W-L |
-| **COSMOS** | Defensive | 25 | 32.0% | 1.32 | 1.52 | D-W-W-D-D-L-W-D-L-W-L-L-D-D-D-L-L-L-D-W-L-L-W-W-W |
-| **PLUTO** | Defensive | 21 | 28.6% | 1.24 | 1.24 | L-L-D-W-L-W-W-D-L-W-D-L-D-D-L-L-W-W-D-D-D |
-| **TUSK** | Aggressive | 21 | 28.6% | 1.48 | 1.90 | W-L-D-D-L-W-W-W-L-L-L-L-L-D-L-D-L-L-W-W-L |
-| **BULLFROG** | Defensive | 21 | 19.0% | 1.00 | 1.52 | L-L-W-D-L-W-D-L-W-D-L-D-L-D-D-L-D-L-L-L-W |
-
-## Most Dominant H2H Pairs (Current Rotation)
-
-| Matchup | Matches | Dominant Player | Win Rate | Breakdown |
-|---|---|---|---|---|
-| **CRUSADER vs TUSK** | 7 | CRUSADER | 71.4% | CRUSADER: 5W | TUSK: 1W | Draws: 1 |
-| **BULLFROG vs BUTCHER** | 6 | BUTCHER | 66.7% | BULLFROG: 0W | BUTCHER: 4W | Draws: 2 |
-| **BULLFROG vs ZT** | 7 | ZT | 57.1% | BULLFROG: 0W | ZT: 4W | Draws: 3 |
-| **INSTINCT vs TUSK** | 7 | INSTINCT | 57.1% | INSTINCT: 4W | TUSK: 2W | Draws: 1 |
-| **BUTCHER vs ZT** | 7 | ZT | 57.1% | BUTCHER: 1W | ZT: 4W | Draws: 2 |
-| **CRUSADER vs INSTINCT** | 7 | INSTINCT | 57.1% | CRUSADER: 2W | INSTINCT: 4W | Draws: 1 |
-| **HORIZON vs PLUTO** | 8 | HORIZON | 50.0% | HORIZON: 4W | PLUTO: 2W | Draws: 2 |
-| **BULLFROG vs MJ** | 8 | BULLFROG | 50.0% | BULLFROG: 4W | MJ: 2W | Draws: 2 |
-| **MADNESS vs PLUTO** | 6 | PLUTO | 50.0% | MADNESS: 1W | PLUTO: 3W | Draws: 2 |
-| **HORIZON vs VAPOR** | 6 | VAPOR | 50.0% | HORIZON: 1W | VAPOR: 3W | Draws: 2 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. SPARTAN (Defensive) vs TUSK (Aggressive) [Aug 11, 03:12 AM AEST]
-- **Analysis**: Total Expected Goals: 3.60 (1.89 to 1.71).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 2. MADNESS (Defensive) vs PLUTO (Defensive) [Aug 11, 03:16 AM AEST]
-- **Analysis**: Total Expected Goals: 3.24 (1.57 to 1.67).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 3. VENUS (Aggressive) vs COSMOS (Defensive) [Aug 11, 03:20 AM AEST]
-- **Analysis**: Total Expected Goals: 3.71 (2.01 to 1.70).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 4. BUTCHER (Defensive) vs BULLFROG (Defensive) [Aug 11, 03:23 AM AEST]
-- **Analysis**: Total Expected Goals: 3.17 (1.77 to 1.40).
-- **Prediction**: **BUTCHER wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 5. CRUSADER (Aggressive) vs SPARTAN (Defensive) [Aug 11, 03:27 AM AEST]
-- **Analysis**: Total Expected Goals: 3.59 (1.95 to 1.63).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 6. HORIZON (Defensive) vs MADNESS (Defensive) [Aug 11, 03:31 AM AEST]
-- **Analysis**: Total Expected Goals: 3.47 (1.78 to 1.69).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 7. ARCTIC (Defensive) vs VENUS (Aggressive) [Aug 11, 03:35 AM AEST]
-- **Analysis**: Total Expected Goals: 3.72 (1.72 to 2.00).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 8. ZT (Defensive) vs MJ (Defensive) [Aug 11, 03:38 AM AEST]
-- **Analysis**: Total Expected Goals: 3.29 (1.81 to 1.47).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 9. TUSK (Aggressive) vs INSTINCT (Defensive) [Aug 11, 03:42 AM AEST]
-- **Analysis**: Total Expected Goals: 3.69 (1.59 to 2.10).
-- **Prediction**: **INSTINCT wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 10. PLUTO (Defensive) vs VAPOR (Defensive) [Aug 11, 03:46 AM AEST]
-- **Analysis**: Total Expected Goals: 3.27 (1.52 to 1.74).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 11. ARCTIC (Defensive) vs COSMOS (Defensive) [Aug 11, 03:50 AM AEST]
-- **Analysis**: Total Expected Goals: 3.49 (1.76 to 1.73).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 12. TEMPEST (Unknown) vs AGENT (Unknown) [Aug 11, 03:53 AM AEST]
+### 1. EDEN (Unknown) vs CHASER (Unknown) [Aug 11, 04:01 AM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 13. FAITH (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 03:57 AM AEST]
+### 2. NAVY (Unknown) vs TROOPER (Unknown) [Aug 11, 04:05 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 3. DUSK (Unknown) vs EMPEROR (Unknown) [Aug 11, 04:08 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 4. FAITH (Unknown) vs GLORY (Unknown) [Aug 11, 04:12 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 5. ENT (Unknown) vs DECIMATOR (Unknown) [Aug 11, 04:16 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 6. STORM (Unknown) vs GHOST (Unknown) [Aug 11, 04:20 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 7. AGENT (Unknown) vs DUSK (Unknown) [Aug 11, 04:23 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 8. GLORY (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 04:27 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 9. CHASER (Unknown) vs ENT (Unknown) [Aug 11, 04:31 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 10. TROOPER (Unknown) vs STORM (Unknown) [Aug 11, 04:35 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 11. EMPEROR (Unknown) vs TEMPEST (Unknown) [Aug 11, 04:38 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 12. EXECUTIONER (Unknown) vs FAITH (Unknown) [Aug 11, 04:42 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 13. DECIMATOR (Unknown) vs EDEN (Unknown) [Aug 11, 04:46 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 14. GHOST (Unknown) vs NAVY (Unknown) [Aug 11, 04:50 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 15. TEMPEST (Unknown) vs DUSK (Unknown) [Aug 11, 04:53 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 16. FAITH (Unknown) vs GLORY (Unknown) [Aug 11, 04:57 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 17. CHASER (Unknown) vs EDEN (Unknown) [Aug 11, 10:01 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 18. TROOPER (Unknown) vs NAVY (Unknown) [Aug 11, 10:05 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 19. EMPEROR (Unknown) vs DUSK (Unknown) [Aug 11, 10:08 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 20. EXECUTIONER (Unknown) vs GLORY (Unknown) [Aug 11, 10:12 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 21. DECIMATOR (Unknown) vs ENT (Unknown) [Aug 11, 10:16 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 22. GHOST (Unknown) vs STORM (Unknown) [Aug 11, 10:20 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 23. TEMPEST (Unknown) vs EMPEROR (Unknown) [Aug 11, 10:23 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 24. FAITH (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 10:27 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 25. EDEN (Unknown) vs DECIMATOR (Unknown) [Aug 11, 10:31 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 26. NAVY (Unknown) vs GHOST (Unknown) [Aug 11, 10:35 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 27. DUSK (Unknown) vs AGENT (Unknown) [Aug 11, 10:38 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 28. FAITH (Unknown) vs GLORY (Unknown) [Aug 11, 10:42 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 29. ENT (Unknown) vs CHASER (Unknown) [Aug 11, 10:46 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 30. STORM (Unknown) vs TROOPER (Unknown) [Aug 11, 10:50 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 31. AGENT (Unknown) vs EMPEROR (Unknown) [Aug 11, 10:53 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 32. GLORY (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 10:57 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 33. CHASER (Unknown) vs DECIMATOR (Unknown) [Aug 11, 11:01 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 34. TROOPER (Unknown) vs GHOST (Unknown) [Aug 11, 11:05 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 35. TEMPEST (Unknown) vs DUSK (Unknown) [Aug 11, 11:08 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 36. FAITH (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 11:12 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 37. EDEN (Unknown) vs ENT (Unknown) [Aug 11, 11:16 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 38. NAVY (Unknown) vs STORM (Unknown) [Aug 11, 11:20 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 39. TEMPEST (Unknown) vs AGENT (Unknown) [Aug 11, 11:23 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 40. FAITH (Unknown) vs GLORY (Unknown) [Aug 11, 11:27 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 41. EDEN (Unknown) vs CHASER (Unknown) [Aug 11, 11:31 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 42. NAVY (Unknown) vs TROOPER (Unknown) [Aug 11, 11:35 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 43. DUSK (Unknown) vs EMPEROR (Unknown) [Aug 11, 11:38 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 44. GLORY (Unknown) vs EXECUTIONER (Unknown) [Aug 11, 11:42 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 45. ENT (Unknown) vs DECIMATOR (Unknown) [Aug 11, 11:46 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 46. STORM (Unknown) vs GHOST (Unknown) [Aug 11, 11:50 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 47. EMPEROR (Unknown) vs TEMPEST (Unknown) [Aug 11, 11:53 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 48. EXECUTIONER (Unknown) vs FAITH (Unknown) [Aug 11, 11:57 AM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 49. DECIMATOR (Unknown) vs EDEN (Unknown) [Aug 11, 12:01 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 50. GHOST (Unknown) vs NAVY (Unknown) [Aug 11, 12:05 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -113,29 +268,27 @@
 ### ⚽ Over 2.5 Goals Parlay
 *No highly confident Over 2.5 matches (Aggressive vs Aggressive > 4.00 XG) found in this rotation.*
 
-### 🏆 Winner Parlay (1 Legs)
-> **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
-
-1. **INSTINCT** to beat TUSK -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
+### 🏆 Winner Parlay
+*No extremely safe Draw No Bet favorites (Uncertainty <= 10) found in this rotation.*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 165
-Decisive Matches Evaluated: 87
+Total Matches Played Today: 0
+Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 26 | Incorrect: 37 | Pushed: 24 | Accuracy: 41.27% (Excl. Pushes)
-Wagered: $1100 | Returned: $807.75 | Profit: $-292.25
+Correct: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Over 2.5 Goals (Selective) --
-Correct: 16 | Incorrect: 15 | Accuracy: 51.61%
-Wagered: $310 | Returned: $272 | Profit: $-38.00
+Correct: 0 | Incorrect: 0 | Accuracy: 0%
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Overall Totals --
-Total Wagered: $1410
-Total Returned: $1079.75
-Profit/Loss: $-330.25
+Total Wagered: $0
+Total Returned: $0
+Profit/Loss: $0.00
 
 ```
