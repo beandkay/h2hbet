@@ -1,171 +1,7 @@
 {
-  "updatedAt": "2026-08-11T19:43:17.956Z",
-  "leagueAvgScored": 1.5,
+  "updatedAt": "2026-08-11T20:27:23.237Z",
+  "leagueAvgScored": 1.3571428571428572,
   "upcoming": [
-    {
-      "externalId": "FI310110826",
-      "startDate": "2026-08-11T19:42:00Z",
-      "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "ENGLAND",
-      "participantAName": "HOLLYWOOD",
-      "participantBName": "THREAT",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI311110826",
-      "startDate": "2026-08-11T19:46:00Z",
-      "isCancelled": false,
-      "teamAName": "ARSENAL",
-      "teamBName": "SPURS",
-      "participantAName": "DANTE",
-      "participantBName": "GRIMACE",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI380110826",
-      "startDate": "2026-08-11T19:50:00Z",
-      "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
-      "teamBName": "FC BARCELONA",
-      "participantAName": "HAPPY HOUR",
-      "participantBName": "FROST",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI313110826",
-      "startDate": "2026-08-11T19:53:00Z",
-      "isCancelled": false,
-      "teamAName": "MANCHESTER CITY",
-      "teamBName": "REAL MADRID",
-      "participantAName": "TEMPEST",
-      "participantBName": "DOMINATOR",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI314110826",
-      "startDate": "2026-08-11T19:57:00Z",
-      "isCancelled": false,
-      "teamAName": "ENGLAND",
-      "teamBName": "SPAIN",
-      "participantAName": "THREAT",
-      "participantBName": "FAITH",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI315110826",
-      "startDate": "2026-08-11T20:01:00Z",
-      "isCancelled": false,
-      "teamAName": "SPURS",
-      "teamBName": "NEWCASTLE UTD",
-      "participantAName": "GRIMACE",
-      "participantBName": "ZEUS",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI316110826",
-      "startDate": "2026-08-11T20:05:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BARCELONA",
-      "teamBName": "LIVERPOOL",
-      "participantAName": "FROST",
-      "participantBName": "TIGER",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI317110826",
-      "startDate": "2026-08-11T20:08:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "PARIS SG",
-      "participantAName": "ORACLE",
-      "participantBName": "REALIST",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI318110826",
-      "startDate": "2026-08-11T20:12:00Z",
-      "isCancelled": false,
-      "teamAName": "PORTUGAL",
-      "teamBName": "FRANCE",
-      "participantAName": "EXECUTIONER",
-      "participantBName": "HOLLYWOOD",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI319110826",
-      "startDate": "2026-08-11T20:16:00Z",
-      "isCancelled": false,
-      "teamAName": "ARSENAL",
-      "teamBName": "NEWCASTLE UTD",
-      "participantAName": "DANTE",
-      "participantBName": "ZEUS",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "computedTotalXG": 0,
-      "computedHomeStyle": "Aggressive",
-      "computedAwayStyle": "Aggressive",
-      "computedPrediction": "*SKIP (Not a Value Edge)*",
-      "computedHome": "DANTE",
-      "computedAway": "ZEUS",
-      "computedHomeUnc": 30,
-      "computedAwayUnc": 30,
-      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
-      "isOUPick": true
-    },
-    {
-      "externalId": "FI381110826",
-      "startDate": "2026-08-11T20:20:00Z",
-      "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
-      "teamBName": "LIVERPOOL",
-      "participantAName": "HAPPY HOUR",
-      "participantBName": "TIGER",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
     {
       "externalId": "FI321110826",
       "startDate": "2026-08-11T20:23:00Z",
@@ -206,7 +42,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 100/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 100,
+      "computedAwayUnc": 30,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI324110826",
@@ -220,7 +66,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 60/100]",
+      "computedHome": "FROST",
+      "computedAway": "HAPPY HOUR",
+      "computedHomeUnc": 60,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI325110826",
@@ -237,6 +93,230 @@
       "teamBScore": null
     },
     {
+      "externalId": "FI326110826",
+      "startDate": "2026-08-11T20:42:00Z",
+      "isCancelled": false,
+      "teamAName": "FRANCE",
+      "teamBName": "SPAIN",
+      "participantAName": "HOLLYWOOD",
+      "participantBName": "FAITH",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI327110826",
+      "startDate": "2026-08-11T20:46:00Z",
+      "isCancelled": false,
+      "teamAName": "NEWCASTLE UTD",
+      "teamBName": "SPURS",
+      "participantAName": "ZEUS",
+      "participantBName": "GRIMACE",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 100/100 - HIGH RISK]",
+      "computedHome": "ZEUS",
+      "computedAway": "GRIMACE",
+      "computedHomeUnc": 30,
+      "computedAwayUnc": 100,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
+    },
+    {
+      "externalId": "FI382110826",
+      "startDate": "2026-08-11T20:50:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BARCELONA",
+      "teamBName": "LIVERPOOL",
+      "participantAName": "FROST",
+      "participantBName": "TIGER",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 60/100]",
+      "computedHome": "FROST",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 60,
+      "computedAwayUnc": 30,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI329110826",
+      "startDate": "2026-08-11T20:53:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "SPAIN",
+      "participantAName": "REALIST",
+      "participantBName": "TEMPEST",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**REALIST wins (Draw No Bet (Value Edge))** [Uncertainty: 50/100]",
+      "computedHome": "REALIST",
+      "computedAway": "TEMPEST",
+      "computedHomeUnc": 50,
+      "computedAwayUnc": 20,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
+    },
+    {
+      "externalId": "FI330110826",
+      "startDate": "2026-08-11T20:57:00Z",
+      "isCancelled": false,
+      "teamAName": "ARSENAL",
+      "teamBName": "ASTON VILLA",
+      "participantAName": "HOLLYWOOD",
+      "participantBName": "THREAT",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI331110826",
+      "startDate": "2026-08-11T21:01:00Z",
+      "isCancelled": false,
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "FC BARCELONA",
+      "participantAName": "ZEUS",
+      "participantBName": "DANTE",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "ZEUS",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 30,
+      "computedAwayUnc": 30,
+      "ouPrediction": "**OVER 2.5 Goals** *(Aggressive Matchup)*",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI383110826",
+      "startDate": "2026-08-11T21:05:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BAYERN MUNCHEN",
+      "teamBName": "MANCHESTER CITY",
+      "participantAName": "HAPPY HOUR",
+      "participantBName": "TIGER",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAPPY HOUR wins (Draw No Bet (Value Edge))** [Uncertainty: 20/100]",
+      "computedHome": "HAPPY HOUR",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 20,
+      "computedAwayUnc": 30,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI333110826",
+      "startDate": "2026-08-11T21:08:00Z",
+      "isCancelled": false,
+      "teamAName": "PORTUGAL",
+      "teamBName": "FRANCE",
+      "participantAName": "DOMINATOR",
+      "participantBName": "ORACLE",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI334110826",
+      "startDate": "2026-08-11T21:12:00Z",
+      "isCancelled": false,
+      "teamAName": "NEWCASTLE UTD",
+      "teamBName": "SPURS",
+      "participantAName": "FAITH",
+      "participantBName": "EXECUTIONER",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI335110826",
+      "startDate": "2026-08-11T21:16:00Z",
+      "isCancelled": false,
+      "teamAName": "LIVERPOOL",
+      "teamBName": "FC BARCELONA",
+      "participantAName": "GRIMACE",
+      "participantBName": "DANTE",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 100/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 100,
+      "computedAwayUnc": 30,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
+    },
+    {
+      "externalId": "FI384110826",
+      "startDate": "2026-08-11T21:20:00Z",
+      "isCancelled": false,
+      "teamAName": "REAL MADRID",
+      "teamBName": "FC BAYERN MUNCHEN",
+      "participantAName": "FROST",
+      "participantBName": "HAPPY HOUR",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 60/100]",
+      "computedHome": "FROST",
+      "computedAway": "HAPPY HOUR",
+      "computedHomeUnc": 60,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    },
+    {
       "externalId": "FI001120826",
       "startDate": "2026-08-12T00:01:00Z",
       "isCancelled": false,
@@ -248,7 +328,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 80,
+      "computedAwayUnc": 10,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI093120826",
@@ -262,7 +352,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "HAPPY HOUR",
+      "computedAway": "FROST",
+      "computedHomeUnc": 0,
+      "computedAwayUnc": 40,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI003120826",
@@ -276,7 +376,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**REALIST wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]",
+      "computedHome": "REALIST",
+      "computedAway": "TEMPEST",
+      "computedHomeUnc": 30,
+      "computedAwayUnc": 0,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI004120826",
@@ -304,7 +414,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "ZEUS",
+      "computedHomeUnc": 80,
+      "computedAwayUnc": 10,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI094120826",
@@ -318,7 +438,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "TIGER",
+      "computedAway": "FROST",
+      "computedHomeUnc": 10,
+      "computedAwayUnc": 40,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI007120826",
@@ -384,7 +514,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAPPY HOUR wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]",
+      "computedHome": "HAPPY HOUR",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 0,
+      "computedAwayUnc": 10,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI011120826",
@@ -426,7 +566,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 80,
+      "computedAwayUnc": 10,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI096120826",
@@ -440,7 +590,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "FROST",
+      "computedAway": "HAPPY HOUR",
+      "computedHomeUnc": 40,
+      "computedAwayUnc": 0,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI015120826",
@@ -482,7 +642,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Aggressive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "ZEUS",
+      "computedAway": "GRIMACE",
+      "computedHomeUnc": 10,
+      "computedAwayUnc": 80,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI097120826",
@@ -496,7 +666,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "TIGER",
+      "computedAway": "FROST",
+      "computedHomeUnc": 10,
+      "computedAwayUnc": 40,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI019120826",
@@ -562,7 +742,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAPPY HOUR wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]",
+      "computedHome": "HAPPY HOUR",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 0,
+      "computedAwayUnc": 10,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI023120826",
@@ -604,7 +794,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "DANTE",
+      "computedHomeUnc": 80,
+      "computedAwayUnc": 10,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI099120826",
@@ -618,7 +818,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "FROST",
+      "computedAway": "HAPPY HOUR",
+      "computedHomeUnc": 40,
+      "computedAwayUnc": 0,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI027120826",
@@ -632,7 +842,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**REALIST wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]",
+      "computedHome": "TEMPEST",
+      "computedAway": "REALIST",
+      "computedHomeUnc": 0,
+      "computedAwayUnc": 30,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI028120826",
@@ -660,7 +880,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Aggressive",
+      "computedPrediction": "**GRIMACE wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]",
+      "computedHome": "GRIMACE",
+      "computedAway": "ZEUS",
+      "computedHomeUnc": 80,
+      "computedAwayUnc": 10,
+      "ouPrediction": "*SKIP (Neutral XG)*",
+      "isOUPick": false
     },
     {
       "externalId": "FI100120826",
@@ -674,7 +904,17 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]",
+      "computedHome": "FROST",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 40,
+      "computedAwayUnc": 10,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
       "externalId": "FI031120826",
@@ -740,23 +980,59 @@
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAPPY HOUR wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]",
+      "computedHome": "TIGER",
+      "computedAway": "HAPPY HOUR",
+      "computedHomeUnc": 10,
+      "computedAwayUnc": 0,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     }
   ],
-  "winnerParlay": [],
-  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 25\nDecisive Matches Evaluated: 0\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 0 | Incorrect: 0 | Accuracy: 0%\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Overall Totals --\nTotal Wagered: $0\nTotal Returned: $0\nProfit/Loss: $0.00\n",
+  "winnerParlay": [
+    {
+      "externalId": "FI095120826",
+      "startDate": "2026-08-12T00:35:00Z",
+      "isCancelled": false,
+      "teamAName": "SPAIN",
+      "teamBName": "ENGLAND",
+      "participantAName": "HAPPY HOUR",
+      "participantBName": "TIGER",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAPPY HOUR wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]",
+      "computedHome": "HAPPY HOUR",
+      "computedAway": "TIGER",
+      "computedHomeUnc": 0,
+      "computedAwayUnc": 10,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    }
+  ],
+  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 35\nDecisive Matches Evaluated: 2\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 2 | Incorrect: 0 | Pushed: 0 | Accuracy: 100.00% (Excl. Pushes)\nWagered: $40 | Returned: $55 | Profit: $15.00\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 0 | Incorrect: 1 | Accuracy: 0.00%\nWagered: $10 | Returned: $0 | Profit: $-10.00\n\n-- Overall Totals --\nTotal Wagered: $50\nTotal Returned: $55\nProfit/Loss: $5.00\n",
   "playerStats": {
     "DANTE": {
-      "matches": 5,
+      "matches": 6,
       "wins": 2,
       "draws": 1,
-      "losses": 2,
+      "losses": 3,
       "goalsScored": 10,
-      "goalsConceded": 9,
+      "goalsConceded": 11,
       "streak": [
         "W",
         "D",
         "W",
+        "L",
         "L",
         "L"
       ],
@@ -765,374 +1041,433 @@
         2,
         5,
         0,
+        2,
+        0
+      ],
+      "concededList": [
+        0,
+        2,
+        2,
+        1,
+        4,
         2
-      ],
-      "concededList": [
-        0,
-        2,
-        2,
-        1,
-        4
-      ],
-      "winRate": "40.0",
-      "avgScored": "2.00",
-      "avgConceded": "1.80",
-      "style": "Aggressive",
-      "recentForm": "W-D-W-L-L"
-    },
-    "ZEUS": {
-      "matches": 5,
-      "wins": 1,
-      "draws": 0,
-      "losses": 4,
-      "goalsScored": 7,
-      "goalsConceded": 14,
-      "streak": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "goalsList": [
-        0,
-        0,
-        2,
-        1,
-        4
-      ],
-      "concededList": [
-        1,
-        1,
-        5,
-        5,
-        2
-      ],
-      "winRate": "20.0",
-      "avgScored": "1.40",
-      "avgConceded": "2.80",
-      "style": "Aggressive",
-      "recentForm": "L-L-L-L-W"
-    },
-    "HAPPY HOUR": {
-      "matches": 4,
-      "wins": 1,
-      "draws": 2,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 4,
-      "streak": [
-        "W",
-        "L",
-        "D",
-        "D"
-      ],
-      "goalsList": [
-        1,
-        2,
-        0,
-        1
-      ],
-      "concededList": [
-        0,
-        3,
-        0,
-        1
-      ],
-      "winRate": "25.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-L-D-D"
-    },
-    "TIGER": {
-      "matches": 4,
-      "wins": 0,
-      "draws": 2,
-      "losses": 2,
-      "goalsScored": 1,
-      "goalsConceded": 3,
-      "streak": [
-        "L",
-        "D",
-        "D",
-        "L"
-      ],
-      "goalsList": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "concededList": [
-        1,
-        0,
-        0,
-        2
-      ],
-      "winRate": "0.0",
-      "avgScored": "0.25",
-      "avgConceded": "0.75",
-      "style": "Defensive",
-      "recentForm": "L-D-D-L"
-    },
-    "TEMPEST": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 2,
-      "losses": 0,
-      "goalsScored": 5,
-      "goalsConceded": 3,
-      "streak": [
-        "W",
-        "D",
-        "D"
-      ],
-      "goalsList": [
-        3,
-        1,
-        1
-      ],
-      "concededList": [
-        1,
-        1,
-        1
       ],
       "winRate": "33.3",
       "avgScored": "1.67",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-D-D"
-    },
-    "REALIST": {
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 6,
-      "streak": [
-        "L",
-        "W",
-        "W"
-      ],
-      "goalsList": [
-        1,
-        2,
-        3
-      ],
-      "concededList": [
-        3,
-        1,
-        2
-      ],
-      "winRate": "66.7",
-      "avgScored": "2.00",
-      "avgConceded": "2.00",
+      "avgConceded": "1.83",
       "style": "Aggressive",
-      "recentForm": "L-W-W"
+      "recentForm": "W-D-W-L-L-L"
     },
-    "THREAT": {
-      "matches": 3,
-      "wins": 3,
+    "ZEUS": {
+      "matches": 6,
+      "wins": 1,
       "draws": 0,
-      "losses": 0,
+      "losses": 5,
       "goalsScored": 7,
-      "goalsConceded": 3,
-      "streak": [
-        "W",
-        "W",
-        "W"
-      ],
-      "goalsList": [
-        2,
-        2,
-        3
-      ],
-      "concededList": [
-        1,
-        1,
-        1
-      ],
-      "winRate": "100.0",
-      "avgScored": "2.33",
-      "avgConceded": "1.00",
-      "style": "Aggressive",
-      "recentForm": "W-W-W"
-    },
-    "HOLLYWOOD": {
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 3,
+      "goalsConceded": 17,
       "streak": [
         "L",
+        "L",
+        "L",
+        "L",
         "W",
-        "W"
+        "L"
       ],
       "goalsList": [
-        1,
-        2,
-        1
-      ],
-      "concededList": [
+        0,
+        0,
         2,
         1,
+        4,
         0
       ],
-      "winRate": "66.7",
-      "avgScored": "1.33",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "L-W-W"
-    },
-    "GRIMACE": {
-      "matches": 4,
-      "wins": 3,
-      "draws": 1,
-      "losses": 0,
-      "goalsScored": 9,
-      "goalsConceded": 3,
-      "streak": [
-        "D",
-        "W",
-        "W",
-        "W"
-      ],
-      "goalsList": [
-        2,
-        1,
-        1,
-        5
-      ],
       "concededList": [
+        1,
+        1,
+        5,
+        5,
         2,
-        0,
-        0,
-        1
+        3
       ],
-      "winRate": "75.0",
-      "avgScored": "2.25",
-      "avgConceded": "0.75",
-      "style": "Defensive",
-      "recentForm": "D-W-W-W"
+      "winRate": "16.7",
+      "avgScored": "1.17",
+      "avgConceded": "2.83",
+      "style": "Aggressive",
+      "recentForm": "L-L-L-L-W-L"
     },
-    "FROST": {
-      "matches": 4,
+    "HAPPY HOUR": {
+      "matches": 6,
       "wins": 2,
       "draws": 2,
-      "losses": 0,
-      "goalsScored": 6,
-      "goalsConceded": 4,
+      "losses": 2,
+      "goalsScored": 7,
+      "goalsConceded": 5,
+      "streak": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L"
+      ],
+      "goalsList": [
+        1,
+        2,
+        0,
+        1,
+        3,
+        0
+      ],
+      "concededList": [
+        0,
+        3,
+        0,
+        1,
+        0,
+        1
+      ],
+      "winRate": "33.3",
+      "avgScored": "1.17",
+      "avgConceded": "0.83",
+      "style": "Defensive",
+      "recentForm": "W-L-D-D-W-L"
+    },
+    "TIGER": {
+      "matches": 6,
+      "wins": 0,
+      "draws": 2,
+      "losses": 4,
+      "goalsScored": 2,
+      "goalsConceded": 8,
+      "streak": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "goalsList": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "concededList": [
+        1,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      "winRate": "0.0",
+      "avgScored": "0.33",
+      "avgConceded": "1.33",
+      "style": "Defensive",
+      "recentForm": "L-D-D-L-L-L"
+    },
+    "TEMPEST": {
+      "matches": 5,
+      "wins": 1,
+      "draws": 2,
+      "losses": 2,
+      "goalsScored": 5,
+      "goalsConceded": 6,
       "streak": [
         "W",
         "D",
         "D",
-        "W"
+        "L",
+        "L"
       ],
       "goalsList": [
         3,
-        0,
         1,
-        2
+        1,
+        0,
+        0
       ],
       "concededList": [
-        2,
-        0,
         1,
+        1,
+        1,
+        2,
         1
       ],
-      "winRate": "50.0",
-      "avgScored": "1.50",
-      "avgConceded": "1.00",
+      "winRate": "20.0",
+      "avgScored": "1.00",
+      "avgConceded": "1.20",
       "style": "Defensive",
-      "recentForm": "W-D-D-W"
+      "recentForm": "W-D-D-L-L"
     },
-    "DOMINATOR": {
-      "matches": 3,
-      "wins": 1,
+    "REALIST": {
+      "matches": 5,
+      "wins": 3,
       "draws": 1,
       "losses": 1,
-      "goalsScored": 7,
-      "goalsConceded": 6,
-      "streak": [
-        "D",
-        "L",
-        "W"
-      ],
-      "goalsList": [
-        1,
-        2,
-        4
-      ],
-      "concededList": [
-        1,
-        3,
-        2
-      ],
-      "winRate": "33.3",
-      "avgScored": "2.33",
-      "avgConceded": "2.00",
-      "style": "Aggressive",
-      "recentForm": "D-L-W"
-    },
-    "FAITH": {
-      "matches": 3,
-      "wins": 0,
-      "draws": 1,
-      "losses": 2,
-      "goalsScored": 2,
-      "goalsConceded": 4,
+      "goalsScored": 9,
+      "goalsConceded": 7,
       "streak": [
         "L",
-        "L",
+        "W",
+        "W",
+        "W",
         "D"
       ],
       "goalsList": [
         1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "concededList": [
+        3,
+        1,
+        2,
+        0,
+        1
+      ],
+      "winRate": "60.0",
+      "avgScored": "1.80",
+      "avgConceded": "1.40",
+      "style": "Aggressive",
+      "recentForm": "L-W-W-W-D"
+    },
+    "THREAT": {
+      "matches": 5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 1,
+      "goalsScored": 8,
+      "goalsConceded": 5,
+      "streak": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "goalsList": [
+        2,
+        2,
+        3,
         0,
         1
       ],
       "concededList": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "winRate": "80.0",
+      "avgScored": "1.60",
+      "avgConceded": "1.00",
+      "style": "Defensive",
+      "recentForm": "W-W-W-L-W"
+    },
+    "HOLLYWOOD": {
+      "matches": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "goalsScored": 6,
+      "goalsConceded": 3,
+      "streak": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        1,
         2,
         1,
+        2
+      ],
+      "concededList": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "winRate": "75.0",
+      "avgScored": "1.50",
+      "avgConceded": "0.75",
+      "style": "Defensive",
+      "recentForm": "L-W-W-W"
+    },
+    "GRIMACE": {
+      "matches": 6,
+      "wins": 5,
+      "draws": 1,
+      "losses": 0,
+      "goalsScored": 14,
+      "goalsConceded": 3,
+      "streak": [
+        "D",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        2,
+        1,
+        1,
+        5,
+        2,
+        3
+      ],
+      "concededList": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "winRate": "83.3",
+      "avgScored": "2.33",
+      "avgConceded": "0.50",
+      "style": "Defensive",
+      "recentForm": "D-W-W-W-W-W"
+    },
+    "FROST": {
+      "matches": 6,
+      "wins": 4,
+      "draws": 2,
+      "losses": 0,
+      "goalsScored": 9,
+      "goalsConceded": 5,
+      "streak": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        3,
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "concededList": [
+        2,
+        0,
+        1,
+        1,
+        0,
         1
       ],
-      "winRate": "0.0",
-      "avgScored": "0.67",
-      "avgConceded": "1.33",
+      "winRate": "66.7",
+      "avgScored": "1.50",
+      "avgConceded": "0.83",
       "style": "Defensive",
-      "recentForm": "L-L-D"
+      "recentForm": "W-D-D-W-W-W"
     },
-    "ORACLE": {
-      "matches": 3,
+    "DOMINATOR": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "goalsScored": 8,
+      "goalsConceded": 6,
+      "streak": [
+        "D",
+        "L",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        1,
+        2,
+        4,
+        1
+      ],
+      "concededList": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "winRate": "50.0",
+      "avgScored": "2.00",
+      "avgConceded": "1.50",
+      "style": "Aggressive",
+      "recentForm": "D-L-W-W"
+    },
+    "FAITH": {
+      "matches": 4,
       "wins": 0,
       "draws": 1,
-      "losses": 2,
-      "goalsScored": 4,
-      "goalsConceded": 7,
+      "losses": 3,
+      "goalsScored": 2,
+      "goalsConceded": 5,
       "streak": [
+        "L",
         "L",
         "D",
         "L"
       ],
       "goalsList": [
         1,
+        0,
         1,
-        2
+        0
       ],
       "concededList": [
         2,
         1,
-        4
+        1,
+        1
       ],
       "winRate": "0.0",
-      "avgScored": "1.33",
-      "avgConceded": "2.33",
+      "avgScored": "0.50",
+      "avgConceded": "1.25",
+      "style": "Defensive",
+      "recentForm": "L-L-D-L"
+    },
+    "ORACLE": {
+      "matches": 4,
+      "wins": 0,
+      "draws": 2,
+      "losses": 2,
+      "goalsScored": 5,
+      "goalsConceded": 8,
+      "streak": [
+        "L",
+        "D",
+        "L",
+        "D"
+      ],
+      "goalsList": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "concededList": [
+        2,
+        1,
+        4,
+        1
+      ],
+      "winRate": "0.0",
+      "avgScored": "1.25",
+      "avgConceded": "2.00",
       "style": "Aggressive",
-      "recentForm": "L-D-L"
+      "recentForm": "L-D-L-D"
     },
     "EXECUTIONER": {
       "matches": 3,
@@ -1165,11 +1500,46 @@
   },
   "h2hData": [
     {
+      "matchup": "GRIMACE vs ZEUS",
+      "matches": 3,
+      "dominantPlayer": "GRIMACE",
+      "winRate": 100,
+      "breakdown": "GRIMACE: 3W | ZEUS: 0W | Draws: 0"
+    },
+    {
       "matchup": "DANTE vs ZEUS",
       "matches": 3,
       "dominantPlayer": "DANTE",
       "winRate": 66.66666666666666,
       "breakdown": "DANTE: 2W | ZEUS: 1W | Draws: 0"
+    },
+    {
+      "matchup": "HAPPY HOUR vs TIGER",
+      "matches": 3,
+      "dominantPlayer": "HAPPY HOUR",
+      "winRate": 66.66666666666666,
+      "breakdown": "HAPPY HOUR: 2W | TIGER: 0W | Draws: 1"
+    },
+    {
+      "matchup": "DANTE vs GRIMACE",
+      "matches": 3,
+      "dominantPlayer": "GRIMACE",
+      "winRate": 66.66666666666666,
+      "breakdown": "DANTE: 0W | GRIMACE: 2W | Draws: 1"
+    },
+    {
+      "matchup": "FROST vs HAPPY HOUR",
+      "matches": 3,
+      "dominantPlayer": "FROST",
+      "winRate": 66.66666666666666,
+      "breakdown": "FROST: 2W | HAPPY HOUR: 0W | Draws: 1"
+    },
+    {
+      "matchup": "FROST vs TIGER",
+      "matches": 3,
+      "dominantPlayer": "FROST",
+      "winRate": 66.66666666666666,
+      "breakdown": "FROST: 2W | TIGER: 0W | Draws: 1"
     }
   ]
 }
