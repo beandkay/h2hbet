@@ -1,56 +1,14 @@
 {
-  "updatedAt": "2026-08-11T07:04:05.500Z",
-  "leagueAvgScored": 1.0384615384615385,
+  "updatedAt": "2026-08-11T08:14:28.444Z",
+  "leagueAvgScored": 1.265625,
   "upcoming": [
     {
-      "externalId": "FI111110826",
-      "startDate": "2026-08-11T07:01:00Z",
+      "externalId": "FI130110826",
+      "startDate": "2026-08-11T08:12:00Z",
       "isCancelled": false,
-      "teamAName": "ASTON VILLA",
-      "teamBName": "SPURS",
-      "participantAName": "PHENOM",
-      "participantBName": "HORIZON",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI112110826",
-      "startDate": "2026-08-11T07:05:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BARCELONA",
-      "teamBName": "LIVERPOOL",
-      "participantAName": "VENUS",
-      "participantBName": "COSMOS",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI113110826",
-      "startDate": "2026-08-11T07:08:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "MANCHESTER CITY",
-      "participantAName": "HAVOC",
-      "participantBName": "FRANCHISE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI114110826",
-      "startDate": "2026-08-11T07:12:00Z",
-      "isCancelled": false,
-      "teamAName": "PORTUGAL",
+      "teamAName": "ENGLAND",
       "teamBName": "FRANCE",
-      "participantAName": "RADICAL",
+      "participantAName": "INSTINCT",
       "participantBName": "SMHAMILA",
       "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
@@ -59,12 +17,12 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI115110826",
-      "startDate": "2026-08-11T07:16:00Z",
+      "externalId": "FI131110826",
+      "startDate": "2026-08-11T08:16:00Z",
       "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
+      "teamAName": "ASTON VILLA",
       "teamBName": "ARSENAL",
-      "participantAName": "DIVINE",
+      "participantAName": "PHENOM",
       "participantBName": "EXILE",
       "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
@@ -73,12 +31,12 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI116110826",
-      "startDate": "2026-08-11T07:20:00Z",
+      "externalId": "FI132110826",
+      "startDate": "2026-08-11T08:20:00Z",
       "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
+      "teamAName": "FC BARCELONA",
       "teamBName": "ATLETICO DE MADRID",
-      "participantAName": "ALIBI",
+      "participantAName": "VENUS",
       "participantBName": "PROPHET",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
@@ -87,26 +45,36 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI117110826",
-      "startDate": "2026-08-11T07:23:00Z",
+      "externalId": "FI133110826",
+      "startDate": "2026-08-11T08:23:00Z",
       "isCancelled": false,
-      "teamAName": "MANCHESTER CITY",
+      "teamAName": "FC BAYERN MUNCHEN",
       "teamBName": "REAL MADRID",
-      "participantAName": "FRANCHISE",
+      "participantAName": "HAVOC",
       "participantBName": "DEMOLISHOR",
       "streamName": "Esoccer 1",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "HAVOC",
+      "computedAway": "DEMOLISHOR",
+      "computedHomeUnc": 20,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     },
     {
-      "externalId": "FI118110826",
-      "startDate": "2026-08-11T07:27:00Z",
+      "externalId": "FI134110826",
+      "startDate": "2026-08-11T08:27:00Z",
       "isCancelled": false,
-      "teamAName": "PORTUGAL",
+      "teamAName": "SPAIN",
       "teamBName": "ENGLAND",
-      "participantAName": "RADICAL",
+      "participantAName": "DART",
       "participantBName": "INSTINCT",
       "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
@@ -115,12 +83,12 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI119110826",
-      "startDate": "2026-08-11T07:31:00Z",
+      "externalId": "FI135110826",
+      "startDate": "2026-08-11T08:31:00Z",
       "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
+      "teamAName": "SPURS",
       "teamBName": "ASTON VILLA",
-      "participantAName": "DIVINE",
+      "participantAName": "HORIZON",
       "participantBName": "PHENOM",
       "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
@@ -129,12 +97,12 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI120110826",
-      "startDate": "2026-08-11T07:35:00Z",
+      "externalId": "FI136110826",
+      "startDate": "2026-08-11T08:35:00Z",
       "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
+      "teamAName": "LIVERPOOL",
       "teamBName": "FC BARCELONA",
-      "participantAName": "ALIBI",
+      "participantAName": "COSMOS",
       "participantBName": "VENUS",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
@@ -143,25 +111,101 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI121110826",
-      "startDate": "2026-08-11T07:38:00Z",
+      "externalId": "FI137110826",
+      "startDate": "2026-08-11T08:38:00Z",
       "isCancelled": false,
-      "teamAName": "REAL MADRID",
+      "teamAName": "MANCHESTER CITY",
       "teamBName": "FC BAYERN MUNCHEN",
-      "participantAName": "DEMOLISHOR",
+      "participantAName": "FRANCHISE",
       "participantBName": "HAVOC",
       "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**HAVOC wins (Draw No Bet (Value Edge))** [Uncertainty: 20/100]",
+      "computedHome": "FRANCHISE",
+      "computedAway": "HAVOC",
+      "computedHomeUnc": 20,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI138110826",
+      "startDate": "2026-08-11T08:42:00Z",
+      "isCancelled": false,
+      "teamAName": "FRANCE",
+      "teamBName": "PORTUGAL",
+      "participantAName": "SMHAMILA",
+      "participantBName": "RADICAL",
+      "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null
     },
     {
-      "externalId": "FI122110826",
-      "startDate": "2026-08-11T07:42:00Z",
+      "externalId": "FI139110826",
+      "startDate": "2026-08-11T08:46:00Z",
       "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "SPAIN",
+      "teamAName": "ARSENAL",
+      "teamBName": "NEWCASTLE UTD",
+      "participantAName": "EXILE",
+      "participantBName": "DIVINE",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI140110826",
+      "startDate": "2026-08-11T08:50:00Z",
+      "isCancelled": false,
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "SSC NAPOLI",
+      "participantAName": "PROPHET",
+      "participantBName": "ALIBI",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null
+    },
+    {
+      "externalId": "FI141110826",
+      "startDate": "2026-08-11T08:53:00Z",
+      "isCancelled": false,
+      "teamAName": "PORTUGAL",
+      "teamBName": "ENGLAND",
+      "participantAName": "FRANCHISE",
+      "participantBName": "DEMOLISHOR",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "**DEMOLISHOR wins (Draw No Bet (Value Edge))** [Uncertainty: 20/100]",
+      "computedHome": "FRANCHISE",
+      "computedAway": "DEMOLISHOR",
+      "computedHomeUnc": 20,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
+    },
+    {
+      "externalId": "FI142110826",
+      "startDate": "2026-08-11T08:57:00Z",
+      "isCancelled": false,
+      "teamAName": "SPURS",
+      "teamBName": "ARSENAL",
       "participantAName": "SMHAMILA",
       "participantBName": "DART",
       "streamName": "Esoccer 2",
@@ -171,11 +215,11 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI123110826",
-      "startDate": "2026-08-11T07:46:00Z",
+      "externalId": "FI143110826",
+      "startDate": "2026-08-11T09:01:00Z",
       "isCancelled": false,
-      "teamAName": "ARSENAL",
-      "teamBName": "SPURS",
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "FC BARCELONA",
       "participantAName": "EXILE",
       "participantBName": "HORIZON",
       "streamName": "Esoccer 3",
@@ -185,11 +229,11 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI124110826",
-      "startDate": "2026-08-11T07:50:00Z",
+      "externalId": "FI144110826",
+      "startDate": "2026-08-11T09:05:00Z",
       "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "LIVERPOOL",
+      "teamAName": "MANCHESTER CITY",
+      "teamBName": "FC BAYERN MUNCHEN",
       "participantAName": "PROPHET",
       "participantBName": "COSMOS",
       "streamName": "Esoccer 4",
@@ -199,400 +243,525 @@
       "teamBScore": null
     },
     {
-      "externalId": "FI125110826",
-      "startDate": "2026-08-11T07:53:00Z",
+      "externalId": "FI145110826",
+      "startDate": "2026-08-11T09:08:00Z",
       "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "MANCHESTER CITY",
+      "teamAName": "SPAIN",
+      "teamBName": "ENGLAND",
       "participantAName": "HAVOC",
-      "participantBName": "FRANCHISE",
+      "participantBName": "DEMOLISHOR",
       "streamName": "Esoccer 1",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
-      "teamBScore": null
-    },
-    {
-      "externalId": "FI126110826",
-      "startDate": "2026-08-11T07:57:00Z",
-      "isCancelled": false,
-      "teamAName": "SPAIN",
-      "teamBName": "PORTUGAL",
-      "participantAName": "DART",
-      "participantBName": "RADICAL",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null
+      "teamBScore": null,
+      "computedTotalXG": 0,
+      "computedHomeStyle": "Defensive",
+      "computedAwayStyle": "Defensive",
+      "computedPrediction": "*SKIP (Not a Value Edge)*",
+      "computedHome": "HAVOC",
+      "computedAway": "DEMOLISHOR",
+      "computedHomeUnc": 20,
+      "computedAwayUnc": 20,
+      "ouPrediction": "**UNDER 2.5 Goals**",
+      "isOUPick": true
     }
   ],
   "winnerParlay": [],
-  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 13\nDecisive Matches Evaluated: 0\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 0 | Incorrect: 0 | Accuracy: 0%\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Overall Totals --\nTotal Wagered: $0\nTotal Returned: $0\nProfit/Loss: $0.00\n",
+  "backtestOutput": "--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---\nTotal Matches Played Today: 32\nDecisive Matches Evaluated: 0\n\n-- Draw No Bet (Tiered Sizing) --\nCorrect: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Over 2.5 Goals (Selective) --\nCorrect: 0 | Incorrect: 0 | Accuracy: 0%\nWagered: $0 | Returned: $0 | Profit: $0.00\n\n-- Overall Totals --\nTotal Wagered: $0\nTotal Returned: $0\nProfit/Loss: $0.00\n",
   "playerStats": {
     "PHENOM": {
-      "matches": 2,
+      "matches": 4,
+      "wins": 2,
+      "draws": 2,
+      "losses": 0,
+      "goalsScored": 8,
+      "goalsConceded": 5,
+      "streak": [
+        "W",
+        "D",
+        "W",
+        "D"
+      ],
+      "goalsList": [
+        2,
+        1,
+        4,
+        1
+      ],
+      "concededList": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "winRate": "50.0",
+      "avgScored": "2.00",
+      "avgConceded": "1.25",
+      "style": "Aggressive",
+      "recentForm": "W-D-W-D"
+    },
+    "DIVINE": {
+      "matches": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "goalsScored": 2,
+      "goalsConceded": 5,
+      "streak": [
+        "L",
+        "L",
+        "L",
+        "D"
+      ],
+      "goalsList": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "concededList": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "winRate": "0.0",
+      "avgScored": "0.50",
+      "avgConceded": "1.25",
+      "style": "Defensive",
+      "recentForm": "L-L-L-D"
+    },
+    "VENUS": {
+      "matches": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "goalsScored": 4,
+      "goalsConceded": 8,
+      "streak": [
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "goalsList": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "concededList": [
+        0,
+        2,
+        5,
+        1
+      ],
+      "winRate": "25.0",
+      "avgScored": "1.00",
+      "avgConceded": "2.00",
+      "style": "Defensive",
+      "recentForm": "W-L-L-L"
+    },
+    "ALIBI": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "goalsScored": 3,
+      "goalsConceded": 3,
+      "streak": [
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "goalsList": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "concededList": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "winRate": "50.0",
+      "avgScored": "0.75",
+      "avgConceded": "0.75",
+      "style": "Defensive",
+      "recentForm": "L-W-L-W"
+    },
+    "HAVOC": {
+      "matches": 6,
+      "wins": 3,
+      "draws": 2,
+      "losses": 1,
+      "goalsScored": 8,
+      "goalsConceded": 5,
+      "streak": [
+        "L",
+        "D",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "concededList": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "winRate": "50.0",
+      "avgScored": "1.33",
+      "avgConceded": "0.83",
+      "style": "Defensive",
+      "recentForm": "L-D-W-D-W-W"
+    },
+    "DEMOLISHOR": {
+      "matches": 5,
+      "wins": 2,
+      "draws": 1,
+      "losses": 2,
+      "goalsScored": 5,
+      "goalsConceded": 5,
+      "streak": [
+        "W",
+        "W",
+        "L",
+        "D",
+        "L"
+      ],
+      "goalsList": [
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "concededList": [
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "winRate": "40.0",
+      "avgScored": "1.00",
+      "avgConceded": "1.00",
+      "style": "Defensive",
+      "recentForm": "W-W-L-D-L"
+    },
+    "DART": {
+      "matches": 5,
+      "wins": 0,
+      "draws": 4,
+      "losses": 1,
+      "goalsScored": 5,
+      "goalsConceded": 6,
+      "streak": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "L"
+      ],
+      "goalsList": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "concededList": [
+        0,
+        1,
+        1,
+        1,
+        3
+      ],
+      "winRate": "0.0",
+      "avgScored": "1.00",
+      "avgConceded": "1.20",
+      "style": "Defensive",
+      "recentForm": "D-D-D-D-L"
+    },
+    "SMHAMILA": {
+      "matches": 4,
+      "wins": 0,
+      "draws": 3,
+      "losses": 1,
+      "goalsScored": 2,
+      "goalsConceded": 3,
+      "streak": [
+        "D",
+        "L",
+        "D",
+        "D"
+      ],
+      "goalsList": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "concededList": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "winRate": "0.0",
+      "avgScored": "0.50",
+      "avgConceded": "0.75",
+      "style": "Defensive",
+      "recentForm": "D-L-D-D"
+    },
+    "HORIZON": {
+      "matches": 4,
       "wins": 1,
       "draws": 1,
+      "losses": 2,
+      "goalsScored": 6,
+      "goalsConceded": 9,
+      "streak": [
+        "L",
+        "W",
+        "L",
+        "D"
+      ],
+      "goalsList": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "concededList": [
+        3,
+        0,
+        4,
+        2
+      ],
+      "winRate": "25.0",
+      "avgScored": "1.50",
+      "avgConceded": "2.25",
+      "style": "Aggressive",
+      "recentForm": "L-W-L-D"
+    },
+    "EXILE": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 2,
+      "losses": 0,
+      "goalsScored": 7,
+      "goalsConceded": 4,
+      "streak": [
+        "W",
+        "D",
+        "W",
+        "D"
+      ],
+      "goalsList": [
+        3,
+        1,
+        1,
+        2
+      ],
+      "concededList": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "winRate": "50.0",
+      "avgScored": "1.75",
+      "avgConceded": "1.00",
+      "style": "Defensive",
+      "recentForm": "W-D-W-D"
+    },
+    "COSMOS": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "goalsScored": 11,
+      "goalsConceded": 8,
+      "streak": [
+        "W",
+        "L",
+        "W",
+        "D"
+      ],
+      "goalsList": [
+        2,
+        0,
+        5,
+        4
+      ],
+      "concededList": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "winRate": "50.0",
+      "avgScored": "2.75",
+      "avgConceded": "2.00",
+      "style": "Aggressive",
+      "recentForm": "W-L-W-D"
+    },
+    "PROPHET": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "goalsScored": 9,
+      "goalsConceded": 8,
+      "streak": [
+        "L",
+        "W",
+        "W",
+        "D"
+      ],
+      "goalsList": [
+        1,
+        2,
+        2,
+        4
+      ],
+      "concededList": [
+        2,
+        1,
+        1,
+        4
+      ],
+      "winRate": "50.0",
+      "avgScored": "2.25",
+      "avgConceded": "2.00",
+      "style": "Aggressive",
+      "recentForm": "L-W-W-D"
+    },
+    "FRANCHISE": {
+      "matches": 5,
+      "wins": 0,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 4,
+      "goalsConceded": 7,
+      "streak": [
+        "D",
+        "L",
+        "D",
+        "D",
+        "L"
+      ],
+      "goalsList": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "concededList": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "winRate": "0.0",
+      "avgScored": "0.80",
+      "avgConceded": "1.40",
+      "style": "Defensive",
+      "recentForm": "D-L-D-D-L"
+    },
+    "RADICAL": {
+      "matches": 4,
+      "wins": 1,
+      "draws": 3,
+      "losses": 0,
+      "goalsScored": 4,
+      "goalsConceded": 3,
+      "streak": [
+        "D",
+        "D",
+        "D",
+        "W"
+      ],
+      "goalsList": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "concededList": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "winRate": "25.0",
+      "avgScored": "1.00",
+      "avgConceded": "0.75",
+      "style": "Defensive",
+      "recentForm": "D-D-D-W"
+    },
+    "INSTINCT": {
+      "matches": 3,
+      "wins": 1,
+      "draws": 2,
       "losses": 0,
       "goalsScored": 3,
       "goalsConceded": 2,
       "streak": [
         "W",
-        "D"
-      ],
-      "goalsList": [
-        2,
-        1
-      ],
-      "concededList": [
-        1,
-        1
-      ],
-      "winRate": "50.0",
-      "avgScored": "1.50",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-D"
-    },
-    "DIVINE": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 0,
-      "losses": 2,
-      "goalsScored": 1,
-      "goalsConceded": 3,
-      "streak": [
-        "L",
-        "L"
-      ],
-      "goalsList": [
-        1,
-        0
-      ],
-      "concededList": [
-        2,
-        1
-      ],
-      "winRate": "0.0",
-      "avgScored": "0.50",
-      "avgConceded": "1.50",
-      "style": "Defensive",
-      "recentForm": "L-L"
-    },
-    "VENUS": {
-      "matches": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "goalsScored": 1,
-      "goalsConceded": 0,
-      "streak": [
-        "W"
-      ],
-      "goalsList": [
-        1
-      ],
-      "concededList": [
-        0
-      ],
-      "winRate": "100.0",
-      "avgScored": "1.00",
-      "avgConceded": "0.00",
-      "style": "Defensive",
-      "recentForm": "W"
-    },
-    "ALIBI": {
-      "matches": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 1,
-      "goalsConceded": 1,
-      "streak": [
-        "L",
-        "W"
-      ],
-      "goalsList": [
-        0,
-        1
-      ],
-      "concededList": [
-        1,
-        0
-      ],
-      "winRate": "50.0",
-      "avgScored": "0.50",
-      "avgConceded": "0.50",
-      "style": "Defensive",
-      "recentForm": "L-W"
-    },
-    "HAVOC": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
-      "streak": [
-        "L",
-        "D"
-      ],
-      "goalsList": [
-        1,
-        1
-      ],
-      "concededList": [
-        2,
-        1
-      ],
-      "winRate": "0.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.50",
-      "style": "Defensive",
-      "recentForm": "L-D"
-    },
-    "DEMOLISHOR": {
-      "matches": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "goalsScored": 4,
-      "goalsConceded": 1,
-      "streak": [
-        "W",
-        "W"
-      ],
-      "goalsList": [
-        2,
-        2
-      ],
-      "concededList": [
-        1,
-        0
-      ],
-      "winRate": "100.0",
-      "avgScored": "2.00",
-      "avgConceded": "0.50",
-      "style": "Defensive",
-      "recentForm": "W-W"
-    },
-    "DART": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 2,
-      "losses": 0,
-      "goalsScored": 1,
-      "goalsConceded": 1,
-      "streak": [
         "D",
         "D"
       ],
       "goalsList": [
-        0,
-        1
-      ],
-      "concededList": [
-        0,
-        1
-      ],
-      "winRate": "0.0",
-      "avgScored": "0.50",
-      "avgConceded": "0.50",
-      "style": "Defensive",
-      "recentForm": "D-D"
-    },
-    "SMHAMILA": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 1,
-      "goalsConceded": 2,
-      "streak": [
-        "D",
-        "L"
-      ],
-      "goalsList": [
-        0,
-        1
-      ],
-      "concededList": [
-        0,
-        2
-      ],
-      "winRate": "0.0",
-      "avgScored": "0.50",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "D-L"
-    },
-    "HORIZON": {
-      "matches": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
-      "streak": [
-        "L",
-        "W"
-      ],
-      "goalsList": [
-        1,
-        1
-      ],
-      "concededList": [
-        3,
-        0
-      ],
-      "winRate": "50.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.50",
-      "style": "Defensive",
-      "recentForm": "L-W"
-    },
-    "EXILE": {
-      "matches": 2,
-      "wins": 1,
-      "draws": 1,
-      "losses": 0,
-      "goalsScored": 4,
-      "goalsConceded": 2,
-      "streak": [
-        "W",
-        "D"
-      ],
-      "goalsList": [
-        3,
-        1
-      ],
-      "concededList": [
-        1,
-        1
-      ],
-      "winRate": "50.0",
-      "avgScored": "2.00",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-D"
-    },
-    "COSMOS": {
-      "matches": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 2,
-      "streak": [
-        "W",
-        "L"
-      ],
-      "goalsList": [
         2,
-        0
-      ],
-      "concededList": [
-        1,
-        1
-      ],
-      "winRate": "50.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-L"
-    },
-    "PROPHET": {
-      "matches": 1,
-      "wins": 0,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 1,
-      "goalsConceded": 2,
-      "streak": [
-        "L"
-      ],
-      "goalsList": [
-        1
-      ],
-      "concededList": [
-        2
-      ],
-      "winRate": "0.0",
-      "avgScored": "1.00",
-      "avgConceded": "2.00",
-      "style": "Defensive",
-      "recentForm": "L"
-    },
-    "FRANCHISE": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 1,
-      "goalsConceded": 3,
-      "streak": [
-        "D",
-        "L"
-      ],
-      "goalsList": [
         1,
         0
       ],
       "concededList": [
         1,
-        2
+        1,
+        0
       ],
-      "winRate": "0.0",
-      "avgScored": "0.50",
-      "avgConceded": "1.50",
-      "style": "Defensive",
-      "recentForm": "D-L"
-    },
-    "RADICAL": {
-      "matches": 1,
-      "wins": 0,
-      "draws": 1,
-      "losses": 0,
-      "goalsScored": 1,
-      "goalsConceded": 1,
-      "streak": [
-        "D"
-      ],
-      "goalsList": [
-        1
-      ],
-      "concededList": [
-        1
-      ],
-      "winRate": "0.0",
+      "winRate": "33.3",
       "avgScored": "1.00",
-      "avgConceded": "1.00",
+      "avgConceded": "0.67",
       "style": "Defensive",
-      "recentForm": "D"
-    },
-    "INSTINCT": {
-      "matches": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "goalsScored": 2,
-      "goalsConceded": 1,
-      "streak": [
-        "W"
-      ],
-      "goalsList": [
-        2
-      ],
-      "concededList": [
-        1
-      ],
-      "winRate": "100.0",
-      "avgScored": "2.00",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W"
+      "recentForm": "W-D-D"
     }
   },
-  "h2hData": []
+  "h2hData": [
+    {
+      "matchup": "DEMOLISHOR vs HAVOC",
+      "matches": 3,
+      "dominantPlayer": "HAVOC",
+      "winRate": 66.66666666666666,
+      "breakdown": "DEMOLISHOR: 1W | HAVOC: 2W | Draws: 0"
+    },
+    {
+      "matchup": "FRANCHISE vs HAVOC",
+      "matches": 3,
+      "dominantPlayer": "HAVOC",
+      "winRate": 33.33333333333333,
+      "breakdown": "FRANCHISE: 0W | HAVOC: 1W | Draws: 2"
+    }
+  ]
 }
