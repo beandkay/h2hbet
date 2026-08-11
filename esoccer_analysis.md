@@ -6,269 +6,279 @@
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **TEMPEST** | Aggressive | 1 | 100.0% | 3.00 | 1.00 | W |
-| **THREAT** | Defensive | 1 | 100.0% | 2.00 | 1.00 | W |
-| **FROST** | Aggressive | 1 | 100.0% | 3.00 | 2.00 | W |
-| **DANTE** | Defensive | 2 | 50.0% | 1.50 | 1.00 | W-D |
-| **HAPPY HOUR** | Defensive | 2 | 50.0% | 1.50 | 1.50 | W-L |
-| **ZEUS** | Defensive | 1 | 0.0% | 0.00 | 1.00 | L |
-| **TIGER** | Defensive | 1 | 0.0% | 0.00 | 1.00 | L |
-| **REALIST** | Aggressive | 1 | 0.0% | 1.00 | 3.00 | L |
-| **HOLLYWOOD** | Defensive | 1 | 0.0% | 1.00 | 2.00 | L |
-| **GRIMACE** | Aggressive | 1 | 0.0% | 2.00 | 2.00 | D |
+| **THREAT** | Aggressive | 3 | 100.0% | 2.33 | 1.00 | W-W-W |
+| **GRIMACE** | Defensive | 4 | 75.0% | 2.25 | 0.75 | D-W-W-W |
+| **REALIST** | Aggressive | 3 | 66.7% | 2.00 | 2.00 | L-W-W |
+| **HOLLYWOOD** | Defensive | 3 | 66.7% | 1.33 | 1.00 | L-W-W |
+| **FROST** | Defensive | 4 | 50.0% | 1.50 | 1.00 | W-D-D-W |
+| **DANTE** | Aggressive | 5 | 40.0% | 2.00 | 1.80 | W-D-W-L-L |
+| **TEMPEST** | Defensive | 3 | 33.3% | 1.67 | 1.00 | W-D-D |
+| **DOMINATOR** | Aggressive | 3 | 33.3% | 2.33 | 2.00 | D-L-W |
+| **HAPPY HOUR** | Defensive | 4 | 25.0% | 1.00 | 1.00 | W-L-D-D |
+| **ZEUS** | Aggressive | 5 | 20.0% | 1.40 | 2.80 | L-L-L-L-W |
+| **TIGER** | Defensive | 4 | 0.0% | 0.25 | 0.75 | L-D-D-L |
+| **FAITH** | Defensive | 3 | 0.0% | 0.67 | 1.33 | L-L-D |
+| **ORACLE** | Aggressive | 3 | 0.0% | 1.33 | 2.33 | L-D-L |
+| **EXECUTIONER** | Defensive | 3 | 0.0% | 1.00 | 2.00 | L-L-D |
+
+## Most Dominant H2H Pairs (Current Rotation)
+
+| Matchup | Matches | Dominant Player | Win Rate | Breakdown |
+|---|---|---|---|---|
+| **DANTE vs ZEUS** | 3 | DANTE | 66.7% | DANTE: 2W | ZEUS: 1W | Draws: 0 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. TIGER (Defensive) vs FROST (Aggressive) [Aug 12, 04:35 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 1. HOLLYWOOD (Defensive) vs THREAT (Aggressive) [Aug 12, 05:42 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 2. REALIST (Aggressive) vs ORACLE (Unknown) [Aug 12, 04:38 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 2. DANTE (Aggressive) vs GRIMACE (Defensive) [Aug 12, 05:46 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 3. HOLLYWOOD (Defensive) vs EXECUTIONER (Unknown) [Aug 12, 04:42 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 3. HAPPY HOUR (Defensive) vs FROST (Defensive) [Aug 12, 05:50 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 4. ZEUS (Defensive) vs DANTE (Defensive) [Aug 12, 04:46 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 4. TEMPEST (Defensive) vs DOMINATOR (Aggressive) [Aug 12, 05:53 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 5. TIGER (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 04:50 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 5. THREAT (Aggressive) vs FAITH (Defensive) [Aug 12, 05:57 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 6. ORACLE (Unknown) vs TEMPEST (Aggressive) [Aug 12, 04:53 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 6. GRIMACE (Defensive) vs ZEUS (Aggressive) [Aug 12, 06:01 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 7. EXECUTIONER (Unknown) vs THREAT (Defensive) [Aug 12, 04:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 7. FROST (Defensive) vs TIGER (Defensive) [Aug 12, 06:05 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 8. DANTE (Defensive) vs GRIMACE (Aggressive) [Aug 12, 05:01 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 8. ORACLE (Aggressive) vs REALIST (Aggressive) [Aug 12, 06:08 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 9. HAPPY HOUR (Defensive) vs FROST (Aggressive) [Aug 12, 05:05 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 9. EXECUTIONER (Defensive) vs HOLLYWOOD (Defensive) [Aug 12, 06:12 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 10. DOMINATOR (Unknown) vs REALIST (Aggressive) [Aug 12, 05:08 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 10. DANTE (Aggressive) vs ZEUS (Aggressive) [Aug 12, 06:16 AM AEST]
+- **Analysis**: Total Expected Goals: 4.50 (2.75 to 1.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
+
+### 11. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 06:20 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 11. FAITH (Unknown) vs HOLLYWOOD (Defensive) [Aug 12, 05:12 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 12. TEMPEST (Defensive) vs ORACLE (Aggressive) [Aug 12, 06:23 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 12. GRIMACE (Aggressive) vs ZEUS (Defensive) [Aug 12, 05:16 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 13. THREAT (Aggressive) vs EXECUTIONER (Defensive) [Aug 12, 06:27 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 13. TIGER (Defensive) vs FROST (Aggressive) [Aug 12, 05:20 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 14. GRIMACE (Defensive) vs DANTE (Aggressive) [Aug 12, 06:31 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 14. DOMINATOR (Unknown) vs ORACLE (Unknown) [Aug 12, 05:23 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 15. FROST (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 06:35 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 15. FAITH (Unknown) vs EXECUTIONER (Unknown) [Aug 12, 05:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 16. REALIST (Aggressive) vs DOMINATOR (Aggressive) [Aug 12, 06:38 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 16. ZEUS (Defensive) vs DANTE (Defensive) [Aug 12, 05:31 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 17. GRIMACE (Defensive) vs DANTE (Aggressive) [Aug 12, 10:01 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 17. GRIMACE (Aggressive) vs DANTE (Defensive) [Aug 12, 10:01 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 18. HAPPY HOUR (Defensive) vs FROST (Defensive) [Aug 12, 10:05 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 18. HAPPY HOUR (Defensive) vs FROST (Aggressive) [Aug 12, 10:05 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 19. REALIST (Aggressive) vs TEMPEST (Defensive) [Aug 12, 10:08 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 19. REALIST (Aggressive) vs TEMPEST (Aggressive) [Aug 12, 10:08 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 20. HOLLYWOOD (Defensive) vs THREAT (Aggressive) [Aug 12, 10:12 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 20. HOLLYWOOD (Defensive) vs THREAT (Defensive) [Aug 12, 10:12 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 21. GRIMACE (Defensive) vs ZEUS (Aggressive) [Aug 12, 10:16 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 21. GRIMACE (Aggressive) vs ZEUS (Defensive) [Aug 12, 10:16 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 22. TIGER (Defensive) vs FROST (Defensive) [Aug 12, 10:20 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 22. TIGER (Defensive) vs FROST (Aggressive) [Aug 12, 10:20 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 23. ORACLE (Aggressive) vs REALIST (Aggressive) [Aug 12, 10:23 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 23. ORACLE (Unknown) vs REALIST (Aggressive) [Aug 12, 10:23 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 24. EXECUTIONER (Defensive) vs HOLLYWOOD (Defensive) [Aug 12, 10:27 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 24. EXECUTIONER (Unknown) vs HOLLYWOOD (Defensive) [Aug 12, 10:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
-
-### 25. ZEUS (Defensive) vs DANTE (Defensive) [Aug 12, 10:31 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+### 25. ZEUS (Aggressive) vs DANTE (Aggressive) [Aug 12, 10:31 AM AEST]
+- **Analysis**: Total Expected Goals: 4.50 (1.75 to 2.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
 ### 26. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 10:35 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 27. TEMPEST (Aggressive) vs DOMINATOR (Unknown) [Aug 12, 10:38 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 27. TEMPEST (Defensive) vs DOMINATOR (Aggressive) [Aug 12, 10:38 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 28. THREAT (Defensive) vs FAITH (Unknown) [Aug 12, 10:42 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 28. THREAT (Aggressive) vs FAITH (Defensive) [Aug 12, 10:42 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 29. GRIMACE (Aggressive) vs DANTE (Defensive) [Aug 12, 10:46 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 29. GRIMACE (Defensive) vs DANTE (Aggressive) [Aug 12, 10:46 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 30. FROST (Aggressive) vs HAPPY HOUR (Defensive) [Aug 12, 10:50 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 30. FROST (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 10:50 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 31. DOMINATOR (Unknown) vs REALIST (Aggressive) [Aug 12, 10:53 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 31. DOMINATOR (Aggressive) vs REALIST (Aggressive) [Aug 12, 10:53 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 32. FAITH (Unknown) vs HOLLYWOOD (Defensive) [Aug 12, 10:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 32. FAITH (Defensive) vs HOLLYWOOD (Defensive) [Aug 12, 10:57 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 33. ZEUS (Defensive) vs GRIMACE (Aggressive) [Aug 12, 11:01 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 33. ZEUS (Aggressive) vs GRIMACE (Defensive) [Aug 12, 11:01 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 34. TIGER (Defensive) vs FROST (Aggressive) [Aug 12, 11:05 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 34. TIGER (Defensive) vs FROST (Defensive) [Aug 12, 11:05 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 35. ORACLE (Unknown) vs TEMPEST (Aggressive) [Aug 12, 11:08 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 35. ORACLE (Aggressive) vs TEMPEST (Defensive) [Aug 12, 11:08 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 36. EXECUTIONER (Unknown) vs THREAT (Defensive) [Aug 12, 11:12 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 36. EXECUTIONER (Defensive) vs THREAT (Aggressive) [Aug 12, 11:12 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 37. DANTE (Defensive) vs ZEUS (Defensive) [Aug 12, 11:16 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+### 37. DANTE (Aggressive) vs ZEUS (Aggressive) [Aug 12, 11:16 AM AEST]
+- **Analysis**: Total Expected Goals: 4.50 (2.75 to 1.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
 ### 38. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 11:20 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 39. ORACLE (Unknown) vs DOMINATOR (Unknown) [Aug 12, 11:23 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 39. ORACLE (Aggressive) vs DOMINATOR (Aggressive) [Aug 12, 11:23 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 40. EXECUTIONER (Unknown) vs FAITH (Unknown) [Aug 12, 11:27 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 40. EXECUTIONER (Defensive) vs FAITH (Defensive) [Aug 12, 11:27 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 41. GRIMACE (Aggressive) vs DANTE (Defensive) [Aug 12, 11:31 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 41. GRIMACE (Defensive) vs DANTE (Aggressive) [Aug 12, 11:31 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 42. FROST (Aggressive) vs HAPPY HOUR (Defensive) [Aug 12, 11:35 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 42. FROST (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 11:35 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 43. TEMPEST (Aggressive) vs REALIST (Aggressive) [Aug 12, 11:38 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 43. TEMPEST (Defensive) vs REALIST (Aggressive) [Aug 12, 11:38 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 44. THREAT (Defensive) vs HOLLYWOOD (Defensive) [Aug 12, 11:42 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 44. THREAT (Aggressive) vs HOLLYWOOD (Defensive) [Aug 12, 11:42 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 45. GRIMACE (Aggressive) vs ZEUS (Defensive) [Aug 12, 11:46 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 45. GRIMACE (Defensive) vs ZEUS (Aggressive) [Aug 12, 11:46 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 46. FROST (Aggressive) vs TIGER (Defensive) [Aug 12, 11:50 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 46. FROST (Defensive) vs TIGER (Defensive) [Aug 12, 11:50 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 47. REALIST (Aggressive) vs ORACLE (Unknown) [Aug 12, 11:53 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 47. REALIST (Aggressive) vs ORACLE (Aggressive) [Aug 12, 11:53 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 48. HOLLYWOOD (Defensive) vs EXECUTIONER (Unknown) [Aug 12, 11:57 AM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+### 48. HOLLYWOOD (Defensive) vs EXECUTIONER (Defensive) [Aug 12, 11:57 AM AEST]
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 49. DANTE (Defensive) vs ZEUS (Defensive) [Aug 12, 12:01 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
-- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
-- **Totals**: *SKIP*
+### 49. DANTE (Aggressive) vs ZEUS (Aggressive) [Aug 12, 12:01 PM AEST]
+- **Analysis**: Total Expected Goals: 4.50 (2.75 to 1.75).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
 ### 50. TIGER (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 12:05 PM AEST]
-- **Analysis**: Insufficient data today to calculate expected goals.
+- **Analysis**: Total Expected Goals: 0.00 (0.00 to 0.00).
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
@@ -285,7 +295,7 @@
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 6
+Total Matches Played Today: 25
 Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
