@@ -1,45 +1,108 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.38
+**League Average Goals Per Match (Per Team):** 1.04
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **GHOST** | Defensive | 23 | 34.8% | 1.17 | 0.96 | W-W-W-L-D-L-L-L-W-L-W-W-D-D-D-D-D-W-W-L-D-D-D |
-| **TROOPER** | Defensive | 23 | 13.0% | 0.78 | 1.35 | D-L-L-D-W-W-D-L-L-D-D-L-L-L-D-D-D-L-W-D-D-L-L |
-
-## Most Dominant H2H Pairs (Current Rotation)
-
-| Matchup | Matches | Dominant Player | Win Rate | Breakdown |
-|---|---|---|---|---|
-| **CHASER vs EDEN** | 8 | CHASER | 75.0% | CHASER: 6W | EDEN: 2W | Draws: 0 |
-| **DECIMATOR vs ENT** | 8 | DECIMATOR | 62.5% | DECIMATOR: 5W | ENT: 2W | Draws: 1 |
-| **CHASER vs ENT** | 8 | ENT | 62.5% | CHASER: 2W | ENT: 5W | Draws: 1 |
-| **DECIMATOR vs EDEN** | 8 | DECIMATOR | 62.5% | DECIMATOR: 5W | EDEN: 1W | Draws: 2 |
-| **GHOST vs TROOPER** | 7 | GHOST | 57.1% | GHOST: 4W | TROOPER: 1W | Draws: 2 |
-| **AGENT vs TEMPEST** | 7 | AGENT | 57.1% | AGENT: 4W | TEMPEST: 1W | Draws: 2 |
-| **EXECUTIONER vs GLORY** | 13 | EXECUTIONER | 53.8% | EXECUTIONER: 7W | GLORY: 4W | Draws: 2 |
-| **DUSK vs EMPEROR** | 8 | EMPEROR | 50.0% | DUSK: 3W | EMPEROR: 4W | Draws: 1 |
-| **STORM vs TROOPER** | 8 | STORM | 50.0% | STORM: 4W | TROOPER: 1W | Draws: 3 |
-| **EMPEROR vs TEMPEST** | 8 | TEMPEST | 50.0% | EMPEROR: 2W | TEMPEST: 4W | Draws: 2 |
+| **VENUS** | Defensive | 1 | 100.0% | 1.00 | 0.00 | W |
+| **DEMOLISHOR** | Defensive | 2 | 100.0% | 2.00 | 0.50 | W-W |
+| **INSTINCT** | Defensive | 1 | 100.0% | 2.00 | 1.00 | W |
+| **PHENOM** | Defensive | 2 | 50.0% | 1.50 | 1.00 | W-D |
+| **ALIBI** | Defensive | 2 | 50.0% | 0.50 | 0.50 | L-W |
+| **HORIZON** | Defensive | 2 | 50.0% | 1.00 | 1.50 | L-W |
+| **EXILE** | Defensive | 2 | 50.0% | 2.00 | 1.00 | W-D |
+| **COSMOS** | Defensive | 2 | 50.0% | 1.00 | 1.00 | W-L |
+| **DIVINE** | Defensive | 2 | 0.0% | 0.50 | 1.50 | L-L |
+| **HAVOC** | Defensive | 2 | 0.0% | 1.00 | 1.50 | L-D |
+| **DART** | Defensive | 2 | 0.0% | 0.50 | 0.50 | D-D |
+| **SMHAMILA** | Defensive | 2 | 0.0% | 0.50 | 1.00 | D-L |
+| **PROPHET** | Defensive | 1 | 0.0% | 1.00 | 2.00 | L |
+| **FRANCHISE** | Defensive | 2 | 0.0% | 0.50 | 1.50 | D-L |
+| **RADICAL** | Defensive | 1 | 0.0% | 1.00 | 1.00 | D |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. TROOPER (Defensive) vs GHOST (Defensive) [Aug 11, 03:50 PM AEST]
-- **Analysis**: Total Expected Goals: 2.70 (1.08 to 1.62).
-- **Prediction**: **GHOST wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 2. DEMOLISHOR (Unknown) vs FRANCHISE (Unknown) [Aug 11, 03:53 PM AEST]
+### 1. PHENOM (Defensive) vs HORIZON (Defensive) [Aug 11, 05:01 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
 
-### 3. INSTINCT (Unknown) vs RADICAL (Unknown) [Aug 11, 03:57 PM AEST]
+### 2. VENUS (Defensive) vs COSMOS (Defensive) [Aug 11, 05:05 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 3. HAVOC (Defensive) vs FRANCHISE (Defensive) [Aug 11, 05:08 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 4. RADICAL (Defensive) vs SMHAMILA (Defensive) [Aug 11, 05:12 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 5. DIVINE (Defensive) vs EXILE (Defensive) [Aug 11, 05:16 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 6. ALIBI (Defensive) vs PROPHET (Defensive) [Aug 11, 05:20 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 7. FRANCHISE (Defensive) vs DEMOLISHOR (Defensive) [Aug 11, 05:23 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 8. RADICAL (Defensive) vs INSTINCT (Defensive) [Aug 11, 05:27 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 9. DIVINE (Defensive) vs PHENOM (Defensive) [Aug 11, 05:31 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 10. ALIBI (Defensive) vs VENUS (Defensive) [Aug 11, 05:35 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 11. DEMOLISHOR (Defensive) vs HAVOC (Defensive) [Aug 11, 05:38 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 12. SMHAMILA (Defensive) vs DART (Defensive) [Aug 11, 05:42 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 13. EXILE (Defensive) vs HORIZON (Defensive) [Aug 11, 05:46 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 14. PROPHET (Defensive) vs COSMOS (Defensive) [Aug 11, 05:50 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 15. HAVOC (Defensive) vs FRANCHISE (Defensive) [Aug 11, 05:53 PM AEST]
+- **Analysis**: Insufficient data today to calculate expected goals.
+- **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
+- **Totals**: *SKIP*
+
+### 16. DART (Defensive) vs RADICAL (Defensive) [Aug 11, 05:57 PM AEST]
 - **Analysis**: Insufficient data today to calculate expected goals.
 - **Prediction**: *SKIP (Building Stats - Needs 5+ matches)*
 - **Totals**: *SKIP*
@@ -50,29 +113,27 @@
 ### ⚽ Over 2.5 Goals Parlay
 *No highly confident Over 2.5 matches (Aggressive vs Aggressive > 4.00 XG) found in this rotation.*
 
-### 🏆 Winner Parlay (1 Legs)
-> **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
-
-1. **GHOST** to beat TROOPER -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
+### 🏆 Winner Parlay
+*No extremely safe Draw No Bet favorites (Uncertainty <= 10) found in this rotation.*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 183
-Decisive Matches Evaluated: 98
+Total Matches Played Today: 13
+Decisive Matches Evaluated: 0
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 32 | Incorrect: 32 | Pushed: 34 | Accuracy: 50.00% (Excl. Pushes)
-Wagered: $1290 | Returned: $1135.75 | Profit: $-154.25
+Correct: 0 | Incorrect: 0 | Pushed: 0 | Accuracy: 0% (Excl. Pushes)
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Over 2.5 Goals (Selective) --
-Correct: 22 | Incorrect: 20 | Accuracy: 52.38%
-Wagered: $420 | Returned: $364 | Profit: $-56.00
+Correct: 0 | Incorrect: 0 | Accuracy: 0%
+Wagered: $0 | Returned: $0 | Profit: $0.00
 
 -- Overall Totals --
-Total Wagered: $1710
-Total Returned: $1499.75
-Profit/Loss: $-210.25
+Total Wagered: $0
+Total Returned: $0
+Profit/Loss: $0.00
 
 ```
