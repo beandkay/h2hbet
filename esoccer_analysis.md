@@ -1,118 +1,123 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.32
+**League Average Goals Per Match (Per Team):** 1.33
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **HOLLYWOOD** | Defensive | 17 | 52.9% | 1.24 | 0.88 | L-W-W-W-L-D-W-W-L-W-D-D-L-W-W-W-L |
-| **DOMINATOR** | Aggressive | 16 | 50.0% | 1.88 | 1.38 | D-L-W-W-L-L-W-W-L-L-W-D-D-W-W-W |
-| **HAPPY HOUR** | Defensive | 21 | 42.9% | 1.05 | 0.62 | W-L-D-D-W-L-L-D-W-D-L-W-W-D-D-W-D-W-W-D-W |
-| **TEMPEST** | Defensive | 17 | 41.2% | 1.24 | 1.00 | W-D-D-L-L-D-D-L-W-W-W-W-W-D-L-W-L |
-| **DANTE** | Aggressive | 22 | 40.9% | 1.82 | 1.27 | W-D-W-L-L-L-W-W-W-W-D-D-D-D-L-L-D-W-W-L-W-L |
-| **GRIMACE** | Defensive | 21 | 38.1% | 1.33 | 1.67 | D-W-W-W-W-W-L-L-L-D-D-L-D-L-W-L-L-L-W-D-W |
-| **REALIST** | Defensive | 17 | 35.3% | 1.29 | 1.41 | L-W-W-W-D-W-D-D-L-L-D-L-L-W-L-L-W |
-| **THREAT** | Defensive | 17 | 35.3% | 1.41 | 1.53 | W-W-W-L-W-D-L-W-L-L-L-D-W-L-D-L-D |
-| **FROST** | Defensive | 20 | 35.0% | 0.95 | 1.45 | W-D-D-W-W-W-D-W-D-D-L-L-D-L-L-W-L-L-D-W |
-| **ZEUS** | Aggressive | 21 | 33.3% | 1.67 | 1.90 | L-L-L-L-W-L-L-W-L-D-D-W-D-W-W-W-D-W-L-D-L |
-| **FAITH** | Defensive | 16 | 31.3% | 1.06 | 1.06 | L-L-D-L-D-L-L-W-D-W-D-W-W-L-W-D |
-| **EXECUTIONER** | Defensive | 16 | 25.0% | 1.31 | 1.56 | L-L-D-W-D-W-L-W-D-D-D-L-L-D-L-W |
-| **TIGER** | Defensive | 21 | 23.8% | 1.14 | 1.10 | L-D-D-L-L-L-W-L-L-D-W-W-L-W-D-L-D-W-L-L-L |
-| **ORACLE** | Defensive | 16 | 18.8% | 1.00 | 1.63 | L-D-L-D-D-W-D-L-W-D-L-D-L-W-L-L |
+| **HOLLYWOOD** | Defensive | 21 | 47.6% | 1.24 | 0.95 | L-W-W-W-L-D-W-W-L-W-D-D-L-W-W-W-L-L-W-D-D |
+| **DOMINATOR** | Aggressive | 20 | 45.0% | 1.75 | 1.35 | D-L-W-W-L-L-W-W-L-L-W-D-D-W-W-W-W-L-D-D |
+| **GRIMACE** | Defensive | 25 | 44.0% | 1.36 | 1.56 | D-W-W-W-W-W-L-L-L-D-D-L-D-L-W-L-L-L-W-D-W-W-W-L-W |
+| **DANTE** | Defensive | 26 | 42.3% | 1.73 | 1.27 | W-D-W-L-L-L-W-W-W-W-D-D-D-D-L-L-D-W-W-L-W-L-W-L-L-W |
+| **HAPPY HOUR** | Defensive | 26 | 42.3% | 1.15 | 0.69 | W-L-D-D-W-L-L-D-W-D-L-W-W-D-D-W-D-W-W-D-W-D-L-W-L-W |
+| **FAITH** | Defensive | 20 | 40.0% | 1.25 | 1.05 | L-L-D-L-D-L-L-W-D-W-D-W-W-L-W-D-W-W-W-D |
+| **TEMPEST** | Defensive | 21 | 38.1% | 1.29 | 1.05 | W-D-D-L-L-D-D-L-W-W-W-W-W-D-L-W-L-D-W-D-D |
+| **THREAT** | Defensive | 21 | 33.3% | 1.38 | 1.57 | W-W-W-L-W-D-L-W-L-L-L-D-W-L-D-L-D-D-L-L-W |
+| **FROST** | Defensive | 24 | 33.3% | 1.00 | 1.58 | W-D-D-W-W-W-D-W-D-D-L-L-D-L-L-W-L-L-D-W-D-W-L-L |
+| **ZEUS** | Aggressive | 25 | 32.0% | 1.60 | 1.88 | L-L-L-L-W-L-L-W-L-D-D-W-D-W-W-W-D-W-L-D-L-L-L-W-L |
+| **TIGER** | Defensive | 24 | 29.2% | 1.13 | 1.04 | L-D-D-L-L-L-W-L-L-D-W-W-L-W-D-L-D-W-L-L-L-L-W-W |
+| **REALIST** | Defensive | 21 | 28.6% | 1.19 | 1.52 | L-W-W-W-D-W-D-D-L-L-D-L-L-W-L-L-W-L-L-L-D |
+| **ORACLE** | Defensive | 20 | 25.0% | 1.10 | 1.40 | L-D-L-D-D-W-D-L-W-D-L-D-L-W-L-L-D-W-W-D |
+| **EXECUTIONER** | Aggressive | 20 | 20.0% | 1.40 | 1.70 | L-L-D-W-D-W-L-W-D-D-D-L-L-D-L-W-D-L-D-L |
 
 ## Most Dominant H2H Pairs (Current Rotation)
 
 | Matchup | Matches | Dominant Player | Win Rate | Breakdown |
 |---|---|---|---|---|
-| **REALIST vs TEMPEST** | 6 | TEMPEST | 66.7% | REALIST: 1W | TEMPEST: 4W | Draws: 1 |
-| **HOLLYWOOD vs THREAT** | 6 | HOLLYWOOD | 66.7% | HOLLYWOOD: 4W | THREAT: 2W | Draws: 0 |
-| **DOMINATOR vs REALIST** | 5 | DOMINATOR | 60.0% | DOMINATOR: 3W | REALIST: 2W | Draws: 0 |
-| **DANTE vs ZEUS** | 11 | DANTE | 54.5% | DANTE: 6W | ZEUS: 2W | Draws: 3 |
-| **HAPPY HOUR vs TIGER** | 11 | HAPPY HOUR | 54.5% | HAPPY HOUR: 6W | TIGER: 2W | Draws: 3 |
-| **GRIMACE vs ZEUS** | 10 | ZEUS | 50.0% | GRIMACE: 3W | ZEUS: 5W | Draws: 2 |
-| **FROST vs TIGER** | 10 | FROST | 50.0% | FROST: 5W | TIGER: 3W | Draws: 2 |
-| **DOMINATOR vs TEMPEST** | 6 | DOMINATOR | 50.0% | DOMINATOR: 3W | TEMPEST: 1W | Draws: 2 |
-| **FAITH vs THREAT** | 6 | THREAT | 50.0% | FAITH: 2W | THREAT: 3W | Draws: 1 |
-| **ORACLE vs REALIST** | 6 | REALIST | 50.0% | ORACLE: 0W | REALIST: 3W | Draws: 3 |
+| **REALIST vs TEMPEST** | 7 | TEMPEST | 71.4% | REALIST: 1W | TEMPEST: 5W | Draws: 1 |
+| **HOLLYWOOD vs THREAT** | 7 | HOLLYWOOD | 71.4% | HOLLYWOOD: 5W | THREAT: 2W | Draws: 0 |
+| **DOMINATOR vs REALIST** | 7 | DOMINATOR | 57.1% | DOMINATOR: 4W | REALIST: 2W | Draws: 1 |
+| **FROST vs TIGER** | 11 | FROST | 54.5% | FROST: 6W | TIGER: 3W | Draws: 2 |
+| **DANTE vs ZEUS** | 13 | DANTE | 53.8% | DANTE: 7W | ZEUS: 3W | Draws: 3 |
+| **DOMINATOR vs ORACLE** | 6 | ORACLE | 50.0% | DOMINATOR: 2W | ORACLE: 3W | Draws: 1 |
+| **EXECUTIONER vs FAITH** | 6 | FAITH | 50.0% | EXECUTIONER: 1W | FAITH: 3W | Draws: 2 |
+| **HAPPY HOUR vs TIGER** | 13 | HAPPY HOUR | 46.2% | HAPPY HOUR: 6W | TIGER: 4W | Draws: 3 |
+| **DANTE vs GRIMACE** | 13 | GRIMACE | 46.2% | DANTE: 4W | GRIMACE: 6W | Draws: 3 |
+| **DOMINATOR vs TEMPEST** | 7 | DOMINATOR | 42.9% | DOMINATOR: 3W | TEMPEST: 1W | Draws: 3 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. HOLLYWOOD (Defensive) vs FAITH (Defensive) [Aug 12, 12:27 PM AEST]
-- **Analysis**: Total Expected Goals: 2.87 (1.59 to 1.28).
-- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
+### 1. HOLLYWOOD (Defensive) vs THREAT (Defensive) [Aug 12, 02:27 PM AEST]
+- **Analysis**: Total Expected Goals: 3.30 (1.82 to 1.47).
+- **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 2. GRIMACE (Defensive) vs ZEUS (Aggressive) [Aug 12, 12:31 PM AEST]
-- **Analysis**: Total Expected Goals: 3.94 (1.96 to 1.98).
+### 2. ZEUS (Aggressive) vs DANTE (Defensive) [Aug 12, 02:31 PM AEST]
+- **Analysis**: Total Expected Goals: 3.90 (1.73 to 2.18).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: *SKIP (Neutral XG)*
 
-### 3. FROST (Defensive) vs TIGER (Defensive) [Aug 12, 12:35 PM AEST]
-- **Analysis**: Total Expected Goals: 2.91 (1.38 to 1.53).
+### 3. TIGER (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 02:35 PM AEST]
+- **Analysis**: Total Expected Goals: 2.68 (1.18 to 1.50).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 4. TEMPEST (Defensive) vs ORACLE (Defensive) [Aug 12, 12:38 PM AEST]
-- **Analysis**: Total Expected Goals: 3.05 (1.82 to 1.23).
-- **Prediction**: **TEMPEST wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 5. THREAT (Defensive) vs EXECUTIONER (Defensive) [Aug 12, 12:42 PM AEST]
-- **Analysis**: Total Expected Goals: 3.51 (1.81 to 1.70).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 6. DANTE (Aggressive) vs ZEUS (Aggressive) [Aug 12, 12:46 PM AEST]
-- **Analysis**: Total Expected Goals: 4.01 (2.23 to 1.78).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 7. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 12:50 PM AEST]
-- **Analysis**: Total Expected Goals: 2.61 (1.49 to 1.12).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 8. TEMPEST (Defensive) vs REALIST (Defensive) [Aug 12, 12:53 PM AEST]
-- **Analysis**: Total Expected Goals: 3.18 (1.71 to 1.47).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 9. THREAT (Defensive) vs HOLLYWOOD (Defensive) [Aug 12, 12:57 PM AEST]
-- **Analysis**: Total Expected Goals: 3.29 (1.47 to 1.83).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 10. DANTE (Aggressive) vs GRIMACE (Defensive) [Aug 12, 01:01 PM AEST]
-- **Analysis**: Total Expected Goals: 3.77 (2.12 to 1.65).
+### 4. DOMINATOR (Aggressive) vs ORACLE (Defensive) [Aug 12, 02:38 PM AEST]
+- **Analysis**: Total Expected Goals: 3.49 (1.98 to 1.51).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: *SKIP (Neutral XG)*
 
-### 11. HAPPY HOUR (Defensive) vs FROST (Defensive) [Aug 12, 01:05 PM AEST]
-- **Analysis**: Total Expected Goals: 2.80 (1.67 to 1.13).
+### 5. FAITH (Defensive) vs EXECUTIONER (Aggressive) [Aug 12, 02:42 PM AEST]
+- **Analysis**: Total Expected Goals: 3.33 (1.85 to 1.48).
 - **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 12. ORACLE (Defensive) vs DOMINATOR (Aggressive) [Aug 12, 01:08 PM AEST]
-- **Analysis**: Total Expected Goals: 3.60 (1.42 to 2.18).
-- **Prediction**: **DOMINATOR wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
 - **Totals**: *SKIP (Neutral XG)*
 
-### 13. EXECUTIONER (Defensive) vs FAITH (Defensive) [Aug 12, 01:12 PM AEST]
-- **Analysis**: Total Expected Goals: 3.09 (1.47 to 1.62).
+### 6. GRIMACE (Defensive) vs DANTE (Defensive) [Aug 12, 02:46 PM AEST]
+- **Analysis**: Total Expected Goals: 3.71 (1.69 to 2.02).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 14. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 01:20 PM AEST]
-- **Analysis**: Total Expected Goals: 2.61 (1.49 to 1.12).
+### 7. FROST (Defensive) vs HAPPY HOUR (Defensive) [Aug 12, 02:50 PM AEST]
+- **Analysis**: Total Expected Goals: 2.95 (1.18 to 1.77).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 15. REALIST (Defensive) vs ORACLE (Defensive) [Aug 12, 01:23 PM AEST]
-- **Analysis**: Total Expected Goals: 3.22 (1.78 to 1.44).
+### 8. ORACLE (Defensive) vs REALIST (Defensive) [Aug 12, 02:53 PM AEST]
+- **Analysis**: Total Expected Goals: 3.17 (1.60 to 1.57).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 9. EXECUTIONER (Aggressive) vs HOLLYWOOD (Defensive) [Aug 12, 02:57 PM AEST]
+- **Analysis**: Total Expected Goals: 3.31 (1.42 to 1.89).
+- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
+- **Totals**: *SKIP (Neutral XG)*
+
+### 10. GRIMACE (Defensive) vs ZEUS (Aggressive) [Aug 12, 03:01 PM AEST]
+- **Analysis**: Total Expected Goals: 3.87 (2.00 to 1.87).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: *SKIP (Neutral XG)*
+
+### 11. TIGER (Defensive) vs FROST (Defensive) [Aug 12, 03:05 PM AEST]
+- **Analysis**: Total Expected Goals: 2.98 (1.63 to 1.35).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 12. TEMPEST (Defensive) vs DOMINATOR (Aggressive) [Aug 12, 03:08 PM AEST]
+- **Analysis**: Total Expected Goals: 3.50 (1.70 to 1.80).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: *SKIP (Neutral XG)*
+
+### 13. THREAT (Defensive) vs FAITH (Defensive) [Aug 12, 03:12 PM AEST]
+- **Analysis**: Total Expected Goals: 3.31 (1.52 to 1.79).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 14. DANTE (Defensive) vs ZEUS (Aggressive) [Aug 12, 03:16 PM AEST]
+- **Analysis**: Total Expected Goals: 3.90 (2.18 to 1.73).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: *SKIP (Neutral XG)*
+
+### 15. HAPPY HOUR (Defensive) vs TIGER (Defensive) [Aug 12, 03:20 PM AEST]
+- **Analysis**: Total Expected Goals: 2.68 (1.50 to 1.18).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **UNDER 2.5 Goals**
+
+### 16. ORACLE (Defensive) vs TEMPEST (Defensive) [Aug 12, 03:23 PM AEST]
+- **Analysis**: Total Expected Goals: 3.09 (1.36 to 1.73).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
@@ -122,30 +127,29 @@
 ### ⚽ Over 2.5 Goals Parlay
 *No highly confident Over 2.5 matches (Aggressive vs Aggressive > 4.00 XG) found in this rotation.*
 
-### 🏆 Winner Parlay (2 Legs)
+### 🏆 Winner Parlay (1 Legs)
 > **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
 
-1. **HOLLYWOOD** to beat FAITH -> **Play: Draw No Bet** *[Uncertainty: 10/100]*
-2. **TEMPEST** to beat ORACLE -> **Play: Draw No Bet** *[Uncertainty: 10/100]*
+1. **HOLLYWOOD** to beat EXECUTIONER -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 129
-Decisive Matches Evaluated: 62
+Total Matches Played Today: 157
+Decisive Matches Evaluated: 81
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 21 | Incorrect: 24 | Pushed: 17 | Accuracy: 46.67% (Excl. Pushes)
-Wagered: $845 | Returned: $674.75 | Profit: $-170.25
+Correct: 29 | Incorrect: 30 | Pushed: 22 | Accuracy: 49.15% (Excl. Pushes)
+Wagered: $1065 | Returned: $891.25 | Profit: $-173.75
 
 -- Over 2.5 Goals (Selective) --
-Correct: 14 | Incorrect: 12 | Accuracy: 53.85%
-Wagered: $260 | Returned: $228.5 | Profit: $-31.50
+Correct: 18 | Incorrect: 13 | Accuracy: 58.06%
+Wagered: $310 | Returned: $298 | Profit: $-12.00
 
 -- Overall Totals --
-Total Wagered: $1105
-Total Returned: $903.25
-Profit/Loss: $-201.75
+Total Wagered: $1375
+Total Returned: $1189.25
+Profit/Loss: $-185.75
 
 ```
