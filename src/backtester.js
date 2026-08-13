@@ -225,7 +225,7 @@ function runTodayBacktest(allMatches, historicalOUStats, engineOpts = {}) {
                         totalReturned += stake;
                     } else if ((pick === h && hs > as) || (pick === a && as > hs)) {
                         dnbCorrect++;
-                        totalReturned += (stake * 1.83);
+                        totalReturned += (stake * 1.50);
                     } else dnbIncorrect++;
                 }
             }
@@ -254,7 +254,7 @@ function runTodayBacktest(allMatches, historicalOUStats, engineOpts = {}) {
 
                 if (won) {
                     correctOU++;
-                    ouReturned += (stake * 1.83);
+                    ouReturned += (stake * 1.50);
                     currentRotationOUStats[h].correct++;
                     currentRotationOUStats[a].correct++;
                 }

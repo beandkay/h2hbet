@@ -41,10 +41,10 @@ function runAutoTuner(endedMatches, playerStats, h2hStats) {
                     }
                     
                     if (pick === home) {
-                        if (m.teamAScore > m.teamBScore) profit += 0.85 * 5;
+                        if (m.teamAScore > m.teamBScore) profit += 0.5 * 5;
                         else if (m.teamAScore < m.teamBScore) profit -= 5;
                     } else if (pick === away) {
-                        if (m.teamBScore > m.teamAScore) profit += 0.85 * 5;
+                        if (m.teamBScore > m.teamAScore) profit += 0.5 * 5;
                         else if (m.teamBScore < m.teamAScore) profit -= 5;
                     }
                 });
@@ -104,10 +104,10 @@ function runAutoTuner(endedMatches, playerStats, h2hStats) {
                 
                 const totalGoals = m.teamAScore + m.teamBScore;
                 if (ouPick === 'O') {
-                    if (totalGoals > 2.5) profit += 0.85 * 5;
+                    if (totalGoals > 2.5) profit += 0.5 * 5;
                     else profit -= 5;
                 } else if (ouPick === 'U') {
-                    if (totalGoals < 2.5) profit += 0.85 * 5;
+                    if (totalGoals < 2.5) profit += 0.5 * 5;
                     else profit -= 5;
                 }
             });
