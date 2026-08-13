@@ -11,10 +11,11 @@ function calculateH2H(endedMatches) {
         const pairKey = `${players[0]} vs ${players[1]}`;
         
         if (!h2hStats[pairKey]) {
-            h2hStats[pairKey] = { matches: 0, [players[0]]: 0, [players[1]]: 0, draws: 0 };
+            h2hStats[pairKey] = { matches: 0, [players[0]]: 0, [players[1]]: 0, draws: 0, totalGoals: 0 };
         }
         
         h2hStats[pairKey].matches++;
+        h2hStats[pairKey].totalGoals += (homeScore + awayScore);
         if (homeScore > awayScore) {
             h2hStats[pairKey][home]++;
         } else if (homeScore < awayScore) {

@@ -1,9 +1,12 @@
-function generatePredictions(matches, playerStats, h2hStats) {
+function generatePredictions(matches, playerStats, h2hStats, opts = {}) {
     const kryptoniteSet = new Set([
         "DEZZY vs FRANCHISE", "ALIBI vs VAPOR", "MAGICIAN vs VIRUS",
         "RIFT vs RIVAL", "ATLAS vs RIFT", "LAVA vs SPARTAN",
         "DECIMATOR vs RIVAL", "BULLFROG vs DART", "FRANCHISE vs LAVA", "MYSTERY vs VENUS"
     ]);
+
+    // Optional: 10-day slot performance function passed from analyze_patterns.js
+    const getSlotPerf = opts.getSlotPerformance || null;
 
     const activePlayers = new Set();
     matches.forEach(m => {
@@ -15,26 +18,17 @@ function generatePredictions(matches, playerStats, h2hStats) {
         const home = m.participantAName;
         const away = m.participantBName;
         
-        const sHome = playerStats[home];
-        const sAway = playerStats[away];
+        let sHome = playerStats[home] || { avgScored: 0, avgConceded: 0, wins: 0, draws: 0, losses: 0, matches: 0, streak: [], goalsList: [], concededList: [], winRate: 0, adjScoringAbility: 0, adjDefendingAbility: 0 };
+        let sAway = playerStats[away] || { avgScored: 0, avgConceded: 0, wins: 0, draws: 0, losses: 0, matches: 0, streak: [], goalsList: [], concededList: [], winRate: 0, adjScoringAbility: 0, adjDefendingAbility: 0 };
         
         let prediction = "";
-        let totalXG = 0;
-        let homeXG = 0;
-        let awayXG = 0;
         let ouPrediction = "";
         
-        if (!sHome || !sAway || sHome.matches < 5 || sAway.matches < 5) {
-            prediction = `*SKIP (Building Stats - Needs 5+ matches)*`;
-            ouPrediction = `*SKIP*`;
-            m.computedPrediction = prediction;
-            m.ouPrediction = ouPrediction;
-            m.isOUPick = false;
-            return;
-        }
+        const needsStats = (!sHome || !sAway || sHome.matches < 3 || sAway.matches < 3);
 
-        homeXG = ((parseFloat(sHome.avgScored) + parseFloat(sAway.avgConceded)) / 2);
-        awayXG = ((parseFloat(sAway.avgScored) + parseFloat(sHome.avgConceded)) / 2);
+        // --- Opponent-Adjusted xG ---
+        let homeXG = ((parseFloat(sHome.adjScoringAbility) + parseFloat(sAway.adjDefendingAbility)) / 2);
+        let awayXG = ((parseFloat(sAway.adjScoringAbility) + parseFloat(sHome.adjDefendingAbility)) / 2);
         
         const calcPPM = (stats) => {
             if (stats.matches === 0) return 0;
@@ -43,9 +37,8 @@ function generatePredictions(matches, playerStats, h2hStats) {
         homeXG += calcPPM(sHome) * 0.25;
         awayXG += calcPPM(sAway) * 0.25;
         
-        const diff = homeXG - awayXG;
-        const homeWinRate = sHome.wins / sHome.matches;
-        const awayWinRate = sAway.wins / sAway.matches;
+        const homeWinRate = sHome.matches > 0 ? (sHome.wins / sHome.matches) * 100 : 0;
+        const awayWinRate = sAway.matches > 0 ? (sAway.wins / sAway.matches) * 100 : 0;
         
         const aestDate = new Date(new Date(m.startDate).getTime() + 10 * 60 * 60 * 1000);
         let hourOfRotation = aestDate.getUTCHours();
@@ -59,21 +52,71 @@ function generatePredictions(matches, playerStats, h2hStats) {
         const hStyle = (parseFloat(sHome.avgScored) + parseFloat(sHome.avgConceded)) > 3.0 ? 'Aggressive' : 'Defensive';
         const aStyle = (parseFloat(sAway.avgScored) + parseFloat(sAway.avgConceded)) > 3.0 ? 'Aggressive' : 'Defensive';
         
-        const isAggVsAgg = hStyle === 'Aggressive' && aStyle === 'Aggressive';
-        const isBottomTier = parseFloat(sHome.winRate) <= 10 && parseFloat(sAway.winRate) <= 10 && sHome.matches >= 5 && sAway.matches >= 5;
-
-        if (isAggVsAgg || isBottomTier) {
-            ouPrediction = `**OVER 2.5 Goals**`;
-            if (isAggVsAgg) ouPrediction += ' *(Aggressive Matchup)*';
-            if (isBottomTier) ouPrediction += ' *(Bottom-Tier Shootout)*';
-        } else if ((homeXG + awayXG) < 2.5 && hStyle === 'Defensive' && aStyle === 'Defensive') {
-            ouPrediction = `**UNDER 2.5 Goals**`;
-        } else {
-            ouPrediction = `*SKIP (Neutral XG)*`;
+        // --- H2H-Weighted xG Blending ---
+        const h2h = h2hStats[pairKey] || { matches: 0 };
+        const baseTotalXG = homeXG + awayXG;
+        let totalXG = baseTotalXG;
+        
+        if (h2h.matches > 0 && h2h.totalGoals !== undefined) {
+            const h2hAvgGoals = h2h.totalGoals / h2h.matches;
+            const h2hWeight = Math.min(h2h.matches * 0.15, 0.40);
+            totalXG = (1 - h2hWeight) * baseTotalXG + h2hWeight * h2hAvgGoals;
+            if (baseTotalXG > 0) {
+                const scale = totalXG / baseTotalXG;
+                homeXG *= scale;
+                awayXG *= scale;
+            }
         }
 
+        // --- Optimal Historical 31-Day Logic ---
+        let pick = null;
+        let pPick = pick;
+        let dnbPick = "N/A";
+        let phase = "Phase 2 (Skipped)";
+
+        // Strict Phase Separation
+        if (h2h.matches === 0) {
+            const optimalP1 = opts.optimalP1 || 70;
+            const optimalP1Diff = opts.optimalP1Diff || 15;
+            const winDiff = homeWinRate - awayWinRate;
+            
+            if (homeWinRate >= optimalP1 && winDiff >= optimalP1Diff) {
+                pPick = home;
+                pick = home;
+                dnbPick = `${home} DNB`;
+                phase = "Phase 1: Form Dominance";
+            } else if (awayWinRate >= optimalP1 && winDiff <= -optimalP1Diff) {
+                pPick = away;
+                pick = away;
+                dnbPick = `${away} DNB`;
+                phase = "Phase 1: Form Dominance";
+            }
+        } else if (h2h.matches >= 3) {
+            const h2hHomeWinRate = ((h2h[home] || 0) / h2h.matches) * 100;
+            const h2hAwayWinRate = ((h2h[away] || 0) / h2h.matches) * 100;
+            const combinedHome = (homeWinRate + h2hHomeWinRate) / 2;
+            const combinedAway = (awayWinRate + h2hAwayWinRate) / 2;
+            const optimalP3 = opts.optimalP3 || 55;
+            
+            if (combinedHome >= optimalP3) {
+                pPick = home;
+                pick = home;
+                dnbPick = `${home} DNB`;
+                phase = "Phase 3: H2H Dominance";
+            } else if (combinedAway >= optimalP3) {
+                pPick = away;
+                pick = away;
+                dnbPick = `${away} DNB`;
+                phase = "Phase 3: H2H Dominance";
+            }
+        }
+
+        // Slot Performance
+        const homeSlotPerf = getSlotPerf ? getSlotPerf(home, m.startDate) : null;
+        const awaySlotPerf = getSlotPerf ? getSlotPerf(away, m.startDate) : null;
+
         // --- Uncertainty Score Calculation ---
-        const calcUncertainty = (stats) => {
+        const calcUncertainty = (stats, slotPerf) => {
             let score = 0;
             const recentStreak = stats.streak.slice(-5).join('');
             if (recentStreak.endsWith('WWWW') || recentStreak.endsWith('WWWWW')) score += 40;
@@ -87,57 +130,65 @@ function generatePredictions(matches, playerStats, h2hStats) {
             
             const recentDraws = stats.streak.slice(-3).filter(x => x === 'D').length;
             if (recentDraws === 0) score += 10;
+            
+            if (slotPerf && slotPerf.status === 'COLD') score += 15;
+            if (slotPerf && slotPerf.status === 'PEAK') score = Math.max(0, score - 10);
+            
             return Math.min(score, 100);
         };
         
-        const homeUnc = calcUncertainty(sHome);
-        const awayUnc = calcUncertainty(sAway);
-        
-        const bothAggressive = hStyle === 'Aggressive' && aStyle === 'Aggressive';
-        const wrDiff = Math.abs(homeWinRate - awayWinRate);
-        let isValidDnb = wrDiff > (bothAggressive ? 0.50 : 0.20);
-        
-        let pick = null;
-        let h2hPreferred = false;
-        
-        // Check H2H Dominance (Requires > 60% win rate)
-        let h2hDominantPlayer = null;
-        if (h2hStats[pairKey] && h2hStats[pairKey].matches >= 3) {
-            const stat = h2hStats[pairKey];
-            const p1Wins = stat[home] || 0;
-            const p2Wins = stat[away] || 0;
-            const maxWins = Math.max(p1Wins, p2Wins);
-            const winRate = (maxWins / stat.matches) * 100;
-            
-            if (winRate > 60) {
-                if (p1Wins > p2Wins) h2hDominantPlayer = home;
-                if (p2Wins > p1Wins) h2hDominantPlayer = away;
-            }
-        }
+        const homeUnc = calcUncertainty(sHome, homeSlotPerf);
+        const awayUnc = calcUncertainty(sAway, awaySlotPerf);
 
-        if (h2hDominantPlayer) {
-            pick = h2hDominantPlayer;
-            h2hPreferred = true;
-            isValidDnb = true; // Override to force prediction
-        } else if (isValidDnb) {
-            pick = homeWinRate > awayWinRate ? home : away;
-        }
-        
-        const formatFav = (name, type, unc) => {
-            const riskStr = unc > 60 ? `[Uncertainty: ${unc}/100 - HIGH RISK]` : `[Uncertainty: ${unc}/100]`;
-            return `**${name} wins (${type})** ${riskStr}`;
-        };
-
-        if (isValidDnb && pick) {
-            const unc = pick === home ? homeUnc : awayUnc;
-            prediction = formatFav(pick, h2hPreferred ? 'Draw No Bet (H2H Edge)' : 'Draw No Bet (Value Edge)', unc);
-            if (h2hPreferred) {
-                prediction += " 🌟 **[H2H PREFERRED]**";
+        if (pPick) {
+            const unc = pPick === home ? homeUnc : awayUnc;
+            if (pPick === "DRAW") {
+                prediction = `**DRAW** (${phase}) [Uncertainty: ${Math.max(homeUnc, awayUnc)}/100]`;
+            } else {
+                prediction = `**${pPick} wins (${phase})** [Uncertainty: ${unc}/100]`;
+                if (isKryptonite) prediction += " ⚠️ **[KRYPTONITE ALERT]**";
             }
         } else {
-            prediction = `*SKIP (Not a Value Edge)*`;
+            prediction = `*SKIP (No Edge)*`;
+        }
+
+        // --- O/U Prediction ---
+        const isAggVsAgg = hStyle === 'Aggressive' && aStyle === 'Aggressive';
+        const isDefVsDef = hStyle === 'Defensive' && aStyle === 'Defensive';
+        const isBottomTier = homeWinRate < 40 && awayWinRate < 40;
+
+        let ou25Pick = "*SKIP*";
+        const optimalOv = opts.optimalOv || 3.1;
+        const optimalUn = opts.optimalUn || 2.0;
+        
+        if (totalXG >= optimalOv) {
+            ou25Pick = "**OVER 2.5**";
+        } else if (totalXG < optimalUn) {
+            ou25Pick = "**UNDER 2.5**";
         }
         
+        let combinedAcc = 0;
+        // --- FEATURE: Historical OU 50% Filter ---
+        if (opts.historicalOUStats) {
+            const hOU = opts.historicalOUStats[home] || { bets: 0, correct: 0 };
+            const aOU = opts.historicalOUStats[away] || { bets: 0, correct: 0 };
+            const totalOUBets = hOU.bets + aOU.bets;
+            const totalOUCorrect = hOU.correct + aOU.correct;
+            combinedAcc = totalOUBets > 0 ? (totalOUCorrect / totalOUBets) * 100 : 0;
+            
+            if (ou25Pick !== "*SKIP*" && totalOUBets >= 10 && combinedAcc < 50) {
+                ou25Pick = "*SKIP* (Poor OU History)";
+            }
+        }
+
+        ouPrediction = (totalXG > 1.5 ? `**OVER 1.5**` : `**UNDER 1.5**`) + ` | ` + ou25Pick + ` | ` + (totalXG > 3.0 ? `**OVER 3.0** (Goal Line - Push on 3)` : `*NO BET (GL 3.0)*`);
+
+        if (needsStats) {
+            prediction = `*SKIP (Building Stats - Needs 3+ matches)*`;
+            ouPrediction = `*SKIP*`;
+            ou25Pick = "*SKIP*";
+        }
+
         m.computedTotalXG = homeXG + awayXG;
         m.computedHomeStyle = hStyle;
         m.computedAwayStyle = aStyle;
@@ -147,9 +198,36 @@ function generatePredictions(matches, playerStats, h2hStats) {
         m.computedHomeUnc = homeUnc;
         m.computedAwayUnc = awayUnc;
         m.ouPrediction = ouPrediction;
+        m.ou25Pick = ou25Pick;
+        m.ouCombinedWinrate = combinedAcc;
         m.isOUPick = ouPrediction.includes('OVER') || ouPrediction.includes('UNDER');
-        m.h2hPreferred = h2hPreferred;
-        m.computedXgDiff = Math.abs(diff);
+        m.h2hPreferred = phase === "Phase 3: H2H Dominance";
+        
+        let h2hWinrate = 0;
+        let h2hFavored = "N/A";
+        if (h2h.matches > 0) {
+            let hWins = h2h[home] || 0;
+            let aWins = h2h[away] || 0;
+            if (hWins > aWins) {
+                h2hFavored = home;
+                h2hWinrate = (hWins / h2h.matches) * 100;
+            } else if (aWins > hWins) {
+                h2hFavored = away;
+                h2hWinrate = (aWins / h2h.matches) * 100;
+            } else {
+                h2hFavored = "DRAW";
+            }
+        }
+        m.h2hFavored = h2hFavored;
+        m.h2hWinrate = h2hWinrate;
+
+        m.computedXgDiff = Math.abs(homeXG - awayXG);
+        m.homeAdjScored = sHome.adjScoringAbility || sHome.avgScored;
+        m.homeAdjDefended = sHome.adjDefendingAbility || sHome.avgConceded;
+        m.awayAdjScored = sAway.adjScoringAbility || sAway.avgScored;
+        m.awayAdjDefended = sAway.adjDefendingAbility || sAway.avgConceded;
+        m.homeRecent = sHome.streak || [];
+        m.awayRecent = sAway.streak || [];
     });
 
     return { matches, activePlayers };

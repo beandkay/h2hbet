@@ -52,7 +52,13 @@ function getParsedData() {
     });
 
     const endedMatches = currentRotationMatches.filter(m => m.matchStatus === 'MATCH_ENDED' && !m.isCancelled);
-    const upcomingMatches = currentRotationMatches.filter(m => m.matchStatus !== 'MATCH_ENDED' && !m.isCancelled && m.matchStatus !== 'PERMANENT_BET_SUSPEND');
+    const nowTime = new Date();
+    const upcomingMatches = currentRotationMatches.filter(m => {
+        return m.matchStatus !== 'MATCH_ENDED' 
+            && !m.isCancelled 
+            && m.matchStatus !== 'PERMANENT_BET_SUSPEND'
+            && new Date(m.startDate) > nowTime;
+    });
 
     let totalLeagueMatches = 0;
     let totalLeagueGoals = 0;

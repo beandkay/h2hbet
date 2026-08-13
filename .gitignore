@@ -1,0 +1,8 @@
+*.json
+node_modules/
+scratch/
+hist_data/
+.DS_Store
+.env
+npm-debug.log*
+yarn-error.log*

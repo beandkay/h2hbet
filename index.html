@@ -3,125 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H2HBet Live Dashboard</title>
+    <meta http-equiv="refresh" content="60">
+    <title>H2HBet AI Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-blobs">
-        <div class="blob red-blob"></div>
-        <div class="blob blue-blob"></div>
-    </div>
-
-    <header class="glass-panel header">
-        <div class="logo">
-            <h1>H2H<span class="highlight">Bet</span></h1>
-            <p class="subtitle">Live Predictions & Analytics</p>
-        </div>
-        <div class="status-indicator">
-            <div class="dot pulse"></div>
-            <span id="last-updated">Waiting for data...</span>
-        </div>
-    </header>
-
-    <main class="dashboard-grid">
-        <!-- Top Matches Section -->
-        <section class="glass-panel main-section">
-            <div class="section-header">
-                <h2>🔥 Premium Plays</h2>
-                <div class="badge">Value Edge Only</div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo-title">
+                <h1>⚽ H2HBet AI Dashboard</h1>
             </div>
-            
-            <div id="premium-plays" class="cards-container">
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
+            <div class="meta-badge">
+                <span class="pulse-dot"></span>
+                <span id="last-updated">Waiting for data...</span>
             </div>
-        </section>
+        </header>
 
-        <!-- Stats & Backtest Sidebar -->
-        <aside class="sidebar">
-            <div class="glass-panel stat-card parlay-card">
-                <h3>🏆 AI Winner Parlay</h3>
-                <div id="winner-parlay">
-                    <p class="loading-text">Analyzing models...</p>
+        <!-- KPI Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-label">Today's Profit</span>
+                <span class="metric-value" id="kpi-profit" style="color: var(--text-main);">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">League Avg Goals</span>
+                <span class="metric-value" style="color: var(--accent-cyan);"><span id="league-avg">--</span> <span style="font-size: 0.9rem; font-weight: 500;">/ team</span></span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Upcoming Matches</span>
+                <span class="metric-value" id="kpi-upcoming" style="color: var(--accent-blue);">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Premium Bets</span>
+                <span class="metric-value" id="kpi-bets" style="color: var(--accent-green);">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">AI Parlay Legs</span>
+                <span class="metric-value" id="kpi-parlay" style="color: var(--accent-purple);">--</span>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs & Search Controls -->
+        <div class="controls-bar">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('upcoming')">📅 Predictions</button>
+                <button class="tab-btn" onclick="switchTab('parlay')">💡 AI Parlays</button>
+                <button class="tab-btn" onclick="switchTab('leaderboard')">📊 Player Leaderboard</button>
+                <button class="tab-btn" onclick="switchTab('h2h')">⚔️ H2H Matrix</button>
+                <button class="tab-btn" onclick="switchTab('backtest')">📈 Backtest Logs</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search player or matchup..." oninput="applyFilters()">
+            </div>
+        </div>
+
+        <!-- TAB 1: Upcoming Match Predictions -->
+        <div id="tab-upcoming" class="tab-content active">
+            <div class="filter-group">
+                <button class="filter-chip active" onclick="setFilter('all', this)">All Matches</button>
+                <button class="filter-chip strict-chip" onclick="setFilter('best', this)">⭐ Best Bets</button>
+                <button class="filter-chip dnb-chip" onclick="setFilter('dnb', this)">🛡️ Draw No Bet</button>
+                <button class="filter-chip upset-chip" onclick="setFilter('totals', this)">🎯 Totals</button>
+                <button class="filter-chip" onclick="setFilter('skip', this)">⏹️ Skips</button>
+            </div>
+
+            <div class="matches-grid" id="premium-plays">
+                <p style="color:var(--text-muted); text-align:center; padding: 2rem;">Loading predictions...</p>
+            </div>
+        </div>
+
+        <!-- TAB 2: AI Parlays -->
+        <div id="tab-parlay" class="tab-content">
+            <div class="parlay-grid">
+                <div class="parlay-card">
+                    <div class="parlay-header">
+                        <h3>🏆 Safest DNB Parlay (Top 3)</h3>
+                    </div>
+                    <div id="winner-parlay">
+                        <p style="color:var(--text-muted);">Loading parlay data...</p>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="glass-panel stat-card backtest-card">
-                <h3>📈 Live Backtest (Today)</h3>
-                <pre id="backtest-output" class="code-block">Loading backtest data...</pre>
-            </div>
-            
-            <div class="glass-panel stat-card league-card">
-                <h3>📊 League Context</h3>
-                <div class="big-number" id="league-avg">--</div>
-                <p>Avg Goals Per Team</p>
-            </div>
-            </div>
-        </aside>
-    </main>
-
-    <!-- Data Tables Section -->
-    <div class="tables-container">
-        <section class="glass-panel main-section">
-            <div class="section-header">
-                <h2>👤 Player Pattern Analysis</h2>
-                <div class="badge">Latest Data</div>
-            </div>
-            <div class="table-wrapper">
-                <table class="data-table" id="player-table">
-                    <thead>
-                        <tr>
-                            <th>Player</th>
-                            <th>Style</th>
-                            <th>Matches</th>
-                            <th>Win %</th>
-                            <th>Avg Scored</th>
-                            <th>Avg Conceded</th>
-                            <th>Form (All Matches)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td colspan="7" class="loading-text" style="text-align: center;">Loading player data...</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="glass-panel main-section" style="margin-top: 2rem;">
-            <div class="section-header">
-                <h2>🏆 Player Standings</h2>
-                <div class="badge">Current Rotation</div>
-            </div>
-            <div class="table-wrapper">
-                <table class="data-table" id="standings-table">
+        <!-- TAB 3: Player Leaderboard -->
+        <div id="tab-leaderboard" class="tab-content">
+            <div class="table-container">
+                <table id="standings-table">
                     <thead>
                         <tr>
                             <th>Rank</th>
                             <th>Player</th>
                             <th>Matches</th>
-                            <th>W</th>
-                            <th>D</th>
-                            <th>L</th>
+                            <th>Form (W-D-L)</th>
+                            <th>Goals (F:A)</th>
                             <th>GD</th>
                             <th>Points</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="8" class="loading-text" style="text-align: center;">Loading standings...</td></tr>
+                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading leaderboard...</td></tr>
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
 
-        <section class="glass-panel main-section" style="margin-top: 2rem;">
-            <div class="section-header">
-                <h2>⚔️ Most Dominant H2H Pairs</h2>
-                <div class="badge">Current Rotation</div>
-            </div>
-            <div class="table-wrapper">
-                <table class="data-table" id="h2h-table">
+        <!-- TAB 4: H2H Matrix -->
+        <div id="tab-h2h" class="tab-content">
+            <h3 style="margin-bottom: 1rem; color: var(--text-main);">Top Dominant H2H Pairs (>60% Win Rate)</h3>
+            <div class="table-container" style="margin-bottom: 2rem;">
+                <table id="h2h-table">
                     <thead>
                         <tr>
                             <th>Matchup</th>
@@ -132,19 +125,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="5" class="loading-text" style="text-align: center;">Loading H2H data...</td></tr>
+                        <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading H2H data...</td></tr>
                     </tbody>
                 </table>
             </div>
-        </section>
-
-        <section class="glass-panel main-section" style="margin-top: 2rem;">
-            <div class="section-header">
-                <h2>⚖️ Other H2H Pairs (≤ 60% Win Rate)</h2>
-                <div class="badge">Current Rotation</div>
-            </div>
-            <div class="table-wrapper">
-                <table class="data-table" id="other-h2h-table">
+            
+            <h3 style="margin-bottom: 1rem; color: var(--text-main);">Other H2H Pairs</h3>
+            <div class="table-container">
+                <table id="other-h2h-table">
                     <thead>
                         <tr>
                             <th>Matchup</th>
@@ -155,13 +143,59 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="5" class="loading-text" style="text-align: center;">Loading other H2H data...</td></tr>
+                        <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading other H2H data...</td></tr>
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
+
+        <!-- TAB 5: Backtest Logs -->
+        <div id="tab-backtest" class="tab-content">
+            <div class="terminal-box" id="backtest-output">Loading backtest output...</div>
+        </div>
     </div>
 
+    <script src="dashboard_data.js"></script>
     <script src="app.js"></script>
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function setFilter(type, btn) {
+            document.querySelectorAll('.filter-chip').forEach(el => el.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const cards = document.querySelectorAll('.match-card');
+            cards.forEach(card => {
+                if (type === 'all') {
+                    card.style.display = 'flex';
+                } else if (type === 'dnb') {
+                    card.style.display = card.dataset.type === 'dnb' ? 'flex' : 'none';
+                } else if (type === 'totals') {
+                    card.style.display = card.dataset.type === 'totals' ? 'flex' : 'none';
+                } else if (type === 'skip') {
+                    card.style.display = card.dataset.type === 'skip' ? 'flex' : 'none';
+                } else if (type === 'best') {
+                    card.style.display = card.classList.contains('highlight-prediction') ? 'flex' : 'none';
+                }
+            });
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.match-card');
+            cards.forEach(card => {
+                if (query === '' || (card.dataset.search && card.dataset.search.includes(query))) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
