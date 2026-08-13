@@ -1,296 +1,126 @@
 # eSoccer Final Model Predictions
 
-**League Average Goals Per Match (Per Team):** 1.49
+**League Average Goals Per Match (Per Team):** 1.50
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
-| **TIGER** | Defensive | 11 | 63.6% | 1.36 | 1.00 | W-W-W-L-W-L-L-W-W-W-D |
-| **RIVAL** | Aggressive | 10 | 60.0% | 1.70 | 1.70 | W-W-D-W-W-W-W-L-L-L |
-| **INFERNO** | Defensive | 12 | 58.3% | 1.75 | 1.17 | D-W-W-W-L-W-L-L-W-D-W-W |
-| **GRIMACE** | Aggressive | 12 | 58.3% | 2.75 | 1.75 | L-W-W-D-W-D-D-D-W-W-W-W |
-| **HOLLYWOOD** | Defensive | 10 | 50.0% | 1.60 | 1.00 | W-D-W-D-W-L-D-D-W-W |
-| **ADEPT** | Aggressive | 11 | 45.5% | 1.64 | 1.45 | W-L-W-W-L-L-W-D-W-L-L |
-| **CASTLE** | Defensive | 12 | 41.7% | 1.25 | 0.83 | D-W-L-L-W-L-W-L-W-D-W-D |
-| **DANTE** | Defensive | 11 | 36.4% | 1.45 | 1.00 | W-D-D-L-D-L-W-W-D-D-W |
-| **STORM** | Aggressive | 11 | 36.4% | 1.64 | 1.91 | W-L-L-D-L-W-D-W-L-L-W |
-| **FROST** | Defensive | 11 | 36.4% | 1.45 | 1.55 | L-L-L-L-W-L-W-W-W-L-D |
-| **FORCE** | Defensive | 11 | 36.4% | 1.27 | 1.73 | L-W-L-W-W-D-W-L-L-L-D |
-| **DOMINATOR** | Defensive | 11 | 27.3% | 1.18 | 1.82 | L-L-W-L-L-D-W-L-W-L-L |
-| **GHOST** | Aggressive | 12 | 25.0% | 1.17 | 2.08 | L-W-L-L-W-D-L-L-L-W-L-L |
-| **ORACLE** | Aggressive | 12 | 25.0% | 1.50 | 1.83 | L-L-D-W-D-W-L-D-W-D-L-L |
-| **ENT** | Defensive | 11 | 18.2% | 1.18 | 1.82 | D-D-L-D-L-W-L-L-L-L-W |
-| **TROOPER** | Defensive | 12 | 16.7% | 1.00 | 1.25 | L-W-L-D-L-L-L-L-L-W-D-D |
+| **TIGER** | Defensive | 15 | 66.7% | 1.53 | 0.80 | W-W-W-L-W-L-L-W-W-W-D-W-W-D-W |
+| **INFERNO** | Defensive | 17 | 64.7% | 1.88 | 1.00 | D-W-W-W-L-W-L-L-W-D-W-W-W-D-W-W-W |
+| **GRIMACE** | Aggressive | 16 | 62.5% | 2.63 | 1.50 | L-W-W-D-W-D-D-D-W-W-W-W-W-W-D-W |
+| **RIVAL** | Defensive | 15 | 46.7% | 1.33 | 1.47 | W-W-D-W-W-W-W-L-L-L-L-D-L-D-W |
+| **HOLLYWOOD** | Defensive | 15 | 46.7% | 1.47 | 1.33 | W-D-W-D-W-L-D-D-W-W-L-W-L-L-W |
+| **DANTE** | Aggressive | 16 | 43.8% | 1.75 | 1.38 | W-D-D-L-D-L-W-W-D-D-W-W-L-D-W-W |
+| **ADEPT** | Aggressive | 16 | 37.5% | 1.81 | 1.81 | W-L-W-W-L-L-W-D-W-L-L-D-W-L-L-D |
+| **CASTLE** | Defensive | 16 | 37.5% | 1.13 | 0.94 | D-W-L-L-W-L-W-L-W-D-W-D-L-D-W-L |
+| **FROST** | Defensive | 16 | 37.5% | 1.25 | 1.50 | L-L-L-L-W-L-W-W-W-L-D-W-L-W-D-L |
+| **ORACLE** | Aggressive | 16 | 31.3% | 1.75 | 1.88 | L-L-D-W-D-W-L-D-W-D-L-L-W-W-L-L |
+| **STORM** | Aggressive | 16 | 31.3% | 1.69 | 2.06 | W-L-L-D-L-W-D-W-L-L-W-D-L-D-W-L |
+| **FORCE** | Defensive | 16 | 31.3% | 1.25 | 1.63 | L-W-L-W-W-D-W-L-L-L-D-W-D-L-D-L |
+| **DOMINATOR** | Defensive | 15 | 20.0% | 1.00 | 1.80 | L-L-W-L-L-D-W-L-W-L-L-L-D-L-D |
+| **ENT** | Defensive | 15 | 20.0% | 1.20 | 1.60 | D-D-L-D-L-W-L-L-L-L-W-L-D-W-L |
+| **GHOST** | Aggressive | 16 | 18.8% | 1.38 | 2.13 | L-W-L-L-W-D-L-L-L-W-L-L-L-D-D-D |
+| **TROOPER** | Defensive | 16 | 12.5% | 0.94 | 1.25 | L-W-L-D-L-L-L-L-L-W-D-D-D-L-D-L |
 
 ## Most Dominant H2H Pairs (Current Rotation)
 
 | Matchup | Matches | Dominant Player | Win Rate | Breakdown |
 |---|---|---|---|---|
-| **DOMINATOR vs INFERNO** | 4 | INFERNO | 100.0% | DOMINATOR: 0W | INFERNO: 4W | Draws: 0 |
-| **ADEPT vs GHOST** | 4 | ADEPT | 75.0% | ADEPT: 3W | GHOST: 1W | Draws: 0 |
-| **FROST vs TIGER** | 4 | TIGER | 75.0% | FROST: 1W | TIGER: 3W | Draws: 0 |
-| **CASTLE vs DOMINATOR** | 4 | CASTLE | 75.0% | CASTLE: 3W | DOMINATOR: 1W | Draws: 0 |
-| **ADEPT vs GRIMACE** | 4 | GRIMACE | 75.0% | ADEPT: 0W | GRIMACE: 3W | Draws: 1 |
-| **GHOST vs GRIMACE** | 4 | GRIMACE | 75.0% | GHOST: 0W | GRIMACE: 3W | Draws: 1 |
-| **TIGER vs TROOPER** | 4 | TIGER | 75.0% | TIGER: 3W | TROOPER: 0W | Draws: 1 |
-| **ADEPT vs STORM** | 3 | ADEPT | 66.7% | ADEPT: 2W | STORM: 1W | Draws: 0 |
-| **FROST vs RIVAL** | 3 | RIVAL | 66.7% | FROST: 1W | RIVAL: 2W | Draws: 0 |
-| **DOMINATOR vs FORCE** | 3 | DOMINATOR | 66.7% | DOMINATOR: 2W | FORCE: 0W | Draws: 1 |
+| **DOMINATOR vs INFERNO** | 5 | INFERNO | 100.0% | DOMINATOR: 0W | INFERNO: 5W | Draws: 0 |
+| **FROST vs TIGER** | 6 | TIGER | 83.3% | FROST: 1W | TIGER: 5W | Draws: 0 |
+| **ADEPT vs GRIMACE** | 5 | GRIMACE | 80.0% | ADEPT: 0W | GRIMACE: 4W | Draws: 1 |
+| **ENT vs HOLLYWOOD** | 5 | HOLLYWOOD | 80.0% | ENT: 1W | HOLLYWOOD: 4W | Draws: 0 |
+| **ADEPT vs GHOST** | 6 | ADEPT | 66.7% | ADEPT: 4W | GHOST: 1W | Draws: 1 |
+| **CASTLE vs DOMINATOR** | 5 | CASTLE | 60.0% | CASTLE: 3W | DOMINATOR: 1W | Draws: 1 |
+| **FROST vs TROOPER** | 5 | FROST | 60.0% | FROST: 3W | TROOPER: 1W | Draws: 1 |
+| **GHOST vs GRIMACE** | 5 | GRIMACE | 60.0% | GHOST: 0W | GRIMACE: 3W | Draws: 2 |
+| **TIGER vs TROOPER** | 5 | TIGER | 60.0% | TIGER: 3W | TROOPER: 0W | Draws: 2 |
+| **RIVAL vs TROOPER** | 6 | RIVAL | 50.0% | RIVAL: 3W | TROOPER: 1W | Draws: 2 |
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
-### 1. RIVAL (Aggressive) vs FROST (Defensive) [Aug 13, 09:50 AM AEST]
-- **Analysis**: Total Expected Goals: 3.97 (2.10 to 1.87).
-- **Prediction**: **RIVAL wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 2. DOMINATOR (Defensive) vs FORCE (Defensive) [Aug 13, 09:53 AM AEST]
-- **Analysis**: Total Expected Goals: 3.55 (1.68 to 1.86).
+### 1. DOMINATOR (Defensive) vs CASTLE (Defensive) [Aug 13, 12:08 PM AEST]
+- **Analysis**: Total Expected Goals: 2.98 (1.17 to 1.81).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 3. ENT (Defensive) vs HOLLYWOOD (Defensive) [Aug 13, 09:57 AM AEST]
-- **Analysis**: Total Expected Goals: 3.48 (1.29 to 2.19).
-- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
+### 2. ENT (Defensive) vs DANTE (Aggressive) [Aug 13, 12:12 PM AEST]
+- **Analysis**: Total Expected Goals: 3.60 (1.51 to 2.10).
+- **Prediction**: **DANTE wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
+- **Totals**: *SKIP (Neutral XG)*
 
-### 4. GHOST (Aggressive) vs ADEPT (Aggressive) [Aug 13, 10:01 AM AEST]
-- **Analysis**: Total Expected Goals: 3.74 (1.52 to 2.22).
+### 3. GHOST (Aggressive) vs STORM (Aggressive) [Aug 13, 12:16 PM AEST]
+- **Analysis**: Total Expected Goals: 4.13 (1.92 to 2.21).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 5. TROOPER (Defensive) vs RIVAL (Aggressive) [Aug 13, 10:05 AM AEST]
-- **Analysis**: Total Expected Goals: 3.49 (1.54 to 1.95).
-- **Prediction**: **RIVAL wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 6. INFERNO (Defensive) vs CASTLE (Defensive) [Aug 13, 10:08 AM AEST]
-- **Analysis**: Total Expected Goals: 3.35 (1.77 to 1.58).
-- **Prediction**: *SKIP (Not a Value Edge)*
+### 4. TROOPER (Defensive) vs FROST (Defensive) [Aug 13, 12:20 PM AEST]
+- **Analysis**: Total Expected Goals: 2.95 (1.39 to 1.56).
+- **Prediction**: **FROST wins (Draw No Bet (Value Edge))** [Uncertainty: 0/100]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 7. ORACLE (Aggressive) vs DANTE (Defensive) [Aug 13, 10:12 AM AEST]
-- **Analysis**: Total Expected Goals: 3.55 (1.52 to 2.03).
+### 5. INFERNO (Defensive) vs DOMINATOR (Defensive) [Aug 13, 12:23 PM AEST]
+- **Analysis**: Total Expected Goals: 3.57 (2.37 to 1.20).
+- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
+- **Totals**: **UNDER 2.5 Goals**
+
+### 6. ORACLE (Aggressive) vs ENT (Defensive) [Aug 13, 12:27 PM AEST]
+- **Analysis**: Total Expected Goals: 3.73 (1.97 to 1.76).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: *SKIP (Neutral XG)*
 
-### 8. GRIMACE (Aggressive) vs STORM (Aggressive) [Aug 13, 10:16 AM AEST]
-- **Analysis**: Total Expected Goals: 4.86 (2.85 to 2.01).
+### 7. GRIMACE (Aggressive) vs GHOST (Aggressive) [Aug 13, 12:31 PM AEST]
+- **Analysis**: Total Expected Goals: 4.57 (2.93 to 1.64).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 9. TIGER (Defensive) vs FROST (Defensive) [Aug 13, 10:20 AM AEST]
-- **Analysis**: Total Expected Goals: 3.48 (1.96 to 1.52).
+### 8. TIGER (Defensive) vs TROOPER (Defensive) [Aug 13, 12:35 PM AEST]
+- **Analysis**: Total Expected Goals: 2.97 (1.92 to 1.04).
 - **Prediction**: **TIGER wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 10. FORCE (Defensive) vs INFERNO (Defensive) [Aug 13, 10:23 AM AEST]
-- **Analysis**: Total Expected Goals: 3.76 (1.54 to 2.22).
-- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
+### 9. CASTLE (Defensive) vs FORCE (Defensive) [Aug 13, 12:38 PM AEST]
+- **Analysis**: Total Expected Goals: 3.12 (1.72 to 1.39).
+- **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 11. HOLLYWOOD (Defensive) vs ORACLE (Aggressive) [Aug 13, 10:27 AM AEST]
-- **Analysis**: Total Expected Goals: 3.71 (2.19 to 1.52).
-- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 12. ADEPT (Aggressive) vs GRIMACE (Aggressive) [Aug 13, 10:31 AM AEST]
-- **Analysis**: Total Expected Goals: 4.68 (2.06 to 2.62).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 13. RIVAL (Aggressive) vs TIGER (Defensive) [Aug 13, 10:35 AM AEST]
-- **Analysis**: Total Expected Goals: 3.86 (1.83 to 2.03).
+### 10. DANTE (Aggressive) vs HOLLYWOOD (Defensive) [Aug 13, 12:42 PM AEST]
+- **Analysis**: Total Expected Goals: 3.80 (1.96 to 1.84).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: *SKIP (Neutral XG)*
 
-### 14. CASTLE (Defensive) vs DOMINATOR (Defensive) [Aug 13, 10:38 AM AEST]
-- **Analysis**: Total Expected Goals: 3.14 (1.91 to 1.23).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 15. DANTE (Defensive) vs ENT (Defensive) [Aug 13, 10:42 AM AEST]
-- **Analysis**: Total Expected Goals: 3.32 (2.02 to 1.29).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 16. STORM (Aggressive) vs GHOST (Aggressive) [Aug 13, 10:46 AM AEST]
-- **Analysis**: Total Expected Goals: 3.93 (2.18 to 1.75).
+### 11. STORM (Aggressive) vs ADEPT (Aggressive) [Aug 13, 12:46 PM AEST]
+- **Analysis**: Total Expected Goals: 4.31 (2.05 to 2.26).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 17. FROST (Defensive) vs TROOPER (Defensive) [Aug 13, 10:50 AM AEST]
-- **Analysis**: Total Expected Goals: 3.11 (1.65 to 1.46).
+### 12. FROST (Defensive) vs RIVAL (Defensive) [Aug 13, 12:50 PM AEST]
+- **Analysis**: Total Expected Goals: 3.49 (1.67 to 1.81).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
-### 18. DOMINATOR (Defensive) vs INFERNO (Defensive) [Aug 13, 10:53 AM AEST]
-- **Analysis**: Total Expected Goals: 3.67 (1.40 to 2.26).
-- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
+### 13. CASTLE (Defensive) vs INFERNO (Defensive) [Aug 13, 12:53 PM AEST]
+- **Analysis**: Total Expected Goals: 3.35 (1.41 to 1.94).
+- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
 - **Totals**: **UNDER 2.5 Goals**
 
-### 19. ENT (Defensive) vs ORACLE (Aggressive) [Aug 13, 10:57 AM AEST]
-- **Analysis**: Total Expected Goals: 3.64 (1.71 to 1.93).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 20. GHOST (Aggressive) vs GRIMACE (Aggressive) [Aug 13, 11:01 AM AEST]
-- **Analysis**: Total Expected Goals: 4.60 (1.67 to 2.94).
+### 14. DANTE (Aggressive) vs ORACLE (Aggressive) [Aug 13, 12:57 PM AEST]
+- **Analysis**: Total Expected Goals: 4.10 (2.24 to 1.86).
 - **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
 
-### 21. TROOPER (Defensive) vs TIGER (Defensive) [Aug 13, 11:05 AM AEST]
-- **Analysis**: Total Expected Goals: 2.99 (1.19 to 1.81).
+### 15. STORM (Aggressive) vs GRIMACE (Aggressive) [Aug 13, 01:01 PM AEST]
+- **Analysis**: Total Expected Goals: 4.78 (1.89 to 2.89).
+- **Prediction**: *SKIP (Not a Value Edge)*
+- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
+
+### 16. FROST (Defensive) vs TIGER (Defensive) [Aug 13, 01:05 PM AEST]
+- **Analysis**: Total Expected Goals: 3.39 (1.34 to 2.05).
 - **Prediction**: **TIGER wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 22. FORCE (Defensive) vs CASTLE (Defensive) [Aug 13, 11:08 AM AEST]
-- **Analysis**: Total Expected Goals: 3.23 (1.37 to 1.86).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 23. HOLLYWOOD (Defensive) vs DANTE (Defensive) [Aug 13, 11:12 AM AEST]
-- **Analysis**: Total Expected Goals: 3.39 (1.77 to 1.61).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 24. ADEPT (Aggressive) vs STORM (Aggressive) [Aug 13, 11:16 AM AEST]
-- **Analysis**: Total Expected Goals: 4.00 (2.14 to 1.86).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 25. RIVAL (Aggressive) vs FROST (Defensive) [Aug 13, 11:20 AM AEST]
-- **Analysis**: Total Expected Goals: 3.97 (2.10 to 1.87).
-- **Prediction**: **RIVAL wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 26. FORCE (Defensive) vs DOMINATOR (Defensive) [Aug 13, 11:23 AM AEST]
-- **Analysis**: Total Expected Goals: 3.55 (1.86 to 1.68).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 27. HOLLYWOOD (Defensive) vs ENT (Defensive) [Aug 13, 11:27 AM AEST]
-- **Analysis**: Total Expected Goals: 3.48 (2.19 to 1.29).
-- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 28. ADEPT (Aggressive) vs GHOST (Aggressive) [Aug 13, 11:31 AM AEST]
-- **Analysis**: Total Expected Goals: 3.74 (2.22 to 1.52).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 29. RIVAL (Aggressive) vs TROOPER (Defensive) [Aug 13, 11:35 AM AEST]
-- **Analysis**: Total Expected Goals: 3.49 (1.95 to 1.54).
-- **Prediction**: **RIVAL wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 30. CASTLE (Defensive) vs INFERNO (Defensive) [Aug 13, 11:38 AM AEST]
-- **Analysis**: Total Expected Goals: 3.35 (1.58 to 1.77).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 31. DANTE (Defensive) vs ORACLE (Aggressive) [Aug 13, 11:42 AM AEST]
-- **Analysis**: Total Expected Goals: 3.55 (2.03 to 1.52).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 32. STORM (Aggressive) vs GRIMACE (Aggressive) [Aug 13, 11:46 AM AEST]
-- **Analysis**: Total Expected Goals: 4.86 (2.01 to 2.85).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 33. FROST (Defensive) vs TIGER (Defensive) [Aug 13, 11:50 AM AEST]
-- **Analysis**: Total Expected Goals: 3.48 (1.52 to 1.96).
-- **Prediction**: **TIGER wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 34. INFERNO (Defensive) vs FORCE (Defensive) [Aug 13, 11:53 AM AEST]
-- **Analysis**: Total Expected Goals: 3.76 (2.22 to 1.54).
-- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 35. ORACLE (Aggressive) vs HOLLYWOOD (Defensive) [Aug 13, 11:57 AM AEST]
-- **Analysis**: Total Expected Goals: 3.71 (1.52 to 2.19).
-- **Prediction**: **HOLLYWOOD wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 36. GRIMACE (Aggressive) vs ADEPT (Aggressive) [Aug 13, 12:01 PM AEST]
-- **Analysis**: Total Expected Goals: 4.68 (2.62 to 2.06).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 37. TIGER (Defensive) vs RIVAL (Aggressive) [Aug 13, 12:05 PM AEST]
-- **Analysis**: Total Expected Goals: 3.86 (2.03 to 1.83).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 38. DOMINATOR (Defensive) vs CASTLE (Defensive) [Aug 13, 12:08 PM AEST]
-- **Analysis**: Total Expected Goals: 3.14 (1.23 to 1.91).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 39. ENT (Defensive) vs DANTE (Defensive) [Aug 13, 12:12 PM AEST]
-- **Analysis**: Total Expected Goals: 3.32 (1.29 to 2.02).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 40. GHOST (Aggressive) vs STORM (Aggressive) [Aug 13, 12:16 PM AEST]
-- **Analysis**: Total Expected Goals: 3.93 (1.75 to 2.18).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 41. TROOPER (Defensive) vs FROST (Defensive) [Aug 13, 12:20 PM AEST]
-- **Analysis**: Total Expected Goals: 3.11 (1.46 to 1.65).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 42. INFERNO (Defensive) vs DOMINATOR (Defensive) [Aug 13, 12:23 PM AEST]
-- **Analysis**: Total Expected Goals: 3.67 (2.26 to 1.40).
-- **Prediction**: **INFERNO wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 43. ORACLE (Aggressive) vs ENT (Defensive) [Aug 13, 12:27 PM AEST]
-- **Analysis**: Total Expected Goals: 3.64 (1.93 to 1.71).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: *SKIP (Neutral XG)*
-
-### 44. GRIMACE (Aggressive) vs GHOST (Aggressive) [Aug 13, 12:31 PM AEST]
-- **Analysis**: Total Expected Goals: 4.60 (2.94 to 1.67).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 45. TIGER (Defensive) vs TROOPER (Defensive) [Aug 13, 12:35 PM AEST]
-- **Analysis**: Total Expected Goals: 2.99 (1.81 to 1.19).
-- **Prediction**: **TIGER wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
-- **Totals**: **UNDER 2.5 Goals**
-
-### 46. CASTLE (Defensive) vs FORCE (Defensive) [Aug 13, 12:38 PM AEST]
-- **Analysis**: Total Expected Goals: 3.23 (1.86 to 1.37).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 47. DANTE (Defensive) vs HOLLYWOOD (Defensive) [Aug 13, 12:42 PM AEST]
-- **Analysis**: Total Expected Goals: 3.39 (1.61 to 1.77).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **UNDER 2.5 Goals**
-
-### 48. STORM (Aggressive) vs ADEPT (Aggressive) [Aug 13, 12:46 PM AEST]
-- **Analysis**: Total Expected Goals: 4.00 (1.86 to 2.14).
-- **Prediction**: *SKIP (Not a Value Edge)*
-- **Totals**: **OVER 2.5 Goals** *(Aggressive Matchup)*
-
-### 49. FROST (Defensive) vs RIVAL (Aggressive) [Aug 13, 12:50 PM AEST]
-- **Analysis**: Total Expected Goals: 3.97 (1.87 to 2.10).
-- **Prediction**: **RIVAL wins (Draw No Bet (Value Edge))** [Uncertainty: 10/100]
-- **Totals**: *SKIP (Neutral XG)*
-
-### 50. CASTLE (Defensive) vs INFERNO (Defensive) [Aug 13, 12:53 PM AEST]
-- **Analysis**: Total Expected Goals: 3.35 (1.58 to 1.77).
-- **Prediction**: *SKIP (Not a Value Edge)*
 - **Totals**: **UNDER 2.5 Goals**
 
 
@@ -302,26 +132,26 @@
 ### 🏆 Winner Parlay (1 Legs)
 > **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10, and no overlapping players.
 
-1. **RIVAL** to beat FROST -> **Play: Draw No Bet** *[Uncertainty: 10/100]*
+1. **FROST** to beat TROOPER -> **Play: Draw No Bet** *[Uncertainty: 0/100]*
 
 ## Backtest Results
 
 ```text
 --- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
-Total Matches Played Today: 90
-Decisive Matches Evaluated: 35
+Total Matches Played Today: 126
+Decisive Matches Evaluated: 62
 
 -- Draw No Bet (Tiered Sizing) --
-Correct: 16 | Incorrect: 12 | Pushed: 7 | Accuracy: 57.14% (Excl. Pushes)
-Wagered: $490 | Returned: $432.75 | Profit: $-57.25
+Correct: 31 | Incorrect: 16 | Pushed: 15 | Accuracy: 65.96% (Excl. Pushes)
+Wagered: $845 | Returned: $856.25 | Profit: $11.25
 
 -- Over 2.5 Goals (Selective) --
-Correct: 11 | Incorrect: 7 | Accuracy: 61.11%
-Wagered: $180 | Returned: $167 | Profit: $-13.00
+Correct: 19 | Incorrect: 9 | Accuracy: 67.86%
+Wagered: $280 | Returned: $284.5 | Profit: $4.50
 
 -- Overall Totals --
-Total Wagered: $670
-Total Returned: $599.75
-Profit/Loss: $-70.25
+Total Wagered: $1125
+Total Returned: $1140.75
+Profit/Loss: $15.75
 
 ```
