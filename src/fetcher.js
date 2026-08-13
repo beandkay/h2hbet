@@ -1,11 +1,12 @@
 const { execSync } = require('child_process');
 
 function getDateString(offsetDays = 0) {
-    const d = new Date();
-    d.setDate(d.getDate() + offsetDays);
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
+    // Force to AEST (UTC+10) so local and GitHub always fetch the same days
+    const d = new Date(new Date().getTime() + 10 * 60 * 60 * 1000);
+    d.setUTCDate(d.getUTCDate() + offsetDays);
+    const year = d.getUTCFullYear();
+    const month = String(d.getUTCMonth() + 1).padStart(2, '0');
+    const day = String(d.getUTCDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
 }
 
