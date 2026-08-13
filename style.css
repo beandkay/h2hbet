@@ -175,6 +175,17 @@ body {
 }
 
 /* Match Cards */
+.parlay-row {
+    background: rgba(46, 204, 113, 0.05) !important;
+    border-left: 4px solid var(--accent-green);
+}
+
+.preferred-row {
+    background: rgba(241, 196, 15, 0.05) !important;
+    border: 1px solid rgba(255, 184, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 184, 0, 0.1);
+}
+
 .match-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--glass-border);

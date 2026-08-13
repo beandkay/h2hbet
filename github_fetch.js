@@ -50,6 +50,7 @@ function fetchAndAnalyze() {
     try {
         console.log("⚙️ Running pattern analysis...");
         execSync('node analyze_patterns.js', { stdio: 'inherit' });
+        execSync('node backtest_today.js', { stdio: 'inherit' });
         console.log("✅ Analysis complete!");
     } catch (error) {
         console.error("❌ Error running analysis:", error.message);

@@ -1,4 +1,8 @@
 const fs = require('fs');
+const path = require('path');
+const { calculateStatistics } = require('./src/statistics');
+const { calculateH2H } = require('./src/h2h_engine');
+const { generatePredictions } = require('./src/predictor');
 
 let matchesYesterday = [];
 try { matchesYesterday = JSON.parse(fs.readFileSync('api_data_yesterday.json', 'utf8')); } catch (e) {}
@@ -47,24 +51,7 @@ const endedMatches = matches
     })
     .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
-const playerStats = {};
-
-let totalLeagueMatches = 0;
-let totalLeagueGoals = 0;
-
-function initPlayer(name) {
-    if (!playerStats[name]) {
-        playerStats[name] = {
-            matches: 0, wins: 0, draws: 0, losses: 0, goalsScored: 0, goalsConceded: 0, streak: []
-        };
-    }
-}
-
-endedMatches.forEach(m => {
-    totalLeagueMatches++;
-    totalLeagueGoals += (m.teamAScore + m.teamBScore);
-});
-const leagueAvgGoalsPerTeam = totalLeagueMatches > 0 ? (totalLeagueGoals / (totalLeagueMatches * 2)) : 1.5;
+let totalLeagueMatches = endedMatches.length;
 
 let evaluatedMatches = 0;
 let correctDnb = 0;
@@ -97,153 +84,73 @@ function getDynamicOUOdds(totalXG) {
     return 1.85;
 }
 
-endedMatches.forEach(m => {
-    const home = m.participantAName;
-    const away = m.participantBName;
-    const homeScore = m.teamAScore;
-    const awayScore = m.teamBScore;
-    
-    initPlayer(home);
-    initPlayer(away);
-    
-    const sHome = playerStats[home];
-    const sAway = playerStats[away];
-    
-    // Evaluate only if both have played at least 5 matches today to establish base stats (Fix #5)
-    if (sHome.matches >= 5 && sAway.matches >= 5) {
-        const homeAvgScored = sHome.goalsScored / sHome.matches;
-        const homeAvgConceded = sHome.goalsConceded / sHome.matches;
-        const awayAvgScored = sAway.goalsScored / sAway.matches;
-        const awayAvgConceded = sAway.goalsConceded / sAway.matches;
-        
-        let homeXG = (homeAvgScored + awayAvgConceded) / 2;
-        let awayXG = (awayAvgScored + homeAvgConceded) / 2;
-        
-        const calcPPM = (stats) => {
-            if (stats.matches === 0) return 0;
-            return ((stats.wins * 3) + (stats.draws * 1)) / stats.matches;
-        };
-        homeXG += calcPPM(sHome) * 0.25;
-        awayXG += calcPPM(sAway) * 0.25;
-        
-        const diff = homeXG - awayXG;
-        const homeWinRate = sHome.wins / sHome.matches;
-        const awayWinRate = sAway.wins / sAway.matches;
-        
-        const aestDate = new Date(new Date(m.startDate).getTime() + 10 * 60 * 60 * 1000);
-        let hourOfRotation = aestDate.getUTCHours();
-        if (hourOfRotation >= 4 && hourOfRotation < 16) hourOfRotation = hourOfRotation - 3;
-        else if (hourOfRotation >= 16) hourOfRotation = hourOfRotation - 15;
-        else hourOfRotation = hourOfRotation + 9;
-        
-        const kryptoniteSet = new Set([
-            "DEZZY vs FRANCHISE", "ALIBI vs VAPOR", "MAGICIAN vs VIRUS",
-            "RIFT vs RIVAL", "ATLAS vs RIFT", "LAVA vs SPARTAN",
-            "DECIMATOR vs RIVAL", "BULLFROG vs DART", "FRANCHISE vs LAVA", "MYSTERY vs VENUS"
-        ]);
-        const pairKey = [home, away].sort().join(' vs ');
-        const isKryptonite = kryptoniteSet.has(pairKey);
-        
-        const hStyle = (homeAvgScored + homeAvgConceded) > 3.0 ? 'Aggressive' : 'Defensive';
-        const aStyle = (awayAvgScored + awayAvgConceded) > 3.0 ? 'Aggressive' : 'Defensive';
-        const bothAggressive = hStyle === 'Aggressive' && aStyle === 'Aggressive';
-        const bothDefensive = hStyle === 'Defensive' && aStyle === 'Defensive';
-        const atLeastOneAgg = hStyle === 'Aggressive' || aStyle === 'Aggressive';
+endedMatches.forEach((m, idx) => {
+    // Reconstruct the state of the league exactly BEFORE this match kicked off
+    const historicalMatches = endedMatches.slice(0, idx);
+    const { playerStats } = calculateStatistics(historicalMatches);
+    const { h2hStats } = calculateH2H(historicalMatches);
 
-        // Winner prediction (DNB Only, Fix #1)
-        let prediction = "";
-        let absDiff = Math.abs(diff);
-        let minDiff = 0.20;
+    // Deep clone the match object so prediction properties don't bleed out
+    const matchData = JSON.parse(JSON.stringify(m));
+
+    // Inject predictions into this single match using the current player stats and H2H state
+    const { matches: predicted } = generatePredictions([matchData], playerStats, h2hStats);
+    const pMatch = predicted[0];
+
+    const home = pMatch.participantAName;
+    const away = pMatch.participantBName;
+    const homeScore = pMatch.teamAScore;
+    const awayScore = pMatch.teamBScore;
+
+    // --- Winner Prediction Evaluation ---
+    const computedPrediction = pMatch.computedPrediction || "";
+    let actualWinner = "";
+    if (homeScore > awayScore) actualWinner = home;
+    else if (homeScore < awayScore) actualWinner = away;
+    else actualWinner = "DRAW";
+
+    if (computedPrediction && !computedPrediction.includes('SKIP')) {
+        evaluatedMatches++;
         
-        // Fix #2: Aggressive vs Aggressive requires a larger edge
-        if (bothAggressive) {
-            minDiff = 0.50;
-        }
-
-        if (diff > minDiff) prediction = "HOME";
-        else if (diff < -minDiff) prediction = "AWAY";
-
-        let actual = "";
-        if (homeScore > awayScore) actual = "HOME";
-        else if (homeScore < awayScore) actual = "AWAY";
-        else actual = "DRAW";
-
-        if (prediction !== "") {
-            evaluatedMatches++;
-            
-            // Tiered Bet Sizing
-            let actualBetSize = dnbBaseBetSize;
-            if (absDiff > 1.0) actualBetSize = dnbBaseBetSize * 2;
-            else if (absDiff > 0.5) actualBetSize = dnbBaseBetSize * 1.5;
-
-            const dynamicOdds = getDynamicDNBOdds(absDiff);
-
-            dnbWagered += actualBetSize;
-            if (prediction === actual) {
-                correctDnb++;
-                dnbReturned += (actualBetSize * dynamicOdds);
-            } else if (actual === "DRAW") {
-                pushDnb++;
-                dnbReturned += actualBetSize;
-            } else {
-                incorrectDnb++;
-            }
-        }
+        // Use regex to extract the name, e.g., "**ALIBI wins (Draw No Bet)** [Uncertainty: 20/100]"
+        const predictedWinnerMatch = computedPrediction.match(/\*\*(.+?) wins/);
+        const predictedWinner = predictedWinnerMatch ? predictedWinnerMatch[1] : (computedPrediction.includes(home) ? home : away);
         
-        // O/U 2.5 Prediction (Robust Combo)
-        const totalXG = homeXG + awayXG;
-        const homeAvgTotal = (sHome.goalsScored / sHome.matches) + (sHome.goalsConceded / sHome.matches);
-        const awayAvgTotal = (sAway.goalsScored / sAway.matches) + (sAway.goalsConceded / sAway.matches);
+        const absDiff = pMatch.computedXgDiff || 0;
         
-        const hAgg = homeAvgTotal > 3.0;
-        const aAgg = awayAvgTotal > 3.0;
-        const isAggVsAgg = hAgg && aAgg;
-        const isBottomTier = sHome.matches >= 3 && sAway.matches >= 3 && (sHome.wins / sHome.matches) <= 0.35 && (sAway.wins / sAway.matches) <= 0.35;
-        const isDefVsDef = !hAgg && !aAgg;
-        
-        let playOU = null;
-        if (isAggVsAgg || isBottomTier) {
-            playOU = "OVER";
-        } else if (isDefVsDef && totalXG < 2.5) {
-            playOU = "UNDER";
-        }
+        let actualBetSize = dnbBaseBetSize;
+        if (absDiff > 1.0) actualBetSize = dnbBaseBetSize * 2;
+        else if (absDiff > 0.5) actualBetSize = dnbBaseBetSize * 1.5;
 
-        if (playOU) {
-            totalOU++;
-            const actualTotal = homeScore + awayScore;
-            const actualOU = actualTotal > 2.5 ? "OVER" : "UNDER";
-            
-            ouWagered += ouBetSize;
-            if (actualOU === playOU) {
-                correctOU++;
-                const dynamicOUOdds = playOU === "UNDER" ? 1.50 : getDynamicOUOdds(totalXG);
-                ouReturned += (ouBetSize * dynamicOUOdds);
-            }
+        const dynamicOdds = getDynamicDNBOdds(absDiff);
+
+        dnbWagered += actualBetSize;
+        if (predictedWinner === actualWinner) {
+            correctDnb++;
+            dnbReturned += (actualBetSize * dynamicOdds);
+        } else if (actualWinner === "DRAW") {
+            pushDnb++;
+            dnbReturned += actualBetSize;
+        } else {
+            incorrectDnb++;
         }
     }
-    
-    sHome.matches++;
-    sAway.matches++;
-    sHome.goalsScored += homeScore;
-    sHome.goalsConceded += awayScore;
-    sAway.goalsScored += awayScore;
-    sAway.goalsConceded += homeScore;
-    
-    if (homeScore > awayScore) {
-        sHome.wins++;
-        sAway.losses++;
-        sHome.streak.push('W');
-        sAway.streak.push('L');
-    } else if (homeScore < awayScore) {
-        sAway.wins++;
-        sHome.losses++;
-        sAway.streak.push('W');
-        sHome.streak.push('L');
-    } else {
-        sHome.draws++;
-        sAway.draws++;
-        sHome.streak.push('D');
-        sAway.streak.push('D');
+
+    // --- O/U Prediction Evaluation ---
+    const ouPrediction = pMatch.ouPrediction || "";
+    if (ouPrediction && !ouPrediction.includes('SKIP')) {
+        totalOU++;
+        const actualTotal = homeScore + awayScore;
+        const actualOU = actualTotal > 2.5 ? "OVER" : "UNDER";
+        const playOU = ouPrediction.includes('OVER') ? "OVER" : "UNDER";
+        
+        ouWagered += ouBetSize;
+        if (actualOU === playOU) {
+            correctOU++;
+            const totalXG = pMatch.computedTotalXG || 0;
+            const dynamicOUOdds = playOU === "UNDER" ? 1.50 : getDynamicOUOdds(totalXG);
+            ouReturned += (ouBetSize * dynamicOUOdds);
+        }
     }
 });
 
@@ -254,19 +161,32 @@ const totalWagered = dnbWagered + ouWagered;
 const totalReturned = dnbReturned + ouReturned;
 const profit = totalReturned - totalWagered;
 
-console.log(`--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---`);
-console.log(`Total Matches Played Today: ${totalLeagueMatches}`);
-console.log(`Decisive Matches Evaluated: ${evaluatedMatches}`);
+const output = `--- BACKTEST: TODAY'S RESULTS (Max Profit Strategy) ---
+Total Matches Played Today: ${totalLeagueMatches}
+Decisive Matches Evaluated: ${evaluatedMatches}
 
-console.log(`\n-- Draw No Bet (Tiered Sizing) --`);
-console.log(`Correct: ${correctDnb} | Incorrect: ${incorrectDnb} | Pushed: ${pushDnb} | Accuracy: ${dnbAccuracy}% (Excl. Pushes)`);
-console.log(`Wagered: $${dnbWagered} | Returned: $${dnbReturned} | Profit: $${(dnbReturned - dnbWagered).toFixed(2)}`);
+-- Draw No Bet (Tiered Sizing) --
+Correct: ${correctDnb} | Incorrect: ${incorrectDnb} | Pushed: ${pushDnb} | Accuracy: ${dnbAccuracy}% (Excl. Pushes)
+Wagered: $${dnbWagered} | Returned: $${dnbReturned} | Profit: $${(dnbReturned - dnbWagered).toFixed(2)}
 
-console.log(`\n-- Over 2.5 Goals (Selective) --`);
-console.log(`Correct: ${correctOU} | Incorrect: ${totalOU - correctOU} | Accuracy: ${ouAccuracy}%`);
-console.log(`Wagered: $${ouWagered} | Returned: $${ouReturned} | Profit: $${(ouReturned - ouWagered).toFixed(2)}`);
+-- Totals (Over/Under 2.5) --
+Correct: ${correctOU} | Incorrect: ${totalOU - correctOU} | Accuracy: ${ouAccuracy}%
+Wagered: $${ouWagered} | Returned: $${ouReturned} | Profit: $${(ouReturned - ouWagered).toFixed(2)}
 
-console.log(`\n-- Overall Totals --`);
-console.log(`Total Wagered: $${totalWagered}`);
-console.log(`Total Returned: $${totalReturned}`);
-console.log(`Profit/Loss: $${profit.toFixed(2)}`);
+-- Overall Totals --
+Total Wagered: $${totalWagered}
+Total Returned: $${totalReturned}
+Profit/Loss: $${profit.toFixed(2)}`;
+
+console.log(output);
+
+try {
+    const dashboardFile = path.join(__dirname, 'dashboard_data.json');
+    if (fs.existsSync(dashboardFile)) {
+        const dashboard = JSON.parse(fs.readFileSync(dashboardFile, 'utf8'));
+        dashboard.backtestOutput = output;
+        fs.writeFileSync(dashboardFile, JSON.stringify(dashboard, null, 2));
+    }
+} catch (e) {
+    console.error("Could not write backtest output to dashboard_data.json:", e.message);
+}

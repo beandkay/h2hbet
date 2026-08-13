@@ -1,11 +1,16 @@
 # eSoccer Final Model Predictions
 
+<<<<<<< HEAD
 **League Average Goals Per Match (Per Team):** 1.55
+=======
+**League Average Goals Per Match (Per Team): M** 1.34
+>>>>>>> 0977fda (Refactor architecture to DRY structure)
 
 ## Player Pattern Analysis (Latest Data)
 
 | Player | Style | Matches | Win% | Avg Scored | Avg Conceded | Form (All Matches) |
 |---|---|---|---|---|---|---|
+<<<<<<< HEAD
 | **GRIMACE** | Aggressive | 20 | 70.0% | 2.55 | 1.30 | L-W-W-D-W-D-D-D-W-W-W-W-W-W-D-W-W-W-W-W |
 | **INFERNO** | Defensive | 20 | 60.0% | 1.70 | 1.05 | D-W-W-W-L-W-L-L-W-D-W-W-W-D-W-W-W-W-L-L |
 | **TIGER** | Defensive | 19 | 57.9% | 1.42 | 0.89 | W-W-W-L-W-L-L-W-W-W-D-W-W-D-W-W-L-L-D |
@@ -22,10 +27,48 @@
 | **TROOPER** | Defensive | 20 | 25.0% | 1.25 | 1.20 | L-W-L-D-L-L-L-L-L-W-D-D-D-L-D-L-L-W-W-W |
 | **ENT** | Defensive | 19 | 21.1% | 1.26 | 1.68 | D-D-L-D-L-W-L-L-L-L-W-L-D-W-L-L-W-D-L |
 | **DOMINATOR** | Defensive | 19 | 15.8% | 0.95 | 1.84 | L-L-W-L-L-D-W-L-W-L-L-L-D-L-D-D-L-L-L |
+=======
+| **ARCTIC** | Defensive | 23 | 65.2% | 1.87 | 1.09 | W-W-L-L-D-W-W-L-L-W-L-W-W-W-W-W-L-W-W-D-W-W-W |
+| **DEZZY** | Defensive | 20 | 55.0% | 1.45 | 1.10 | W-L-W-D-W-L-W-W-L-W-W-L-W-W-L-W-W-D-L-L |
+| **AGONY** | Aggressive | 19 | 52.6% | 1.68 | 1.37 | W-W-L-L-D-D-W-L-L-W-L-D-L-W-W-W-W-W-W |
+| **SPARTAN** | Defensive | 17 | 47.1% | 1.35 | 0.94 | W-D-D-D-W-L-W-D-W-W-L-W-W-D-W-L-D |
+| **PLUTO** | Defensive | 19 | 42.1% | 1.11 | 0.95 | W-L-W-L-D-L-W-W-L-L-W-W-W-L-W-L-L-D-D |
+| **GUARDIAN** | Defensive | 18 | 38.9% | 1.17 | 1.22 | D-L-L-L-W-D-W-W-W-L-W-D-D-W-D-W-D-L |
+| **BULLFROG** | Defensive | 19 | 36.8% | 1.21 | 1.05 | D-W-D-D-W-L-W-L-D-L-D-W-L-L-L-W-W-W-D |
+| **EXECUTOR** | Defensive | 22 | 31.8% | 1.14 | 1.32 | L-W-W-W-D-L-L-D-W-D-W-D-W-L-D-L-W-L-D-D-L-L |
+| **MAGICIAN** | Defensive | 19 | 31.6% | 1.32 | 1.58 | L-D-W-W-D-D-L-W-W-W-D-D-L-L-L-W-L-L-D |
+| **FRANCHISE** | Aggressive | 19 | 31.6% | 1.74 | 1.89 | L-D-W-D-W-D-L-L-D-L-W-W-L-D-L-L-L-W-W |
+| **BLITZ** | Aggressive | 19 | 31.6% | 1.47 | 1.68 | L-D-L-W-D-W-L-L-W-L-D-L-W-W-L-L-W-D-L |
+| **TUSK** | Defensive | 17 | 29.4% | 1.41 | 1.47 | L-W-D-L-W-W-W-D-L-D-D-W-D-D-L-D-D |
+| **LAVA** | Defensive | 19 | 26.3% | 1.21 | 1.37 | W-L-W-L-D-D-L-D-L-L-L-D-L-W-D-L-L-W-W |
+| **MATRIX** | Defensive | 23 | 21.7% | 1.00 | 1.61 | L-L-W-L-L-W-W-D-L-D-L-D-L-L-L-D-W-L-L-D-L-W-L |
+| **CRUSADER** | Defensive | 19 | 10.5% | 0.89 | 1.37 | D-L-L-D-D-L-L-L-D-W-L-D-W-L-D-L-L-D-D |
+>>>>>>> 0977fda (Refactor architecture to DRY structure)
 
-## Most Dominant H2H Pairs (Current Rotation)
+## Player Standings (Current Rotation)
+
+| Rank | Player | Matches | W | D | L | GF | GA | GD | Points |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **ARCTIC** | 23 | 15 | 2 | 6 | 43 | 25 | +18 | **47** |
+| 2 | **DEZZY** | 20 | 11 | 2 | 7 | 29 | 22 | +7 | **35** |
+| 3 | **AGONY** | 19 | 10 | 3 | 6 | 32 | 26 | +6 | **33** |
+| 4 | **SPARTAN** | 17 | 8 | 6 | 3 | 23 | 16 | +7 | **30** |
+| 5 | **EXECUTOR** | 22 | 7 | 7 | 8 | 25 | 29 | -4 | **28** |
+| 6 | **PLUTO** | 19 | 8 | 3 | 8 | 21 | 18 | +3 | **27** |
+| 7 | **BULLFROG** | 19 | 7 | 6 | 6 | 23 | 20 | +3 | **27** |
+| 8 | **GUARDIAN** | 18 | 7 | 6 | 5 | 21 | 22 | -1 | **27** |
+| 9 | **MAGICIAN** | 19 | 6 | 6 | 7 | 25 | 30 | -5 | **24** |
+| 10 | **TUSK** | 17 | 5 | 8 | 4 | 24 | 25 | -1 | **23** |
+| 11 | **FRANCHISE** | 19 | 6 | 5 | 8 | 33 | 36 | -3 | **23** |
+| 12 | **BLITZ** | 19 | 6 | 4 | 9 | 28 | 32 | -4 | **22** |
+| 13 | **LAVA** | 19 | 5 | 5 | 9 | 23 | 26 | -3 | **20** |
+| 14 | **MATRIX** | 23 | 5 | 5 | 13 | 23 | 37 | -14 | **20** |
+| 15 | **CRUSADER** | 19 | 2 | 8 | 9 | 17 | 26 | -9 | **14** |
+
+## Top Dominant H2H Pairs (>60% Win Rate)
 
 | Matchup | Matches | Dominant Player | Win Rate | Breakdown |
+<<<<<<< HEAD
 |---|---|---|---|---|
 | **DOMINATOR vs INFERNO** | 6 | INFERNO | 100.0% | DOMINATOR: 0W | INFERNO: 6W | Draws: 0 |
 | **ADEPT vs GRIMACE** | 7 | GRIMACE | 85.7% | ADEPT: 0W | GRIMACE: 6W | Draws: 1 |
@@ -37,12 +80,36 @@
 | **CASTLE vs DOMINATOR** | 7 | CASTLE | 57.1% | CASTLE: 4W | DOMINATOR: 1W | Draws: 2 |
 | **DANTE vs ENT** | 7 | DANTE | 57.1% | DANTE: 4W | ENT: 0W | Draws: 3 |
 | **FROST vs TROOPER** | 7 | FROST | 57.1% | FROST: 4W | TROOPER: 2W | Draws: 1 |
+=======
+|---------|---------|-----------------|----------|-----------|
+| CRUSADER vs SPARTAN | 6 | **SPARTAN** | 83.3% | CRUSADER: 0W | SPARTAN: 5W | Draws: 1 |
+| ARCTIC vs MATRIX | 12 | **ARCTIC** | 75.0% | ARCTIC: 9W | MATRIX: 3W | Draws: 0 |
+| DEZZY vs FRANCHISE | 7 | **DEZZY** | 71.4% | DEZZY: 5W | FRANCHISE: 1W | Draws: 1 |
+| AGONY vs BLITZ | 7 | **AGONY** | 71.4% | AGONY: 5W | BLITZ: 2W | Draws: 0 |
+| DEZZY vs LAVA | 7 | **DEZZY** | 71.4% | DEZZY: 5W | LAVA: 2W | Draws: 0 |
+| DEZZY vs GUARDIAN | 6 | **GUARDIAN** | 66.7% | DEZZY: 1W | GUARDIAN: 4W | Draws: 1 |
+
+## Other H2H Pairs (<= 60% Win Rate)
+
+| Matchup | Matches | Leading Player | Win Rate | Breakdown |
+|---------|---------|----------------|----------|-----------|
+| ARCTIC vs EXECUTOR | 11 | ARCTIC | 54.5% | ARCTIC: 6W | EXECUTOR: 3W | Draws: 2 |
+| BULLFROG vs TUSK | 6 | BULLFROG | 50.0% | BULLFROG: 3W | TUSK: 2W | Draws: 1 |
+| AGONY vs PLUTO | 6 | AGONY | 50.0% | AGONY: 3W | PLUTO: 2W | Draws: 1 |
+| FRANCHISE vs LAVA | 6 | FRANCHISE | 50.0% | FRANCHISE: 3W | LAVA: 1W | Draws: 2 |
+| BLITZ vs PLUTO | 6 | PLUTO | 50.0% | BLITZ: 2W | PLUTO: 3W | Draws: 1 |
+| EXECUTOR vs MATRIX | 11 | EXECUTOR | 36.4% | EXECUTOR: 4W | MATRIX: 2W | Draws: 5 |
+| BLITZ vs MAGICIAN | 6 | BLITZ | 33.3% | BLITZ: 2W | MAGICIAN: 1W | Draws: 3 |
+| CRUSADER vs TUSK | 6 | TUSK | 33.3% | CRUSADER: 0W | TUSK: 2W | Draws: 4 |
+| GUARDIAN vs LAVA | 6 | LAVA | 33.3% | GUARDIAN: 1W | LAVA: 2W | Draws: 3 |
+>>>>>>> 0977fda (Refactor architecture to DRY structure)
 
 ## Top 50 Upcoming Matches (Max Profit Strategy)
 
 > [!NOTE]
 > The model uses an optimized max-profit strategy: All predicted winners are played as **Draw No Bet**, with bet sizing tiered by confidence. It also selectively bets **OVER 2.5** only in aggressive, high-scoring matchups.
 
+<<<<<<< HEAD
 ### 1. GRIMACE (Aggressive) vs GHOST (Aggressive) [Aug 13, 02:16 PM AEST]
 - **Analysis**: Total Expected Goals: 4.66 (2.94 to 1.73).
 - **Prediction**: *SKIP (Not a Value Edge)*
@@ -157,3 +224,95 @@ Total Returned: $1628.5
 Profit/Loss: $23.50
 
 ```
+=======
+### 1. GUARDIAN vs FRANCHISE
+- **Time:** Aug 10, 01:38 AM AEST
+- **Styles:** Defensive vs Aggressive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 2. SPARTAN vs CRUSADER
+- **Time:** Aug 10, 01:42 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** **SPARTAN wins (Draw No Bet (H2H Edge))** [Uncertainty: 0/100] 🌟 **[H2H PREFERRED]**
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 3. MAGICIAN vs BLITZ
+- **Time:** Aug 10, 01:46 AM AEST
+- **Styles:** Defensive vs Aggressive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 4. ARCTIC vs EXECUTOR
+- **Time:** Aug 10, 01:50 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** **ARCTIC wins (Draw No Bet (Value Edge))** [Uncertainty: 40/100]
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 5. FRANCHISE vs LAVA
+- **Time:** Aug 10, 01:53 AM AEST
+- **Styles:** Aggressive vs Defensive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 6. CRUSADER vs TUSK
+- **Time:** Aug 10, 01:57 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 7. BLITZ vs PLUTO
+- **Time:** Aug 10, 02:01 AM AEST
+- **Styles:** Aggressive vs Defensive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 8. MATRIX vs ARCTIC
+- **Time:** Aug 10, 02:05 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** **ARCTIC wins (Draw No Bet (H2H Edge))** [Uncertainty: 40/100] 🌟 **[H2H PREFERRED]**
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 9. DEZZY vs GUARDIAN
+- **Time:** Aug 10, 02:08 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** **GUARDIAN wins (Draw No Bet (H2H Edge))** [Uncertainty: 30/100] 🌟 **[H2H PREFERRED]**
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 10. BULLFROG vs SPARTAN
+- **Time:** Aug 10, 02:12 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 11. AGONY vs MAGICIAN
+- **Time:** Aug 10, 02:16 AM AEST
+- **Styles:** Aggressive vs Defensive
+- **Prediction:** **AGONY wins (Draw No Bet (Value Edge))** [Uncertainty: 80/100 - HIGH RISK]
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 12. MATRIX vs EXECUTOR
+- **Time:** Aug 10, 02:20 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** *SKIP (Not a Value Edge)*
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 13. DEZZY vs FRANCHISE
+- **Time:** Aug 10, 02:23 AM AEST
+- **Styles:** Defensive vs Aggressive
+- **Prediction:** **DEZZY wins (Draw No Bet (H2H Edge))** [Uncertainty: 0/100] 🌟 **[H2H PREFERRED]**
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 14. BULLFROG vs CRUSADER
+- **Time:** Aug 10, 02:27 AM AEST
+- **Styles:** Defensive vs Defensive
+- **Prediction:** **BULLFROG wins (Draw No Bet (Value Edge))** [Uncertainty: 30/100]
+- **Over/Under:** *SKIP (Neutral XG)*
+
+### 15. AGONY vs BLITZ
+- **Time:** Aug 10, 02:31 AM AEST
+- **Styles:** Aggressive vs Aggressive
+- **Prediction:** **AGONY wins (Draw No Bet (H2H Edge))** [Uncertainty: 80/100 - HIGH RISK] 🌟 **[H2H PREFERRED]**
+- **Over/Under:** **OVER 2.5 Goals** *(Aggressive Matchup)*
+
+>>>>>>> 0977fda (Refactor architecture to DRY structure)

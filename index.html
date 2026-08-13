@@ -91,6 +91,32 @@
 
         <section class="glass-panel main-section" style="margin-top: 2rem;">
             <div class="section-header">
+                <h2>🏆 Player Standings</h2>
+                <div class="badge">Current Rotation</div>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Matches</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GD</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="8" class="loading-text" style="text-align: center;">Loading standings...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="glass-panel main-section" style="margin-top: 2rem;">
+            <div class="section-header">
                 <h2>⚔️ Most Dominant H2H Pairs</h2>
                 <div class="badge">Current Rotation</div>
             </div>
@@ -107,6 +133,29 @@
                     </thead>
                     <tbody>
                         <tr><td colspan="5" class="loading-text" style="text-align: center;">Loading H2H data...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="glass-panel main-section" style="margin-top: 2rem;">
+            <div class="section-header">
+                <h2>⚖️ Other H2H Pairs (≤ 60% Win Rate)</h2>
+                <div class="badge">Current Rotation</div>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="other-h2h-table">
+                    <thead>
+                        <tr>
+                            <th>Matchup</th>
+                            <th>Matches</th>
+                            <th>Leading Player</th>
+                            <th>Win Rate</th>
+                            <th>Breakdown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5" class="loading-text" style="text-align: center;">Loading other H2H data...</td></tr>
                     </tbody>
                 </table>
             </div>
