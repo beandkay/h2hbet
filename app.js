@@ -1,5 +1,6 @@
 const premiumPlaysContainer = document.getElementById('premium-plays');
 const winnerParlayContainer = document.getElementById('winner-parlay');
+const totalsParlayContainer = document.getElementById('totals-parlay');
 const backtestOutput = document.getElementById('backtest-output');
 const leagueAvg = document.getElementById('league-avg');
 const lastUpdated = document.getElementById('last-updated');
@@ -22,70 +23,174 @@ function fetchDashboardData() {
 
 function renderHistoryTags(recent) {
     if (!recent || recent.length === 0) return '<span style="color:var(--text-muted)">No data</span>';
-    return recent.slice(-5).map(r => `<span class="history-tag ${r}">${r}</span>`).join('');
+    return recent.slice(-5).map(r => {
+        let text = (typeof r === 'object' && r !== null) ? r.result : r;
+        let c = text === 'P' ? 'D' : text; // map P to D for color
+        let title = (typeof r === 'object' && r !== null) ? ` title="${r.scored}-${r.conceded} vs ${r.opponent}"` : '';
+        return `<span class="history-tag ${c}"${title}>${text}</span>`;
+    }).join('');
+}
+
+function renderH2HMatchTags(historyArr, homePlayer) {
+    if (!historyArr || historyArr.length === 0) return '<span style="color:var(--text-muted)">No Data</span>';
+    const tags = historyArr.slice(-5).map(h => {
+        if (typeof h === 'string') {
+            return '';
+        } else {
+            if (h.prediction && h.prediction.pick !== 'SKIP') {
+                let text = h.prediction.result;
+                let c = 'D';
+                if (text === 'W') c = 'W';
+                else if (text === 'L') c = 'L';
+                else if (text === 'P') { text = 'P'; c = 'D'; }
+                return `<span class="history-tag ${c}">${text}</span>`;
+            }
+            return '';
+        }
+    }).filter(t => t !== '');
+
+    return tags.length > 0 ? tags.join('') : '<span style="color:var(--text-muted)">No Data</span>';
+}
+
+// Actual (not prediction) H2H match winners for this pair — "W" tagged red when
+// homePlayer won, blue when away won, "D" for a draw.
+function renderH2HActualTags(historyArr, homePlayer) {
+    if (!historyArr || historyArr.length === 0) return '<span style="color:var(--text-muted)">No Data</span>';
+    const tags = historyArr.slice(-5).map(h => {
+        const winner = (typeof h === 'string') ? h : (h ? h.matchWinner : null);
+        if (!winner) return '';
+        if (winner === 'DRAW') return `<span class="history-tag D">D</span>`;
+        const cls = winner === homePlayer ? 'h2h-home' : 'h2h-away';
+        return `<span class="history-tag ${cls}" title="${winner} won">W</span>`;
+    }).filter(t => t !== '');
+    return tags.length > 0 ? tags.join('') : '<span style="color:var(--text-muted)">No Data</span>';
+}
+
+// Actual (not prediction) OU2.5 results for this pair — "O" for over, "U" for under.
+function renderOUActualTags(historyArr) {
+    if (!historyArr || historyArr.length === 0) return '<span style="color:var(--text-muted)">No Data</span>';
+    const tags = historyArr.slice(-5).map(h => {
+        const val = (typeof h === 'string') ? h : (h ? h.matchOU : null);
+        if (!val) return '';
+        const isOver = val === 'OVER';
+        return `<span class="history-tag ${isOver ? 'ou-o' : 'ou-u'}">${isOver ? 'O' : 'U'}</span>`;
+    }).filter(t => t !== '');
+    return tags.length > 0 ? tags.join('') : '<span style="color:var(--text-muted)">No Data</span>';
+}
+
+function setProfitEl(id, val) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const num = typeof val === 'number' ? val : 0;
+    const str = (num < 0 ? "-$" : "$") + Math.abs(num).toFixed(2);
+    el.textContent = str;
+    if (num < 0) el.style.color = 'var(--accent-red)';
+    else if (num > 0) el.style.color = 'var(--accent-green)';
+    else el.style.color = '';
 }
 
 function renderDashboard(data) {
     const date = new Date(data.generatedAt || Date.now());
     lastUpdated.innerHTML = `<strong>${date.toLocaleDateString('en-AU', {timeZone: 'Australia/Brisbane', weekday:'long', month:'short', day:'numeric', year:'numeric'})} at ${date.toLocaleTimeString('en-AU', {timeZone: 'Australia/Brisbane'})} AEST</strong>`;
-    
+
     if (data.leagueAvgGoalsPerTeam) leagueAvg.textContent = data.leagueAvgGoalsPerTeam.toFixed(2);
-    
+
+    const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+
     const kpiUpcoming = document.getElementById('kpi-upcoming');
-    const kpiBets = document.getElementById('kpi-bets');
-    const kpiParlay = document.getElementById('kpi-parlay');
-    if (kpiUpcoming && data.upcoming) kpiUpcoming.textContent = data.upcoming.length;
-    if (kpiBets && data.upcoming) kpiBets.textContent = data.upcoming.filter(m => m.computedPrediction && !m.computedPrediction.includes('SKIP')).length;
-    if (kpiParlay && data.winnerParlay) kpiParlay.textContent = data.winnerParlay.length;
-    
+    const upcomingList = data.upcoming || [];
+    if (kpiUpcoming) kpiUpcoming.textContent = upcomingList.length;
+    setText('kpi-upcoming-dnb', upcomingList.filter(m => m.h2hPoissonPick || m.h2hEloPick).length);
+    setText('kpi-upcoming-totals', upcomingList.filter(m => m.ouPoissonPick || m.ouEloPick).length);
+    setText('kpi-upcoming-skip', upcomingList.filter(m => !(m.h2hPoissonPick || m.h2hEloPick) && !(m.ouPoissonPick || m.ouEloPick)).length);
+
+    setText('kpi-avg-total-goals', data.leagueAvgGoalsPerTeam ? (data.leagueAvgGoalsPerTeam * 2).toFixed(2) : '--');
+    setText('kpi-player-count', (data.standings || []).length);
+
     backtestOutput.textContent = data.backtestOutput || 'No backtest data available.';
-    
-    let profitStr = "$0.00";
-    if (data.backtestOutput) {
-        const lines = data.backtestOutput.split('\n');
-        const plLine = lines.find(l => l.includes('Profit/Loss:'));
-        if (plLine) {
-            profitStr = plLine.split('Profit/Loss:')[1].trim();
-        }
-    }
-    const kpiProfit = document.getElementById('kpi-profit');
-    if (kpiProfit) {
-        kpiProfit.textContent = profitStr;
-        if (profitStr.includes('-')) kpiProfit.style.color = 'var(--accent-red)';
-        else if (profitStr !== '$0.00' && profitStr !== '$0') kpiProfit.style.color = 'var(--accent-green)';
-    }
-    
+
+    const rotationPerf = data.extraModelPerformance && data.extraModelPerformance.rotation;
+
+    setProfitEl('kpi-h2h-poisson-profit', rotationPerf && rotationPerf.h2hPoisson ? rotationPerf.h2hPoisson.profit : 0);
+    setProfitEl('kpi-h2h-elo-profit', rotationPerf && rotationPerf.h2hElo ? rotationPerf.h2hElo.profit : 0);
+    setProfitEl('kpi-ou-poisson-profit', rotationPerf && rotationPerf.ouPoisson ? rotationPerf.ouPoisson.profit : 0);
+    setProfitEl('kpi-ou-elo-profit', rotationPerf && rotationPerf.ouElo ? rotationPerf.ouElo.profit : 0);
+
+    const h2hPoissonProfit = rotationPerf && rotationPerf.h2hPoisson ? rotationPerf.h2hPoisson.profit : 0;
+    const h2hEloProfit = rotationPerf && rotationPerf.h2hElo ? rotationPerf.h2hElo.profit : 0;
+    const ouPoissonProfit = rotationPerf && rotationPerf.ouPoisson ? rotationPerf.ouPoisson.profit : 0;
+    const ouEloProfit = rotationPerf && rotationPerf.ouElo ? rotationPerf.ouElo.profit : 0;
+    setProfitEl('kpi-profit-poisson', h2hPoissonProfit + ouPoissonProfit);
+    setProfitEl('kpi-profit-elo', h2hEloProfit + ouEloProfit);
+    setProfitEl('kpi-profit-total', h2hPoissonProfit + h2hEloProfit + ouPoissonProfit + ouEloProfit);
+    setProfitEl('kpi-h2h-total-profit', h2hPoissonProfit + h2hEloProfit);
+    setProfitEl('kpi-ou-total-profit', ouPoissonProfit + ouEloProfit);
+
+    const ouOverPoisson = rotationPerf && rotationPerf.ouPoisson && rotationPerf.ouPoisson.over ? rotationPerf.ouPoisson.over.profit : 0;
+    const ouOverElo = rotationPerf && rotationPerf.ouElo && rotationPerf.ouElo.over ? rotationPerf.ouElo.over.profit : 0;
+    setProfitEl('kpi-ou-over-poisson', ouOverPoisson);
+    setProfitEl('kpi-ou-over-elo', ouOverElo);
+    setProfitEl('kpi-ou-over-total', ouOverPoisson + ouOverElo);
+
+    const ouUnderPoisson = rotationPerf && rotationPerf.ouPoisson && rotationPerf.ouPoisson.under ? rotationPerf.ouPoisson.under.profit : 0;
+    const ouUnderElo = rotationPerf && rotationPerf.ouElo && rotationPerf.ouElo.under ? rotationPerf.ouElo.under.profit : 0;
+    setProfitEl('kpi-ou-under-poisson', ouUnderPoisson);
+    setProfitEl('kpi-ou-under-elo', ouUnderElo);
+    setProfitEl('kpi-ou-under-total', ouUnderPoisson + ouUnderElo);
+
     if (data.winnerParlay && data.winnerParlay.length > 0) {
         let html = '';
         data.winnerParlay.forEach((m, idx) => {
-            let fav = "DRAW";
-            let unc = 0;
-            if (!m.computedPrediction.includes("**DRAW**")) {
-                fav = m.computedPrediction.includes(m.computedHome) ? m.computedHome : m.computedAway;
-                unc = fav === m.computedHome ? m.computedHomeUnc : m.computedAwayUnc;
-            } else {
-                unc = Math.max(m.computedHomeUnc, m.computedAwayUnc);
-            }
+            const opponent = m.h2hPoissonPick === m.participantAName ? m.participantBName : m.participantAName;
+            const kickoff = new Date(m.startDate).toLocaleTimeString('en-AU', { timeZone: 'Australia/Brisbane', hour: '2-digit', minute: '2-digit' });
             html += `
                 <div class="parlay-leg">
-                    <span class="parlay-leg-title">${idx + 1}. ${fav === "DRAW" ? "DRAW" : `${fav} to beat ${fav === m.computedHome ? m.computedAway : m.computedHome}`}</span>
-                    <span class="parlay-leg-play">Risk: ${unc}/100</span>
+                    <div>
+                        <span class="parlay-leg-title">${idx + 1}. ${m.h2hPoissonPick} to beat ${opponent}</span>
+                        <div style="color:var(--text-muted); font-size:0.75rem; margin-top:2px;">🕒 ${kickoff} · H2H·Poisson</div>
+                    </div>
+                    <span class="parlay-leg-play">${m.h2hPoissonProb.toFixed(0)}%</span>
                 </div>
             `;
         });
         winnerParlayContainer.innerHTML = html;
     } else {
-        winnerParlayContainer.innerHTML = '<p style="color:var(--text-muted);">No extremely safe Draw No Bet favorites found in this rotation.</p>';
+        winnerParlayContainer.innerHTML = '<p style="color:var(--text-muted);">No H2H·Poisson picks found in this rotation.</p>';
     }
 
-    renderUpcomingMatches(data.upcoming || [], data.h2hData || [], data.playerStats || {});
+    if (totalsParlayContainer) {
+        if (data.totalsParlay && data.totalsParlay.length > 0) {
+            let html = '';
+            data.totalsParlay.forEach((m, idx) => {
+                const kickoff = new Date(m.startDate).toLocaleTimeString('en-AU', { timeZone: 'Australia/Brisbane', hour: '2-digit', minute: '2-digit' });
+                html += `
+                    <div class="parlay-leg">
+                        <div>
+                            <span class="parlay-leg-title">${idx + 1}. ${m.participantAName} vs ${m.participantBName} — ${m.ouEloPick} 2.5</span>
+                            <div style="color:var(--text-muted); font-size:0.75rem; margin-top:2px;">🕒 ${kickoff} · OU·Elo</div>
+                        </div>
+                        <span class="parlay-leg-play">${m.ouEloProb.toFixed(0)}%</span>
+                    </div>
+                `;
+            });
+            totalsParlayContainer.innerHTML = html;
+        } else {
+            totalsParlayContainer.innerHTML = '<p style="color:var(--text-muted);">No OU·Elo picks found in this rotation.</p>';
+        }
+    }
+
+    renderUpcomingMatches(data.upcoming || [], data.h2hData || [], data.playerStats || {}, data.extraModelPerformance || null);
     renderPlayerTables(data.playerStats || {}, data.standings || []);
     renderH2HTables(data.h2hData || [], data.otherH2hData || []);
+
+    // The match-card DOM was fully rebuilt, so any filter chip / search query the user
+    // had active is now visually stale. Re-apply it against the new cards.
+    if (typeof reapplyFilterAndSearch === 'function') reapplyFilterAndSearch();
 
     firstLoad = false;
 }
 
-function renderUpcomingMatches(upcoming, h2hData, playerStats) {
+function renderUpcomingMatches(upcoming, h2hData, playerStats, extraModelPerformance) {
     if (!upcoming || upcoming.length === 0) {
         premiumPlaysContainer.innerHTML = `
             <div class="match-card">
@@ -94,121 +199,78 @@ function renderUpcomingMatches(upcoming, h2hData, playerStats) {
         `;
         return;
     }
-    
+
     let html = '';
     upcoming.forEach((m, idx) => {
         const date = new Date(m.startDate).toLocaleTimeString('en-AU', { timeZone: 'Australia/Brisbane', hour: '2-digit', minute: '2-digit' });
-        const isSkipped = m.computedPrediction && m.computedPrediction.includes('SKIP') && !m.isOUPick;
-        
-        let predType = "skip";
-        if (!isSkipped) predType = "dnb";
-        else if (m.isOUPick) predType = "totals";
 
         const homeRank = playerStats && playerStats[m.participantAName] && playerStats[m.participantAName].rank ? `<span style="color:var(--text-muted); font-size: 0.9em;">#${playerStats[m.participantAName].rank}</span> ` : '';
         const awayRank = playerStats && playerStats[m.participantBName] && playerStats[m.participantBName].rank ? `<span style="color:var(--text-muted); font-size: 0.9em;">#${playerStats[m.participantBName].rank}</span> ` : '';
 
-        const totalXG = m.computedTotalXG || 0;
-        const xgDiff = m.computedXgDiff || 0;
-        const hXG = (totalXG / 2) + (xgDiff / 2);
-        const aXG = (totalXG / 2) - (xgDiff / 2);
-        let totalVal = totalXG > 0 ? totalXG : 1;
-        const hXgPct = Math.max(10, Math.min(90, (hXG / totalVal) * 100));
-        const aXgPct = 100 - hXgPct;
+        const hasH2HPick = !!(m.h2hPoissonPick || m.h2hEloPick);
+        const hasOUPick = !!(m.ouPoissonPick || m.ouEloPick);
+        let predTypes = [];
+        if (hasH2HPick) predTypes.push('dnb');
+        if (hasOUPick) predTypes.push('totals');
+        if (!hasH2HPick && !hasOUPick) predTypes.push('skip');
+        const predTypeStr = predTypes.join(' ');
 
-        let xgHtml = `
-            <div class="xg-section">
-                <div class="xg-header">
-                    <span>Expected Goals Split</span>
-                    <span>Total xG: <strong>${totalXG.toFixed(2)}</strong> <small style="color: var(--accent-cyan); font-size: 0.75rem;">(H2H edge: ${Math.abs(xgDiff).toFixed(2)})</small></span>
-                </div>
-                <div class="xg-bar-container">
-                    <div class="xg-bar-home" style="width: ${hXgPct}%;"></div>
-                    <div class="xg-bar-away" style="width: ${aXgPct}%;"></div>
-                </div>
-            </div>
-        `;
+        m.h2hPreferred = (m.h2hPoissonPairAcc >= 60 && m.h2hPoissonPairBets >= 3) || (m.h2hEloPairAcc >= 60 && m.h2hEloPairBets >= 3);
 
-        let predHtml = '';
-        if (m.computedPrediction && !m.computedPrediction.includes('SKIP')) {
-            const isDraw = m.computedPrediction.includes('DRAW');
-            const fav = isDraw ? 'DRAW' : (m.computedPrediction.includes(m.computedHome) ? m.computedHome : m.computedAway);
-            let unc = 0;
-            if (isDraw) unc = Math.max(m.computedHomeUnc || 0, m.computedAwayUnc || 0);
-            else unc = fav === m.computedHome ? (m.computedHomeUnc || 0) : (m.computedAwayUnc || 0);
-            
-            let phaseMatch = m.computedPrediction.match(/\((Phase (\d)[^)]+)\)/);
-            let phaseBadge = '';
-            if (phaseMatch && phaseMatch[1]) {
-                const phaseNum = phaseMatch[2];
-                phaseBadge = `<span class="phase-${phaseNum}">[PHASE ${phaseNum}]</span> `;
-            } else if (m.h2hPreferred) {
-                phaseBadge = `<span class="phase-3">[⭐ H2H DOMINANT]</span> `;
-            }
-            
-            let uncClass = unc < 20 ? 'low' : (unc > 40 ? 'high' : 'med');
+        const hStyleClass = m.homeStyle ? m.homeStyle.toLowerCase() : 'neutral';
+        const aStyleClass = m.awayStyle ? m.awayStyle.toLowerCase() : 'neutral';
 
-            predHtml = `
-                <div class="prediction-box ${isDraw ? 'strict' : 'dnb'}">
-                    <span>${phaseBadge}${m.computedPrediction.replace(/\*\*/g, '').split(' (')[0]} <span style="font-size:0.8rem">(${isDraw ? 'STRAIGHT' : 'DNB'})</span></span>
-                    <span class="unc-meter ${uncClass}">Risk: ${unc}/100</span>
-                </div>
-            `;
-        } else {
-            predHtml = `
-                <div class="prediction-box skip">
-                    <span>SKIP (No Mathematical Edge)</span>
-                </div>
-            `;
-        }
-
-        let ouHtml = '';
-        if (m.isOUPick && m.ouPrediction) {
-            const parts = m.ouPrediction.split('|').map(p => p.replace(/[*_]/g, '').trim());
-            ouHtml = `
-                <div class="totals-pills">
-                    ${parts[0] ? `<span class="totals-pill highlight">${parts[0]}</span>` : ''}
-                    ${parts[1] ? `<span class="totals-pill highlight">${parts[1]}</span>` : ''}
-                    ${parts[2] ? `<span class="totals-pill">${parts[2]}</span>` : ''}
-                </div>
-            `;
-        }
-
-        // Match History Tags
-
-        const pairKey = [m.participantAName, m.participantBName].sort().join(' vs ');
-        const h2hInsight = h2hData.find(h => h.matchup === pairKey);
-        let h2hTags = '';
-        if (playerStats && playerStats[m.participantAName] && playerStats[m.participantAName].h2hBacktest) {
-            h2hTags = playerStats[m.participantAName].h2hBacktest.streak.slice(-5).map(r => `<span class="history-tag h2h-tag">${r}</span>`).join('');
-        }
-        if (!h2hTags && h2hInsight) h2hTags = '<span style="color:var(--text-muted)">Dominant: ' + h2hInsight.dominantPlayer + '</span>';
-
-        const hStyleClass = m.computedHomeStyle ? m.computedHomeStyle.toLowerCase() : 'neutral';
-        const aStyleClass = m.computedAwayStyle ? m.computedAwayStyle.toLowerCase() : 'neutral';
-
-        // Profile Box
         let pHomeQual = playerStats && playerStats[m.participantAName] ? (playerStats[m.participantAName].adjScoringAbility || 1.0) : 1.0;
         let pHomeDef = playerStats && playerStats[m.participantAName] ? (playerStats[m.participantAName].adjDefendingAbility || 1.0) : 1.0;
         let pAwayQual = playerStats && playerStats[m.participantBName] ? (playerStats[m.participantBName].adjScoringAbility || 1.0) : 1.0;
         let pAwayDef = playerStats && playerStats[m.participantBName] ? (playerStats[m.participantBName].adjDefendingAbility || 1.0) : 1.0;
 
-        let slotHtml = '';
-        if (m.homeSlotPerf && m.awaySlotPerf) {
-            let hBadge = m.homeSlotPerf.status;
-            let aBadge = m.awaySlotPerf.status;
-            slotHtml = `
-                <div class="profile-row">
-                    <span>⏱️ Time Slot (${m.homeSlotPerf.slot}):</span>
-                    <div>
-                        <span class="slot-badge ${hBadge}">${m.participantAName}: ${m.homeSlotPerf.winRate}%</span>
-                        <span class="slot-badge ${aBadge}">${m.participantBName}: ${m.awaySlotPerf.winRate}%</span>
-                    </div>
+        // Signal grid: rows = Winner (H2H) / Totals (OU), cols = Poisson / Elo.
+        // Each cell folds in the model's pick+prob and its per-pair rotation
+        // accuracy (previously two separate stacked rows) as a subscript.
+        const signalCell = (pick, prob, cls, pairAcc, pairBets, pairCorrect) => {
+            if (!pick) return `<div class="signal-cell empty"><span class="no-signal">No signal</span></div>`;
+            const sub = pairBets > 0 ? `<small>${pairAcc.toFixed(0)}% · ${pairCorrect}/${pairBets}</small>` : '';
+            return `<div class="signal-cell ${cls}"><strong>${pick}</strong> ${prob.toFixed(0)}%${sub}</div>`;
+        };
+
+        const signalGridHtml = `
+            <div class="signal-grid">
+                <div class="signal-row signal-header">
+                    <span class="signal-label"></span>
+                    <span class="signal-col-label poisson">Poisson</span>
+                    <span class="signal-col-label elo">Elo</span>
                 </div>
-            `;
+                <div class="signal-row">
+                    <span class="signal-label">Winner</span>
+                    ${signalCell(m.h2hPoissonPick, m.h2hPoissonProb || 0, 'poisson', m.h2hPoissonPairAcc || 0, m.h2hPoissonPairBets || 0, m.h2hPoissonPairCorrect || 0)}
+                    ${signalCell(m.h2hEloPick, m.h2hEloProb || 0, 'elo', m.h2hEloPairAcc || 0, m.h2hEloPairBets || 0, m.h2hEloPairCorrect || 0)}
+                </div>
+                <div class="signal-row">
+                    <span class="signal-label">Totals</span>
+                    ${signalCell(m.ouPoissonPick, m.ouPoissonProb || 0, `poisson ${(m.ouPoissonPick || '').toLowerCase()}`, m.ouPoissonPairAcc || 0, m.ouPoissonPairBets || 0, m.ouPoissonPairCorrect || 0)}
+                    ${signalCell(m.ouEloPick, m.ouEloProb || 0, `elo ${(m.ouEloPick || '').toLowerCase()}`, m.ouEloPairAcc || 0, m.ouEloPairBets || 0, m.ouEloPairCorrect || 0)}
+                </div>
+            </div>
+        `;
+
+        // Quick facts strip: H2H leader + scoring/defending quality + time-slot
+        // form, previously three separate boxed sections, now one chip row.
+        let slotChip = '';
+        if (m.homeSlotPerf && m.awaySlotPerf) {
+            slotChip = `<span class="fact-chip">⏱️ <span class="slot-badge ${m.homeSlotPerf.status}">${m.participantAName} ${m.homeSlotPerf.winRate}%</span> <span class="slot-badge ${m.awaySlotPerf.status}">${m.participantBName} ${m.awaySlotPerf.winRate}%</span></span>`;
         }
+        const quickFactsHtml = `
+            <div class="quick-facts">
+                <span class="fact-chip">🏆 ${m.h2hFavored && m.h2hFavored !== 'N/A' ? `${m.h2hFavored} ${(m.h2hWinrate || 0).toFixed(0)}%` : 'No H2H edge'}</span>
+                <span class="fact-chip">🎯 ${pHomeQual.toFixed(2)}/${pHomeDef.toFixed(2)} vs ${pAwayQual.toFixed(2)}/${pAwayDef.toFixed(2)}</span>
+                ${slotChip}
+                <span class="fact-chip">💰 @1.6x odds</span>
+            </div>
+        `;
 
         html += `
-            <div class="match-card ${m.h2hPreferred ? 'highlight-prediction' : ''}" data-type="${predType}" data-search="${m.participantAName.toLowerCase()} ${m.participantBName.toLowerCase()}">
+            <div class="match-card ${m.h2hPreferred ? 'highlight-prediction' : ''}" data-type="${predTypeStr}" data-search="${m.participantAName.toLowerCase()} ${m.participantBName.toLowerCase()}">
                 <div class="match-header">
                     <span class="match-id">#${idx + 1}</span>
                     <span>🕒 ${date}</span>
@@ -218,62 +280,45 @@ function renderUpcomingMatches(upcoming, h2hData, playerStats) {
                     <div class="team-row">
                         <div class="team-info">
                             <span class="team-name">${homeRank}${m.participantAName}</span>
-                            <span class="style-badge ${hStyleClass}">${m.computedHomeStyle || 'UNKNOWN'}</span>
+                            <span class="style-badge ${hStyleClass}">${m.homeStyle || 'UNKNOWN'}</span>
                         </div>
-                        <span style="font-weight: 700; color: #38bdf8;">${hXG.toFixed(2)}</span>
                     </div>
                     <div class="team-row">
                         <div class="team-info">
                             <span class="team-name">${awayRank}${m.participantBName}</span>
-                            <span class="style-badge ${aStyleClass}">${m.computedAwayStyle || 'UNKNOWN'}</span>
+                            <span class="style-badge ${aStyleClass}">${m.awayStyle || 'UNKNOWN'}</span>
                         </div>
-                        <span style="font-weight: 700; color: #ec4899;">${aXG.toFixed(2)}</span>
                     </div>
                 </div>
 
-                ${xgHtml}
-                
-                ${predHtml}
-                
-                ${ouHtml}
+                ${signalGridHtml}
+                ${quickFactsHtml}
 
-                <div class="insight-box" style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px; margin-bottom: 12px; font-size: 0.85rem;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                        <span style="color: var(--text-muted);">Historical H2H Leader:</span>
-                        <strong style="color: var(--text-main);">${m.h2hFavored && m.h2hFavored !== 'N/A' ? `${m.h2hFavored} (${(m.h2hWinrate || 0).toFixed(1)}%)` : 'No Dominance / N/A'}</strong>
+                <details class="history-details" open>
+                    <summary>History</summary>
+                    <div class="match-history-box">
+                        <div class="history-row">
+                            <span class="history-label">🔵 ${m.participantAName} Last 5:</span>
+                            <div class="history-tags">${m.homeRecent ? renderHistoryTags(m.homeRecent) : ''}</div>
+                        </div>
+                        <div class="history-row">
+                            <span class="history-label">🟣 ${m.participantBName} Last 5:</span>
+                            <div class="history-tags">${m.awayRecent ? renderHistoryTags(m.awayRecent) : ''}</div>
+                        </div>
+                        <div class="history-row" style="margin-top: 6px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 6px;">
+                            <span class="history-label">🆚 H2H Last 5:</span>
+                            <div class="history-tags">${m.h2hHistory && m.h2hHistory.length > 0 ? renderH2HActualTags(m.h2hHistory, m.participantAName) : '<span style="color:var(--text-muted)">No Data</span>'}</div>
+                        </div>
+                        <div class="history-row">
+                            <span class="history-label">🥅 H2H OU2.5 Last 5:</span>
+                            <div class="history-tags">${m.h2hHistoryOU && m.h2hHistoryOU.length > 0 ? renderOUActualTags(m.h2hHistoryOU) : '<span style="color:var(--text-muted)">No Data</span>'}</div>
+                        </div>
                     </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <span style="color: var(--text-muted);">OU Model Historical Accuracy:</span>
-                        <strong style="color: ${m.ouCombinedWinrate && m.ouCombinedWinrate >= 50 ? 'var(--accent-cyan)' : 'var(--accent-red)'};">${(m.ouCombinedWinrate || 0).toFixed(1)}%</strong>
-                    </div>
-                </div>
-
-                <div class="profile-box">
-                    <div class="profile-row">
-                        <span>🎯 Scoring / Defending Quality:</span>
-                        <span style="font-weight:700; color: var(--text-main);">${pHomeQual.toFixed(2)}/${pHomeDef.toFixed(2)} | ${pAwayQual.toFixed(2)}/${pAwayDef.toFixed(2)}</span>
-                    </div>
-                    ${slotHtml}
-                </div>
-
-                <div class="match-history-box">
-                    <div class="history-row">
-                        <span class="history-label">🔵 ${m.participantAName} Last 5:</span>
-                        <div class="history-tags">${renderHistoryTags(m.homeRecent)}</div>
-                    </div>
-                    <div class="history-row">
-                        <span class="history-label">🟣 ${m.participantBName} Last 5:</span>
-                        <div class="history-tags">${renderHistoryTags(m.awayRecent)}</div>
-                    </div>
-                    <div class="history-row">
-                        <span class="history-label">⚔️ H2H Backtest (Last 5):</span>
-                        <div class="history-tags">${h2hTags}</div>
-                    </div>
-                </div>
+                </details>
             </div>
         `;
     });
-    
+
     premiumPlaysContainer.innerHTML = html;
 }
 
@@ -282,14 +327,18 @@ function renderPlayerTables(playerStats, standings) {
     if (standingsTbody) {
         let standingsHtml = '';
         standings.forEach(p => {
+            const styleClass = p.style ? p.style.toLowerCase() : 'neutral';
             standingsHtml += `
                 <tr>
                     <td><strong>${p.rank}</strong></td>
                     <td><strong>${p.p}</strong></td>
                     <td>${p.matches}</td>
+                    <td><strong style="color:var(--accent-purple)">${p.winRate}%</strong></td>
                     <td><div class="history-tags">${renderHistoryTags(p.streak)}</div></td>
                     <td>${p.goalsScored} : ${p.goalsConceded}</td>
+                    <td style="color:var(--text-muted)">${p.avgScored} : ${p.avgConceded}</td>
                     <td style="color:${p.gd > 0 ? 'var(--accent-green)' : (p.gd < 0 ? 'var(--accent-red)' : 'var(--text-main)')}">${p.gd > 0 ? '+'+p.gd : p.gd}</td>
+                    <td><span class="style-badge ${styleClass}">${p.style || 'UNKNOWN'}</span></td>
                     <td><strong style="color:var(--accent-cyan)">${p.points}</strong></td>
                 </tr>
             `;
@@ -311,13 +360,15 @@ function renderH2HTables(h2hData, otherH2hData) {
                         <td>${h.matches}</td>
                         <td><strong style="color:var(--accent-green)">${h.dominantPlayer}</strong></td>
                         <td>${wr}</td>
+                        <td style="color:var(--text-muted)">${(h.avgGoals || 0).toFixed(2)}</td>
+                        <td><div class="history-tags">${renderH2HMatchTags(h.recentForm, h.dominantPlayer)}</div></td>
                         <td style="color:var(--text-muted)">${h.breakdown}</td>
                     </tr>
                 `;
             });
             topTbody.innerHTML = html;
         } else {
-            topTbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color:var(--text-muted);">No high-domination pairs found.</td></tr>';
+            topTbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color:var(--text-muted);">No high-domination pairs found.</td></tr>';
         }
     }
 
@@ -333,18 +384,20 @@ function renderH2HTables(h2hData, otherH2hData) {
                         <td>${h.matches}</td>
                         <td><strong style="color:var(--accent-green)">${h.dominantPlayer}</strong></td>
                         <td>${wr}</td>
+                        <td style="color:var(--text-muted)">${(h.avgGoals || 0).toFixed(2)}</td>
+                        <td><div class="history-tags">${renderH2HMatchTags(h.recentForm, h.dominantPlayer)}</div></td>
                         <td style="color:var(--text-muted)">${h.breakdown}</td>
                     </tr>
                 `;
             });
             otherTbody.innerHTML = html;
         } else {
-            otherTbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color:var(--text-muted);">No other pairs found.</td></tr>';
+            otherTbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color:var(--text-muted);">No other pairs found.</td></tr>';
         }
     }
 }
 
 window.onload = () => {
     fetchDashboardData();
-    setInterval(fetchDashboardData, 60000); // refresh every minute
+
 };

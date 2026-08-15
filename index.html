@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60">
+
     <title>H2HBet AI Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,25 +23,62 @@
 
         <!-- KPI Metrics -->
         <div class="metrics-grid">
-            <div class="metric-card">
-                <span class="metric-label">Today's Profit</span>
-                <span class="metric-value" id="kpi-profit" style="color: var(--text-main);">--</span>
-            </div>
-            <div class="metric-card">
-                <span class="metric-label">League Avg Goals</span>
-                <span class="metric-value" style="color: var(--accent-cyan);"><span id="league-avg">--</span> <span style="font-size: 0.9rem; font-weight: 500;">/ team</span></span>
+            <div class="metric-card pl-card">
+                <span class="metric-label">Model P/L (This Rotation)</span>
+                <table class="pl-table">
+                    <thead>
+                        <tr><th></th><th>Poisson</th><th>Elo</th><th>Total</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Winner</td>
+                            <td id="kpi-h2h-poisson-profit">--</td>
+                            <td id="kpi-h2h-elo-profit">--</td>
+                            <td id="kpi-h2h-total-profit">--</td>
+                        </tr>
+                        <tr>
+                            <td>Totals</td>
+                            <td id="kpi-ou-poisson-profit">--</td>
+                            <td id="kpi-ou-elo-profit">--</td>
+                            <td id="kpi-ou-total-profit">--</td>
+                        </tr>
+                        <tr>
+                            <td>Over</td>
+                            <td id="kpi-ou-over-poisson">--</td>
+                            <td id="kpi-ou-over-elo">--</td>
+                            <td id="kpi-ou-over-total">--</td>
+                        </tr>
+                        <tr>
+                            <td>Under</td>
+                            <td id="kpi-ou-under-poisson">--</td>
+                            <td id="kpi-ou-under-elo">--</td>
+                            <td id="kpi-ou-under-total">--</td>
+                        </tr>
+                        <tr class="pl-total-row">
+                            <td>Today's Total</td>
+                            <td id="kpi-profit-poisson">--</td>
+                            <td id="kpi-profit-elo">--</td>
+                            <td id="kpi-profit-total">--</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="metric-card">
                 <span class="metric-label">Upcoming Matches</span>
                 <span class="metric-value" id="kpi-upcoming" style="color: var(--accent-blue);">--</span>
+                <div class="metric-subrow">
+                    <span class="metric-subitem dnb">🛡️ <strong id="kpi-upcoming-dnb">--</strong> Winner</span>
+                    <span class="metric-subitem totals">🎯 <strong id="kpi-upcoming-totals">--</strong> Totals</span>
+                    <span class="metric-subitem skip">⏹️ <strong id="kpi-upcoming-skip">--</strong> Skips</span>
+                </div>
             </div>
             <div class="metric-card">
-                <span class="metric-label">Premium Bets</span>
-                <span class="metric-value" id="kpi-bets" style="color: var(--accent-green);">--</span>
-            </div>
-            <div class="metric-card">
-                <span class="metric-label">AI Parlay Legs</span>
-                <span class="metric-value" id="kpi-parlay" style="color: var(--accent-purple);">--</span>
+                <span class="metric-label">League Avg Goals</span>
+                <span class="metric-value" style="color: var(--accent-cyan);"><span id="league-avg">--</span> <span style="font-size: 0.9rem; font-weight: 500;">/ team</span></span>
+                <div class="metric-subrow">
+                    <span class="metric-subitem">⚽ <strong id="kpi-avg-total-goals">--</strong> / match</span>
+                    <span class="metric-subitem">👥 <strong id="kpi-player-count">--</strong> players tracked</span>
+                </div>
             </div>
         </div>
 
@@ -85,6 +122,14 @@
                         <p style="color:var(--text-muted);">Loading parlay data...</p>
                     </div>
                 </div>
+                <div class="parlay-card">
+                    <div class="parlay-header">
+                        <h3>🎯 Best Totals Parlay (Top 4)</h3>
+                    </div>
+                    <div id="totals-parlay">
+                        <p style="color:var(--text-muted);">Loading parlay data...</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,14 +142,17 @@
                             <th>Rank</th>
                             <th>Player</th>
                             <th>Matches</th>
+                            <th>Win Rate</th>
                             <th>Form (W-D-L)</th>
                             <th>Goals (F:A)</th>
+                            <th>Avg G/G</th>
                             <th>GD</th>
+                            <th>Style</th>
                             <th>Points</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading leaderboard...</td></tr>
+                        <tr><td colspan="10" style="text-align: center; color: var(--text-muted);">Loading leaderboard...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -121,11 +169,13 @@
                             <th>Matches</th>
                             <th>Dominant Player</th>
                             <th>Win Rate</th>
+                            <th>Avg Goals/Match</th>
+                            <th>Recent Form</th>
                             <th>Breakdown</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading H2H data...</td></tr>
+                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading H2H data...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -139,11 +189,13 @@
                             <th>Matches</th>
                             <th>Leading Player</th>
                             <th>Win Rate</th>
+                            <th>Avg Goals/Match</th>
+                            <th>Recent Form</th>
                             <th>Breakdown</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading other H2H data...</td></tr>
+                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading other H2H data...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -165,37 +217,44 @@
             event.target.classList.add('active');
         }
 
-        function setFilter(type, btn) {
-            document.querySelectorAll('.filter-chip').forEach(el => el.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const cards = document.querySelectorAll('.match-card');
-            cards.forEach(card => {
-                if (type === 'all') {
-                    card.style.display = 'flex';
-                } else if (type === 'dnb') {
-                    card.style.display = card.dataset.type === 'dnb' ? 'flex' : 'none';
-                } else if (type === 'totals') {
-                    card.style.display = card.dataset.type === 'totals' ? 'flex' : 'none';
-                } else if (type === 'skip') {
-                    card.style.display = card.dataset.type === 'skip' ? 'flex' : 'none';
-                } else if (type === 'best') {
-                    card.style.display = card.classList.contains('highlight-prediction') ? 'flex' : 'none';
-                }
+        // Track the currently-active filter chip so we can re-apply it after an
+        // auto-refresh rebuilds the match-card DOM.
+        let currentFilter = 'all';
+
+        function cardMatchesFilter(card, type) {
+            if (type === 'all')    return true;
+            if (type === 'best')   return card.classList.contains('highlight-prediction');
+            if (type === 'dnb' || type === 'totals' || type === 'skip') {
+                return card.dataset.type && card.dataset.type.includes(type);
+            }
+            return true;
+        }
+
+        function reapplyFilterAndSearch() {
+            const query = (document.getElementById('searchInput')?.value || '').toLowerCase();
+            document.querySelectorAll('.match-card').forEach(card => {
+                const passesFilter = cardMatchesFilter(card, currentFilter);
+                const passesSearch = query === '' || (card.dataset.search && card.dataset.search.includes(query));
+                card.style.display = (passesFilter && passesSearch) ? 'flex' : 'none';
             });
         }
 
-        function applyFilters() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.match-card');
-            cards.forEach(card => {
-                if (query === '' || (card.dataset.search && card.dataset.search.includes(query))) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+        function setFilter(type, btn) {
+            document.querySelectorAll('.filter-chip').forEach(el => el.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = type;
+            reapplyFilterAndSearch();
         }
+
+        function applyFilters() {
+            // Called from the search input; delegates to the shared filter+search logic.
+            reapplyFilterAndSearch();
+        }
+
+        // Auto-refresh the dashboard every 5 minutes to fetch the latest data
+        setTimeout(() => {
+            window.location.reload();
+        }, 5 * 60 * 1000);
     </script>
 </body>
 </html>
