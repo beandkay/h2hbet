@@ -48,7 +48,13 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-    let filePath = path.join(PUBLIC_DIR, req.url === '/' ? 'index.html' : req.url);
+    const urlPath = decodeURIComponent(req.url.split('?')[0]);
+    const filePath = path.join(PUBLIC_DIR, urlPath === '/' ? 'index.html' : urlPath);
+    if (!filePath.startsWith(PUBLIC_DIR + path.sep) && filePath !== PUBLIC_DIR) {
+        res.writeHead(403);
+        res.end('403 Forbidden');
+        return;
+    }
     const extname = path.extname(filePath);
     const contentType = mimeTypes[extname] || 'text/plain';
 

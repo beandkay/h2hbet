@@ -244,7 +244,7 @@ function renderUpcomingMatches(upcoming, h2hData, playerStats, extraModelPerform
                 <span class="fact-chip">🏆 ${m.h2hFavored && m.h2hFavored !== 'N/A' ? `${m.h2hFavored} ${(m.h2hWinrate || 0).toFixed(0)}%` : 'No H2H edge'}</span>
                 <span class="fact-chip">🎯 ${pHomeQual.toFixed(2)}/${pHomeDef.toFixed(2)} vs ${pAwayQual.toFixed(2)}/${pAwayDef.toFixed(2)}</span>
                 ${slotChip}
-                <span class="fact-chip">💰 @1.6x odds</span>
+                <span class="fact-chip">💰 @1.7x odds</span>
             </div>
         `;
 

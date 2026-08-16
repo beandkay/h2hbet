@@ -37,7 +37,7 @@ function runAnalysis(allMatches) {
         const d = new Date(m.startDate);
         const matchAEST = new Date(d.getTime() + 10 * 60 * 60 * 1000);
         if (matchAEST >= startAEST && matchAEST < endAEST) {
-            if (m.matchStatus === 'MATCH_ENDED' && !m.isCancelled) {
+            if (m.matchStatus === 'MATCH_ENDED' && !m.isCancelled && typeof m.teamAScore === 'number' && typeof m.teamBScore === 'number') {
                 endedMatches.push(m);
             } else if (!m.isCancelled && m.matchStatus !== 'PERMANENT_BET_SUSPEND' && d > nowTime) {
                 upcomingMatches.push(m);

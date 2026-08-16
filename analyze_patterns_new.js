@@ -472,7 +472,7 @@ rawUpcoming.forEach((m, idx) => {
         };
 
         homeShift = getEmpiricalShiftStatus(m.startDate);
-        awayShift = getEmpiricalShiftStatus(m.startDate);
+        awayShift = homeShift;
 
         // Energy & Focus Phase Mismatch Adjustment:
         if (homeShift.phase === 2 && awayShift.phase === 3) homeXG += 0.12;
