@@ -7,16 +7,21 @@
 // stats from scratch each tick. That same forward pass also tallies each model's
 // live bets/wins/profit against its own historical picks (predict-before-update, so
 // it's the identical walk-forward, zero-lookahead check used in model_lab), giving a
-// running $5-stake/1.6x-payout performance figure that refreshes every tick.
+// running $5-stake/1.7x-payout performance figure that refreshes every tick.
 const fs = require('fs');
 
 const STAKE = 5;
-const PAYOUT = 1.6;
+const PAYOUT = 1.7;
 
-const OU_POISSON = { alpha: 0.15, threshOver: 0.65, threshUnder: 0.80, minMatches: 3 };
-const OU_ELO = { K: 0.15, threshOver: 0.68, threshUnder: 0.75, minMatches: 3 };
-const H2H_POISSON = { alpha: 0.3, threshold: 0.55, minMatches: 3 };
-const H2H_ELO = { K: 12, threshold: 0.62, minMatches: 3, initRating: 1500 };
+// Thresholds re-tuned for the 1.7x payout (was 1.6x): grid-searched per market for
+// max profit against a 45-day window (tmp_backtest/recent_45day_fresh.json), then
+// confirmed on the live 31-day history (historical_fifa.json) — see
+// tmp_backtest/grid_payout17.js. The higher payout lowers break-even win rate, so
+// every threshold moved down to trade some win-rate for materially higher coverage.
+const OU_POISSON = { alpha: 0.15, threshOver: 0.58, threshUnder: 0.65, minMatches: 3 };
+const OU_ELO = { K: 0.15, threshOver: 0.61, threshUnder: 0.70, minMatches: 3 };
+const H2H_POISSON = { alpha: 0.3, threshold: 0.525, minMatches: 3 };
+const H2H_ELO = { K: 12, threshold: 0.615, minMatches: 3, initRating: 1500 };
 
 function sigmoid(x) {
     return 1 / (1 + Math.exp(-x));

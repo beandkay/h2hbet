@@ -6,3 +6,4 @@ hist_data/
 .env
 npm-debug.log*
 yarn-error.log*
+tmp_backtest/
