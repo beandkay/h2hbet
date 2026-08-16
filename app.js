@@ -31,27 +31,6 @@ function renderHistoryTags(recent) {
     }).join('');
 }
 
-function renderH2HMatchTags(historyArr, homePlayer) {
-    if (!historyArr || historyArr.length === 0) return '<span style="color:var(--text-muted)">No Data</span>';
-    const tags = historyArr.slice(-5).map(h => {
-        if (typeof h === 'string') {
-            return '';
-        } else {
-            if (h.prediction && h.prediction.pick !== 'SKIP') {
-                let text = h.prediction.result;
-                let c = 'D';
-                if (text === 'W') c = 'W';
-                else if (text === 'L') c = 'L';
-                else if (text === 'P') { text = 'P'; c = 'D'; }
-                return `<span class="history-tag ${c}">${text}</span>`;
-            }
-            return '';
-        }
-    }).filter(t => t !== '');
-
-    return tags.length > 0 ? tags.join('') : '<span style="color:var(--text-muted)">No Data</span>';
-}
-
 // Actual (not prediction) H2H match winners for this pair — "W" tagged red when
 // homePlayer won, blue when away won, "D" for a draw.
 function renderH2HActualTags(historyArr, homePlayer) {
@@ -361,7 +340,7 @@ function renderH2HTables(h2hData, otherH2hData) {
                         <td><strong style="color:var(--accent-green)">${h.dominantPlayer}</strong></td>
                         <td>${wr}</td>
                         <td style="color:var(--text-muted)">${(h.avgGoals || 0).toFixed(2)}</td>
-                        <td><div class="history-tags">${renderH2HMatchTags(h.recentForm, h.dominantPlayer)}</div></td>
+                        <td><div class="history-tags">${renderH2HActualTags(h.recentForm, h.dominantPlayer)}</div></td>
                         <td style="color:var(--text-muted)">${h.breakdown}</td>
                     </tr>
                 `;
@@ -385,7 +364,7 @@ function renderH2HTables(h2hData, otherH2hData) {
                         <td><strong style="color:var(--accent-green)">${h.dominantPlayer}</strong></td>
                         <td>${wr}</td>
                         <td style="color:var(--text-muted)">${(h.avgGoals || 0).toFixed(2)}</td>
-                        <td><div class="history-tags">${renderH2HMatchTags(h.recentForm, h.dominantPlayer)}</div></td>
+                        <td><div class="history-tags">${renderH2HActualTags(h.recentForm, h.dominantPlayer)}</div></td>
                         <td style="color:var(--text-muted)">${h.breakdown}</td>
                     </tr>
                 `;
