@@ -7,3 +7,4 @@ hist_data/
 npm-debug.log*
 yarn-error.log*
 tmp_backtest/
+*.diff
