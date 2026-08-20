@@ -99,6 +99,7 @@ function runAnalysis(allMatches) {
         }
         m.h2hFavored = h2hFavored;
         m.h2hWinrate = h2hWinrate;
+        m.h2hAvgGoals = h2h.matches > 0 ? (h2h.totalGoals / h2h.matches) : 0;
 
         m.h2hHistory = (h2h.history || []).slice(-5).map(matchWinner => ({ matchWinner }));
         m.h2hHistoryOU = (h2h.historyOU || []).slice(-5).map(matchOU => ({ matchOU }));

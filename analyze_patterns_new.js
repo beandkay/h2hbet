@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
+const { OUDynamicOddsTracker, H2HDynamicOddsTracker, OU_BASELINE_ODDS, H2H_BASELINE_ODDS } = require('./src/dynamic_odds');
 
 let matchesYesterday = [];
 try { matchesYesterday = JSON.parse(fs.readFileSync('api_data_yesterday.json', 'utf8')); } catch (e) {}
@@ -131,6 +132,19 @@ endedMatches.forEach(m => {
     } else {
         h2hStats[pairKey].draws++;
     }
+});
+
+// --- Dynamic Odds Trackers — build per-pair streak state from ended matches ---
+const ouDynOdds = new OUDynamicOddsTracker();
+const h2hDynOdds = new H2HDynamicOddsTracker();
+endedMatches.forEach(m => {
+    const pairKey = [m.participantAName, m.participantBName].sort().join(' vs ');
+    const totalG = m.teamAScore + m.teamBScore;
+    ouDynOdds.recordResult(pairKey, totalG > 2.5 ? 'OVER' : 'UNDER');
+    let winner = null;
+    if (m.teamAScore > m.teamBScore) winner = m.participantAName;
+    else if (m.teamBScore > m.teamAScore) winner = m.participantBName;
+    h2hDynOdds.recordResult(pairKey, winner);
 });
 
 for (let player in playerStats) {
@@ -480,6 +494,17 @@ rawUpcoming.forEach((m, idx) => {
         if (homeShift.phase === 2 && awayShift.phase === 1) homeXG += 0.08;
         if (awayShift.phase === 2 && homeShift.phase === 1) awayXG += 0.08;
 
+        const h2hObj = h2hStats[pairKey];
+        if (h2hObj && h2hObj.matches > 0) {
+            const hWins = h2hObj[home] || 0;
+            const aWins = h2hObj[away] || 0;
+            const hRate = hWins / h2hObj.matches;
+            const aRate = aWins / h2hObj.matches;
+            const h2hDiff = hRate - aRate;
+            const h2hBonusWeight = Math.min(h2hObj.matches * 0.10, 0.40);
+            if (h2hDiff > 0) homeXG += h2hDiff * h2hBonusWeight;
+            else if (h2hDiff < 0) awayXG += -h2hDiff * h2hBonusWeight;
+        }
         const updatedDiff = homeXG - awayXG;
 
         let isHomeFav = updatedDiff > 1.00 || (homeWinRate > 0.60 && awayWinRate < 0.40 && (homeWinRate - awayWinRate) >= 0.30);
@@ -514,9 +539,13 @@ rawUpcoming.forEach((m, idx) => {
         homeUnc = calcUncertainty(sHome, homeSlotPerf, homeShift);
         awayUnc = calcUncertainty(sAway, awaySlotPerf, awayShift);
         
-        const formatFav = (name, type, unc) => {
+        const pairKey = [home, away].sort().join(' vs ');
+        const pairOUOdds = ouDynOdds.getOdds(pairKey);
+        const pairH2HOdds = h2hDynOdds.getOdds(pairKey, home, away);
+
+        const formatFav = (name, type, unc, favOdds) => {
             const riskStr = unc > 60 ? ` [Uncertainty: ${unc}/100 - HIGH RISK]` : ` [Uncertainty: ${unc}/100]`;
-            return `**${name} wins (${type})** - ⚖️ SOLID EDGE*${riskStr}`;
+            return `**${name} wins (${type} @ ${favOdds.toFixed(2)})** - ⚖️ SOLID EDGE*${riskStr}`;
         };
         
         const homeStreakStr = sHome.streak ? sHome.streak.slice(-3).join('') : '';
@@ -528,28 +557,30 @@ rawUpcoming.forEach((m, idx) => {
         const absDiff = Math.abs(updatedDiff);
 
         if (isHomeUpsetRisk) {
-            prediction = `**${away} wins (Bet Underdog)** - 🚨 UPSET ALERT*`;
+            prediction = `**${away} wins (Bet Underdog @ ${pairH2HOdds.awayOdds.toFixed(2)})** - 🚨 UPSET ALERT*`;
             isUpsetAlert = true;
             predictionType = "UPSET";
         } else if (isAwayUpsetRisk) {
-            prediction = `**${home} wins (Bet Underdog)** - 🚨 UPSET ALERT*`;
+            prediction = `**${home} wins (Bet Underdog @ ${pairH2HOdds.homeOdds.toFixed(2)})** - 🚨 UPSET ALERT*`;
             isUpsetAlert = true;
             predictionType = "UPSET";
         } else if (absDiff >= 0.50 && (homeShift.phase === 2 || awayShift.phase === 2 || homeShift.phase === 1) && homeUnc <= 30 && awayUnc <= 30) {
             const favName = updatedDiff > 0 ? home : away;
+            const favOdds = updatedDiff > 0 ? pairH2HOdds.homeOdds : pairH2HOdds.awayOdds;
             const favUnc = updatedDiff > 0 ? homeUnc : awayUnc;
-            prediction = `**${favName} wins (DNB @ 1.70 / DC @ 1.45)** - 💎 ABSOLUTE SURE LOCK* [Uncertainty: ${favUnc}/100]`;
+            prediction = `**${favName} wins (DNB @ ${favOdds.toFixed(2)} / DC @ ${(favOdds - 0.25).toFixed(2)})** - 💎 ABSOLUTE SURE LOCK* [Uncertainty: ${favUnc}/100]`;
             predictionType = "SURE_LOCK";
         } else if (absDiff >= 0.35 && (homeShift.phase === 2 || awayShift.phase === 2 || homeShift.phase === 1) && homeUnc <= 35 && awayUnc <= 35) {
             const favName = updatedDiff > 0 ? home : away;
+            const favOdds = updatedDiff > 0 ? pairH2HOdds.homeOdds : pairH2HOdds.awayOdds;
             const favUnc = updatedDiff > 0 ? homeUnc : awayUnc;
-            prediction = `**${favName} wins (Draw No Bet @ 1.70)** - 🔥 HIGH CONFIDENCE LOCK* [Uncertainty: ${favUnc}/100]`;
+            prediction = `**${favName} wins (Draw No Bet @ ${favOdds.toFixed(2)})** - 🔥 HIGH CONFIDENCE LOCK* [Uncertainty: ${favUnc}/100]`;
             predictionType = "HIGH_LOCK";
         } else if (updatedDiff >= activeMinDnbThreshold) {
-            prediction = formatFav(home, 'Draw No Bet', homeUnc);
+            prediction = formatFav(home, 'Draw No Bet', homeUnc, pairH2HOdds.homeOdds);
             predictionType = "DNB";
         } else if (updatedDiff <= -activeMinDnbThreshold) {
-            prediction = formatFav(away, 'Draw No Bet', awayUnc);
+            prediction = formatFav(away, 'Draw No Bet', awayUnc, pairH2HOdds.awayOdds);
             predictionType = "DNB";
         } else {
             prediction = `*SKIP (Too Close to Call / Shift Phase Noise)*`;
@@ -596,18 +627,22 @@ rawUpcoming.forEach((m, idx) => {
         m.computedAway = away;
         m.computedHomeUnc = homeUnc;
         m.computedAwayUnc = awayUnc;
+        m.computedOverOdds = pairOUOdds.overOdds;
+        m.computedUnderOdds = pairOUOdds.underOdds;
+        m.computedHomeOdds = pairH2HOdds.homeOdds;
+        m.computedAwayOdds = pairH2HOdds.awayOdds;
         
         // Clean, Non-Redundant Totals Prediction (No OVER 1.5, No Redundant NO BETs)
         let isGl3Convective = totalXG >= 3.25 && homeStyle === 'Aggressive' && awayStyle === 'Aggressive' && (!h2h || h2h.matches < 2 || h2hAvgGoals >= 3.0);
 
         if (totalXG > 3.15) {
             if (isGl3Convective) {
-                ouPrediction = "**OVER 2.5** | **OVER 3.0** (Goal Line - Push on 3)";
+                ouPrediction = `**OVER 2.5 (@ ${pairOUOdds.overOdds.toFixed(2)})** | **OVER 3.0** (Goal Line - Push on 3)`;
             } else {
-                ouPrediction = "**OVER 2.5**";
+                ouPrediction = `**OVER 2.5 (@ ${pairOUOdds.overOdds.toFixed(2)})**`;
             }
         } else if (totalXG < 2.75) {
-            ouPrediction = "**UNDER 2.5**";
+            ouPrediction = `**UNDER 2.5 (@ ${pairOUOdds.underOdds.toFixed(2)})**`;
         } else {
             ouPrediction = "*NO BET (Totals)*";
         }
@@ -651,6 +686,9 @@ rawUpcoming.forEach((m, idx) => {
     const homeSlotPerf = getPlayerSlotPerformance(home, m.startDate);
     const awaySlotPerf = getPlayerSlotPerformance(away, m.startDate);
     
+    const pairOUOdds = ouDynOdds.getOdds(pairKey);
+    const pairH2HOdds = h2hDynOdds.getOdds(pairKey, home, away);
+
     upcomingMatchData.push({
         idx: idx + 1,
         home,
@@ -682,7 +720,11 @@ rawUpcoming.forEach((m, idx) => {
         homeAdjScored: sHome ? sHome.adjScoringAbility : 0,
         homeAdjDefended: sHome ? sHome.adjDefendingAbility : 0,
         awayAdjScored: sAway ? sAway.adjScoringAbility : 0,
-        awayAdjDefended: sAway ? sAway.adjDefendingAbility : 0
+        awayAdjDefended: sAway ? sAway.adjDefendingAbility : 0,
+        overOdds: pairOUOdds.overOdds,
+        underOdds: pairOUOdds.underOdds,
+        homeOdds: pairH2HOdds.homeOdds,
+        awayOdds: pairH2HOdds.awayOdds
     });
     
     report += `### ${idx + 1}. ${home} (${hStyle}) vs ${away} (${aStyle}) [${matchTime}]\n`;
@@ -712,7 +754,7 @@ if (totalsParlay.length > 0) {
     report += `### ⚽ Over 2.5 Goals Parlay (${totalsParlay.length} Legs)\n`;
     report += `> **Model Logic:** Strictly matches where both players have an Aggressive style and Expected Goals are > 4.00.\n\n`;
     totalsParlay.forEach((m, idx) => {
-        report += `${idx + 1}. **${m.computedHome} vs ${m.computedAway}** *(Expected Goals: ${m.computedTotalXG.toFixed(2)})* -> **Play: OVER 2.5 Goals**\n`;
+        report += `${idx + 1}. **${m.computedHome} vs ${m.computedAway}** *(Expected Goals: ${m.computedTotalXG.toFixed(2)})* -> **Play: OVER 2.5 Goals (@ ${m.computedOverOdds.toFixed(2)})**\n`;
     });
 } else {
     report += `### ⚽ Over 2.5 Goals Parlay\n*No highly confident Over 2.5 matches (Aggressive vs Aggressive > 4.00 XG) found in this rotation.*\n`;
@@ -722,23 +764,24 @@ const winnerParlay = rawUpcoming.filter(m => {
     if (!m.computedPrediction || !m.computedPrediction.includes('Draw No Bet') || m.computedPrediction.includes('UPSET ALERT')) return false;
     const fav = m.computedPrediction.includes(m.computedHome) ? m.computedHome : m.computedAway;
     const unc = fav === m.computedHome ? m.computedHomeUnc : m.computedAwayUnc;
-    return unc <= 10;
+    return unc <= 25;
 }).sort((a, b) => {
     const favA = a.computedPrediction.includes(a.computedHome) ? a.computedHome : a.computedAway;
     const uncA = favA === a.computedHome ? (a.computedHomeUnc || 0) : (a.computedAwayUnc || 0);
     const favB = b.computedPrediction.includes(b.computedHome) ? b.computedHome : b.computedAway;
     const uncB = favB === b.computedHome ? (b.computedHomeUnc || 0) : (b.computedAwayUnc || 0);
     return uncA - uncB;
-}).slice(0, 3);
+}).slice(0, 8);
 
 report += "\n";
 if (winnerParlay.length > 0) {
     report += `### 🏆 Winner Parlay (${winnerParlay.length} Legs)\n`;
-    report += `> **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 10.\n\n`;
+    report += `> **Model Logic:** Strictly favorites playing on a "Draw No Bet" line to protect against ties, with Uncertainty Score <= 25.\n\n`;
     winnerParlay.forEach((m, idx) => {
         const fav = m.computedPrediction.includes(m.computedHome) ? m.computedHome : m.computedAway;
+        const favOdds = fav === m.computedHome ? m.computedHomeOdds : m.computedAwayOdds;
         const unc = fav === m.computedHome ? m.computedHomeUnc : m.computedAwayUnc;
-        report += `${idx + 1}. **${fav}** to beat ${fav === m.computedHome ? m.computedAway : m.computedHome} -> **Play: Draw No Bet** *[Uncertainty: ${unc}/100]*\n`;
+        report += `${idx + 1}. **${fav}** to beat ${fav === m.computedHome ? m.computedAway : m.computedHome} -> **Play: Draw No Bet (@ ${favOdds.toFixed(2)})** *[Uncertainty: ${unc}/100]*\n`;
     });
 } else {
     report += `### 🏆 Winner Parlay\n*No extremely safe Draw No Bet favorites (Uncertainty <= 10) found in this rotation.*\n`;
@@ -1593,6 +1636,13 @@ function generateHtmlReport() {
                                     <span class="slot-badge ${m.awayShift.phase === 2 ? 'PEAK' : (m.awayShift.phase === 1 ? 'STEADY' : 'COLD')}">${m.away}: P${m.awayShift.phase} ${m.awayShift.name}</span>
                                 </div>
                             </div>
+                            <div class="profile-row">
+                                <span>💰 Dynamic Odds:</span>
+                                <div>
+                                    <span class="slot-badge ${m.homeOdds < 1.83 ? 'COLD' : (m.homeOdds > 1.83 ? 'PEAK' : 'NEUTRAL')}">H2H: ${m.home} @${m.homeOdds.toFixed(2)} / ${m.away} @${m.awayOdds.toFixed(2)}</span>
+                                    <span class="slot-badge ${m.overOdds < 1.6 ? 'COLD' : (m.overOdds > 1.6 ? 'PEAK' : 'NEUTRAL')}">OU: Over @${m.overOdds.toFixed(2)} / Under @${m.underOdds.toFixed(2)}</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="match-history-box">
@@ -1662,7 +1712,7 @@ function generateHtmlReport() {
                         <span style="font-size: 1.5rem;">🏆</span>
                         <div>
                             <h3>Winner Parlay (${winnerParlay.length} Legs)</h3>
-                            <p style="font-size: 0.825rem; color: var(--text-muted);">Safe Draw No Bet favorites with Uncertainty ≤ 10</p>
+                            <p style="font-size: 0.825rem; color: var(--text-muted);">Safe Draw No Bet favorites with Uncertainty ≤ 25</p>
                         </div>
                     </div>
                     ${winnerParlay.length > 0 ? winnerParlay.map((m, idx) => {

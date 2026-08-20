@@ -117,6 +117,30 @@ function renderDashboard(data) {
     setProfitEl('kpi-ou-under-elo', ouUnderElo);
     setProfitEl('kpi-ou-under-total', ouUnderPoisson + ouUnderElo);
 
+    // --- Segment P/L (3 × 4-hour blocks) ---
+    const segments = data.extraModelPerformance && data.extraModelPerformance.segments;
+    if (segments && segments.length === 3) {
+        segments.forEach((seg, i) => {
+            const labelEl = document.getElementById(`segment-label-${i}`);
+            if (labelEl) labelEl.textContent = `📊 ${seg.label}`;
+
+            const h2hP = seg.h2hPoisson ? seg.h2hPoisson.profit : 0;
+            const h2hE = seg.h2hElo ? seg.h2hElo.profit : 0;
+            const ouP = seg.ouPoisson ? seg.ouPoisson.profit : 0;
+            const ouE = seg.ouElo ? seg.ouElo.profit : 0;
+
+            setProfitEl(`seg${i}-h2h-poisson`, h2hP);
+            setProfitEl(`seg${i}-h2h-elo`, h2hE);
+            setProfitEl(`seg${i}-h2h-total`, h2hP + h2hE);
+            setProfitEl(`seg${i}-ou-poisson`, ouP);
+            setProfitEl(`seg${i}-ou-elo`, ouE);
+            setProfitEl(`seg${i}-ou-total`, ouP + ouE);
+            setProfitEl(`seg${i}-total-poisson`, h2hP + ouP);
+            setProfitEl(`seg${i}-total-elo`, h2hE + ouE);
+            setProfitEl(`seg${i}-total`, h2hP + h2hE + ouP + ouE);
+        });
+    }
+
     if (data.winnerParlay && data.winnerParlay.length > 0) {
         let html = '';
         data.winnerParlay.forEach((m, idx) => {
@@ -242,9 +266,11 @@ function renderUpcomingMatches(upcoming, h2hData, playerStats, extraModelPerform
         const quickFactsHtml = `
             <div class="quick-facts">
                 <span class="fact-chip">🏆 ${m.h2hFavored && m.h2hFavored !== 'N/A' ? `${m.h2hFavored} ${(m.h2hWinrate || 0).toFixed(0)}%` : 'No H2H edge'}</span>
+                <span class="fact-chip">⚽ H2H Avg Goals: ${m.h2hAvgGoals > 0 ? m.h2hAvgGoals.toFixed(2) : 'N/A'}</span>
                 <span class="fact-chip">🎯 ${pHomeQual.toFixed(2)}/${pHomeDef.toFixed(2)} vs ${pAwayQual.toFixed(2)}/${pAwayDef.toFixed(2)}</span>
                 ${slotChip}
-                <span class="fact-chip">💰 @1.7x odds</span>
+                <span class="fact-chip">💰 H2H @${(m.h2hPoissonHomeOdds || 1.83).toFixed(2)}/${(m.h2hPoissonAwayOdds || 1.83).toFixed(2)}</span>
+                <span class="fact-chip">🎲 OU @${(m.ouPoissonOverOdds || 1.6).toFixed(2)}O/${(m.ouPoissonUnderOdds || 1.6).toFixed(2)}U</span>
             </div>
         `;
 

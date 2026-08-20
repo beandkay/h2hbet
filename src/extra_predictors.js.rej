@@ -1,0 +1,17 @@
+--- src/extra_predictors.js
++++ src/extra_predictors.js
+@@ -35,10 +35,10 @@ const PAYOUT = 1.6;
+ // tmp_backtest/tune_window_rotation_isolated.js — so state stays continuous.
+ // The `OU_POISSON` name and its `ouPoisson*` output fields are kept as-is for
+ // compatibility with the dashboard/pipeline code that reads them.
+-const OU_POISSON = { windowN: 22, threshOver: 3.2, threshUnder: 2.0, minMatches: 3 };
+-const OU_ELO = { K: 0.15, threshOver: 0.67, threshUnder: 0.75, minMatches: 3 };
+-const H2H_POISSON = { alpha: 0.3, threshold: 0.505, minMatches: 3 };
+-const H2H_ELO = { K: 12, threshold: 0.585, minMatches: 3, initRating: 1500 };
++const OU_POISSON = { windowN: 16, threshOver: 3.9, threshUnder: 2.4, minMatches: 3 };
++const OU_ELO = { K: 0.03, threshOver: 0.59, threshUnder: 0.56, minMatches: 3 };
++const H2H_POISSON = { alpha: 0.6, threshold: 0.40, minMatches: 3 };
++const H2H_ELO = { K: 50, threshold: 0.54, minMatches: 3, initRating: 1500 };
+ 
+ function sigmoid(x) {
+     return 1 / (1 + Math.exp(-x));
