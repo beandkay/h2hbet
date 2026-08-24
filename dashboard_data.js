@@ -1,14 +1,14 @@
 const dashboardData = {
-  "generatedAt": "2026-08-24T15:11:01.632Z",
-  "leagueAvgGoalsPerTeam": 1.3633093525179856,
+  "generatedAt": "2026-08-24T15:55:23.699Z",
+  "leagueAvgGoalsPerTeam": 1.3424657534246576,
   "playerStats": {
     "PROPHET": {
-      "matches": 18,
+      "matches": 20,
       "wins": 5,
       "draws": 6,
-      "losses": 7,
-      "goalsScored": 31,
-      "goalsConceded": 34,
+      "losses": 9,
+      "goalsScored": 33,
+      "goalsConceded": 38,
       "streak": [
         "D",
         "L",
@@ -27,7 +27,9 @@ const dashboardData = {
         "L",
         "L",
         "L",
-        "D"
+        "D",
+        "L",
+        "L"
       ],
       "goalsList": [
         1,
@@ -47,7 +49,9 @@ const dashboardData = {
         0,
         1,
         2,
-        3
+        3,
+        0,
+        2
       ],
       "concededList": [
         1,
@@ -67,6 +71,8 @@ const dashboardData = {
         2,
         2,
         3,
+        3,
+        1,
         3
       ],
       "history": [
@@ -159,25 +165,35 @@ const dashboardData = {
           "opponent": "PLUTO",
           "scored": 3,
           "conceded": 3
+        },
+        {
+          "opponent": "PHENOM",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "HORIZON",
+          "scored": 2,
+          "conceded": 3
         }
       ],
-      "winRate": "27.8",
-      "avgScored": "1.72",
-      "avgConceded": "1.89",
+      "winRate": "25.0",
+      "avgScored": "1.65",
+      "avgConceded": "1.90",
       "style": "Aggressive",
-      "recentForm": "D-L-W-W-W-L-W-D-D-D-L-W-L-D-L-L-L-D",
+      "recentForm": "D-L-W-W-W-L-W-D-D-D-L-W-L-D-L-L-L-D-L-L",
       "points": 21,
-      "gd": -3,
-      "adjScoringAbility": 1.6,
-      "adjDefendingAbility": 1.7,
-      "rank": 11
+      "gd": -5,
+      "adjScoringAbility": 1.56,
+      "adjDefendingAbility": 1.69,
+      "rank": 13
     },
     "PHENOM": {
-      "matches": 18,
-      "wins": 6,
+      "matches": 19,
+      "wins": 7,
       "draws": 3,
       "losses": 9,
-      "goalsScored": 25,
+      "goalsScored": 26,
       "goalsConceded": 27,
       "streak": [
         "D",
@@ -197,7 +213,8 @@ const dashboardData = {
         "W",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
       "goalsList": [
         1,
@@ -216,6 +233,7 @@ const dashboardData = {
         2,
         2,
         2,
+        1,
         1,
         1
       ],
@@ -237,7 +255,8 @@ const dashboardData = {
         1,
         1,
         2,
-        2
+        2,
+        0
       ],
       "history": [
         {
@@ -329,26 +348,31 @@ const dashboardData = {
           "opponent": "HORIZON",
           "scored": 1,
           "conceded": 2
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 1,
+          "conceded": 0
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.39",
-      "avgConceded": "1.50",
+      "winRate": "36.8",
+      "avgScored": "1.37",
+      "avgConceded": "1.42",
       "style": "Defensive",
-      "recentForm": "D-L-W-L-W-D-L-L-L-D-L-L-W-W-W-W-L-L",
-      "points": 21,
-      "gd": -2,
-      "adjScoringAbility": 1.26,
-      "adjDefendingAbility": 1.27,
+      "recentForm": "D-L-W-L-W-D-L-L-L-D-L-L-W-W-W-W-L-L-W",
+      "points": 24,
+      "gd": -1,
+      "adjScoringAbility": 1.2,
+      "adjDefendingAbility": 1.2,
       "rank": 10
     },
     "ALIBI": {
-      "matches": 18,
+      "matches": 20,
       "wins": 8,
-      "draws": 6,
-      "losses": 4,
-      "goalsScored": 30,
-      "goalsConceded": 24,
+      "draws": 7,
+      "losses": 5,
+      "goalsScored": 31,
+      "goalsConceded": 26,
       "streak": [
         "L",
         "D",
@@ -367,7 +391,9 @@ const dashboardData = {
         "W",
         "D",
         "D",
-        "W"
+        "W",
+        "D",
+        "L"
       ],
       "goalsList": [
         2,
@@ -387,7 +413,9 @@ const dashboardData = {
         3,
         1,
         1,
-        2
+        2,
+        1,
+        0
       ],
       "concededList": [
         3,
@@ -407,7 +435,9 @@ const dashboardData = {
         1,
         1,
         1,
-        0
+        0,
+        1,
+        1
       ],
       "history": [
         {
@@ -499,26 +529,36 @@ const dashboardData = {
           "opponent": "COSMOS",
           "scored": 2,
           "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 0,
+          "conceded": 1
         }
       ],
-      "winRate": "44.4",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
+      "winRate": "40.0",
+      "avgScored": "1.55",
+      "avgConceded": "1.30",
       "style": "Defensive",
-      "recentForm": "L-D-W-W-D-W-W-L-D-L-L-D-W-W-W-D-D-W",
-      "points": 30,
-      "gd": 6,
-      "adjScoringAbility": 1.55,
-      "adjDefendingAbility": 1.34,
-      "rank": 5
+      "recentForm": "L-D-W-W-D-W-W-L-D-L-L-D-W-W-W-D-D-W-D-L",
+      "points": 31,
+      "gd": 5,
+      "adjScoringAbility": 1.49,
+      "adjDefendingAbility": 1.33,
+      "rank": 4
     },
     "ASSAULT": {
-      "matches": 18,
+      "matches": 19,
       "wins": 8,
-      "draws": 4,
+      "draws": 5,
       "losses": 6,
-      "goalsScored": 29,
-      "goalsConceded": 26,
+      "goalsScored": 30,
+      "goalsConceded": 27,
       "streak": [
         "W",
         "W",
@@ -537,7 +577,8 @@ const dashboardData = {
         "W",
         "D",
         "D",
-        "W"
+        "W",
+        "D"
       ],
       "goalsList": [
         3,
@@ -557,7 +598,8 @@ const dashboardData = {
         4,
         1,
         2,
-        2
+        2,
+        1
       ],
       "concededList": [
         2,
@@ -577,7 +619,8 @@ const dashboardData = {
         3,
         1,
         2,
-        0
+        0,
+        1
       ],
       "history": [
         {
@@ -669,17 +712,22 @@ const dashboardData = {
           "opponent": "VENUS",
           "scored": 2,
           "conceded": 0
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
         }
       ],
-      "winRate": "44.4",
-      "avgScored": "1.61",
-      "avgConceded": "1.44",
-      "style": "Aggressive",
-      "recentForm": "W-W-D-L-W-W-L-L-L-W-W-L-L-D-W-D-D-W",
-      "points": 28,
+      "winRate": "42.1",
+      "avgScored": "1.58",
+      "avgConceded": "1.42",
+      "style": "Defensive",
+      "recentForm": "W-W-D-L-W-W-L-L-L-W-W-L-L-D-W-D-D-W-D",
+      "points": 29,
       "gd": 3,
-      "adjScoringAbility": 1.52,
-      "adjDefendingAbility": 1.43,
+      "adjScoringAbility": 1.54,
+      "adjDefendingAbility": 1.45,
       "rank": 6
     },
     "ZT": {
@@ -888,9 +936,9 @@ const dashboardData = {
       "recentForm": "D-D-L-L-D-L-W-L-D-W-D-L-D-L-D-D-W-L-L-D-L-W-L",
       "points": 21,
       "gd": -10,
-      "adjScoringAbility": 0.99,
-      "adjDefendingAbility": 1.32,
-      "rank": 13
+      "adjScoringAbility": 0.98,
+      "adjDefendingAbility": 1.3,
+      "rank": 14
     },
     "HAVOC": {
       "matches": 23,
@@ -1098,16 +1146,16 @@ const dashboardData = {
       "recentForm": "D-W-W-D-D-W-L-D-D-L-D-L-D-L-D-L-L-L-W-L-W-D-W",
       "points": 27,
       "gd": 1,
-      "adjScoringAbility": 1.05,
-      "adjDefendingAbility": 0.91,
-      "rank": 7
+      "adjScoringAbility": 1.04,
+      "adjDefendingAbility": 0.9,
+      "rank": 8
     },
     "BULLFROG": {
-      "matches": 22,
-      "wins": 8,
+      "matches": 23,
+      "wins": 9,
       "draws": 2,
       "losses": 12,
-      "goalsScored": 25,
+      "goalsScored": 26,
       "goalsConceded": 31,
       "streak": [
         "L",
@@ -1131,7 +1179,8 @@ const dashboardData = {
         "L",
         "L",
         "W",
-        "D"
+        "D",
+        "W"
       ],
       "goalsList": [
         1,
@@ -1155,7 +1204,8 @@ const dashboardData = {
         0,
         1,
         2,
-        2
+        2,
+        1
       ],
       "concededList": [
         2,
@@ -1179,7 +1229,8 @@ const dashboardData = {
         1,
         3,
         1,
-        2
+        2,
+        0
       ],
       "history": [
         {
@@ -1291,26 +1342,31 @@ const dashboardData = {
           "opponent": "DART",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 0
         }
       ],
-      "winRate": "36.4",
-      "avgScored": "1.14",
-      "avgConceded": "1.41",
+      "winRate": "39.1",
+      "avgScored": "1.13",
+      "avgConceded": "1.35",
       "style": "Defensive",
-      "recentForm": "L-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-L-D-L-L-W-D",
-      "points": 26,
-      "gd": -6,
-      "adjScoringAbility": 1.1,
-      "adjDefendingAbility": 1.24,
-      "rank": 8
+      "recentForm": "L-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-L-D-L-L-W-D-W",
+      "points": 29,
+      "gd": -5,
+      "adjScoringAbility": 1.08,
+      "adjDefendingAbility": 1.19,
+      "rank": 7
     },
     "MJ": {
-      "matches": 22,
+      "matches": 23,
       "wins": 10,
       "draws": 5,
-      "losses": 7,
+      "losses": 8,
       "goalsScored": 33,
-      "goalsConceded": 30,
+      "goalsConceded": 31,
       "streak": [
         "W",
         "D",
@@ -1333,7 +1389,8 @@ const dashboardData = {
         "W",
         "D",
         "L",
-        "W"
+        "W",
+        "L"
       ],
       "goalsList": [
         2,
@@ -1357,7 +1414,8 @@ const dashboardData = {
         1,
         3,
         1,
-        3
+        3,
+        0
       ],
       "concededList": [
         1,
@@ -1381,7 +1439,8 @@ const dashboardData = {
         0,
         3,
         2,
-        0
+        0,
+        1
       ],
       "history": [
         {
@@ -1493,26 +1552,31 @@ const dashboardData = {
           "opponent": "DART",
           "scored": 3,
           "conceded": 0
+        },
+        {
+          "opponent": "BULLFROG",
+          "scored": 0,
+          "conceded": 1
         }
       ],
-      "winRate": "45.5",
-      "avgScored": "1.50",
-      "avgConceded": "1.36",
+      "winRate": "43.5",
+      "avgScored": "1.43",
+      "avgConceded": "1.35",
       "style": "Defensive",
-      "recentForm": "W-D-L-D-L-D-W-L-W-L-W-W-L-W-W-L-W-D-W-D-L-W",
+      "recentForm": "W-D-L-D-L-D-W-L-W-L-W-W-L-W-W-L-W-D-W-D-L-W-L",
       "points": 35,
-      "gd": 3,
-      "adjScoringAbility": 1.43,
-      "adjDefendingAbility": 1.36,
-      "rank": 2
+      "gd": 2,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.33,
+      "rank": 3
     },
     "PLUTO": {
-      "matches": 18,
+      "matches": 19,
       "wins": 7,
-      "draws": 4,
+      "draws": 5,
       "losses": 7,
-      "goalsScored": 29,
-      "goalsConceded": 31,
+      "goalsScored": 30,
+      "goalsConceded": 32,
       "streak": [
         "L",
         "W",
@@ -1531,6 +1595,7 @@ const dashboardData = {
         "W",
         "L",
         "W",
+        "D",
         "D"
       ],
       "goalsList": [
@@ -1551,7 +1616,8 @@ const dashboardData = {
         2,
         1,
         2,
-        3
+        3,
+        1
       ],
       "concededList": [
         2,
@@ -1571,7 +1637,8 @@ const dashboardData = {
         0,
         2,
         1,
-        3
+        3,
+        1
       ],
       "history": [
         {
@@ -1663,26 +1730,31 @@ const dashboardData = {
           "opponent": "PROPHET",
           "scored": 3,
           "conceded": 3
+        },
+        {
+          "opponent": "HORIZON",
+          "scored": 1,
+          "conceded": 1
         }
       ],
-      "winRate": "38.9",
-      "avgScored": "1.61",
-      "avgConceded": "1.72",
+      "winRate": "36.8",
+      "avgScored": "1.58",
+      "avgConceded": "1.68",
       "style": "Aggressive",
-      "recentForm": "L-W-L-D-L-W-D-W-D-L-W-L-W-L-W-L-W-D",
-      "points": 25,
+      "recentForm": "L-W-L-D-L-W-D-W-D-L-W-L-W-L-W-L-W-D-D",
+      "points": 26,
       "gd": -2,
-      "adjScoringAbility": 1.4,
-      "adjDefendingAbility": 1.51,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.47,
       "rank": 9
     },
     "HORIZON": {
-      "matches": 18,
-      "wins": 9,
-      "draws": 5,
+      "matches": 20,
+      "wins": 10,
+      "draws": 6,
       "losses": 4,
-      "goalsScored": 27,
-      "goalsConceded": 20,
+      "goalsScored": 31,
+      "goalsConceded": 23,
       "streak": [
         "W",
         "W",
@@ -1701,6 +1773,8 @@ const dashboardData = {
         "L",
         "W",
         "W",
+        "W",
+        "D",
         "W"
       ],
       "goalsList": [
@@ -1721,7 +1795,9 @@ const dashboardData = {
         1,
         2,
         3,
-        2
+        2,
+        1,
+        3
       ],
       "concededList": [
         0,
@@ -1741,7 +1817,9 @@ const dashboardData = {
         2,
         1,
         2,
-        1
+        1,
+        1,
+        2
       ],
       "history": [
         {
@@ -1833,25 +1911,35 @@ const dashboardData = {
           "opponent": "PHENOM",
           "scored": 2,
           "conceded": 1
+        },
+        {
+          "opponent": "PLUTO",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 3,
+          "conceded": 2
         }
       ],
       "winRate": "50.0",
-      "avgScored": "1.50",
-      "avgConceded": "1.11",
+      "avgScored": "1.55",
+      "avgConceded": "1.15",
       "style": "Defensive",
-      "recentForm": "W-W-L-D-L-D-D-D-W-W-W-W-L-D-L-W-W-W",
-      "points": 32,
-      "gd": 7,
-      "adjScoringAbility": 1.2,
-      "adjDefendingAbility": 0.98,
-      "rank": 3
+      "recentForm": "W-W-L-D-L-D-D-D-W-W-W-W-L-D-L-W-W-W-D-W",
+      "points": 36,
+      "gd": 8,
+      "adjScoringAbility": 1.24,
+      "adjDefendingAbility": 1.01,
+      "rank": 2
     },
     "COSMOS": {
-      "matches": 18,
-      "wins": 4,
+      "matches": 19,
+      "wins": 5,
       "draws": 6,
       "losses": 8,
-      "goalsScored": 23,
+      "goalsScored": 24,
       "goalsConceded": 25,
       "streak": [
         "W",
@@ -1871,7 +1959,8 @@ const dashboardData = {
         "L",
         "D",
         "D",
-        "L"
+        "L",
+        "W"
       ],
       "goalsList": [
         3,
@@ -1891,7 +1980,8 @@ const dashboardData = {
         1,
         0,
         2,
-        0
+        0,
+        1
       ],
       "concededList": [
         0,
@@ -1911,7 +2001,8 @@ const dashboardData = {
         3,
         0,
         2,
-        2
+        2,
+        0
       ],
       "history": [
         {
@@ -2003,26 +2094,31 @@ const dashboardData = {
           "opponent": "ALIBI",
           "scored": 0,
           "conceded": 2
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 0
         }
       ],
-      "winRate": "22.2",
-      "avgScored": "1.28",
-      "avgConceded": "1.39",
+      "winRate": "26.3",
+      "avgScored": "1.26",
+      "avgConceded": "1.32",
       "style": "Defensive",
-      "recentForm": "W-L-L-D-L-L-W-W-D-L-L-D-W-D-L-D-D-L",
-      "points": 18,
-      "gd": -2,
-      "adjScoringAbility": 1.18,
-      "adjDefendingAbility": 1.22,
-      "rank": 14
+      "recentForm": "W-L-L-D-L-L-W-W-D-L-L-D-W-D-L-D-D-L-W",
+      "points": 21,
+      "gd": -1,
+      "adjScoringAbility": 1.19,
+      "adjDefendingAbility": 1.2,
+      "rank": 12
     },
     "VENUS": {
-      "matches": 18,
-      "wins": 5,
+      "matches": 20,
+      "wins": 6,
       "draws": 6,
-      "losses": 7,
-      "goalsScored": 22,
-      "goalsConceded": 29,
+      "losses": 8,
+      "goalsScored": 23,
+      "goalsConceded": 30,
       "streak": [
         "L",
         "D",
@@ -2041,7 +2137,9 @@ const dashboardData = {
         "L",
         "D",
         "D",
-        "L"
+        "L",
+        "L",
+        "W"
       ],
       "goalsList": [
         0,
@@ -2061,7 +2159,9 @@ const dashboardData = {
         3,
         0,
         1,
-        0
+        0,
+        0,
+        1
       ],
       "concededList": [
         3,
@@ -2081,7 +2181,9 @@ const dashboardData = {
         4,
         0,
         1,
-        2
+        2,
+        1,
+        0
       ],
       "history": [
         {
@@ -2173,18 +2275,28 @@ const dashboardData = {
           "opponent": "ASSAULT",
           "scored": 0,
           "conceded": 2
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 0
         }
       ],
-      "winRate": "27.8",
-      "avgScored": "1.22",
-      "avgConceded": "1.61",
+      "winRate": "30.0",
+      "avgScored": "1.15",
+      "avgConceded": "1.50",
       "style": "Defensive",
-      "recentForm": "L-D-D-D-D-L-L-W-W-W-W-W-L-L-L-D-D-L",
-      "points": 21,
+      "recentForm": "L-D-D-D-D-L-L-W-W-W-W-W-L-L-L-D-D-L-L-W",
+      "points": 24,
       "gd": -7,
-      "adjScoringAbility": 1.2,
-      "adjDefendingAbility": 1.47,
-      "rank": 12
+      "adjScoringAbility": 1.15,
+      "adjDefendingAbility": 1.4,
+      "rank": 11
     },
     "DEZZY": {
       "matches": 22,
@@ -2384,8 +2496,8 @@ const dashboardData = {
       "recentForm": "D-L-W-D-W-L-W-D-L-W-W-W-W-W-D-W-W-W-D-W-L-D",
       "points": 42,
       "gd": 9,
-      "adjScoringAbility": 2.08,
-      "adjDefendingAbility": 1.87,
+      "adjScoringAbility": 2.04,
+      "adjDefendingAbility": 1.85,
       "rank": 1
     },
     "DART": {
@@ -2586,9 +2698,9 @@ const dashboardData = {
       "recentForm": "L-D-L-D-W-D-W-W-L-W-W-L-L-L-W-W-D-D-W-D-D-L",
       "points": 31,
       "gd": 3,
-      "adjScoringAbility": 1.57,
-      "adjDefendingAbility": 1.49,
-      "rank": 4
+      "adjScoringAbility": 1.58,
+      "adjDefendingAbility": 1.51,
+      "rank": 5
     }
   },
   "standings": [
@@ -2791,383 +2903,594 @@ const dashboardData = {
       "recentForm": "D-L-W-D-W-L-W-D-L-W-W-W-W-W-D-W-W-W-D-W-L-D",
       "points": 42,
       "gd": 9,
-      "adjScoringAbility": 2.08,
-      "adjDefendingAbility": 1.87,
+      "adjScoringAbility": 2.04,
+      "adjDefendingAbility": 1.85,
       "rank": 1
     },
     {
-      "p": "MJ",
-      "matches": 22,
+      "p": "HORIZON",
+      "matches": 20,
       "wins": 10,
-      "draws": 5,
-      "losses": 7,
-      "goalsScored": 33,
-      "goalsConceded": 30,
+      "draws": 6,
+      "losses": 4,
+      "goalsScored": 31,
+      "goalsConceded": 23,
       "streak": [
         "W",
+        "W",
+        "L",
         "D",
         "L",
         "D",
-        "L",
+        "D",
         "D",
         "W",
-        "L",
         "W",
-        "L",
-        "W",
-        "W",
-        "L",
         "W",
         "W",
         "L",
-        "W",
-        "D",
-        "W",
         "D",
         "L",
+        "W",
+        "W",
+        "W",
+        "D",
         "W"
       ],
       "goalsList": [
         2,
         2,
         0,
+        2,
         0,
         1,
+        0,
+        1,
+        1,
+        2,
         2,
         3,
         1,
         2,
         1,
-        1,
-        3,
-        0,
-        1,
         2,
-        0,
-        1,
         3,
-        1,
-        3,
+        2,
         1,
         3
       ],
       "concededList": [
-        1,
-        2,
-        3,
         0,
-        3,
-        2,
         1,
         3,
-        0,
         2,
-        0,
         1,
         1,
         0,
         1,
-        2,
         0,
-        3,
         0,
-        3,
+        0,
+        1,
         2,
-        0
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2
       ],
       "history": [
         {
-          "opponent": "BULLFROG",
+          "opponent": "PLUTO",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "PROPHET",
           "scored": 2,
           "conceded": 1
         },
         {
-          "opponent": "DART",
-          "scored": 2,
-          "conceded": 2
-        },
-        {
-          "opponent": "BULLFROG",
+          "opponent": "PHENOM",
           "scored": 0,
           "conceded": 3
         },
         {
-          "opponent": "DART",
-          "scored": 0,
-          "conceded": 0
-        },
-        {
-          "opponent": "BULLFROG",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "DART",
+          "opponent": "PLUTO",
           "scored": 2,
           "conceded": 2
         },
         {
-          "opponent": "BULLFROG",
-          "scored": 3,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "BULLFROG",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "BULLFROG",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "DART",
-          "scored": 3,
-          "conceded": 1
-        },
-        {
-          "opponent": "BULLFROG",
+          "opponent": "PROPHET",
           "scored": 0,
           "conceded": 1
         },
         {
-          "opponent": "DART",
+          "opponent": "PHENOM",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PLUTO",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PHENOM",
           "scored": 1,
           "conceded": 0
         },
         {
-          "opponent": "BULLFROG",
+          "opponent": "PLUTO",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "PHENOM",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "PLUTO",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "PHENOM",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "PLUTO",
           "scored": 2,
           "conceded": 1
         },
         {
-          "opponent": "DART",
-          "scored": 0,
+          "opponent": "PROPHET",
+          "scored": 3,
           "conceded": 2
         },
         {
-          "opponent": "BULLFROG",
-          "scored": 1,
-          "conceded": 0
+          "opponent": "PHENOM",
+          "scored": 2,
+          "conceded": 1
         },
         {
-          "opponent": "DART",
+          "opponent": "PLUTO",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PROPHET",
           "scored": 3,
-          "conceded": 3
-        },
-        {
-          "opponent": "BULLFROG",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "DART",
-          "scored": 3,
-          "conceded": 3
-        },
-        {
-          "opponent": "BULLFROG",
-          "scored": 1,
           "conceded": 2
-        },
-        {
-          "opponent": "DART",
-          "scored": 3,
-          "conceded": 0
         }
       ],
-      "winRate": "45.5",
-      "avgScored": "1.50",
-      "avgConceded": "1.36",
+      "winRate": "50.0",
+      "avgScored": "1.55",
+      "avgConceded": "1.15",
       "style": "Defensive",
-      "recentForm": "W-D-L-D-L-D-W-L-W-L-W-W-L-W-W-L-W-D-W-D-L-W",
-      "points": 35,
-      "gd": 3,
-      "adjScoringAbility": 1.43,
-      "adjDefendingAbility": 1.36,
+      "recentForm": "W-W-L-D-L-D-D-D-W-W-W-W-L-D-L-W-W-W-D-W",
+      "points": 36,
+      "gd": 8,
+      "adjScoringAbility": 1.24,
+      "adjDefendingAbility": 1.01,
       "rank": 2
     },
     {
-      "p": "HORIZON",
-      "matches": 18,
-      "wins": 9,
+      "p": "MJ",
+      "matches": 23,
+      "wins": 10,
       "draws": 5,
-      "losses": 4,
-      "goalsScored": 27,
-      "goalsConceded": 20,
+      "losses": 8,
+      "goalsScored": 33,
+      "goalsConceded": 31,
       "streak": [
         "W",
-        "W",
-        "L",
         "D",
         "L",
         "D",
-        "D",
-        "D",
-        "W",
-        "W",
-        "W",
-        "W",
         "L",
         "D",
+        "W",
+        "L",
+        "W",
         "L",
         "W",
         "W",
-        "W"
+        "L",
+        "W",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L"
       ],
       "goalsList": [
         2,
         2,
         0,
-        2,
         0,
         1,
-        0,
-        1,
-        1,
-        2,
         2,
         3,
         1,
         2,
         1,
-        2,
+        1,
         3,
-        2
+        0,
+        1,
+        2,
+        0,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        0
       ],
       "concededList": [
-        0,
         1,
+        2,
+        3,
+        0,
         3,
         2,
         1,
+        3,
+        0,
+        2,
+        0,
+        1,
         1,
         0,
         1,
+        2,
         0,
+        3,
         0,
+        3,
+        2,
         0,
-        1,
-        2,
-        2,
-        2,
-        1,
-        2,
         1
       ],
       "history": [
         {
-          "opponent": "PLUTO",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "PROPHET",
+          "opponent": "BULLFROG",
           "scored": 2,
           "conceded": 1
         },
         {
-          "opponent": "PHENOM",
+          "opponent": "DART",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "BULLFROG",
           "scored": 0,
           "conceded": 3
         },
         {
-          "opponent": "PLUTO",
-          "scored": 2,
-          "conceded": 2
-        },
-        {
-          "opponent": "PROPHET",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "PHENOM",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "PLUTO",
+          "opponent": "DART",
           "scored": 0,
           "conceded": 0
         },
         {
-          "opponent": "PROPHET",
+          "opponent": "BULLFROG",
           "scored": 1,
-          "conceded": 1
+          "conceded": 3
         },
         {
-          "opponent": "PHENOM",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "PLUTO",
+          "opponent": "DART",
           "scored": 2,
-          "conceded": 0
+          "conceded": 2
         },
         {
-          "opponent": "PROPHET",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "PHENOM",
+          "opponent": "BULLFROG",
           "scored": 3,
           "conceded": 1
         },
         {
-          "opponent": "PLUTO",
+          "opponent": "DART",
           "scored": 1,
-          "conceded": 2
+          "conceded": 3
         },
         {
-          "opponent": "PROPHET",
+          "opponent": "BULLFROG",
           "scored": 2,
-          "conceded": 2
+          "conceded": 0
         },
         {
-          "opponent": "PHENOM",
+          "opponent": "DART",
           "scored": 1,
           "conceded": 2
         },
         {
-          "opponent": "PLUTO",
+          "opponent": "BULLFROG",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DART",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "BULLFROG",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "BULLFROG",
           "scored": 2,
           "conceded": 1
         },
         {
-          "opponent": "PROPHET",
-          "scored": 3,
+          "opponent": "DART",
+          "scored": 0,
           "conceded": 2
         },
         {
-          "opponent": "PHENOM",
-          "scored": 2,
+          "opponent": "BULLFROG",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DART",
+          "scored": 3,
+          "conceded": 3
+        },
+        {
+          "opponent": "BULLFROG",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DART",
+          "scored": 3,
+          "conceded": 3
+        },
+        {
+          "opponent": "BULLFROG",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "DART",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "BULLFROG",
+          "scored": 0,
           "conceded": 1
         }
       ],
-      "winRate": "50.0",
-      "avgScored": "1.50",
-      "avgConceded": "1.11",
+      "winRate": "43.5",
+      "avgScored": "1.43",
+      "avgConceded": "1.35",
       "style": "Defensive",
-      "recentForm": "W-W-L-D-L-D-D-D-W-W-W-W-L-D-L-W-W-W",
-      "points": 32,
-      "gd": 7,
-      "adjScoringAbility": 1.2,
-      "adjDefendingAbility": 0.98,
+      "recentForm": "W-D-L-D-L-D-W-L-W-L-W-W-L-W-W-L-W-D-W-D-L-W-L",
+      "points": 35,
+      "gd": 2,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.33,
       "rank": 3
+    },
+    {
+      "p": "ALIBI",
+      "matches": 20,
+      "wins": 8,
+      "draws": 7,
+      "losses": 5,
+      "goalsScored": 31,
+      "goalsConceded": 26,
+      "streak": [
+        "L",
+        "D",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "D",
+        "W",
+        "D",
+        "L"
+      ],
+      "goalsList": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        3,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "concededList": [
+        3,
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "history": [
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 0,
+          "conceded": 1
+        }
+      ],
+      "winRate": "40.0",
+      "avgScored": "1.55",
+      "avgConceded": "1.30",
+      "style": "Defensive",
+      "recentForm": "L-D-W-W-D-W-W-L-D-L-L-D-W-W-W-D-D-W-D-L",
+      "points": 31,
+      "gd": 5,
+      "adjScoringAbility": 1.49,
+      "adjDefendingAbility": 1.33,
+      "rank": 4
     },
     {
       "p": "DART",
@@ -3368,189 +3691,18 @@ const dashboardData = {
       "recentForm": "L-D-L-D-W-D-W-W-L-W-W-L-L-L-W-W-D-D-W-D-D-L",
       "points": 31,
       "gd": 3,
-      "adjScoringAbility": 1.57,
-      "adjDefendingAbility": 1.49,
-      "rank": 4
-    },
-    {
-      "p": "ALIBI",
-      "matches": 18,
-      "wins": 8,
-      "draws": 6,
-      "losses": 4,
-      "goalsScored": 30,
-      "goalsConceded": 24,
-      "streak": [
-        "L",
-        "D",
-        "W",
-        "W",
-        "D",
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "D",
-        "W",
-        "W",
-        "W",
-        "D",
-        "D",
-        "W"
-      ],
-      "goalsList": [
-        2,
-        1,
-        1,
-        2,
-        1,
-        3,
-        2,
-        1,
-        2,
-        1,
-        2,
-        1,
-        2,
-        2,
-        3,
-        1,
-        1,
-        2
-      ],
-      "concededList": [
-        3,
-        1,
-        0,
-        0,
-        1,
-        2,
-        1,
-        2,
-        2,
-        3,
-        3,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0
-      ],
-      "history": [
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 3
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 3,
-          "conceded": 2
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 2,
-          "conceded": 2
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 2,
-          "conceded": 3
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 3,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 2,
-          "conceded": 0
-        }
-      ],
-      "winRate": "44.4",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
-      "style": "Defensive",
-      "recentForm": "L-D-W-W-D-W-W-L-D-L-L-D-W-W-W-D-D-W",
-      "points": 30,
-      "gd": 6,
-      "adjScoringAbility": 1.55,
-      "adjDefendingAbility": 1.34,
+      "adjScoringAbility": 1.58,
+      "adjDefendingAbility": 1.51,
       "rank": 5
     },
     {
       "p": "ASSAULT",
-      "matches": 18,
+      "matches": 19,
       "wins": 8,
-      "draws": 4,
+      "draws": 5,
       "losses": 6,
-      "goalsScored": 29,
-      "goalsConceded": 26,
+      "goalsScored": 30,
+      "goalsConceded": 27,
       "streak": [
         "W",
         "W",
@@ -3569,7 +3721,8 @@ const dashboardData = {
         "W",
         "D",
         "D",
-        "W"
+        "W",
+        "D"
       ],
       "goalsList": [
         3,
@@ -3589,7 +3742,8 @@ const dashboardData = {
         4,
         1,
         2,
-        2
+        2,
+        1
       ],
       "concededList": [
         2,
@@ -3609,7 +3763,8 @@ const dashboardData = {
         3,
         1,
         2,
-        0
+        0,
+        1
       ],
       "history": [
         {
@@ -3701,18 +3856,234 @@ const dashboardData = {
           "opponent": "VENUS",
           "scored": 2,
           "conceded": 0
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
         }
       ],
-      "winRate": "44.4",
-      "avgScored": "1.61",
-      "avgConceded": "1.44",
-      "style": "Aggressive",
-      "recentForm": "W-W-D-L-W-W-L-L-L-W-W-L-L-D-W-D-D-W",
-      "points": 28,
+      "winRate": "42.1",
+      "avgScored": "1.58",
+      "avgConceded": "1.42",
+      "style": "Defensive",
+      "recentForm": "W-W-D-L-W-W-L-L-L-W-W-L-L-D-W-D-D-W-D",
+      "points": 29,
       "gd": 3,
-      "adjScoringAbility": 1.52,
-      "adjDefendingAbility": 1.43,
+      "adjScoringAbility": 1.54,
+      "adjDefendingAbility": 1.45,
       "rank": 6
+    },
+    {
+      "p": "BULLFROG",
+      "matches": 23,
+      "wins": 9,
+      "draws": 2,
+      "losses": 12,
+      "goalsScored": 26,
+      "goalsConceded": 31,
+      "streak": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "L",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "goalsList": [
+        1,
+        1,
+        3,
+        2,
+        3,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1,
+        3,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "concededList": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        2,
+        2,
+        0,
+        1,
+        4,
+        0,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        2,
+        0
+      ],
+      "history": [
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "DART",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "MJ",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "DART",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "MJ",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "DART",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "MJ",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "DART",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "MJ",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 2,
+          "conceded": 4
+        },
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DART",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "DART",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "MJ",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "MJ",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "MJ",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "DART",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "MJ",
+          "scored": 1,
+          "conceded": 0
+        }
+      ],
+      "winRate": "39.1",
+      "avgScored": "1.13",
+      "avgConceded": "1.35",
+      "style": "Defensive",
+      "recentForm": "L-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-L-D-L-L-W-D-W",
+      "points": 29,
+      "gd": -5,
+      "adjScoringAbility": 1.08,
+      "adjDefendingAbility": 1.19,
+      "rank": 7
     },
     {
       "p": "HAVOC",
@@ -3921,221 +4292,18 @@ const dashboardData = {
       "recentForm": "D-W-W-D-D-W-L-D-D-L-D-L-D-L-D-L-L-L-W-L-W-D-W",
       "points": 27,
       "gd": 1,
-      "adjScoringAbility": 1.05,
-      "adjDefendingAbility": 0.91,
-      "rank": 7
-    },
-    {
-      "p": "BULLFROG",
-      "matches": 22,
-      "wins": 8,
-      "draws": 2,
-      "losses": 12,
-      "goalsScored": 25,
-      "goalsConceded": 31,
-      "streak": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "L",
-        "W",
-        "L",
-        "L",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "W",
-        "D"
-      ],
-      "goalsList": [
-        1,
-        1,
-        3,
-        2,
-        3,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        1,
-        3,
-        1,
-        0,
-        0,
-        1,
-        0,
-        1,
-        2,
-        2
-      ],
-      "concededList": [
-        2,
-        0,
-        0,
-        0,
-        1,
-        2,
-        3,
-        2,
-        2,
-        0,
-        1,
-        4,
-        0,
-        2,
-        2,
-        1,
-        1,
-        1,
-        1,
-        3,
-        1,
-        2
-      ],
-      "history": [
-        {
-          "opponent": "MJ",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "MJ",
-          "scored": 3,
-          "conceded": 0
-        },
-        {
-          "opponent": "DART",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "MJ",
-          "scored": 3,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 0,
-          "conceded": 2
-        },
-        {
-          "opponent": "MJ",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "DART",
-          "scored": 0,
-          "conceded": 2
-        },
-        {
-          "opponent": "MJ",
-          "scored": 0,
-          "conceded": 2
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "MJ",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 2,
-          "conceded": 4
-        },
-        {
-          "opponent": "MJ",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "DART",
-          "scored": 3,
-          "conceded": 2
-        },
-        {
-          "opponent": "MJ",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "DART",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "MJ",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "MJ",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "MJ",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "DART",
-          "scored": 2,
-          "conceded": 2
-        }
-      ],
-      "winRate": "36.4",
-      "avgScored": "1.14",
-      "avgConceded": "1.41",
-      "style": "Defensive",
-      "recentForm": "L-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-L-D-L-L-W-D",
-      "points": 26,
-      "gd": -6,
-      "adjScoringAbility": 1.1,
-      "adjDefendingAbility": 1.24,
+      "adjScoringAbility": 1.04,
+      "adjDefendingAbility": 0.9,
       "rank": 8
     },
     {
       "p": "PLUTO",
-      "matches": 18,
+      "matches": 19,
       "wins": 7,
-      "draws": 4,
+      "draws": 5,
       "losses": 7,
-      "goalsScored": 29,
-      "goalsConceded": 31,
+      "goalsScored": 30,
+      "goalsConceded": 32,
       "streak": [
         "L",
         "W",
@@ -4154,6 +4322,7 @@ const dashboardData = {
         "W",
         "L",
         "W",
+        "D",
         "D"
       ],
       "goalsList": [
@@ -4174,7 +4343,8 @@ const dashboardData = {
         2,
         1,
         2,
-        3
+        3,
+        1
       ],
       "concededList": [
         2,
@@ -4194,7 +4364,8 @@ const dashboardData = {
         0,
         2,
         1,
-        3
+        3,
+        1
       ],
       "history": [
         {
@@ -4286,26 +4457,31 @@ const dashboardData = {
           "opponent": "PROPHET",
           "scored": 3,
           "conceded": 3
+        },
+        {
+          "opponent": "HORIZON",
+          "scored": 1,
+          "conceded": 1
         }
       ],
-      "winRate": "38.9",
-      "avgScored": "1.61",
-      "avgConceded": "1.72",
+      "winRate": "36.8",
+      "avgScored": "1.58",
+      "avgConceded": "1.68",
       "style": "Aggressive",
-      "recentForm": "L-W-L-D-L-W-D-W-D-L-W-L-W-L-W-L-W-D",
-      "points": 25,
+      "recentForm": "L-W-L-D-L-W-D-W-D-L-W-L-W-L-W-L-W-D-D",
+      "points": 26,
       "gd": -2,
-      "adjScoringAbility": 1.4,
-      "adjDefendingAbility": 1.51,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.47,
       "rank": 9
     },
     {
       "p": "PHENOM",
-      "matches": 18,
-      "wins": 6,
+      "matches": 19,
+      "wins": 7,
       "draws": 3,
       "losses": 9,
-      "goalsScored": 25,
+      "goalsScored": 26,
       "goalsConceded": 27,
       "streak": [
         "D",
@@ -4325,7 +4501,8 @@ const dashboardData = {
         "W",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
       "goalsList": [
         1,
@@ -4344,6 +4521,7 @@ const dashboardData = {
         2,
         2,
         2,
+        1,
         1,
         1
       ],
@@ -4365,7 +4543,8 @@ const dashboardData = {
         1,
         1,
         2,
-        2
+        2,
+        0
       ],
       "history": [
         {
@@ -4457,27 +4636,398 @@ const dashboardData = {
           "opponent": "HORIZON",
           "scored": 1,
           "conceded": 2
+        },
+        {
+          "opponent": "PROPHET",
+          "scored": 1,
+          "conceded": 0
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.39",
-      "avgConceded": "1.50",
+      "winRate": "36.8",
+      "avgScored": "1.37",
+      "avgConceded": "1.42",
       "style": "Defensive",
-      "recentForm": "D-L-W-L-W-D-L-L-L-D-L-L-W-W-W-W-L-L",
-      "points": 21,
-      "gd": -2,
-      "adjScoringAbility": 1.26,
-      "adjDefendingAbility": 1.27,
+      "recentForm": "D-L-W-L-W-D-L-L-L-D-L-L-W-W-W-W-L-L-W",
+      "points": 24,
+      "gd": -1,
+      "adjScoringAbility": 1.2,
+      "adjDefendingAbility": 1.2,
       "rank": 10
     },
     {
-      "p": "PROPHET",
-      "matches": 18,
+      "p": "VENUS",
+      "matches": 20,
+      "wins": 6,
+      "draws": 6,
+      "losses": 8,
+      "goalsScored": 23,
+      "goalsConceded": 30,
+      "streak": [
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "goalsList": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        0,
+        1,
+        3,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "concededList": [
+        3,
+        1,
+        0,
+        1,
+        1,
+        2,
+        4,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "history": [
+        {
+          "opponent": "COSMOS",
+          "scored": 0,
+          "conceded": 3
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 2,
+          "conceded": 4
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 3,
+          "conceded": 4
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "COSMOS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 0
+        }
+      ],
+      "winRate": "30.0",
+      "avgScored": "1.15",
+      "avgConceded": "1.50",
+      "style": "Defensive",
+      "recentForm": "L-D-D-D-D-L-L-W-W-W-W-W-L-L-L-D-D-L-L-W",
+      "points": 24,
+      "gd": -7,
+      "adjScoringAbility": 1.15,
+      "adjDefendingAbility": 1.4,
+      "rank": 11
+    },
+    {
+      "p": "COSMOS",
+      "matches": 19,
       "wins": 5,
       "draws": 6,
-      "losses": 7,
-      "goalsScored": 31,
-      "goalsConceded": 34,
+      "losses": 8,
+      "goalsScored": 24,
+      "goalsConceded": 25,
+      "streak": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "D",
+        "W",
+        "D",
+        "L",
+        "D",
+        "D",
+        "L",
+        "W"
+      ],
+      "goalsList": [
+        3,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "concededList": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2,
+        0,
+        2,
+        1,
+        2,
+        1,
+        0,
+        1,
+        3,
+        0,
+        2,
+        2,
+        0
+      ],
+      "history": [
+        {
+          "opponent": "VENUS",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 4,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "ASSAULT",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ALIBI",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "VENUS",
+          "scored": 1,
+          "conceded": 0
+        }
+      ],
+      "winRate": "26.3",
+      "avgScored": "1.26",
+      "avgConceded": "1.32",
+      "style": "Defensive",
+      "recentForm": "W-L-L-D-L-L-W-W-D-L-L-D-W-D-L-D-D-L-W",
+      "points": 21,
+      "gd": -1,
+      "adjScoringAbility": 1.19,
+      "adjDefendingAbility": 1.2,
+      "rank": 12
+    },
+    {
+      "p": "PROPHET",
+      "matches": 20,
+      "wins": 5,
+      "draws": 6,
+      "losses": 9,
+      "goalsScored": 33,
+      "goalsConceded": 38,
       "streak": [
         "D",
         "L",
@@ -4496,7 +5046,9 @@ const dashboardData = {
         "L",
         "L",
         "L",
-        "D"
+        "D",
+        "L",
+        "L"
       ],
       "goalsList": [
         1,
@@ -4516,7 +5068,9 @@ const dashboardData = {
         0,
         1,
         2,
-        3
+        3,
+        0,
+        2
       ],
       "concededList": [
         1,
@@ -4536,6 +5090,8 @@ const dashboardData = {
         2,
         2,
         3,
+        3,
+        1,
         3
       ],
       "history": [
@@ -4628,189 +5184,28 @@ const dashboardData = {
           "opponent": "PLUTO",
           "scored": 3,
           "conceded": 3
-        }
-      ],
-      "winRate": "27.8",
-      "avgScored": "1.72",
-      "avgConceded": "1.89",
-      "style": "Aggressive",
-      "recentForm": "D-L-W-W-W-L-W-D-D-D-L-W-L-D-L-L-L-D",
-      "points": 21,
-      "gd": -3,
-      "adjScoringAbility": 1.6,
-      "adjDefendingAbility": 1.7,
-      "rank": 11
-    },
-    {
-      "p": "VENUS",
-      "matches": 18,
-      "wins": 5,
-      "draws": 6,
-      "losses": 7,
-      "goalsScored": 22,
-      "goalsConceded": 29,
-      "streak": [
-        "L",
-        "D",
-        "D",
-        "D",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "D",
-        "D",
-        "L"
-      ],
-      "goalsList": [
-        0,
-        1,
-        0,
-        1,
-        1,
-        1,
-        2,
-        2,
-        2,
-        1,
-        3,
-        3,
-        0,
-        1,
-        3,
-        0,
-        1,
-        0
-      ],
-      "concededList": [
-        3,
-        1,
-        0,
-        1,
-        1,
-        2,
-        4,
-        1,
-        1,
-        0,
-        2,
-        2,
-        2,
-        2,
-        4,
-        0,
-        1,
-        2
-      ],
-      "history": [
+        },
         {
-          "opponent": "COSMOS",
+          "opponent": "PHENOM",
           "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "HORIZON",
+          "scored": 2,
           "conceded": 3
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 0,
-          "conceded": 0
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 2,
-          "conceded": 4
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 1
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 1,
-          "conceded": 0
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 3,
-          "conceded": 2
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 3,
-          "conceded": 2
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 0,
-          "conceded": 2
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 3,
-          "conceded": 4
-        },
-        {
-          "opponent": "COSMOS",
-          "scored": 0,
-          "conceded": 0
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 0,
-          "conceded": 2
         }
       ],
-      "winRate": "27.8",
-      "avgScored": "1.22",
-      "avgConceded": "1.61",
-      "style": "Defensive",
-      "recentForm": "L-D-D-D-D-L-L-W-W-W-W-W-L-L-L-D-D-L",
+      "winRate": "25.0",
+      "avgScored": "1.65",
+      "avgConceded": "1.90",
+      "style": "Aggressive",
+      "recentForm": "D-L-W-W-W-L-W-D-D-D-L-W-L-D-L-L-L-D-L-L",
       "points": 21,
-      "gd": -7,
-      "adjScoringAbility": 1.2,
-      "adjDefendingAbility": 1.47,
-      "rank": 12
+      "gd": -5,
+      "adjScoringAbility": 1.56,
+      "adjDefendingAbility": 1.69,
+      "rank": 13
     },
     {
       "p": "ZT",
@@ -5019,259 +5414,213 @@ const dashboardData = {
       "recentForm": "D-D-L-L-D-L-W-L-D-W-D-L-D-L-D-D-W-L-L-D-L-W-L",
       "points": 21,
       "gd": -10,
-      "adjScoringAbility": 0.99,
-      "adjDefendingAbility": 1.32,
-      "rank": 13
-    },
-    {
-      "p": "COSMOS",
-      "matches": 18,
-      "wins": 4,
-      "draws": 6,
-      "losses": 8,
-      "goalsScored": 23,
-      "goalsConceded": 25,
-      "streak": [
-        "W",
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "D",
-        "L",
-        "L",
-        "D",
-        "W",
-        "D",
-        "L",
-        "D",
-        "D",
-        "L"
-      ],
-      "goalsList": [
-        3,
-        0,
-        0,
-        1,
-        1,
-        2,
-        4,
-        2,
-        2,
-        0,
-        1,
-        1,
-        2,
-        1,
-        1,
-        0,
-        2,
-        0
-      ],
-      "concededList": [
-        0,
-        2,
-        1,
-        1,
-        2,
-        3,
-        2,
-        0,
-        2,
-        1,
-        2,
-        1,
-        0,
-        1,
-        3,
-        0,
-        2,
-        2
-      ],
-      "history": [
-        {
-          "opponent": "VENUS",
-          "scored": 3,
-          "conceded": 0
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 0,
-          "conceded": 2
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 2,
-          "conceded": 3
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 4,
-          "conceded": 2
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 2,
-          "conceded": 2
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 0,
-          "conceded": 1
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 2
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 2,
-          "conceded": 0
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 1,
-          "conceded": 3
-        },
-        {
-          "opponent": "VENUS",
-          "scored": 0,
-          "conceded": 0
-        },
-        {
-          "opponent": "ASSAULT",
-          "scored": 2,
-          "conceded": 2
-        },
-        {
-          "opponent": "ALIBI",
-          "scored": 0,
-          "conceded": 2
-        }
-      ],
-      "winRate": "22.2",
-      "avgScored": "1.28",
-      "avgConceded": "1.39",
-      "style": "Defensive",
-      "recentForm": "W-L-L-D-L-L-W-W-D-L-L-D-W-D-L-D-D-L",
-      "points": 18,
-      "gd": -2,
-      "adjScoringAbility": 1.18,
-      "adjDefendingAbility": 1.22,
+      "adjScoringAbility": 0.98,
+      "adjDefendingAbility": 1.3,
       "rank": 14
     }
   ],
   "upcoming": [
     {
-      "externalId": "FI239240826",
-      "startDate": "2026-08-24T15:16:00Z",
+      "externalId": "FI248240826",
+      "startDate": "2026-08-24T15:57:00Z",
       "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "SPAIN",
-      "participantAName": "PROPHET",
-      "participantBName": "PHENOM",
+      "teamAName": "MANCHESTER CITY",
+      "teamBName": "REAL MADRID",
+      "participantAName": "BULLFROG",
+      "participantBName": "MJ",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "L",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "W",
+        "D",
+        "L",
+        "D",
+        "L",
+        "D",
+        "W",
+        "L",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L"
+      ],
+      "h2hFavored": "MJ",
+      "h2hWinrate": 58.333333333333336,
+      "h2hAvgGoals": 2.25,
+      "h2hHistory": [
+        {
+          "matchWinner": "MJ"
+        },
+        {
+          "matchWinner": "MJ"
+        },
+        {
+          "matchWinner": "MJ"
+        },
+        {
+          "matchWinner": "BULLFROG"
+        },
+        {
+          "matchWinner": "BULLFROG"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83
+    },
+    {
+      "externalId": "FI249240826",
+      "startDate": "2026-08-24T16:01:00Z",
+      "isCancelled": false,
+      "teamAName": "PORTUGAL",
+      "teamBName": "FRANCE",
+      "participantAName": "PLUTO",
+      "participantBName": "PROPHET",
       "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "L",
-        "W",
-        "D",
-        "D",
-        "D",
         "L",
         "W",
         "L",
         "D",
         "L",
+        "W",
+        "D",
+        "W",
+        "D",
         "L",
+        "W",
         "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "W",
+        "D",
         "D"
       ],
       "awayRecent": [
         "D",
         "L",
         "W",
+        "W",
+        "W",
         "L",
         "W",
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D",
         "L",
         "L",
         "L",
         "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
         "L",
         "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 3.1666666666666665,
+      "h2hAvgGoals": 4.833333333333333,
       "h2hHistory": [
         {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "PROPHET"
+          "matchWinner": "PLUTO"
         },
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "PHENOM"
+          "matchWinner": "PROPHET"
         },
         {
-          "matchWinner": "PHENOM"
+          "matchWinner": "PLUTO"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         },
@@ -5283,17 +5632,14 @@ const dashboardData = {
         },
         {
           "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 70.39655621557841,
+      "ouPoissonOverOdds": 1.35,
+      "ouPoissonUnderOdds": 2.5,
       "ouEloPick": "OVER",
-      "ouEloProb": 67.3844115001455,
+      "ouEloProb": 61.71926176669849,
       "ouEloOverOdds": 1.35,
       "ouEloUnderOdds": 2.5,
       "h2hPoissonPick": null,
@@ -5309,14 +5655,253 @@ const dashboardData = {
       "ouEloPairCorrect": 4
     },
     {
-      "externalId": "FI240240826",
-      "startDate": "2026-08-24T15:20:00Z",
+      "externalId": "FI250240826",
+      "startDate": "2026-08-24T16:05:00Z",
       "isCancelled": false,
-      "teamAName": "ASTON VILLA",
-      "teamBName": "SPURS",
-      "participantAName": "ALIBI",
-      "participantBName": "ASSAULT",
+      "teamAName": "NEWCASTLE UTD",
+      "teamBName": "ASTON VILLA",
+      "participantAName": "COSMOS",
+      "participantBName": "ALIBI",
       "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "D",
+        "W",
+        "D",
+        "L",
+        "D",
+        "D",
+        "L",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "D",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "D",
+        "W",
+        "D",
+        "L"
+      ],
+      "h2hFavored": "ALIBI",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
+      "h2hHistory": [
+        {
+          "matchWinner": "ALIBI"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ALIBI"
+        },
+        {
+          "matchWinner": "ALIBI"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "ALIBI",
+      "h2hEloProb": 66.60218895355372,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 4,
+      "h2hEloPairCorrect": 4
+    },
+    {
+      "externalId": "FI251240826",
+      "startDate": "2026-08-24T16:08:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BARCELONA",
+      "teamBName": "ATLETICO DE MADRID",
+      "participantAName": "ZT",
+      "participantBName": "DEZZY",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "D",
+        "L",
+        "W",
+        "L",
+        "D",
+        "W",
+        "D",
+        "L",
+        "D",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "D",
+        "L",
+        "W",
+        "L"
+      ],
+      "awayRecent": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "L",
+        "D"
+      ],
+      "h2hFavored": "DEZZY",
+      "h2hWinrate": 54.54545454545454,
+      "h2hAvgGoals": 2.8181818181818183,
+      "h2hHistory": [
+        {
+          "matchWinner": "DEZZY"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DEZZY"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZT"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "UNDER",
+      "ouEloProb": 66.15765831038598,
+      "ouEloOverOdds": 2.5,
+      "ouEloUnderOdds": 1.35,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "DEZZY",
+      "h2hEloProb": 70.41770702850793,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
+      "ouEloPairAcc": 54.54545454545454,
+      "ouEloPairBets": 11,
+      "ouEloPairCorrect": 6,
+      "h2hEloPairAcc": 75,
+      "h2hEloPairBets": 8,
+      "h2hEloPairCorrect": 6
+    },
+    {
+      "externalId": "FI252240826",
+      "startDate": "2026-08-24T16:12:00Z",
+      "isCancelled": false,
+      "teamAName": "MANCHESTER CITY",
+      "teamBName": "FC BAYERN MUNCHEN",
+      "participantAName": "BULLFROG",
+      "participantBName": "DART",
+      "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
@@ -5325,22 +5910,263 @@ const dashboardData = {
       "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
-        "D",
         "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "L",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "D",
+        "L",
+        "D",
         "W",
         "D",
         "W",
         "W",
         "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "D",
+        "W",
+        "D",
+        "D",
+        "L"
+      ],
+      "h2hFavored": "DART",
+      "h2hWinrate": 45.45454545454545,
+      "h2hAvgGoals": 2.727272727272727,
+      "h2hHistory": [
+        {
+          "matchWinner": "BULLFROG"
+        },
+        {
+          "matchWinner": "DART"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DART"
+        },
+        {
+          "matchWinner": "DRAW"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 1,
+      "h2hEloPairCorrect": 0
+    },
+    {
+      "externalId": "FI253240826",
+      "startDate": "2026-08-24T16:16:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "SPAIN",
+      "participantAName": "HORIZON",
+      "participantBName": "PHENOM",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "D",
+        "D",
+        "D",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
         "D",
         "L",
         "L",
+        "L",
         "D",
+        "L",
+        "L",
         "W",
         "W",
         "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "HORIZON",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 2.6666666666666665,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "HORIZON"
+        },
+        {
+          "matchWinner": "HORIZON"
+        },
+        {
+          "matchWinner": "PHENOM"
+        },
+        {
+          "matchWinner": "HORIZON"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 64.3244817097958,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 6,
+      "ouEloPairCorrect": 4
+    },
+    {
+      "externalId": "FI254240826",
+      "startDate": "2026-08-24T16:20:00Z",
+      "isCancelled": false,
+      "teamAName": "ARSENAL",
+      "teamBName": "SPURS",
+      "participantAName": "VENUS",
+      "participantBName": "ASSAULT",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "L",
         "D",
         "D",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
@@ -5361,31 +6187,32 @@ const dashboardData = {
         "W",
         "D",
         "D",
-        "W"
+        "W",
+        "D"
       ],
-      "h2hFavored": "ALIBI",
+      "h2hFavored": "ASSAULT",
       "h2hWinrate": 50,
-      "h2hAvgGoals": 3.1666666666666665,
+      "h2hAvgGoals": 3.3333333333333335,
       "h2hHistory": [
         {
-          "matchWinner": "ALIBI"
+          "matchWinner": "ASSAULT"
         },
         {
-          "matchWinner": "ALIBI"
+          "matchWinner": "VENUS"
+        },
+        {
+          "matchWinner": "VENUS"
         },
         {
           "matchWinner": "ASSAULT"
         },
         {
-          "matchWinner": "ALIBI"
-        },
-        {
-          "matchWinner": "DRAW"
+          "matchWinner": "ASSAULT"
         }
       ],
       "h2hHistoryOU": [
         {
-          "matchOU": "UNDER"
+          "matchOU": "OVER"
         },
         {
           "matchOU": "OVER"
@@ -5405,9 +6232,9 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 65.44269782295822,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouEloProb": 61.89743775351017,
+      "ouEloOverOdds": 1.35,
+      "ouEloUnderOdds": 2.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -5419,245 +6246,18 @@ const dashboardData = {
       "ouEloPairAcc": 66.66666666666666,
       "ouEloPairBets": 6,
       "ouEloPairCorrect": 4,
-      "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
-      "externalId": "FI241240826",
-      "startDate": "2026-08-24T15:31:00Z",
+      "externalId": "FI255240826",
+      "startDate": "2026-08-24T16:23:00Z",
       "isCancelled": false,
-      "teamAName": "ENGLAND",
-      "teamBName": "FRANCE",
-      "participantAName": "HORIZON",
-      "participantBName": "PROPHET",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "D",
-        "D",
-        "D",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "L",
-        "W",
-        "D",
-        "D",
-        "D",
-        "L",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "HORIZON",
-      "h2hWinrate": 50,
-      "h2hAvgGoals": 2.8333333333333335,
-      "h2hHistory": [
-        {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "HORIZON"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "HORIZON"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 68.01308233570754,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 50,
-      "ouEloPairBets": 6,
-      "ouEloPairCorrect": 3
-    },
-    {
-      "externalId": "FI242240826",
-      "startDate": "2026-08-24T15:35:00Z",
-      "isCancelled": false,
-      "teamAName": "ARSENAL",
-      "teamBName": "ASTON VILLA",
-      "participantAName": "VENUS",
-      "participantBName": "ALIBI",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "D",
-        "D",
-        "D",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "D",
-        "D",
-        "L"
-      ],
-      "awayRecent": [
-        "L",
-        "D",
-        "W",
-        "W",
-        "D",
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "D",
-        "W",
-        "W",
-        "W",
-        "D",
-        "D",
-        "W"
-      ],
-      "h2hFavored": "VENUS",
-      "h2hWinrate": 33.33333333333333,
-      "h2hAvgGoals": 2.8333333333333335,
-      "h2hHistory": [
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "VENUS"
-        },
-        {
-          "matchWinner": "VENUS"
-        },
-        {
-          "matchWinner": "ALIBI"
-        },
-        {
-          "matchWinner": "DRAW"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "UNDER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 62.235203080997536,
-      "ouEloOverOdds": 1.4,
-      "ouEloUnderOdds": 2.4,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 50,
-      "ouEloPairBets": 6,
-      "ouEloPairCorrect": 3,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI243240826",
-      "startDate": "2026-08-24T15:38:00Z",
-      "isCancelled": false,
-      "teamAName": "LIVERPOOL",
-      "teamBName": "ATLETICO DE MADRID",
-      "participantAName": "HAVOC",
-      "participantBName": "DEZZY",
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "LIVERPOOL",
+      "participantAName": "DEZZY",
+      "participantBName": "HAVOC",
       "streamName": "Esoccer 1",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
@@ -5667,6 +6267,30 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "D",
+        "L",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "L",
+        "D"
+      ],
+      "awayRecent": [
+        "D",
         "W",
         "W",
         "D",
@@ -5689,30 +6313,6 @@ const dashboardData = {
         "W",
         "D",
         "W"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "W",
-        "L",
-        "W",
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "W",
-        "D",
-        "W",
-        "W",
-        "W",
-        "D",
-        "W",
-        "L",
-        "D"
       ],
       "h2hFavored": "DEZZY",
       "h2hWinrate": 54.54545454545454,
@@ -5763,8 +6363,8 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "DEZZY",
+      "h2hEloProb": 61.29630363959243,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouEloPairAcc": 54.54545454545454,
@@ -5775,66 +6375,67 @@ const dashboardData = {
       "h2hEloPairCorrect": 2
     },
     {
-      "externalId": "FI244240826",
-      "startDate": "2026-08-24T15:42:00Z",
+      "externalId": "FI256240826",
+      "startDate": "2026-08-24T16:27:00Z",
       "isCancelled": false,
-      "teamAName": "REAL MADRID",
-      "teamBName": "FC BAYERN MUNCHEN",
-      "participantAName": "MJ",
-      "participantBName": "DART",
+      "teamAName": "FC BAYERN MUNCHEN",
+      "teamBName": "REAL MADRID",
+      "participantAName": "DART",
+      "participantBName": "MJ",
       "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
+      "homeStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
-        "W",
-        "D",
         "L",
         "D",
         "L",
         "D",
         "W",
-        "L",
-        "W",
-        "L",
+        "D",
         "W",
         "W",
         "L",
         "W",
         "W",
         "L",
+        "L",
+        "L",
         "W",
+        "W",
+        "D",
         "D",
         "W",
         "D",
-        "L",
-        "W"
+        "D",
+        "L"
       ],
       "awayRecent": [
+        "W",
+        "D",
         "L",
         "D",
         "L",
         "D",
         "W",
-        "D",
-        "W",
+        "L",
         "W",
         "L",
         "W",
         "W",
         "L",
+        "W",
+        "W",
         "L",
+        "W",
+        "D",
+        "W",
+        "D",
         "L",
         "W",
-        "W",
-        "D",
-        "D",
-        "W",
-        "D",
-        "D",
         "L"
       ],
       "h2hFavored": "DRAW",
@@ -5892,12 +6493,12 @@ const dashboardData = {
       "h2hEloAwayOdds": 1.83
     },
     {
-      "externalId": "FI245240826",
-      "startDate": "2026-08-24T15:46:00Z",
+      "externalId": "FI257240826",
+      "startDate": "2026-08-24T16:31:00Z",
       "isCancelled": false,
-      "teamAName": "SPAIN",
+      "teamAName": "ENGLAND",
       "teamBName": "PORTUGAL",
-      "participantAName": "PHENOM",
+      "participantAName": "HORIZON",
       "participantBName": "PLUTO",
       "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
@@ -5907,24 +6508,26 @@ const dashboardData = {
       "homeStyle": "Defensive",
       "awayStyle": "Aggressive",
       "homeRecent": [
-        "D",
-        "L",
         "W",
-        "L",
         "W",
-        "D",
-        "L",
-        "L",
         "L",
         "D",
         "L",
-        "L",
+        "D",
+        "D",
+        "D",
         "W",
         "W",
         "W",
         "W",
         "L",
-        "L"
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "L",
@@ -5944,31 +6547,32 @@ const dashboardData = {
         "W",
         "L",
         "W",
+        "D",
         "D"
       ],
-      "h2hFavored": "PLUTO",
-      "h2hWinrate": 66.66666666666666,
-      "h2hAvgGoals": 2.8333333333333335,
+      "h2hFavored": "HORIZON",
+      "h2hWinrate": 42.857142857142854,
+      "h2hAvgGoals": 2.2857142857142856,
       "h2hHistory": [
         {
-          "matchWinner": "PHENOM"
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "HORIZON"
         },
         {
           "matchWinner": "PLUTO"
         },
         {
-          "matchWinner": "PLUTO"
+          "matchWinner": "HORIZON"
         },
         {
-          "matchWinner": "PHENOM"
-        },
-        {
-          "matchWinner": "PLUTO"
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
-          "matchOU": "OVER"
+          "matchOU": "UNDER"
         },
         {
           "matchOU": "UNDER"
@@ -5980,7 +6584,7 @@ const dashboardData = {
           "matchOU": "OVER"
         },
         {
-          "matchOU": "OVER"
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -5988,9 +6592,9 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 59.13098936011163,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
+      "ouEloProb": 59.19627576155081,
+      "ouEloOverOdds": 1.35,
+      "ouEloUnderOdds": 2.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -5998,41 +6602,46 @@ const dashboardData = {
       "h2hEloPick": null,
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouEloPairAcc": 25,
+      "ouEloPairBets": 4,
+      "ouEloPairCorrect": 1
     },
     {
-      "externalId": "FI246240826",
-      "startDate": "2026-08-24T15:50:00Z",
+      "externalId": "FI258240826",
+      "startDate": "2026-08-24T16:35:00Z",
       "isCancelled": false,
-      "teamAName": "SPURS",
+      "teamAName": "ARSENAL",
       "teamBName": "NEWCASTLE UTD",
-      "participantAName": "ASSAULT",
+      "participantAName": "VENUS",
       "participantBName": "COSMOS",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
-        "W",
-        "W",
-        "D",
-        "L",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "W",
-        "W",
-        "L",
         "L",
         "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
         "D",
         "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
@@ -6053,26 +6662,27 @@ const dashboardData = {
         "L",
         "D",
         "D",
-        "L"
+        "L",
+        "W"
       ],
-      "h2hFavored": "ASSAULT",
-      "h2hWinrate": 50,
-      "h2hAvgGoals": 2.6666666666666665,
+      "h2hFavored": "COSMOS",
+      "h2hWinrate": 57.14285714285714,
+      "h2hAvgGoals": 2.142857142857143,
       "h2hHistory": [
         {
-          "matchWinner": "ASSAULT"
+          "matchWinner": "COSMOS"
+        },
+        {
+          "matchWinner": "VENUS"
         },
         {
           "matchWinner": "COSMOS"
         },
         {
-          "matchWinner": "ASSAULT"
-        },
-        {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "COSMOS"
         }
       ],
       "h2hHistoryOU": [
@@ -6083,13 +6693,13 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
-          "matchOU": "OVER"
+          "matchOU": "UNDER"
         },
         {
           "matchOU": "UNDER"
         },
         {
-          "matchOU": "OVER"
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -6104,17 +6714,17 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ASSAULT",
-      "h2hEloProb": 68.58538459439221,
-      "h2hEloHomeOdds": 1.3,
-      "h2hEloAwayOdds": 2.7,
-      "h2hEloPairAcc": 75,
-      "h2hEloPairBets": 4,
-      "h2hEloPairCorrect": 3
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 0
     },
     {
-      "externalId": "FI247240826",
-      "startDate": "2026-08-24T15:53:00Z",
+      "externalId": "FI259240826",
+      "startDate": "2026-08-24T16:38:00Z",
       "isCancelled": false,
       "teamAName": "FC BARCELONA",
       "teamBName": "LIVERPOOL",
@@ -6241,8 +6851,8 @@ const dashboardData = {
       "h2hEloPairCorrect": 1
     },
     {
-      "externalId": "FI248240826",
-      "startDate": "2026-08-24T15:57:00Z",
+      "externalId": "FI260240826",
+      "startDate": "2026-08-24T16:42:00Z",
       "isCancelled": false,
       "teamAName": "MANCHESTER CITY",
       "teamBName": "REAL MADRID",
@@ -6277,7 +6887,8 @@ const dashboardData = {
         "L",
         "L",
         "W",
-        "D"
+        "D",
+        "W"
       ],
       "awayRecent": [
         "W",
@@ -6301,23 +6912,24 @@ const dashboardData = {
         "W",
         "D",
         "L",
-        "W"
+        "W",
+        "L"
       ],
       "h2hFavored": "MJ",
-      "h2hWinrate": 63.63636363636363,
-      "h2hAvgGoals": 2.3636363636363638,
+      "h2hWinrate": 58.333333333333336,
+      "h2hAvgGoals": 2.25,
       "h2hHistory": [
         {
+          "matchWinner": "MJ"
+        },
+        {
+          "matchWinner": "MJ"
+        },
+        {
+          "matchWinner": "MJ"
+        },
+        {
           "matchWinner": "BULLFROG"
-        },
-        {
-          "matchWinner": "MJ"
-        },
-        {
-          "matchWinner": "MJ"
-        },
-        {
-          "matchWinner": "MJ"
         },
         {
           "matchWinner": "BULLFROG"
@@ -6325,9 +6937,6 @@ const dashboardData = {
       ],
       "h2hHistoryOU": [
         {
-          "matchOU": "UNDER"
-        },
-        {
           "matchOU": "OVER"
         },
         {
@@ -6338,6 +6947,9 @@ const dashboardData = {
         },
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -6356,248 +6968,9 @@ const dashboardData = {
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83
-    },
-    {
-      "externalId": "FI249240826",
-      "startDate": "2026-08-24T16:01:00Z",
-      "isCancelled": false,
-      "teamAName": "PORTUGAL",
-      "teamBName": "FRANCE",
-      "participantAName": "PLUTO",
-      "participantBName": "PROPHET",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Aggressive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "L",
-        "W",
-        "L",
-        "D",
-        "L",
-        "W",
-        "D",
-        "W",
-        "D",
-        "L",
-        "W",
-        "L",
-        "W",
-        "L",
-        "W",
-        "L",
-        "W",
-        "D"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "L",
-        "W",
-        "D",
-        "D",
-        "D",
-        "L",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 4.833333333333333,
-      "h2hHistory": [
-        {
-          "matchWinner": "PLUTO"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "PLUTO"
-        },
-        {
-          "matchWinner": "DRAW"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": "OVER",
-      "ouPoissonProb": 69.06904376560746,
-      "ouPoissonOverOdds": 1.35,
-      "ouPoissonUnderOdds": 2.5,
-      "ouEloPick": "OVER",
-      "ouEloProb": 62.38600698928294,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 66.66666666666666,
-      "ouEloPairBets": 6,
-      "ouEloPairCorrect": 4
-    },
-    {
-      "externalId": "FI250240826",
-      "startDate": "2026-08-24T16:05:00Z",
-      "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
-      "teamBName": "ASTON VILLA",
-      "participantAName": "COSMOS",
-      "participantBName": "ALIBI",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "W",
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "D",
-        "L",
-        "L",
-        "D",
-        "W",
-        "D",
-        "L",
-        "D",
-        "D",
-        "L"
-      ],
-      "awayRecent": [
-        "L",
-        "D",
-        "W",
-        "W",
-        "D",
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "D",
-        "W",
-        "W",
-        "W",
-        "D",
-        "D",
-        "W"
-      ],
-      "h2hFavored": "ALIBI",
-      "h2hWinrate": 66.66666666666666,
-      "h2hAvgGoals": 3,
-      "h2hHistory": [
-        {
-          "matchWinner": "ALIBI"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "ALIBI"
-        },
-        {
-          "matchWinner": "ALIBI"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "UNDER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ALIBI",
-      "h2hEloProb": 70.4918179172447,
-      "h2hEloHomeOdds": 2.7,
-      "h2hEloAwayOdds": 1.3,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 4,
-      "h2hEloPairCorrect": 4
     }
   ],
   "h2hData": [
-    {
-      "matchup": "PHENOM vs PLUTO",
-      "matches": 6,
-      "dominantPlayer": "PLUTO",
-      "winRate": 66.66666666666666,
-      "breakdown": "PHENOM: 2W | PLUTO: 4W | Draws: 0",
-      "avgGoals": 2.8333333333333335,
-      "recentForm": [
-        "PHENOM",
-        "PLUTO",
-        "PLUTO",
-        "PHENOM",
-        "PLUTO"
-      ]
-    },
     {
       "matchup": "ALIBI vs COSMOS",
       "matches": 6,
@@ -6612,24 +6985,54 @@ const dashboardData = {
         "ALIBI",
         "ALIBI"
       ]
-    },
-    {
-      "matchup": "BULLFROG vs MJ",
-      "matches": 11,
-      "dominantPlayer": "MJ",
-      "winRate": 63.63636363636363,
-      "breakdown": "BULLFROG: 4W | MJ: 7W | Draws: 0",
-      "avgGoals": 2.3636363636363638,
-      "recentForm": [
-        "BULLFROG",
-        "MJ",
-        "MJ",
-        "MJ",
-        "BULLFROG"
-      ]
     }
   ],
   "otherH2hData": [
+    {
+      "matchup": "BULLFROG vs MJ",
+      "matches": 12,
+      "dominantPlayer": "MJ",
+      "winRate": 58.333333333333336,
+      "breakdown": "BULLFROG: 5W | MJ: 7W | Draws: 0",
+      "avgGoals": 2.25,
+      "recentForm": [
+        "MJ",
+        "MJ",
+        "MJ",
+        "BULLFROG",
+        "BULLFROG"
+      ]
+    },
+    {
+      "matchup": "COSMOS vs VENUS",
+      "matches": 7,
+      "dominantPlayer": "COSMOS",
+      "winRate": 57.14285714285714,
+      "breakdown": "COSMOS: 4W | VENUS: 1W | Draws: 2",
+      "avgGoals": 2.142857142857143,
+      "recentForm": [
+        "COSMOS",
+        "VENUS",
+        "COSMOS",
+        "DRAW",
+        "COSMOS"
+      ]
+    },
+    {
+      "matchup": "DEZZY vs ZT",
+      "matches": 11,
+      "dominantPlayer": "DEZZY",
+      "winRate": 54.54545454545454,
+      "breakdown": "DEZZY: 6W | ZT: 2W | Draws: 3",
+      "avgGoals": 2.8181818181818183,
+      "recentForm": [
+        "DEZZY",
+        "DRAW",
+        "DEZZY",
+        "DRAW",
+        "ZT"
+      ]
+    },
     {
       "matchup": "DEZZY vs HAVOC",
       "matches": 11,
@@ -6646,48 +7049,63 @@ const dashboardData = {
       ]
     },
     {
-      "matchup": "ALIBI vs ASSAULT",
-      "matches": 6,
-      "dominantPlayer": "ALIBI",
-      "winRate": 50,
-      "breakdown": "ALIBI: 3W | ASSAULT: 2W | Draws: 1",
-      "avgGoals": 3.1666666666666665,
-      "recentForm": [
-        "ALIBI",
-        "ALIBI",
-        "ASSAULT",
-        "ALIBI",
-        "DRAW"
-      ]
-    },
-    {
-      "matchup": "ASSAULT vs COSMOS",
-      "matches": 6,
-      "dominantPlayer": "ASSAULT",
-      "winRate": 50,
-      "breakdown": "ASSAULT: 3W | COSMOS: 1W | Draws: 2",
-      "avgGoals": 2.6666666666666665,
-      "recentForm": [
-        "ASSAULT",
-        "COSMOS",
-        "ASSAULT",
-        "DRAW",
-        "DRAW"
-      ]
-    },
-    {
-      "matchup": "HORIZON vs PROPHET",
+      "matchup": "HORIZON vs PHENOM",
       "matches": 6,
       "dominantPlayer": "HORIZON",
       "winRate": 50,
-      "breakdown": "HORIZON: 3W | PROPHET: 1W | Draws: 2",
-      "avgGoals": 2.8333333333333335,
+      "breakdown": "HORIZON: 3W | PHENOM: 2W | Draws: 1",
+      "avgGoals": 2.6666666666666665,
       "recentForm": [
-        "PROPHET",
         "DRAW",
         "HORIZON",
-        "DRAW",
+        "HORIZON",
+        "PHENOM",
         "HORIZON"
+      ]
+    },
+    {
+      "matchup": "ASSAULT vs VENUS",
+      "matches": 6,
+      "dominantPlayer": "ASSAULT",
+      "winRate": 50,
+      "breakdown": "ASSAULT: 3W | VENUS: 2W | Draws: 1",
+      "avgGoals": 3.3333333333333335,
+      "recentForm": [
+        "ASSAULT",
+        "VENUS",
+        "VENUS",
+        "ASSAULT",
+        "ASSAULT"
+      ]
+    },
+    {
+      "matchup": "BULLFROG vs DART",
+      "matches": 11,
+      "dominantPlayer": "DART",
+      "winRate": 45.45454545454545,
+      "breakdown": "BULLFROG: 4W | DART: 5W | Draws: 2",
+      "avgGoals": 2.727272727272727,
+      "recentForm": [
+        "BULLFROG",
+        "DART",
+        "DRAW",
+        "DART",
+        "DRAW"
+      ]
+    },
+    {
+      "matchup": "HORIZON vs PLUTO",
+      "matches": 7,
+      "dominantPlayer": "HORIZON",
+      "winRate": 42.857142857142854,
+      "breakdown": "HORIZON: 3W | PLUTO: 1W | Draws: 3",
+      "avgGoals": 2.2857142857142856,
+      "recentForm": [
+        "DRAW",
+        "HORIZON",
+        "PLUTO",
+        "HORIZON",
+        "DRAW"
       ]
     },
     {
@@ -6704,27 +7122,12 @@ const dashboardData = {
         "HAVOC",
         "HAVOC"
       ]
-    },
-    {
-      "matchup": "ALIBI vs VENUS",
-      "matches": 6,
-      "dominantPlayer": "VENUS",
-      "winRate": 33.33333333333333,
-      "breakdown": "ALIBI: 1W | VENUS: 2W | Draws: 3",
-      "avgGoals": 2.8333333333333335,
-      "recentForm": [
-        "DRAW",
-        "VENUS",
-        "VENUS",
-        "ALIBI",
-        "DRAW"
-      ]
     }
   ],
   "totalsParlay": [
     {
-      "externalId": "FI247240826",
-      "startDate": "2026-08-24T15:53:00Z",
+      "externalId": "FI259240826",
+      "startDate": "2026-08-24T16:38:00Z",
       "isCancelled": false,
       "teamAName": "FC BARCELONA",
       "teamBName": "LIVERPOOL",
@@ -6851,237 +7254,13 @@ const dashboardData = {
       "h2hEloPairCorrect": 1
     },
     {
-      "externalId": "FI241240826",
-      "startDate": "2026-08-24T15:31:00Z",
+      "externalId": "FI255240826",
+      "startDate": "2026-08-24T16:23:00Z",
       "isCancelled": false,
-      "teamAName": "ENGLAND",
-      "teamBName": "FRANCE",
-      "participantAName": "HORIZON",
-      "participantBName": "PROPHET",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "D",
-        "D",
-        "D",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "D",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "L",
-        "W",
-        "D",
-        "D",
-        "D",
-        "L",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "HORIZON",
-      "h2hWinrate": 50,
-      "h2hAvgGoals": 2.8333333333333335,
-      "h2hHistory": [
-        {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "HORIZON"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "HORIZON"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 68.01308233570754,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 50,
-      "ouEloPairBets": 6,
-      "ouEloPairCorrect": 3
-    },
-    {
-      "externalId": "FI239240826",
-      "startDate": "2026-08-24T15:16:00Z",
-      "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "SPAIN",
-      "participantAName": "PROPHET",
-      "participantBName": "PHENOM",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "L",
-        "W",
-        "D",
-        "D",
-        "D",
-        "L",
-        "W",
-        "L",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "L",
-        "W",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.1666666666666665,
-      "h2hHistory": [
-        {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "PROPHET"
-        },
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "PHENOM"
-        },
-        {
-          "matchWinner": "PHENOM"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 67.3844115001455,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 66.66666666666666,
-      "ouEloPairBets": 6,
-      "ouEloPairCorrect": 4
-    },
-    {
-      "externalId": "FI243240826",
-      "startDate": "2026-08-24T15:38:00Z",
-      "isCancelled": false,
-      "teamAName": "LIVERPOOL",
-      "teamBName": "ATLETICO DE MADRID",
-      "participantAName": "HAVOC",
-      "participantBName": "DEZZY",
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "LIVERPOOL",
+      "participantAName": "DEZZY",
+      "participantBName": "HAVOC",
       "streamName": "Esoccer 1",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
@@ -7091,6 +7270,30 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "D",
+        "L",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "L",
+        "D"
+      ],
+      "awayRecent": [
+        "D",
         "W",
         "W",
         "D",
@@ -7113,30 +7316,6 @@ const dashboardData = {
         "W",
         "D",
         "W"
-      ],
-      "awayRecent": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "W",
-        "L",
-        "W",
-        "D",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "W",
-        "D",
-        "W",
-        "W",
-        "W",
-        "D",
-        "W",
-        "L",
-        "D"
       ],
       "h2hFavored": "DEZZY",
       "h2hWinrate": 54.54545454545454,
@@ -7187,8 +7366,8 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "DEZZY",
+      "h2hEloProb": 61.29630363959243,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouEloPairAcc": 54.54545454545454,
@@ -7197,6 +7376,248 @@ const dashboardData = {
       "h2hEloPairAcc": 100,
       "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI251240826",
+      "startDate": "2026-08-24T16:08:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BARCELONA",
+      "teamBName": "ATLETICO DE MADRID",
+      "participantAName": "ZT",
+      "participantBName": "DEZZY",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "D",
+        "L",
+        "W",
+        "L",
+        "D",
+        "W",
+        "D",
+        "L",
+        "D",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "D",
+        "L",
+        "W",
+        "L"
+      ],
+      "awayRecent": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "L",
+        "D"
+      ],
+      "h2hFavored": "DEZZY",
+      "h2hWinrate": 54.54545454545454,
+      "h2hAvgGoals": 2.8181818181818183,
+      "h2hHistory": [
+        {
+          "matchWinner": "DEZZY"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DEZZY"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZT"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "UNDER",
+      "ouEloProb": 66.15765831038598,
+      "ouEloOverOdds": 2.5,
+      "ouEloUnderOdds": 1.35,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "DEZZY",
+      "h2hEloProb": 70.41770702850793,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
+      "ouEloPairAcc": 54.54545454545454,
+      "ouEloPairBets": 11,
+      "ouEloPairCorrect": 6,
+      "h2hEloPairAcc": 75,
+      "h2hEloPairBets": 8,
+      "h2hEloPairCorrect": 6
+    },
+    {
+      "externalId": "FI253240826",
+      "startDate": "2026-08-24T16:16:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "SPAIN",
+      "participantAName": "HORIZON",
+      "participantBName": "PHENOM",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "D",
+        "D",
+        "D",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "HORIZON",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 2.6666666666666665,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "HORIZON"
+        },
+        {
+          "matchWinner": "HORIZON"
+        },
+        {
+          "matchWinner": "PHENOM"
+        },
+        {
+          "matchWinner": "HORIZON"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 64.3244817097958,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 6,
+      "ouEloPairCorrect": 4
     }
   ],
   "winnerParlay": [],
@@ -7206,28 +7627,28 @@ const dashboardData = {
       "wins": 1312,
       "wr": 64.25073457394711,
       "profit": -841.5,
-      "cov": 14.399548691911711
+      "cov": 14.392444319142939
     },
     "ouElo": {
-      "bets": 5401,
-      "wins": 3441,
-      "wr": 63.710423995556376,
-      "profit": -2073.5,
-      "cov": 38.086171638107324
+      "bets": 5406,
+      "wins": 3442,
+      "wr": 63.66999630040695,
+      "profit": -2090.5,
+      "cov": 38.10262193402876
     },
     "h2hPoisson": {
       "bets": 1325,
       "wins": 902,
       "wr": 68.0754716981132,
       "profit": 334.6500000000001,
-      "cov": 9.343487765319795
+      "cov": 9.338877925007049
     },
     "h2hElo": {
-      "bets": 2226,
-      "wins": 1459,
-      "wr": 65.54357592093442,
-      "profit": 263.3500000000011,
-      "cov": 15.697059445737255
+      "bets": 3443,
+      "wins": 2179,
+      "wr": 63.287830380482134,
+      "profit": 161.05000000000166,
+      "cov": 24.26698618550888
     },
     "rotation": {
       "ouPoisson": {
@@ -7235,41 +7656,41 @@ const dashboardData = {
         "wins": 12,
         "wr": 92.3076923076923,
         "profit": 14,
-        "cov": 9.352517985611511,
+        "cov": 8.904109589041095,
         "over": {
           "bets": 1,
           "wins": 1,
           "wr": 100,
           "profit": 1.9999999999999996,
-          "cov": 0.7194244604316548
+          "cov": 0.684931506849315
         },
         "under": {
           "bets": 12,
           "wins": 11,
           "wr": 91.66666666666666,
           "profit": 12.000000000000002,
-          "cov": 8.633093525179856
+          "cov": 8.21917808219178
         }
       },
       "ouElo": {
-        "bets": 79,
-        "wins": 50,
-        "wr": 63.29113924050633,
-        "profit": -41.5,
-        "cov": 56.83453237410072,
+        "bets": 84,
+        "wins": 51,
+        "wr": 60.71428571428571,
+        "profit": -58.5,
+        "cov": 57.534246575342465,
         "over": {
-          "bets": 45,
-          "wins": 27,
-          "wr": 60,
-          "profit": -25.75,
-          "cov": 32.37410071942446
+          "bets": 50,
+          "wins": 28,
+          "wr": 56.00000000000001,
+          "profit": -42.75,
+          "cov": 34.24657534246575
         },
         "under": {
           "bets": 34,
           "wins": 23,
           "wr": 67.64705882352942,
           "profit": -15.75,
-          "cov": 24.46043165467626
+          "cov": 23.28767123287671
         }
       },
       "h2hPoisson": {
@@ -7277,14 +7698,14 @@ const dashboardData = {
         "wins": 1,
         "wr": 100,
         "profit": 4.15,
-        "cov": 0.7194244604316548
+        "cov": 0.684931506849315
       },
       "h2hElo": {
-        "bets": 23,
-        "wins": 17,
-        "wr": 73.91304347826086,
-        "profit": 4.450000000000002,
-        "cov": 16.546762589928058
+        "bets": 30,
+        "wins": 18,
+        "wr": 60,
+        "profit": -21.400000000000006,
+        "cov": 20.54794520547945
       }
     },
     "segments": [
@@ -7296,9 +7717,9 @@ const dashboardData = {
           "wr": 100
         },
         "h2hElo": {
-          "profit": -3.849999999999998,
-          "bets": 13,
-          "wr": 69.23076923076923
+          "profit": -23.85,
+          "bets": 17,
+          "wr": 52.94117647058824
         },
         "ouPoisson": {
           "profit": 11.25,
@@ -7319,9 +7740,9 @@ const dashboardData = {
           "wr": 0
         },
         "h2hElo": {
-          "profit": 11.8,
-          "bets": 8,
-          "wr": 87.5
+          "profit": 6.8,
+          "bets": 9,
+          "wr": 77.77777777777779
         },
         "ouPoisson": {
           "profit": -0.4999999999999991,
@@ -7342,8 +7763,8 @@ const dashboardData = {
           "wr": 0
         },
         "h2hElo": {
-          "profit": -3.5,
-          "bets": 2,
+          "profit": -4.35,
+          "bets": 4,
           "wr": 50
         },
         "ouPoisson": {
@@ -7352,12 +7773,12 @@ const dashboardData = {
           "wr": 100
         },
         "ouElo": {
-          "profit": -2.9999999999999982,
-          "bets": 9,
-          "wr": 66.66666666666666
+          "profit": -20,
+          "bets": 14,
+          "wr": 50
         }
       }
     ]
   },
-  "backtestOutput": "🧪 Poisson/Elo Prediction Models — Live 45-Day Performance (All-Time)\n  OU·Poisson    Bets: 2042 | 1312W/730L | WR: 64.3% | Profit: $-841.50 | Coverage: 14.4%\n  OU·Elo        Bets: 5401 | 3441W/1960L | WR: 63.7% | Profit: $-2073.50 | Coverage: 38.1%\n  H2H·Poisson   Bets: 1325 | 902W/423L | WR: 68.1% | Profit: $334.65 | Coverage: 9.3%\n  H2H·Elo       Bets: 2226 | 1459W/767L | WR: 65.5% | Profit: $263.35 | Coverage: 15.7%\n\n====================================\n📊 This Rotation\n  OU·Poisson    Bets: 13 | 12W/1L | WR: 92.3% | Profit: $14.00 | Coverage: 9.4%\n  OU·Elo        Bets: 79 | 50W/29L | WR: 63.3% | Profit: $-41.50 | Coverage: 56.8%\n  H2H·Poisson   Bets: 1 | 1W/0L | WR: 100.0% | Profit: $4.15 | Coverage: 0.7%\n  H2H·Elo       Bets: 23 | 17W/6L | WR: 73.9% | Profit: $4.45 | Coverage: 16.5%\n\n  Over 2.5  — Poisson: $2.00 | Elo: $-25.75 | Total: $-23.75\n  Under 2.5 — Poisson: $12.00 | Elo: $-15.75 | Total: $-3.75\n\n====================================\n📊 GRAND TOTAL (This Rotation)\nTotal Profit: $-18.90"
+  "backtestOutput": "🧪 Poisson/Elo Prediction Models — Live 45-Day Performance (All-Time)\n  OU·Poisson    Bets: 2042 | 1312W/730L | WR: 64.3% | Profit: $-841.50 | Coverage: 14.4%\n  OU·Elo        Bets: 5406 | 3442W/1964L | WR: 63.7% | Profit: $-2090.50 | Coverage: 38.1%\n  H2H·Poisson   Bets: 1325 | 902W/423L | WR: 68.1% | Profit: $334.65 | Coverage: 9.3%\n  H2H·Elo       Bets: 3443 | 2179W/1264L | WR: 63.3% | Profit: $161.05 | Coverage: 24.3%\n\n====================================\n📊 This Rotation\n  OU·Poisson    Bets: 13 | 12W/1L | WR: 92.3% | Profit: $14.00 | Coverage: 8.9%\n  OU·Elo        Bets: 84 | 51W/33L | WR: 60.7% | Profit: $-58.50 | Coverage: 57.5%\n  H2H·Poisson   Bets: 1 | 1W/0L | WR: 100.0% | Profit: $4.15 | Coverage: 0.7%\n  H2H·Elo       Bets: 30 | 18W/12L | WR: 60.0% | Profit: $-21.40 | Coverage: 20.5%\n\n  Over 2.5  — Poisson: $2.00 | Elo: $-42.75 | Total: $-40.75\n  Under 2.5 — Poisson: $12.00 | Elo: $-15.75 | Total: $-3.75\n\n====================================\n📊 GRAND TOTAL (This Rotation)\nTotal Profit: $-61.75"
 };
