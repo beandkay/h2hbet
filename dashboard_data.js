@@ -1,15 +1,20 @@
 const dashboardData = {
-  "generatedAt": "2026-09-16T19:47:16.760Z",
-  "leagueAvgGoalsPerTeam": 1.5,
+  "generatedAt": "2026-09-16T22:23:56.727Z",
+  "leagueAvgGoalsPerTeam": 1.6796875,
   "playerStats": {
     "ODYSSEY": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 0,
-      "losses": 2,
-      "goalsScored": 5,
-      "goalsConceded": 7,
+      "matches": 8,
+      "wins": 3,
+      "draws": 1,
+      "losses": 4,
+      "goalsScored": 13,
+      "goalsConceded": 17,
       "streak": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
         "L",
         "L",
         "W"
@@ -17,12 +22,22 @@ const dashboardData = {
       "goalsList": [
         1,
         0,
-        4
+        4,
+        3,
+        1,
+        0,
+        1,
+        3
       ],
       "concededList": [
         3,
         2,
-        2
+        2,
+        1,
+        1,
+        4,
+        3,
+        1
       ],
       "history": [
         {
@@ -39,40 +54,80 @@ const dashboardData = {
           "opponent": "NAVY",
           "scored": 4,
           "conceded": 2
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 0,
+          "conceded": 4
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 3,
+          "conceded": 1
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.67",
-      "avgConceded": "2.33",
+      "winRate": "37.5",
+      "avgScored": "1.63",
+      "avgConceded": "2.13",
       "style": "Aggressive",
-      "recentForm": "L-L-W",
-      "points": 3,
-      "gd": -2,
-      "adjScoringAbility": 1.45,
-      "adjDefendingAbility": 2,
-      "rank": 12
+      "recentForm": "L-L-W-W-D-L-L-W",
+      "points": 10,
+      "gd": -4,
+      "adjScoringAbility": 1.69,
+      "adjDefendingAbility": 1.97,
+      "rank": 10
     },
     "PILLAR": {
-      "matches": 3,
-      "wins": 1,
+      "matches": 8,
+      "wins": 3,
       "draws": 1,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 6,
+      "losses": 4,
+      "goalsScored": 14,
+      "goalsConceded": 15,
       "streak": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "goalsList": [
         3,
         1,
-        2
+        2,
+        1,
+        2,
+        3,
+        1,
+        1
       ],
       "concededList": [
         1,
         3,
-        2
+        2,
+        3,
+        0,
+        1,
+        2,
+        3
       ],
       "history": [
         {
@@ -89,27 +144,57 @@ const dashboardData = {
           "opponent": "HAPPY HOUR",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 1,
+          "conceded": 3
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "2.00",
-      "avgConceded": "2.00",
+      "winRate": "37.5",
+      "avgScored": "1.75",
+      "avgConceded": "1.88",
       "style": "Aggressive",
-      "recentForm": "W-L-D",
-      "points": 4,
-      "gd": 0,
-      "adjScoringAbility": 1.94,
-      "adjDefendingAbility": 1.8,
+      "recentForm": "W-L-D-L-W-W-L-L",
+      "points": 10,
+      "gd": -1,
+      "adjScoringAbility": 1.66,
+      "adjDefendingAbility": 1.83,
       "rank": 9
     },
     "GRIMACE": {
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 4,
+      "matches": 8,
+      "wins": 4,
+      "draws": 1,
+      "losses": 3,
+      "goalsScored": 18,
+      "goalsConceded": 17,
       "streak": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -117,12 +202,22 @@ const dashboardData = {
       "goalsList": [
         3,
         2,
-        0
+        0,
+        3,
+        1,
+        4,
+        4,
+        1
       ],
       "concededList": [
         2,
         1,
-        1
+        1,
+        5,
+        1,
+        2,
+        3,
+        2
       ],
       "history": [
         {
@@ -139,39 +234,82 @@ const dashboardData = {
           "opponent": "MARS",
           "scored": 0,
           "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 3,
+          "conceded": 5
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "MARS",
+          "scored": 4,
+          "conceded": 2
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 4,
+          "conceded": 3
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 1,
+          "conceded": 2
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
-      "style": "Defensive",
-      "recentForm": "W-W-L",
-      "points": 6,
+      "winRate": "50.0",
+      "avgScored": "2.25",
+      "avgConceded": "2.13",
+      "style": "Aggressive",
+      "recentForm": "W-W-L-L-D-W-W-L",
+      "points": 13,
       "gd": 1,
-      "adjScoringAbility": 1.5,
-      "adjDefendingAbility": 1.65,
-      "rank": 3
+      "adjScoringAbility": 2.17,
+      "adjDefendingAbility": 2.04,
+      "rank": 6
     },
     "THREAT": {
-      "matches": 3,
-      "wins": 0,
-      "draws": 2,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 6,
+      "matches": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 4,
+      "goalsScored": 21,
+      "goalsConceded": 22,
       "streak": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "goalsList": [
         2,
         1,
-        2
+        2,
+        5,
+        2,
+        3,
+        3,
+        2,
+        1
       ],
       "concededList": [
         3,
         1,
+        2,
+        3,
+        2,
+        2,
+        4,
+        3,
         2
       ],
       "history": [
@@ -189,43 +327,94 @@ const dashboardData = {
           "opponent": "UNLEASHED",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 5,
+          "conceded": 3
+        },
+        {
+          "opponent": "MARS",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 3,
+          "conceded": 4
+        },
+        {
+          "opponent": "MARS",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 1,
+          "conceded": 2
         }
       ],
-      "winRate": "0.0",
-      "avgScored": "1.67",
-      "avgConceded": "2.00",
+      "winRate": "22.2",
+      "avgScored": "2.33",
+      "avgConceded": "2.44",
       "style": "Aggressive",
-      "recentForm": "L-D-D",
-      "points": 2,
+      "recentForm": "L-D-D-W-D-W-L-L-L",
+      "points": 9,
       "gd": -1,
-      "adjScoringAbility": 2,
-      "adjDefendingAbility": 2.25,
-      "rank": 13
+      "adjScoringAbility": 2.51,
+      "adjDefendingAbility": 2.6,
+      "rank": 12
     },
     "CASTLE": {
-      "matches": 4,
-      "wins": 1,
+      "matches": 11,
+      "wins": 4,
       "draws": 2,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 7,
+      "losses": 5,
+      "goalsScored": 18,
+      "goalsConceded": 20,
       "streak": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "goalsList": [
         1,
         2,
         1,
-        0
+        0,
+        3,
+        2,
+        5,
+        1,
+        0,
+        0,
+        3
       ],
       "concededList": [
         1,
         1,
         1,
-        4
+        4,
+        1,
+        3,
+        2,
+        4,
+        1,
+        2,
+        0
       ],
       "history": [
         {
@@ -247,32 +436,81 @@ const dashboardData = {
           "opponent": "INFERNO",
           "scored": 0,
           "conceded": 4
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 5,
+          "conceded": 2
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 1,
+          "conceded": 4
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 3,
+          "conceded": 0
         }
       ],
-      "winRate": "25.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.75",
-      "style": "Defensive",
-      "recentForm": "D-W-D-L",
-      "points": 5,
-      "gd": -3,
-      "adjScoringAbility": 1.88,
-      "adjDefendingAbility": 2.06,
-      "rank": 4
+      "winRate": "36.4",
+      "avgScored": "1.64",
+      "avgConceded": "1.82",
+      "style": "Aggressive",
+      "recentForm": "D-W-D-L-W-L-W-L-L-L-W",
+      "points": 14,
+      "gd": -2,
+      "adjScoringAbility": 1.8,
+      "adjDefendingAbility": 1.89,
+      "rank": 5
     },
     "ORACLE": {
-      "matches": 3,
-      "wins": 0,
-      "draws": 2,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
+      "matches": 10,
+      "wins": 1,
+      "draws": 3,
+      "losses": 6,
+      "goalsScored": 9,
+      "goalsConceded": 21,
       "streak": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "goalsList": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
         1,
         1,
         0
@@ -280,7 +518,14 @@ const dashboardData = {
       "concededList": [
         1,
         1,
-        1
+        1,
+        3,
+        3,
+        5,
+        2,
+        0,
+        2,
+        3
       ],
       "history": [
         {
@@ -297,40 +542,90 @@ const dashboardData = {
           "opponent": "INFERNO",
           "scored": 0,
           "conceded": 1
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 0,
+          "conceded": 3
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 2,
+          "conceded": 5
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 0,
+          "conceded": 3
         }
       ],
-      "winRate": "0.0",
-      "avgScored": "0.67",
-      "avgConceded": "1.00",
+      "winRate": "10.0",
+      "avgScored": "0.90",
+      "avgConceded": "2.10",
       "style": "Defensive",
-      "recentForm": "D-D-L",
-      "points": 2,
-      "gd": -1,
-      "adjScoringAbility": 0.57,
-      "adjDefendingAbility": 1.25,
-      "rank": 14
+      "recentForm": "D-D-L-L-L-L-D-W-L-L",
+      "points": 6,
+      "gd": -12,
+      "adjScoringAbility": 1.12,
+      "adjDefendingAbility": 1.88,
+      "rank": 15
     },
     "ASSASSIN": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 3,
-      "goalsConceded": 5,
+      "matches": 8,
+      "wins": 2,
+      "draws": 2,
+      "losses": 4,
+      "goalsScored": 9,
+      "goalsConceded": 14,
       "streak": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "goalsList": [
         0,
         2,
-        1
+        1,
+        1,
+        2,
+        0,
+        1,
+        2
       ],
       "concededList": [
         3,
         1,
-        1
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
       ],
       "history": [
         {
@@ -347,40 +642,83 @@ const dashboardData = {
           "opponent": "ZEUS",
           "scored": 1,
           "conceded": 1
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 3
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.00",
-      "avgConceded": "1.67",
+      "winRate": "25.0",
+      "avgScored": "1.13",
+      "avgConceded": "1.75",
       "style": "Defensive",
-      "recentForm": "L-W-D",
-      "points": 4,
-      "gd": -2,
-      "adjScoringAbility": 1,
-      "adjDefendingAbility": 1.33,
-      "rank": 11
+      "recentForm": "L-W-D-D-W-L-L-L",
+      "points": 8,
+      "gd": -5,
+      "adjScoringAbility": 1.2,
+      "adjDefendingAbility": 1.73,
+      "rank": 14
     },
     "FORCE": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 5,
+      "matches": 9,
+      "wins": 4,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 15,
+      "goalsConceded": 12,
       "streak": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "goalsList": [
         3,
         1,
-        2
+        2,
+        1,
+        1,
+        0,
+        3,
+        1,
+        3
       ],
       "concededList": [
         0,
         3,
-        2
+        2,
+        1,
+        0,
+        4,
+        1,
+        1,
+        0
       ],
       "history": [
         {
@@ -397,40 +735,82 @@ const dashboardData = {
           "opponent": "DOMINATOR",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 0,
+          "conceded": 4
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 3,
+          "conceded": 0
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "2.00",
-      "avgConceded": "1.67",
-      "style": "Aggressive",
-      "recentForm": "W-L-D",
-      "points": 4,
-      "gd": 1,
-      "adjScoringAbility": 1.9,
-      "adjDefendingAbility": 1.42,
-      "rank": 6
+      "winRate": "44.4",
+      "avgScored": "1.67",
+      "avgConceded": "1.33",
+      "style": "Defensive",
+      "recentForm": "W-L-D-D-W-L-W-D-W",
+      "points": 15,
+      "gd": 3,
+      "adjScoringAbility": 1.72,
+      "adjDefendingAbility": 1.47,
+      "rank": 3
     },
     "NAVY": {
-      "matches": 3,
-      "wins": 2,
+      "matches": 7,
+      "wins": 5,
       "draws": 0,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 5,
+      "losses": 2,
+      "goalsScored": 16,
+      "goalsConceded": 10,
       "streak": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "goalsList": [
         1,
         3,
+        2,
+        2,
+        4,
+        2,
         2
       ],
       "concededList": [
         0,
         1,
-        4
+        4,
+        3,
+        0,
+        1,
+        1
       ],
       "history": [
         {
@@ -447,40 +827,78 @@ const dashboardData = {
           "opponent": "ODYSSEY",
           "scored": 2,
           "conceded": 4
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 4,
+          "conceded": 0
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 2,
+          "conceded": 1
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "2.00",
-      "avgConceded": "1.67",
+      "winRate": "71.4",
+      "avgScored": "2.29",
+      "avgConceded": "1.43",
       "style": "Aggressive",
-      "recentForm": "W-W-L",
-      "points": 6,
-      "gd": 1,
-      "adjScoringAbility": 1.68,
-      "adjDefendingAbility": 1.45,
+      "recentForm": "W-W-L-L-W-W-W",
+      "points": 15,
+      "gd": 6,
+      "adjScoringAbility": 2.09,
+      "adjDefendingAbility": 1.53,
       "rank": 2
     },
     "HAPPY HOUR": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 3,
+      "matches": 9,
+      "wins": 3,
+      "draws": 2,
+      "losses": 4,
+      "goalsScored": 13,
+      "goalsConceded": 14,
       "streak": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "goalsList": [
         0,
         2,
-        2
+        2,
+        3,
+        1,
+        0,
+        1,
+        1,
+        3
       ],
       "concededList": [
         1,
         0,
-        2
+        2,
+        2,
+        1,
+        2,
+        2,
+        3,
+        1
       ],
       "history": [
         {
@@ -497,40 +915,85 @@ const dashboardData = {
           "opponent": "PILLAR",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 3,
+          "conceded": 1
         }
       ],
       "winRate": "33.3",
-      "avgScored": "1.33",
-      "avgConceded": "1.00",
+      "avgScored": "1.44",
+      "avgConceded": "1.56",
       "style": "Defensive",
-      "recentForm": "L-W-D",
-      "points": 4,
-      "gd": 1,
-      "adjScoringAbility": 0.93,
-      "adjDefendingAbility": 0.75,
+      "recentForm": "L-W-D-W-D-L-L-L-W",
+      "points": 11,
+      "gd": -1,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.4,
       "rank": 8
     },
     "MARS": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
+      "matches": 8,
+      "wins": 2,
+      "draws": 3,
+      "losses": 3,
+      "goalsScored": 9,
+      "goalsConceded": 12,
       "streak": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "goalsList": [
         0,
         1,
-        1
+        1,
+        0,
+        2,
+        2,
+        0,
+        3
       ],
       "concededList": [
         2,
         1,
-        0
+        0,
+        0,
+        2,
+        4,
+        1,
+        2
       ],
       "history": [
         {
@@ -547,40 +1010,83 @@ const dashboardData = {
           "opponent": "GRIMACE",
           "scored": 1,
           "conceded": 0
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 2,
+          "conceded": 4
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 3,
+          "conceded": 2
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "0.67",
-      "avgConceded": "1.00",
+      "winRate": "25.0",
+      "avgScored": "1.13",
+      "avgConceded": "1.50",
       "style": "Defensive",
-      "recentForm": "L-D-W",
-      "points": 4,
-      "gd": -1,
-      "adjScoringAbility": 0.63,
-      "adjDefendingAbility": 0.9,
-      "rank": 10
+      "recentForm": "L-D-W-D-D-L-L-W",
+      "points": 9,
+      "gd": -3,
+      "adjScoringAbility": 0.81,
+      "adjDefendingAbility": 1.26,
+      "rank": 13
     },
     "UNLEASHED": {
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 4,
+      "matches": 9,
+      "wins": 4,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 13,
+      "goalsConceded": 10,
       "streak": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "goalsList": [
         2,
         1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        2,
         2
       ],
       "concededList": [
         0,
         2,
-        2
+        2,
+        0,
+        1,
+        3,
+        0,
+        1,
+        1
       ],
       "history": [
         {
@@ -597,40 +1103,88 @@ const dashboardData = {
           "opponent": "THREAT",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "MARS",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "MARS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
+          "conceded": 1
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
+      "winRate": "44.4",
+      "avgScored": "1.44",
+      "avgConceded": "1.11",
       "style": "Defensive",
-      "recentForm": "W-L-D",
-      "points": 4,
-      "gd": 1,
-      "adjScoringAbility": 1.88,
-      "adjDefendingAbility": 1.2,
-      "rank": 7
+      "recentForm": "W-L-D-D-D-L-W-W-W",
+      "points": 15,
+      "gd": 3,
+      "adjScoringAbility": 1.18,
+      "adjDefendingAbility": 0.81,
+      "rank": 4
     },
     "INFERNO": {
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
+      "matches": 9,
+      "wins": 7,
+      "draws": 1,
       "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 2,
+      "goalsScored": 22,
+      "goalsConceded": 8,
       "streak": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "goalsList": [
         1,
         4,
-        1
+        1,
+        3,
+        3,
+        4,
+        2,
+        2,
+        2
       ],
       "concededList": [
         2,
         0,
-        0
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1
       ],
       "history": [
         {
@@ -647,37 +1201,85 @@ const dashboardData = {
           "opponent": "ORACLE",
           "scored": 1,
           "conceded": 0
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 4,
+          "conceded": 1
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 2,
+          "conceded": 1
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "2.00",
-      "avgConceded": "0.67",
-      "style": "Defensive",
-      "recentForm": "L-W-W",
-      "points": 6,
-      "gd": 4,
-      "adjScoringAbility": 1.93,
-      "adjDefendingAbility": 1,
+      "winRate": "77.8",
+      "avgScored": "2.44",
+      "avgConceded": "0.89",
+      "style": "Aggressive",
+      "recentForm": "L-W-W-W-W-W-D-W-W",
+      "points": 22,
+      "gd": 14,
+      "adjScoringAbility": 2.15,
+      "adjDefendingAbility": 1.19,
       "rank": 1
     },
     "DOMINATOR": {
-      "matches": 2,
-      "wins": 0,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 3,
-      "goalsConceded": 4,
+      "matches": 8,
+      "wins": 3,
+      "draws": 2,
+      "losses": 3,
+      "goalsScored": 16,
+      "goalsConceded": 14,
       "streak": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "goalsList": [
         1,
-        2
+        2,
+        2,
+        1,
+        4,
+        3,
+        3,
+        0
       ],
       "concededList": [
         2,
-        2
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        3
       ],
       "history": [
         {
@@ -689,36 +1291,81 @@ const dashboardData = {
           "opponent": "FORCE",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 4,
+          "conceded": 0
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 0,
+          "conceded": 3
         }
       ],
-      "winRate": "0.0",
-      "avgScored": "1.50",
-      "avgConceded": "2.00",
+      "winRate": "37.5",
+      "avgScored": "2.00",
+      "avgConceded": "1.75",
       "style": "Aggressive",
-      "recentForm": "L-D",
-      "points": 1,
-      "gd": -1,
-      "adjScoringAbility": 1.35,
-      "adjDefendingAbility": 2.25,
-      "rank": 15
+      "recentForm": "L-D-D-L-W-W-W-L",
+      "points": 11,
+      "gd": 2,
+      "adjScoringAbility": 2.36,
+      "adjDefendingAbility": 2.24,
+      "rank": 7
     },
     "ZEUS": {
-      "matches": 2,
-      "wins": 1,
-      "draws": 1,
-      "losses": 0,
-      "goalsScored": 4,
-      "goalsConceded": 2,
+      "matches": 7,
+      "wins": 2,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 9,
+      "goalsConceded": 9,
       "streak": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "goalsList": [
         3,
+        1,
+        2,
+        0,
+        1,
+        1,
         1
       ],
       "concededList": [
         1,
+        1,
+        2,
+        1,
+        0,
+        3,
         1
       ],
       "history": [
@@ -731,43 +1378,86 @@ const dashboardData = {
           "opponent": "ASSASSIN",
           "scored": 1,
           "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 1
         }
       ],
-      "winRate": "50.0",
-      "avgScored": "2.00",
-      "avgConceded": "1.00",
+      "winRate": "28.6",
+      "avgScored": "1.29",
+      "avgConceded": "1.29",
       "style": "Defensive",
-      "recentForm": "W-D",
-      "points": 4,
-      "gd": 2,
-      "adjScoringAbility": 1.8,
-      "adjDefendingAbility": 1.13,
-      "rank": 5
+      "recentForm": "W-D-D-L-W-L-D",
+      "points": 9,
+      "gd": 0,
+      "adjScoringAbility": 1.41,
+      "adjDefendingAbility": 1.25,
+      "rank": 11
     }
   },
   "standings": [
     {
       "p": "INFERNO",
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
+      "matches": 9,
+      "wins": 7,
+      "draws": 1,
       "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 2,
+      "goalsScored": 22,
+      "goalsConceded": 8,
       "streak": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "goalsList": [
         1,
         4,
-        1
+        1,
+        3,
+        3,
+        4,
+        2,
+        2,
+        2
       ],
       "concededList": [
         2,
         0,
-        0
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1
       ],
       "history": [
         {
@@ -784,41 +1474,83 @@ const dashboardData = {
           "opponent": "ORACLE",
           "scored": 1,
           "conceded": 0
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 4,
+          "conceded": 1
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 2,
+          "conceded": 1
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "2.00",
-      "avgConceded": "0.67",
-      "style": "Defensive",
-      "recentForm": "L-W-W",
-      "points": 6,
-      "gd": 4,
-      "adjScoringAbility": 1.93,
-      "adjDefendingAbility": 1,
+      "winRate": "77.8",
+      "avgScored": "2.44",
+      "avgConceded": "0.89",
+      "style": "Aggressive",
+      "recentForm": "L-W-W-W-W-W-D-W-W",
+      "points": 22,
+      "gd": 14,
+      "adjScoringAbility": 2.15,
+      "adjDefendingAbility": 1.19,
       "rank": 1
     },
     {
       "p": "NAVY",
-      "matches": 3,
-      "wins": 2,
+      "matches": 7,
+      "wins": 5,
       "draws": 0,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 5,
+      "losses": 2,
+      "goalsScored": 16,
+      "goalsConceded": 10,
       "streak": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "goalsList": [
         1,
         3,
+        2,
+        2,
+        4,
+        2,
         2
       ],
       "concededList": [
         0,
         1,
-        4
+        4,
+        3,
+        0,
+        1,
+        1
       ],
       "history": [
         {
@@ -835,95 +1567,283 @@ const dashboardData = {
           "opponent": "ODYSSEY",
           "scored": 2,
           "conceded": 4
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 4,
+          "conceded": 0
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 2,
+          "conceded": 1
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "2.00",
-      "avgConceded": "1.67",
+      "winRate": "71.4",
+      "avgScored": "2.29",
+      "avgConceded": "1.43",
       "style": "Aggressive",
-      "recentForm": "W-W-L",
-      "points": 6,
-      "gd": 1,
-      "adjScoringAbility": 1.68,
-      "adjDefendingAbility": 1.45,
+      "recentForm": "W-W-L-L-W-W-W",
+      "points": 15,
+      "gd": 6,
+      "adjScoringAbility": 2.09,
+      "adjDefendingAbility": 1.53,
       "rank": 2
     },
     {
-      "p": "GRIMACE",
-      "matches": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 4,
+      "p": "FORCE",
+      "matches": 9,
+      "wins": 4,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 15,
+      "goalsConceded": 12,
       "streak": [
         "W",
+        "L",
+        "D",
+        "D",
         "W",
-        "L"
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "goalsList": [
         3,
+        1,
         2,
-        0
+        1,
+        1,
+        0,
+        3,
+        1,
+        3
       ],
       "concededList": [
+        0,
+        3,
         2,
+        1,
+        0,
+        4,
+        1,
+        1,
+        0
+      ],
+      "history": [
+        {
+          "opponent": "ASSASSIN",
+          "scored": 3,
+          "conceded": 0
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 0,
+          "conceded": 4
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 3,
+          "conceded": 0
+        }
+      ],
+      "winRate": "44.4",
+      "avgScored": "1.67",
+      "avgConceded": "1.33",
+      "style": "Defensive",
+      "recentForm": "W-L-D-D-W-L-W-D-W",
+      "points": 15,
+      "gd": 3,
+      "adjScoringAbility": 1.72,
+      "adjDefendingAbility": 1.47,
+      "rank": 3
+    },
+    {
+      "p": "UNLEASHED",
+      "matches": 9,
+      "wins": 4,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 13,
+      "goalsConceded": 10,
+      "streak": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "goalsList": [
+        2,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "concededList": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        3,
+        0,
         1,
         1
       ],
       "history": [
         {
-          "opponent": "THREAT",
-          "scored": 3,
+          "opponent": "MARS",
+          "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 1,
           "conceded": 2
         },
         {
-          "opponent": "UNLEASHED",
+          "opponent": "THREAT",
           "scored": 2,
-          "conceded": 1
+          "conceded": 2
         },
         {
           "opponent": "MARS",
           "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "MARS",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
           "conceded": 1
         }
       ],
-      "winRate": "66.7",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
+      "winRate": "44.4",
+      "avgScored": "1.44",
+      "avgConceded": "1.11",
       "style": "Defensive",
-      "recentForm": "W-W-L",
-      "points": 6,
-      "gd": 1,
-      "adjScoringAbility": 1.5,
-      "adjDefendingAbility": 1.65,
-      "rank": 3
+      "recentForm": "W-L-D-D-D-L-W-W-W",
+      "points": 15,
+      "gd": 3,
+      "adjScoringAbility": 1.18,
+      "adjDefendingAbility": 0.81,
+      "rank": 4
     },
     {
       "p": "CASTLE",
-      "matches": 4,
-      "wins": 1,
+      "matches": 11,
+      "wins": 4,
       "draws": 2,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 7,
+      "losses": 5,
+      "goalsScored": 18,
+      "goalsConceded": 20,
       "streak": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "goalsList": [
         1,
         2,
         1,
-        0
+        0,
+        3,
+        2,
+        5,
+        1,
+        0,
+        0,
+        3
       ],
       "concededList": [
         1,
         1,
         1,
-        4
+        4,
+        1,
+        3,
+        2,
+        4,
+        1,
+        2,
+        0
       ],
       "history": [
         {
@@ -945,186 +1865,276 @@ const dashboardData = {
           "opponent": "INFERNO",
           "scored": 0,
           "conceded": 4
-        }
-      ],
-      "winRate": "25.0",
-      "avgScored": "1.00",
-      "avgConceded": "1.75",
-      "style": "Defensive",
-      "recentForm": "D-W-D-L",
-      "points": 5,
-      "gd": -3,
-      "adjScoringAbility": 1.88,
-      "adjDefendingAbility": 2.06,
-      "rank": 4
-    },
-    {
-      "p": "ZEUS",
-      "matches": 2,
-      "wins": 1,
-      "draws": 1,
-      "losses": 0,
-      "goalsScored": 4,
-      "goalsConceded": 2,
-      "streak": [
-        "W",
-        "D"
-      ],
-      "goalsList": [
-        3,
-        1
-      ],
-      "concededList": [
-        1,
-        1
-      ],
-      "history": [
+        },
         {
-          "opponent": "FORCE",
+          "opponent": "ORACLE",
           "scored": 3,
           "conceded": 1
         },
         {
-          "opponent": "ASSASSIN",
-          "scored": 1,
-          "conceded": 1
-        }
-      ],
-      "winRate": "50.0",
-      "avgScored": "2.00",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "W-D",
-      "points": 4,
-      "gd": 2,
-      "adjScoringAbility": 1.8,
-      "adjDefendingAbility": 1.13,
-      "rank": 5
-    },
-    {
-      "p": "FORCE",
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 5,
-      "streak": [
-        "W",
-        "L",
-        "D"
-      ],
-      "goalsList": [
-        3,
-        1,
-        2
-      ],
-      "concededList": [
-        0,
-        3,
-        2
-      ],
-      "history": [
-        {
-          "opponent": "ASSASSIN",
-          "scored": 3,
-          "conceded": 0
-        },
-        {
-          "opponent": "ZEUS",
-          "scored": 1,
+          "opponent": "INFERNO",
+          "scored": 2,
           "conceded": 3
         },
         {
-          "opponent": "DOMINATOR",
-          "scored": 2,
+          "opponent": "ORACLE",
+          "scored": 5,
           "conceded": 2
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 1,
+          "conceded": 4
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "ORACLE",
+          "scored": 3,
+          "conceded": 0
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "2.00",
-      "avgConceded": "1.67",
+      "winRate": "36.4",
+      "avgScored": "1.64",
+      "avgConceded": "1.82",
       "style": "Aggressive",
-      "recentForm": "W-L-D",
-      "points": 4,
-      "gd": 1,
-      "adjScoringAbility": 1.9,
-      "adjDefendingAbility": 1.42,
-      "rank": 6
+      "recentForm": "D-W-D-L-W-L-W-L-L-L-W",
+      "points": 14,
+      "gd": -2,
+      "adjScoringAbility": 1.8,
+      "adjDefendingAbility": 1.89,
+      "rank": 5
     },
     {
-      "p": "UNLEASHED",
-      "matches": 3,
-      "wins": 1,
+      "p": "GRIMACE",
+      "matches": 8,
+      "wins": 4,
       "draws": 1,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 4,
+      "losses": 3,
+      "goalsScored": 18,
+      "goalsConceded": 17,
       "streak": [
         "W",
+        "W",
         "L",
-        "D"
+        "L",
+        "D",
+        "W",
+        "W",
+        "L"
       ],
       "goalsList": [
+        3,
         2,
+        0,
+        3,
         1,
-        2
+        4,
+        4,
+        1
       ],
       "concededList": [
-        0,
         2,
+        1,
+        1,
+        5,
+        1,
+        2,
+        3,
         2
       ],
       "history": [
         {
-          "opponent": "MARS",
-          "scored": 2,
-          "conceded": 0
+          "opponent": "THREAT",
+          "scored": 3,
+          "conceded": 2
         },
         {
-          "opponent": "GRIMACE",
+          "opponent": "UNLEASHED",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "MARS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 3,
+          "conceded": 5
+        },
+        {
+          "opponent": "UNLEASHED",
           "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "MARS",
+          "scored": 4,
           "conceded": 2
         },
         {
           "opponent": "THREAT",
-          "scored": 2,
+          "scored": 4,
+          "conceded": 3
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 1,
           "conceded": 2
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.67",
-      "avgConceded": "1.33",
-      "style": "Defensive",
-      "recentForm": "W-L-D",
-      "points": 4,
+      "winRate": "50.0",
+      "avgScored": "2.25",
+      "avgConceded": "2.13",
+      "style": "Aggressive",
+      "recentForm": "W-W-L-L-D-W-W-L",
+      "points": 13,
       "gd": 1,
-      "adjScoringAbility": 1.88,
-      "adjDefendingAbility": 1.2,
+      "adjScoringAbility": 2.17,
+      "adjDefendingAbility": 2.04,
+      "rank": 6
+    },
+    {
+      "p": "DOMINATOR",
+      "matches": 8,
+      "wins": 3,
+      "draws": 2,
+      "losses": 3,
+      "goalsScored": 16,
+      "goalsConceded": 14,
+      "streak": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "goalsList": [
+        1,
+        2,
+        2,
+        1,
+        4,
+        3,
+        3,
+        0
+      ],
+      "concededList": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        3
+      ],
+      "history": [
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 4,
+          "conceded": 0
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 0,
+          "conceded": 3
+        }
+      ],
+      "winRate": "37.5",
+      "avgScored": "2.00",
+      "avgConceded": "1.75",
+      "style": "Aggressive",
+      "recentForm": "L-D-D-L-W-W-W-L",
+      "points": 11,
+      "gd": 2,
+      "adjScoringAbility": 2.36,
+      "adjDefendingAbility": 2.24,
       "rank": 7
     },
     {
       "p": "HAPPY HOUR",
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 4,
-      "goalsConceded": 3,
+      "matches": 9,
+      "wins": 3,
+      "draws": 2,
+      "losses": 4,
+      "goalsScored": 13,
+      "goalsConceded": 14,
       "streak": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "goalsList": [
         0,
         2,
-        2
+        2,
+        3,
+        1,
+        0,
+        1,
+        1,
+        3
       ],
       "concededList": [
         1,
         0,
-        2
+        2,
+        2,
+        1,
+        2,
+        2,
+        3,
+        1
       ],
       "history": [
         {
@@ -1141,41 +2151,86 @@ const dashboardData = {
           "opponent": "PILLAR",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 1,
+          "conceded": 2
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 3,
+          "conceded": 1
         }
       ],
       "winRate": "33.3",
-      "avgScored": "1.33",
-      "avgConceded": "1.00",
+      "avgScored": "1.44",
+      "avgConceded": "1.56",
       "style": "Defensive",
-      "recentForm": "L-W-D",
-      "points": 4,
-      "gd": 1,
-      "adjScoringAbility": 0.93,
-      "adjDefendingAbility": 0.75,
+      "recentForm": "L-W-D-W-D-L-L-L-W",
+      "points": 11,
+      "gd": -1,
+      "adjScoringAbility": 1.37,
+      "adjDefendingAbility": 1.4,
       "rank": 8
     },
     {
       "p": "PILLAR",
-      "matches": 3,
-      "wins": 1,
+      "matches": 8,
+      "wins": 3,
       "draws": 1,
-      "losses": 1,
-      "goalsScored": 6,
-      "goalsConceded": 6,
+      "losses": 4,
+      "goalsScored": 14,
+      "goalsConceded": 15,
       "streak": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "goalsList": [
         3,
         1,
-        2
+        2,
+        1,
+        2,
+        3,
+        1,
+        1
       ],
       "concededList": [
         1,
         3,
-        2
+        2,
+        3,
+        0,
+        1,
+        2,
+        3
       ],
       "history": [
         {
@@ -1192,130 +2247,58 @@ const dashboardData = {
           "opponent": "HAPPY HOUR",
           "scored": 2,
           "conceded": 2
-        }
-      ],
-      "winRate": "33.3",
-      "avgScored": "2.00",
-      "avgConceded": "2.00",
-      "style": "Aggressive",
-      "recentForm": "W-L-D",
-      "points": 4,
-      "gd": 0,
-      "adjScoringAbility": 1.94,
-      "adjDefendingAbility": 1.8,
-      "rank": 9
-    },
-    {
-      "p": "MARS",
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
-      "streak": [
-        "L",
-        "D",
-        "W"
-      ],
-      "goalsList": [
-        0,
-        1,
-        1
-      ],
-      "concededList": [
-        2,
-        1,
-        0
-      ],
-      "history": [
-        {
-          "opponent": "UNLEASHED",
-          "scored": 0,
-          "conceded": 2
         },
         {
-          "opponent": "THREAT",
+          "opponent": "ODYSSEY",
           "scored": 1,
-          "conceded": 1
-        },
-        {
-          "opponent": "GRIMACE",
-          "scored": 1,
-          "conceded": 0
-        }
-      ],
-      "winRate": "33.3",
-      "avgScored": "0.67",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "L-D-W",
-      "points": 4,
-      "gd": -1,
-      "adjScoringAbility": 0.63,
-      "adjDefendingAbility": 0.9,
-      "rank": 10
-    },
-    {
-      "p": "ASSASSIN",
-      "matches": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 3,
-      "goalsConceded": 5,
-      "streak": [
-        "L",
-        "W",
-        "D"
-      ],
-      "goalsList": [
-        0,
-        2,
-        1
-      ],
-      "concededList": [
-        3,
-        1,
-        1
-      ],
-      "history": [
-        {
-          "opponent": "FORCE",
-          "scored": 0,
           "conceded": 3
         },
         {
-          "opponent": "DOMINATOR",
+          "opponent": "HAPPY HOUR",
           "scored": 2,
+          "conceded": 0
+        },
+        {
+          "opponent": "ODYSSEY",
+          "scored": 3,
           "conceded": 1
         },
         {
-          "opponent": "ZEUS",
+          "opponent": "NAVY",
           "scored": 1,
-          "conceded": 1
+          "conceded": 2
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 1,
+          "conceded": 3
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.00",
-      "avgConceded": "1.67",
-      "style": "Defensive",
-      "recentForm": "L-W-D",
-      "points": 4,
-      "gd": -2,
-      "adjScoringAbility": 1,
-      "adjDefendingAbility": 1.33,
-      "rank": 11
+      "winRate": "37.5",
+      "avgScored": "1.75",
+      "avgConceded": "1.88",
+      "style": "Aggressive",
+      "recentForm": "W-L-D-L-W-W-L-L",
+      "points": 10,
+      "gd": -1,
+      "adjScoringAbility": 1.66,
+      "adjDefendingAbility": 1.83,
+      "rank": 9
     },
     {
       "p": "ODYSSEY",
-      "matches": 3,
-      "wins": 1,
-      "draws": 0,
-      "losses": 2,
-      "goalsScored": 5,
-      "goalsConceded": 7,
+      "matches": 8,
+      "wins": 3,
+      "draws": 1,
+      "losses": 4,
+      "goalsScored": 13,
+      "goalsConceded": 17,
       "streak": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
         "L",
         "L",
         "W"
@@ -1323,12 +2306,22 @@ const dashboardData = {
       "goalsList": [
         1,
         0,
-        4
+        4,
+        3,
+        1,
+        0,
+        1,
+        3
       ],
       "concededList": [
         3,
         2,
-        2
+        2,
+        1,
+        1,
+        4,
+        3,
+        1
       ],
       "history": [
         {
@@ -1345,40 +2338,166 @@ const dashboardData = {
           "opponent": "NAVY",
           "scored": 4,
           "conceded": 2
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "NAVY",
+          "scored": 0,
+          "conceded": 4
+        },
+        {
+          "opponent": "PILLAR",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "HAPPY HOUR",
+          "scored": 3,
+          "conceded": 1
         }
       ],
-      "winRate": "33.3",
-      "avgScored": "1.67",
-      "avgConceded": "2.33",
+      "winRate": "37.5",
+      "avgScored": "1.63",
+      "avgConceded": "2.13",
       "style": "Aggressive",
-      "recentForm": "L-L-W",
-      "points": 3,
-      "gd": -2,
-      "adjScoringAbility": 1.45,
-      "adjDefendingAbility": 2,
-      "rank": 12
+      "recentForm": "L-L-W-W-D-L-L-W",
+      "points": 10,
+      "gd": -4,
+      "adjScoringAbility": 1.69,
+      "adjDefendingAbility": 1.97,
+      "rank": 10
+    },
+    {
+      "p": "ZEUS",
+      "matches": 7,
+      "wins": 2,
+      "draws": 3,
+      "losses": 2,
+      "goalsScored": 9,
+      "goalsConceded": 9,
+      "streak": [
+        "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
+        "D"
+      ],
+      "goalsList": [
+        3,
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "concededList": [
+        1,
+        1,
+        2,
+        1,
+        0,
+        3,
+        1
+      ],
+      "history": [
+        {
+          "opponent": "FORCE",
+          "scored": 3,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "ASSASSIN",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 1
+        }
+      ],
+      "winRate": "28.6",
+      "avgScored": "1.29",
+      "avgConceded": "1.29",
+      "style": "Defensive",
+      "recentForm": "W-D-D-L-W-L-D",
+      "points": 9,
+      "gd": 0,
+      "adjScoringAbility": 1.41,
+      "adjDefendingAbility": 1.25,
+      "rank": 11
     },
     {
       "p": "THREAT",
-      "matches": 3,
-      "wins": 0,
-      "draws": 2,
-      "losses": 1,
-      "goalsScored": 5,
-      "goalsConceded": 6,
+      "matches": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 4,
+      "goalsScored": 21,
+      "goalsConceded": 22,
       "streak": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "goalsList": [
         2,
         1,
-        2
+        2,
+        5,
+        2,
+        3,
+        3,
+        2,
+        1
       ],
       "concededList": [
         3,
         1,
+        2,
+        3,
+        2,
+        2,
+        4,
+        3,
         2
       ],
       "history": [
@@ -1396,33 +2515,259 @@ const dashboardData = {
           "opponent": "UNLEASHED",
           "scored": 2,
           "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 5,
+          "conceded": 3
+        },
+        {
+          "opponent": "MARS",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 3,
+          "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 3,
+          "conceded": 4
+        },
+        {
+          "opponent": "MARS",
+          "scored": 2,
+          "conceded": 3
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 1,
+          "conceded": 2
         }
       ],
-      "winRate": "0.0",
-      "avgScored": "1.67",
-      "avgConceded": "2.00",
+      "winRate": "22.2",
+      "avgScored": "2.33",
+      "avgConceded": "2.44",
       "style": "Aggressive",
-      "recentForm": "L-D-D",
-      "points": 2,
+      "recentForm": "L-D-D-W-D-W-L-L-L",
+      "points": 9,
       "gd": -1,
-      "adjScoringAbility": 2,
-      "adjDefendingAbility": 2.25,
+      "adjScoringAbility": 2.51,
+      "adjDefendingAbility": 2.6,
+      "rank": 12
+    },
+    {
+      "p": "MARS",
+      "matches": 8,
+      "wins": 2,
+      "draws": 3,
+      "losses": 3,
+      "goalsScored": 9,
+      "goalsConceded": 12,
+      "streak": [
+        "L",
+        "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "goalsList": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        3
+      ],
+      "concededList": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        4,
+        1,
+        2
+      ],
+      "history": [
+        {
+          "opponent": "UNLEASHED",
+          "scored": 0,
+          "conceded": 2
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 0,
+          "conceded": 0
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "GRIMACE",
+          "scored": 2,
+          "conceded": 4
+        },
+        {
+          "opponent": "UNLEASHED",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "THREAT",
+          "scored": 3,
+          "conceded": 2
+        }
+      ],
+      "winRate": "25.0",
+      "avgScored": "1.13",
+      "avgConceded": "1.50",
+      "style": "Defensive",
+      "recentForm": "L-D-W-D-D-L-L-W",
+      "points": 9,
+      "gd": -3,
+      "adjScoringAbility": 0.81,
+      "adjDefendingAbility": 1.26,
       "rank": 13
     },
     {
-      "p": "ORACLE",
-      "matches": 3,
-      "wins": 0,
+      "p": "ASSASSIN",
+      "matches": 8,
+      "wins": 2,
       "draws": 2,
-      "losses": 1,
-      "goalsScored": 2,
-      "goalsConceded": 3,
+      "losses": 4,
+      "goalsScored": 9,
+      "goalsConceded": 14,
       "streak": [
+        "L",
+        "W",
         "D",
         "D",
+        "W",
+        "L",
+        "L",
         "L"
       ],
       "goalsList": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "concededList": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "history": [
+        {
+          "opponent": "FORCE",
+          "scored": 0,
+          "conceded": 3
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 1
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 1
+        },
+        {
+          "opponent": "ZEUS",
+          "scored": 0,
+          "conceded": 1
+        },
+        {
+          "opponent": "FORCE",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "DOMINATOR",
+          "scored": 2,
+          "conceded": 3
+        }
+      ],
+      "winRate": "25.0",
+      "avgScored": "1.13",
+      "avgConceded": "1.75",
+      "style": "Defensive",
+      "recentForm": "L-W-D-D-W-L-L-L",
+      "points": 8,
+      "gd": -5,
+      "adjScoringAbility": 1.2,
+      "adjDefendingAbility": 1.73,
+      "rank": 14
+    },
+    {
+      "p": "ORACLE",
+      "matches": 10,
+      "wins": 1,
+      "draws": 3,
+      "losses": 6,
+      "goalsScored": 9,
+      "goalsConceded": 21,
+      "streak": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
+      ],
+      "goalsList": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
         1,
         1,
         0
@@ -1430,7 +2775,14 @@ const dashboardData = {
       "concededList": [
         1,
         1,
-        1
+        1,
+        3,
+        3,
+        5,
+        2,
+        0,
+        2,
+        3
       ],
       "history": [
         {
@@ -1447,72 +2799,240 @@ const dashboardData = {
           "opponent": "INFERNO",
           "scored": 0,
           "conceded": 1
-        }
-      ],
-      "winRate": "0.0",
-      "avgScored": "0.67",
-      "avgConceded": "1.00",
-      "style": "Defensive",
-      "recentForm": "D-D-L",
-      "points": 2,
-      "gd": -1,
-      "adjScoringAbility": 0.57,
-      "adjDefendingAbility": 1.25,
-      "rank": 14
-    },
-    {
-      "p": "DOMINATOR",
-      "matches": 2,
-      "wins": 0,
-      "draws": 1,
-      "losses": 1,
-      "goalsScored": 3,
-      "goalsConceded": 4,
-      "streak": [
-        "L",
-        "D"
-      ],
-      "goalsList": [
-        1,
-        2
-      ],
-      "concededList": [
-        2,
-        2
-      ],
-      "history": [
+        },
         {
-          "opponent": "ASSASSIN",
+          "opponent": "CASTLE",
+          "scored": 1,
+          "conceded": 3
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 0,
+          "conceded": 3
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 2,
+          "conceded": 5
+        },
+        {
+          "opponent": "INFERNO",
+          "scored": 2,
+          "conceded": 2
+        },
+        {
+          "opponent": "CASTLE",
+          "scored": 1,
+          "conceded": 0
+        },
+        {
+          "opponent": "INFERNO",
           "scored": 1,
           "conceded": 2
         },
         {
-          "opponent": "FORCE",
-          "scored": 2,
-          "conceded": 2
+          "opponent": "CASTLE",
+          "scored": 0,
+          "conceded": 3
         }
       ],
-      "winRate": "0.0",
-      "avgScored": "1.50",
-      "avgConceded": "2.00",
-      "style": "Aggressive",
-      "recentForm": "L-D",
-      "points": 1,
-      "gd": -1,
-      "adjScoringAbility": 1.35,
-      "adjDefendingAbility": 2.25,
+      "winRate": "10.0",
+      "avgScored": "0.90",
+      "avgConceded": "2.10",
+      "style": "Defensive",
+      "recentForm": "D-D-L-L-L-L-D-W-L-L",
+      "points": 6,
+      "gd": -12,
+      "adjScoringAbility": 1.12,
+      "adjDefendingAbility": 1.88,
       "rank": 15
     }
   ],
   "upcoming": [
     {
-      "externalId": "FI314160926",
-      "startDate": "2026-09-16T19:50:00Z",
+      "externalId": "FI356160926",
+      "startDate": "2026-09-16T22:27:00Z",
       "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "FC BARCELONA",
-      "participantAName": "UNLEASHED",
-      "participantBName": "MARS",
+      "teamAName": "ARSENAL",
+      "teamBName": "ASTON VILLA",
+      "participantAName": "ASSASSIN",
+      "participantBName": "FORCE",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "awayRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "h2hFavored": "FORCE",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
+      "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "FORCE"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 65.61331593233484,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243552,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.4539057006108,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI357160926",
+      "startDate": "2026-09-16T22:31:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BARCELONA",
+      "teamBName": "LIVERPOOL",
+      "participantAName": "NAVY",
+      "participantBName": "HAPPY HOUR",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "NAVY",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
+      "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "NAVY"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "UNDER",
+      "ouEloProb": 61.32905543840133,
+      "ouEloOverOdds": 2.3,
+      "ouEloUnderOdds": 1.5,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 33.33333333333333,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 1
+    },
+    {
+      "externalId": "FI358160926",
+      "startDate": "2026-09-16T22:35:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BAYERN MUNCHEN",
+      "teamBName": "MANCHESTER CITY",
+      "participantAName": "MARS",
+      "participantBName": "UNLEASHED",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
@@ -1521,24 +3041,47 @@ const dashboardData = {
       "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
-        "W",
-        "L",
-        "D"
-      ],
-      "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "awayRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
         "W"
       ],
       "h2hFavored": "UNLEASHED",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 1,
       "h2hHistory": [
+        {
+          "matchWinner": "UNLEASHED"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -1556,85 +3099,120 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 54.34032150830008,
+      "h2hEloProb": 57.983990465951344,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
-      "externalId": "FI315160926",
-      "startDate": "2026-09-16T19:53:00Z",
+      "externalId": "FI359160926",
+      "startDate": "2026-09-16T22:38:00Z",
       "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "MANCHESTER CITY",
-      "participantAName": "CASTLE",
-      "participantBName": "INFERNO",
+      "teamAName": "FRANCE",
+      "teamBName": "SPAIN",
+      "participantAName": "ORACLE",
+      "participantBName": "CASTLE",
       "streamName": "Esoccer 1",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
-        "W",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
+        "D",
+        "W",
+        "D",
         "L",
         "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "CASTLE"
         },
         {
-          "matchWinner": "INFERNO"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         },
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413894,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
-      "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782231,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
-      "externalId": "FI316160926",
-      "startDate": "2026-09-16T19:57:00Z",
+      "externalId": "FI360160926",
+      "startDate": "2026-09-16T22:42:00Z",
       "isCancelled": false,
-      "teamAName": "SPAIN",
-      "teamBName": "ENGLAND",
-      "participantAName": "ASSASSIN",
+      "teamAName": "NEWCASTLE UTD",
+      "teamBName": "SPURS",
+      "participantAName": "ZEUS",
       "participantBName": "DOMINATOR",
       "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
@@ -1644,63 +3222,76 @@ const dashboardData = {
       "homeStyle": "Defensive",
       "awayStyle": "Aggressive",
       "homeRecent": [
+        "W",
+        "D",
+        "D",
         "L",
         "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
-      "h2hFavored": "ASSASSIN",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hFavored": "DOMINATOR",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 4,
       "h2hHistory": [
         {
-          "matchWinner": "ASSASSIN"
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 64.78427966207806,
+      "ouPoissonProb": 63.80569941973548,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.68991125722517,
+      "ouEloProb": 68.50496444960712,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 60.193874928946656,
+      "h2hEloPick": "DOMINATOR",
+      "h2hEloProb": 54.148652745586,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
       "ouPoissonPairBets": 1,
       "ouPoissonPairCorrect": 1,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hPoissonPairCorrect": 1
     },
     {
-      "externalId": "FI317160926",
-      "startDate": "2026-09-16T20:01:00Z",
+      "externalId": "FI361160926",
+      "startDate": "2026-09-16T22:46:00Z",
       "isCancelled": false,
-      "teamAName": "ASTON VILLA",
-      "teamBName": "SPURS",
-      "participantAName": "NAVY",
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "SSC NAPOLI",
+      "participantAName": "ODYSSEY",
       "participantBName": "PILLAR",
       "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
@@ -1710,34 +3301,56 @@ const dashboardData = {
       "homeStyle": "Aggressive",
       "awayStyle": "Aggressive",
       "homeRecent": [
+        "L",
+        "L",
         "W",
         "W",
-        "L"
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
-      "h2hFavored": "NAVY",
-      "h2hWinrate": 100,
+      "h2hFavored": "PILLAR",
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
         {
-          "matchWinner": "NAVY"
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "PILLAR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 68.91236700659218,
+      "ouPoissonProb": 68.20853015553516,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 64.05632767850776,
+      "ouEloProb": 73.20791386246232,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
@@ -1749,52 +3362,429 @@ const dashboardData = {
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
-      "externalId": "FI318160926",
-      "startDate": "2026-09-16T20:05:00Z",
+      "externalId": "FI362160926",
+      "startDate": "2026-09-16T22:50:00Z",
       "isCancelled": false,
-      "teamAName": "FC BARCELONA",
-      "teamBName": "LIVERPOOL",
-      "participantAName": "MARS",
+      "teamAName": "REAL MADRID",
+      "teamBName": "PARIS SG",
+      "participantAName": "GRIMACE",
       "participantBName": "THREAT",
       "streamName": "Esoccer 4",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Aggressive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
         "L",
         "D",
-        "W"
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "GRIMACE",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 6.666666666666667,
       "h2hHistory": [
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
+        {
+          "matchWinner": "GRIMACE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 67.8638720379794,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 60.858607322680335,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "GRIMACE",
+      "h2hEloProb": 58.295332158611245,
+      "h2hEloHomeOdds": 2.5,
+      "h2hEloAwayOdds": 1.5,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI363160926",
+      "startDate": "2026-09-16T22:53:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "SPAIN",
+      "participantAName": "INFERNO",
+      "participantBName": "CASTLE",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
+      "h2hHistory": [
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "INFERNO",
+      "h2hEloProb": 64.4739387687384,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
+    },
+    {
+      "externalId": "FI364160926",
+      "startDate": "2026-09-16T22:57:00Z",
+      "isCancelled": false,
+      "teamAName": "SPURS",
+      "teamBName": "ARSENAL",
+      "participantAName": "DOMINATOR",
+      "participantBName": "ASSASSIN",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "awayRecent": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "h2hFavored": "ASSASSIN",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3.6666666666666665,
+      "h2hHistory": [
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 66.58525029142987,
+      "ouPoissonOverOdds": 1.5,
+      "ouPoissonUnderOdds": 2.3,
+      "ouEloPick": "OVER",
+      "ouEloProb": 62.96581117917358,
+      "ouEloOverOdds": 1.5,
+      "ouEloUnderOdds": 2.3,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "ASSASSIN",
+      "h2hEloProb": 53.36445932909817,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 50,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI365160926",
+      "startDate": "2026-09-16T23:01:00Z",
+      "isCancelled": false,
+      "teamAName": "SSC NAPOLI",
+      "teamBName": "FC BARCELONA",
+      "participantAName": "PILLAR",
+      "participantBName": "NAVY",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "W",
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "awayRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "h2hFavored": "NAVY",
+      "h2hWinrate": 100,
+      "h2hAvgGoals": 3.5,
+      "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "NAVY"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 70.33251249827323,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 66.21996338537407,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.93979745066364,
+      "h2hEloHomeOdds": 2.4,
+      "h2hEloAwayOdds": 1.6,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI366160926",
+      "startDate": "2026-09-16T23:05:00Z",
+      "isCancelled": false,
+      "teamAName": "PARIS SG",
+      "teamBName": "FC BAYERN MUNCHEN",
+      "participantAName": "THREAT",
+      "participantBName": "MARS",
+      "streamName": "Esoccer 4",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "L",
+        "D",
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "awayRecent": [
+        "L",
+        "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "MARS",
+      "h2hWinrate": 33.33333333333333,
+      "h2hAvgGoals": 3.6666666666666665,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "MARS"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.45137382358631,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
@@ -1806,19 +3796,22 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "MARS",
-      "h2hEloProb": 52.88336009818278,
+      "h2hEloProb": 52.110088111358266,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1
     },
     {
-      "externalId": "FI319160926",
-      "startDate": "2026-09-16T20:08:00Z",
+      "externalId": "FI367160926",
+      "startDate": "2026-09-16T23:12:00Z",
       "isCancelled": false,
-      "teamAName": "MANCHESTER CITY",
-      "teamBName": "REAL MADRID",
-      "participantAName": "INFERNO",
-      "participantBName": "ORACLE",
-      "streamName": "Esoccer 1",
+      "teamAName": "ASTON VILLA",
+      "teamBName": "NEWCASTLE UTD",
+      "participantAName": "FORCE",
+      "participantBName": "ZEUS",
+      "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
@@ -1826,60 +3819,88 @@ const dashboardData = {
       "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
         "L",
         "W",
+        "D",
         "W"
       ],
       "awayRecent": [
+        "W",
         "D",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "D"
       ],
-      "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.3333333333333335,
       "h2hHistory": [
         {
-          "matchWinner": "INFERNO"
+          "matchWinner": "ZEUS"
+        },
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
           "matchOU": "UNDER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.633370640814775,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 64.83092137419813,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 70.93924477521227,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 61.475053157227144,
       "h2hPoissonHomeOdds": 1.4,
       "h2hPoissonAwayOdds": 2.6,
-      "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331966,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 63.661796470913124,
       "h2hEloHomeOdds": 1.4,
       "h2hEloAwayOdds": 2.6,
-      "h2hPoissonPairAcc": 100,
+      "ouPoissonPairAcc": 33.33333333333333,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hPoissonPairAcc": 0,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hPoissonPairCorrect": 0,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
     },
     {
-      "externalId": "FI320160926",
-      "startDate": "2026-09-16T20:12:00Z",
+      "externalId": "FI368160926",
+      "startDate": "2026-09-16T23:16:00Z",
       "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "PORTUGAL",
-      "participantAName": "ZEUS",
-      "participantBName": "FORCE",
-      "streamName": "Esoccer 2",
+      "teamAName": "LIVERPOOL",
+      "teamBName": "ATLETICO DE MADRID",
+      "participantAName": "HAPPY HOUR",
+      "participantBName": "ODYSSEY",
+      "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
@@ -1887,92 +3908,49 @@ const dashboardData = {
       "homeStyle": "Defensive",
       "awayStyle": "Aggressive",
       "homeRecent": [
-        "W",
-        "D"
-      ],
-      "awayRecent": [
-        "W",
         "L",
-        "D"
-      ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
-      "h2hHistory": [
-        {
-          "matchWinner": "ZEUS"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI321160926",
-      "startDate": "2026-09-16T20:16:00Z",
-      "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
-      "teamBName": "ARSENAL",
-      "participantAName": "ODYSSEY",
-      "participantBName": "HAPPY HOUR",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "L",
         "L",
         "L",
         "W"
       ],
       "awayRecent": [
         "L",
+        "L",
         "W",
-        "D"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "HAPPY HOUR",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ODYSSEY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -1988,308 +3966,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.40906615053833,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hEloProb": 54.59829272009738,
+      "h2hEloHomeOdds": 1.6,
+      "h2hEloAwayOdds": 2.4,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
-    },
-    {
-      "externalId": "FI322160926",
-      "startDate": "2026-09-16T20:20:00Z",
-      "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
-      "teamBName": "ATLETICO DE MADRID",
-      "participantAName": "GRIMACE",
-      "participantBName": "UNLEASHED",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "W",
-        "W",
-        "L"
-      ],
-      "awayRecent": [
-        "W",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
-      "h2hHistory": [
-        {
-          "matchWinner": "GRIMACE"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0
-    },
-    {
-      "externalId": "FI323160926",
-      "startDate": "2026-09-16T20:23:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BAYERN MUNCHEN",
-      "teamBName": "REAL MADRID",
-      "participantAName": "CASTLE",
-      "participantBName": "ORACLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "awayRecent": [
-        "D",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
-      "h2hHistory": [
-        {
-          "matchWinner": "DRAW"
-        },
-        {
-          "matchWinner": "DRAW"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        },
-        {
-          "matchOU": "UNDER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.4495222360664,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
-    },
-    {
-      "externalId": "FI324160926",
-      "startDate": "2026-09-16T20:27:00Z",
-      "isCancelled": false,
-      "teamAName": "SPAIN",
-      "teamBName": "FRANCE",
-      "participantAName": "ASSASSIN",
-      "participantBName": "ZEUS",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "W",
-        "D"
-      ],
-      "awayRecent": [
-        "W",
-        "D"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
-      "h2hHistory": [
-        {
-          "matchWinner": "DRAW"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 61.89595921274511,
-      "ouEloOverOdds": 1.5,
-      "ouEloUnderOdds": 2.3,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 59.69308044153902,
-      "h2hEloHomeOdds": 2.4,
-      "h2hEloAwayOdds": 1.6,
-      "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI325160926",
-      "startDate": "2026-09-16T20:31:00Z",
-      "isCancelled": false,
-      "teamAName": "ASTON VILLA",
-      "teamBName": "NEWCASTLE UTD",
-      "participantAName": "NAVY",
-      "participantBName": "ODYSSEY",
-      "streamName": "Esoccer 3",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Aggressive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "W",
-        "W",
-        "L"
-      ],
-      "awayRecent": [
-        "L",
-        "L",
-        "W"
-      ],
-      "h2hFavored": "ODYSSEY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 6,
-      "h2hHistory": [
-        {
-          "matchWinner": "ODYSSEY"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.55636554792666,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 69.90133936685132,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
-    },
-    {
-      "externalId": "FI326160926",
-      "startDate": "2026-09-16T20:35:00Z",
-      "isCancelled": false,
-      "teamAName": "FC BARCELONA",
-      "teamBName": "SSC NAPOLI",
-      "participantAName": "MARS",
-      "participantBName": "GRIMACE",
-      "streamName": "Esoccer 4",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "D",
-        "W"
-      ],
-      "awayRecent": [
-        "W",
-        "W",
-        "L"
-      ],
-      "h2hFavored": "MARS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
-      "h2hHistory": [
-        {
-          "matchWinner": "MARS"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "UNDER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 53.77778548253338,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI001170926",
@@ -2309,17 +3991,33 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
         "L",
         "L",
         "W"
       ],
       "h2hFavored": "PILLAR",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
         {
           "matchWinner": "PILLAR"
         }
@@ -2327,16 +4025,22 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 65.8649874778097,
-      "ouPoissonOverOdds": 1.35,
-      "ouPoissonUnderOdds": 2.5,
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.01135695442481,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -2346,11 +4050,14 @@ const dashboardData = {
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI002170926",
@@ -2366,21 +4073,38 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
       ],
       "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 5,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 6.666666666666667,
       "h2hHistory": [
+        {
+          "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
         {
           "matchWinner": "GRIMACE"
         }
@@ -2388,30 +4112,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 67.8638720379794,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 60.858607322680335,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 56.632248302050556,
+      "h2hEloProb": 58.295332158611245,
       "h2hEloHomeOdds": 1.5,
       "h2hEloAwayOdds": 2.5,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI003170926",
@@ -2426,22 +4159,44 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -2449,30 +4204,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.633370640814775,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
+      "h2hPoissonProb": 65.42740225617035,
+      "h2hPoissonHomeOdds": 1.3,
+      "h2hPoissonAwayOdds": 2.7,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331966,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
+      "h2hEloProb": 65.94144122675823,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI004170926",
@@ -2487,27 +4251,50 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "FORCE",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -2517,26 +4304,29 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 66.55043222084512,
+      "ouEloProb": 65.61331593233484,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243555,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.45390570061078,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
       "ouPoissonPairBets": 1,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
       "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI005170926",
@@ -2556,17 +4346,33 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "NAVY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -2574,6 +4380,12 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -2581,26 +4393,26 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 63.88540031476096,
-      "ouEloOverOdds": 2.5,
-      "ouEloUnderOdds": 1.35,
+      "ouEloProb": 61.32905543840133,
+      "ouEloOverOdds": 2.3,
+      "ouEloUnderOdds": 1.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.52889216727079,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 33.33333333333333,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI006170926",
@@ -2620,22 +4432,45 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "h2hFavored": "UNLEASHED",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 1,
       "h2hHistory": [
+        {
+          "matchWinner": "UNLEASHED"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -2653,12 +4488,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 54.34032150830008,
+      "h2hEloProb": 57.983990465951344,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI007170926",
@@ -2674,27 +4509,50 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -2702,25 +4560,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.44952223606641,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI008170926",
@@ -2736,57 +4609,80 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "ZEUS"
+        },
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
+      "ouPoissonProb": 64.83092137419813,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "ouEloProb": 70.93924477521227,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 61.475053157227144,
+      "h2hPoissonHomeOdds": 2.6,
+      "h2hPoissonAwayOdds": 1.4,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
+      "h2hEloProb": 63.661796470913124,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
+      "ouPoissonPairAcc": 33.33333333333333,
+      "ouPoissonPairBets": 3,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
       "h2hPoissonPairAcc": 0,
       "h2hPoissonPairBets": 1,
       "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI009170926",
@@ -2806,24 +4702,47 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "HAPPY HOUR",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ODYSSEY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -2839,11 +4758,11 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.40906615053833,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hEloProb": 54.5982927200974,
+      "h2hEloHomeOdds": 2.4,
+      "h2hEloAwayOdds": 1.6,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
     },
     {
@@ -2859,9 +4778,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -2869,17 +4793,35 @@ const dashboardData = {
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
-      "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -2899,10 +4841,7 @@ const dashboardData = {
       "h2hEloPick": null,
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0
+      "h2hEloAwayOdds": 1.83
     },
     {
       "externalId": "FI011170926",
@@ -2917,25 +4856,47 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
         "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
       "h2hHistory": [
         {
           "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
         },
         {
           "matchWinner": "INFERNO"
@@ -2947,6 +4908,15 @@ const dashboardData = {
         },
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -2957,17 +4927,20 @@ const dashboardData = {
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413894,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782231,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.47393876873839,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI012170926",
@@ -2987,53 +4960,76 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "h2hFavored": "ASSASSIN",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "DOMINATOR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 64.78427966207806,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
+      "ouPoissonProb": 66.58525029142987,
+      "ouPoissonOverOdds": 1.5,
+      "ouPoissonUnderOdds": 2.3,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.68991125722517,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouEloProb": 62.96581117917358,
+      "ouEloOverOdds": 1.5,
+      "ouEloUnderOdds": 2.3,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 60.193874928946656,
+      "h2hEloProb": 53.36445932909818,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 50,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI013170926",
@@ -3053,17 +5049,29 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "NAVY",
       "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -3071,30 +5079,33 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 68.91236700659218,
+      "ouPoissonProb": 70.33251249827323,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 64.05632767850776,
+      "ouEloProb": 66.21996338537407,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.93979745066365,
+      "h2hEloHomeOdds": 1.6,
+      "h2hEloAwayOdds": 2.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2
     },
     {
       "externalId": "FI014170926",
@@ -3114,28 +5125,51 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "MARS",
+      "h2hWinrate": 33.33333333333333,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "MARS"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.45137382358631,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
@@ -3147,9 +5181,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "MARS",
-      "h2hEloProb": 52.88336009818278,
+      "h2hEloProb": 52.110088111358266,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1
     },
     {
       "externalId": "FI015170926",
@@ -3164,22 +5201,44 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -3187,30 +5246,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.633370640814775,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
+      "h2hPoissonProb": 65.42740225617035,
+      "h2hPoissonHomeOdds": 1.3,
+      "h2hPoissonAwayOdds": 2.7,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331966,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
+      "h2hEloProb": 65.94144122675823,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI016170926",
@@ -3226,51 +5294,78 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        },
+        {
+          "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.1548248923092,
+      "ouPoissonProb": 69.69442139717542,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.32361756968855,
+      "ouEloProb": 72.77306765074962,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 65.18126716610169,
+      "h2hPoissonHomeOdds": 2.4,
+      "h2hPoissonAwayOdds": 1.6,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 59.11972016680933,
+      "h2hEloProb": 59.73382132790732,
       "h2hEloHomeOdds": 2.4,
       "h2hEloAwayOdds": 1.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI017170926",
@@ -3290,22 +5385,45 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -3315,7 +5433,7 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 61.490382572634886,
+      "ouEloProb": 59.58631310067092,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
@@ -3323,12 +5441,15 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.3608156830486,
+      "h2hEloProb": 54.90564294887772,
       "h2hEloHomeOdds": 1.5,
       "h2hEloAwayOdds": 2.5,
-      "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI018170926",
@@ -3348,12 +5469,24 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
@@ -3361,9 +5494,21 @@ const dashboardData = {
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -3381,9 +5526,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 57.18770081042949,
+      "h2hEloProb": 60.02651222409301,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI019170926",
@@ -3399,27 +5547,50 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -3427,25 +5598,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.44952223606641,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI020170926",
@@ -3464,22 +5650,38 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "ZEUS",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 1.5,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZEUS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -3489,20 +5691,23 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.89595921274511,
-      "ouEloOverOdds": 1.5,
-      "ouEloUnderOdds": 2.3,
+      "ouEloProb": 60.827005225493025,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 59.693080441539024,
-      "h2hEloHomeOdds": 1.6,
-      "h2hEloAwayOdds": 2.4,
+      "h2hEloProb": 57.47139784562929,
+      "h2hEloHomeOdds": 1.5,
+      "h2hEloAwayOdds": 2.5,
       "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 0,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 1,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI021170926",
@@ -3522,48 +5727,66 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
-      "h2hFavored": "ODYSSEY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 6,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 5,
       "h2hHistory": [
         {
           "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "NAVY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.55636554792666,
+      "ouPoissonProb": 70.3837559482303,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 69.90133936685132,
+      "ouEloProb": 71.75394796718476,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.63060814831593,
+      "h2hEloHomeOdds": 1.4,
+      "h2hEloAwayOdds": 2.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI022170926",
@@ -3578,9 +5801,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -3588,17 +5816,124 @@ const dashboardData = {
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "MARS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
         {
           "matchWinner": "MARS"
+        },
+        {
+          "matchWinner": "GRIMACE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "GRIMACE",
+      "h2hEloProb": 56.22885570880285,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
+    },
+    {
+      "externalId": "FI023170926",
+      "startDate": "2026-09-17T01:23:00Z",
+      "isCancelled": false,
+      "teamAName": "NEWCASTLE UTD",
+      "teamBName": "ASTON VILLA",
+      "participantAName": "INFERNO",
+      "participantBName": "CASTLE",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
+      "h2hHistory": [
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -3615,78 +5950,16 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 53.77778548253338,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI023170926",
-      "startDate": "2026-09-17T01:23:00Z",
-      "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
-      "teamBName": "ASTON VILLA",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.4739387687384,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI024170926",
@@ -3705,33 +5978,67 @@ const dashboardData = {
       "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
-      "h2hFavored": "N/A",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 0,
-      "h2hHistory": [],
-      "h2hHistoryOU": [],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "h2hFavored": "DOMINATOR",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 4,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.80569941973548,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 68.08725743840213,
+      "ouEloProb": 68.50496444960712,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "DOMINATOR",
+      "h2hEloProb": 54.148652745586,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI025170926",
@@ -3751,17 +6058,33 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "PILLAR",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
         {
           "matchWinner": "PILLAR"
         }
@@ -3769,16 +6092,22 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 65.8649874778097,
-      "ouPoissonOverOdds": 1.35,
-      "ouPoissonUnderOdds": 2.5,
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.01135695442481,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -3788,11 +6117,14 @@ const dashboardData = {
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI026170926",
@@ -3807,9 +6139,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Aggressive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -3817,12 +6154,24 @@ const dashboardData = {
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 5,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 6.666666666666667,
       "h2hHistory": [
+        {
+          "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
         {
           "matchWinner": "GRIMACE"
         }
@@ -3830,30 +6179,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 67.8638720379794,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 60.858607322680335,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 56.632248302050556,
+      "h2hEloProb": 58.295332158611245,
       "h2hEloHomeOdds": 2.5,
       "h2hEloAwayOdds": 1.5,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI027170926",
@@ -3869,21 +6227,43 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
         "W"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -3891,30 +6271,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.63337064081476,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
+      "h2hPoissonProb": 65.42740225617037,
+      "h2hPoissonHomeOdds": 2.7,
+      "h2hPoissonAwayOdds": 1.3,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331967,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
+      "h2hEloProb": 65.94144122675824,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI028170926",
@@ -3930,26 +6319,49 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "h2hFavored": "FORCE",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -3959,26 +6371,29 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 66.55043222084512,
+      "ouEloProb": 65.61331593233484,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243552,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.4539057006108,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
       "ouPoissonPairBets": 1,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
       "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI029170926",
@@ -3998,17 +6413,33 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "h2hFavored": "NAVY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -4016,6 +6447,12 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -4023,26 +6460,26 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 63.88540031476096,
-      "ouEloOverOdds": 2.5,
-      "ouEloUnderOdds": 1.35,
+      "ouEloProb": 61.32905543840133,
+      "ouEloOverOdds": 2.3,
+      "ouEloUnderOdds": 1.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.52889216727079,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 33.33333333333333,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI030170926",
@@ -4062,22 +6499,45 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "UNLEASHED",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 1,
       "h2hHistory": [
+        {
+          "matchWinner": "UNLEASHED"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -4095,12 +6555,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 54.34032150830007,
+      "h2hEloProb": 57.983990465951344,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI031170926",
@@ -4115,28 +6575,51 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -4144,25 +6627,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985419,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.4495222360664,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI032170926",
@@ -4177,58 +6675,81 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "ZEUS"
+        },
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
+      "ouPoissonProb": 64.83092137419813,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "ouEloProb": 70.93924477521227,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 61.475053157227144,
+      "h2hPoissonHomeOdds": 1.4,
+      "h2hPoissonAwayOdds": 2.6,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
+      "h2hEloProb": 63.661796470913124,
+      "h2hEloHomeOdds": 1.4,
+      "h2hEloAwayOdds": 2.6,
+      "ouPoissonPairAcc": 33.33333333333333,
+      "ouPoissonPairBets": 3,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
       "h2hPoissonPairAcc": 0,
       "h2hPoissonPairBets": 1,
       "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI033170926",
@@ -4248,24 +6769,47 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
-      ],
-      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
         "L",
         "L",
         "W"
       ],
-      "h2hFavored": "HAPPY HOUR",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "awayRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ODYSSEY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -4281,11 +6825,11 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.40906615053833,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hEloProb": 54.59829272009738,
+      "h2hEloHomeOdds": 1.6,
+      "h2hEloAwayOdds": 2.4,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
     },
     {
@@ -4302,26 +6846,49 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "W",
         "W",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
         "L"
       ],
-      "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -4341,10 +6908,7 @@ const dashboardData = {
       "h2hEloPick": null,
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0
+      "h2hEloAwayOdds": 1.83
     },
     {
       "externalId": "FI035170926",
@@ -4359,25 +6923,47 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
         "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
       "h2hHistory": [
         {
           "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
         },
         {
           "matchWinner": "INFERNO"
@@ -4389,6 +6975,15 @@ const dashboardData = {
         },
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -4399,17 +6994,20 @@ const dashboardData = {
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413894,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782231,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.47393876873839,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI036170926",
@@ -4428,54 +7026,77 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "ASSASSIN",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "DOMINATOR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 64.78427966207806,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
+      "ouPoissonProb": 66.58525029142987,
+      "ouPoissonOverOdds": 1.5,
+      "ouPoissonUnderOdds": 2.3,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.68991125722517,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouEloProb": 62.96581117917358,
+      "ouEloOverOdds": 1.5,
+      "ouEloUnderOdds": 2.3,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 60.193874928946656,
+      "h2hEloProb": 53.36445932909817,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 50,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI037170926",
@@ -4495,17 +7116,29 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "NAVY",
       "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -4513,30 +7146,33 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 68.91236700659218,
+      "ouPoissonProb": 70.33251249827323,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 64.05632767850776,
+      "ouEloProb": 66.21996338537407,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.93979745066364,
+      "h2hEloHomeOdds": 2.4,
+      "h2hEloAwayOdds": 1.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2
     },
     {
       "externalId": "FI038170926",
@@ -4556,28 +7192,51 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "MARS",
+      "h2hWinrate": 33.33333333333333,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "MARS"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.45137382358631,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
@@ -4589,9 +7248,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "MARS",
-      "h2hEloProb": 52.88336009818278,
+      "h2hEloProb": 52.110088111358266,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1
     },
     {
       "externalId": "FI039170926",
@@ -4607,21 +7269,43 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
         "W"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -4629,30 +7313,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.63337064081476,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
+      "h2hPoissonProb": 65.42740225617037,
+      "h2hPoissonHomeOdds": 2.7,
+      "h2hPoissonAwayOdds": 1.3,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331967,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
+      "h2hEloProb": 65.94144122675824,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI040170926",
@@ -4667,52 +7360,79 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        },
+        {
+          "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.1548248923092,
+      "ouPoissonProb": 69.69442139717542,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.32361756968855,
+      "ouEloProb": 72.77306765074962,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 65.18126716610169,
+      "h2hPoissonHomeOdds": 1.6,
+      "h2hPoissonAwayOdds": 2.4,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 59.11972016680933,
+      "h2hEloProb": 59.733821327907336,
       "h2hEloHomeOdds": 1.6,
       "h2hEloAwayOdds": 2.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI041170926",
@@ -4732,22 +7452,45 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -4757,7 +7500,7 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 61.490382572634886,
+      "ouEloProb": 59.58631310067092,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
@@ -4765,12 +7508,15 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.3608156830486,
+      "h2hEloProb": 54.90564294887772,
       "h2hEloHomeOdds": 2.5,
       "h2hEloAwayOdds": 1.5,
-      "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI042170926",
@@ -4790,12 +7536,24 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
@@ -4803,9 +7561,21 @@ const dashboardData = {
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -4823,9 +7593,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 57.18770081042949,
+      "h2hEloProb": 60.026512224093,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI043170926",
@@ -4841,27 +7614,50 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -4869,25 +7665,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.44952223606641,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI044170926",
@@ -4907,21 +7718,37 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "ZEUS",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 1.5,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZEUS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -4931,20 +7758,23 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.89595921274511,
-      "ouEloOverOdds": 1.5,
-      "ouEloUnderOdds": 2.3,
+      "ouEloProb": 60.827005225493025,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 59.69308044153902,
-      "h2hEloHomeOdds": 2.4,
-      "h2hEloAwayOdds": 1.6,
+      "h2hEloProb": 57.471397845629305,
+      "h2hEloHomeOdds": 2.5,
+      "h2hEloAwayOdds": 1.5,
       "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 0,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 1,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI045170926",
@@ -4964,48 +7794,66 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "ODYSSEY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 6,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 5,
       "h2hHistory": [
         {
           "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "NAVY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.55636554792666,
+      "ouPoissonProb": 70.3837559482303,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 69.90133936685132,
+      "ouEloProb": 71.75394796718476,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.63060814831593,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI046170926",
@@ -5021,26 +7869,138 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "W",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
         "L"
       ],
-      "h2hFavored": "MARS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
         {
           "matchWinner": "MARS"
+        },
+        {
+          "matchWinner": "GRIMACE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "GRIMACE",
+      "h2hEloProb": 56.22885570880285,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
+    },
+    {
+      "externalId": "FI047170926",
+      "startDate": "2026-09-17T02:53:00Z",
+      "isCancelled": false,
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "SSC NAPOLI",
+      "participantAName": "INFERNO",
+      "participantBName": "CASTLE",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
+      "h2hHistory": [
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -5057,78 +8017,16 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 53.77778548253338,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI047170926",
-      "startDate": "2026-09-17T02:53:00Z",
-      "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "SSC NAPOLI",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.4739387687384,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI048170926",
@@ -5144,26 +8042,49 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "h2hFavored": "FORCE",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -5173,26 +8094,29 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 66.55043222084512,
+      "ouEloProb": 65.61331593233484,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243552,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.4539057006108,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
       "ouPoissonPairBets": 1,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
       "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI049170926",
@@ -5212,17 +8136,33 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "h2hFavored": "NAVY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -5230,6 +8170,12 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -5237,26 +8183,26 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 63.88540031476096,
-      "ouEloOverOdds": 2.5,
-      "ouEloUnderOdds": 1.35,
+      "ouEloProb": 61.32905543840133,
+      "ouEloOverOdds": 2.3,
+      "ouEloUnderOdds": 1.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.52889216727079,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 33.33333333333333,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI050170926",
@@ -5276,22 +8222,45 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "UNLEASHED",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 1,
       "h2hHistory": [
+        {
+          "matchWinner": "UNLEASHED"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -5309,12 +8278,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 54.34032150830007,
+      "h2hEloProb": 57.983990465951344,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI051170926",
@@ -5333,33 +8302,67 @@ const dashboardData = {
       "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
-      "h2hFavored": "N/A",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 0,
-      "h2hHistory": [],
-      "h2hHistoryOU": [],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "h2hFavored": "DOMINATOR",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 4,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.80569941973548,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 68.08725743840213,
+      "ouEloProb": 68.50496444960712,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "DOMINATOR",
+      "h2hEloProb": 54.148652745586,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI052170926",
@@ -5379,17 +8382,33 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "PILLAR",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
         {
           "matchWinner": "PILLAR"
         }
@@ -5397,16 +8416,22 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 65.8649874778097,
-      "ouPoissonOverOdds": 1.35,
-      "ouPoissonUnderOdds": 2.5,
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.01135695442481,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -5416,11 +8441,14 @@ const dashboardData = {
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI053170926",
@@ -5435,9 +8463,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Aggressive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -5445,12 +8478,24 @@ const dashboardData = {
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 5,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 6.666666666666667,
       "h2hHistory": [
+        {
+          "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
         {
           "matchWinner": "GRIMACE"
         }
@@ -5458,30 +8503,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 67.8638720379794,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 60.858607322680335,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 56.632248302050556,
+      "h2hEloProb": 58.295332158611245,
       "h2hEloHomeOdds": 2.5,
       "h2hEloAwayOdds": 1.5,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI054170926",
@@ -5496,58 +8550,81 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "ZEUS"
+        },
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
+      "ouPoissonProb": 64.83092137419813,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "ouEloProb": 70.93924477521227,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 61.475053157227144,
+      "h2hPoissonHomeOdds": 1.4,
+      "h2hPoissonAwayOdds": 2.6,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
+      "h2hEloProb": 63.661796470913124,
+      "h2hEloHomeOdds": 1.4,
+      "h2hEloAwayOdds": 2.6,
+      "ouPoissonPairAcc": 33.33333333333333,
+      "ouPoissonPairBets": 3,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
       "h2hPoissonPairAcc": 0,
       "h2hPoissonPairBets": 1,
       "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI055170926",
@@ -5567,24 +8644,47 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
-      ],
-      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
         "L",
         "L",
         "W"
       ],
-      "h2hFavored": "HAPPY HOUR",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "awayRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ODYSSEY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -5600,11 +8700,11 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.40906615053833,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hEloProb": 54.59829272009738,
+      "h2hEloHomeOdds": 1.6,
+      "h2hEloAwayOdds": 2.4,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
     },
     {
@@ -5621,26 +8721,49 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "W",
         "W",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
         "L"
       ],
-      "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -5660,10 +8783,7 @@ const dashboardData = {
       "h2hEloPick": null,
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0
+      "h2hEloAwayOdds": 1.83
     },
     {
       "externalId": "FI057170926",
@@ -5679,27 +8799,50 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -5707,25 +8850,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.44952223606641,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI058170926",
@@ -5744,54 +8902,77 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "ASSASSIN",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "DOMINATOR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 64.78427966207806,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
+      "ouPoissonProb": 66.58525029142987,
+      "ouPoissonOverOdds": 1.5,
+      "ouPoissonUnderOdds": 2.3,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.68991125722517,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouEloProb": 62.96581117917358,
+      "ouEloOverOdds": 1.5,
+      "ouEloUnderOdds": 2.3,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 60.193874928946656,
+      "h2hEloProb": 53.36445932909817,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 50,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI059170926",
@@ -5811,17 +8992,29 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "NAVY",
       "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -5829,30 +9022,33 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 68.91236700659218,
+      "ouPoissonProb": 70.33251249827323,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 64.05632767850776,
+      "ouEloProb": 66.21996338537407,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.93979745066364,
+      "h2hEloHomeOdds": 2.4,
+      "h2hEloAwayOdds": 1.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2
     },
     {
       "externalId": "FI060170926",
@@ -5872,22 +9068,141 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "MARS",
+      "h2hWinrate": 33.33333333333333,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "MARS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.45137382358631,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "MARS",
+      "h2hEloProb": 52.110088111358266,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1
+    },
+    {
+      "externalId": "FI061170926",
+      "startDate": "2026-09-17T03:53:00Z",
+      "isCancelled": false,
+      "teamAName": "SSC NAPOLI",
+      "teamBName": "ATLETICO DE MADRID",
+      "participantAName": "CASTLE",
+      "participantBName": "INFERNO",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
+      "h2hHistory": [
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -5904,75 +9219,16 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "MARS",
-      "h2hEloProb": 52.88336009818278,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
-    },
-    {
-      "externalId": "FI061170926",
-      "startDate": "2026-09-17T03:53:00Z",
-      "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
-      "teamBName": "ATLETICO DE MADRID",
-      "participantAName": "CASTLE",
-      "participantBName": "INFERNO",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "awayRecent": [
-        "L",
-        "W",
-        "W"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413894,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782231,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.47393876873839,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI062170926",
@@ -5992,21 +9248,37 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "ZEUS",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 1.5,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZEUS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -6016,20 +9288,23 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.89595921274511,
-      "ouEloOverOdds": 1.5,
-      "ouEloUnderOdds": 2.3,
+      "ouEloProb": 60.827005225493025,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 59.69308044153902,
-      "h2hEloHomeOdds": 2.4,
-      "h2hEloAwayOdds": 1.6,
+      "h2hEloProb": 57.471397845629305,
+      "h2hEloHomeOdds": 2.5,
+      "h2hEloAwayOdds": 1.5,
       "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 0,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 1,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI063170926",
@@ -6049,48 +9324,66 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "ODYSSEY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 6,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 5,
       "h2hHistory": [
         {
           "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "NAVY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.55636554792666,
+      "ouPoissonProb": 70.3837559482303,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 69.90133936685132,
+      "ouEloProb": 71.75394796718476,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.63060814831593,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI064170926",
@@ -6106,28 +9399,44 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "W",
+        "L",
+        "L",
+        "D",
+        "W",
+        "W",
         "L"
       ],
-      "h2hFavored": "MARS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
         {
           "matchWinner": "MARS"
+        },
+        {
+          "matchWinner": "GRIMACE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -6143,12 +9452,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 53.77778548253338,
+      "h2hEloProb": 56.22885570880285,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI065170926",
@@ -6164,21 +9473,43 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "L",
         "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
         "W"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -6186,30 +9517,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.63337064081476,
-      "h2hPoissonHomeOdds": 2.6,
-      "h2hPoissonAwayOdds": 1.4,
+      "h2hPoissonProb": 65.42740225617037,
+      "h2hPoissonHomeOdds": 2.7,
+      "h2hPoissonAwayOdds": 1.3,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331967,
-      "h2hEloHomeOdds": 2.6,
-      "h2hEloAwayOdds": 1.4,
+      "h2hEloProb": 65.94144122675824,
+      "h2hEloHomeOdds": 2.7,
+      "h2hEloAwayOdds": 1.3,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI066170926",
@@ -6224,52 +9564,79 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        },
+        {
+          "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.1548248923092,
+      "ouPoissonProb": 69.69442139717542,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.32361756968855,
+      "ouEloProb": 72.77306765074962,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 65.18126716610169,
+      "h2hPoissonHomeOdds": 1.6,
+      "h2hPoissonAwayOdds": 2.4,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 59.11972016680933,
+      "h2hEloProb": 59.733821327907336,
       "h2hEloHomeOdds": 1.6,
       "h2hEloAwayOdds": 2.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI067170926",
@@ -6289,22 +9656,45 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -6314,7 +9704,7 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 61.490382572634886,
+      "ouEloProb": 59.58631310067092,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
@@ -6322,12 +9712,15 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.3608156830486,
+      "h2hEloProb": 54.90564294887772,
       "h2hEloHomeOdds": 2.5,
       "h2hEloAwayOdds": 1.5,
-      "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI068170926",
@@ -6347,12 +9740,24 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
@@ -6360,9 +9765,21 @@ const dashboardData = {
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -6380,9 +9797,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 57.18770081042949,
+      "h2hEloProb": 60.026512224093,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI069170926",
@@ -6398,27 +9818,50 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "awayRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -6426,25 +9869,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985418,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.44952223606641,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI070170926",
@@ -6459,27 +9917,50 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Aggressive",
+      "homeStyle": "Defensive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "h2hFavored": "FORCE",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -6489,26 +9970,29 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 66.55043222084512,
+      "ouEloProb": 65.61331593233484,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243555,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.45390570061078,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
       "ouPoissonPairBets": 1,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
       "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI071170926",
@@ -6528,17 +10012,33 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "NAVY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -6546,6 +10046,12 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -6553,26 +10059,26 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 63.88540031476096,
-      "ouEloOverOdds": 2.5,
-      "ouEloUnderOdds": 1.35,
+      "ouEloProb": 61.32905543840133,
+      "ouEloOverOdds": 2.3,
+      "ouEloUnderOdds": 1.5,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.52889216727079,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 33.33333333333333,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI072170926",
@@ -6592,22 +10098,45 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "h2hFavored": "UNLEASHED",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 1,
       "h2hHistory": [
+        {
+          "matchWinner": "UNLEASHED"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -6625,12 +10154,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 54.34032150830008,
+      "h2hEloProb": 57.983990465951344,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI073170926",
@@ -6645,10 +10174,16 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
@@ -6656,14 +10191,30 @@ const dashboardData = {
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
       "h2hHistory": [
         {
           "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
         },
         {
           "matchWinner": "INFERNO"
@@ -6675,6 +10226,15 @@ const dashboardData = {
         },
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": null,
@@ -6685,17 +10245,20 @@ const dashboardData = {
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.4739387687384,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI074170926",
@@ -6714,33 +10277,67 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
-      "h2hFavored": "N/A",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 0,
-      "h2hHistory": [],
-      "h2hHistoryOU": [],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "h2hFavored": "DOMINATOR",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 4,
+      "h2hHistory": [
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.80569941973548,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 68.08725743840213,
+      "ouEloProb": 68.50496444960712,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
+      "h2hEloPick": "DOMINATOR",
+      "h2hEloProb": 54.14865274558601,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI075170926",
@@ -6760,17 +10357,33 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
         "L",
         "L",
         "W"
       ],
       "h2hFavored": "PILLAR",
-      "h2hWinrate": 100,
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
         {
           "matchWinner": "PILLAR"
         }
@@ -6778,16 +10391,22 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 65.8649874778097,
-      "ouPoissonOverOdds": 1.35,
-      "ouPoissonUnderOdds": 2.5,
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.01135695442481,
-      "ouEloOverOdds": 1.35,
-      "ouEloUnderOdds": 2.5,
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
@@ -6797,11 +10416,14 @@ const dashboardData = {
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     },
     {
       "externalId": "FI076170926",
@@ -6817,21 +10439,38 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
       ],
       "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 5,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 6.666666666666667,
       "h2hHistory": [
+        {
+          "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
         {
           "matchWinner": "GRIMACE"
         }
@@ -6839,30 +10478,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 67.8638720379794,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
+      "ouEloPick": "OVER",
+      "ouEloProb": 60.858607322680335,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 56.632248302050556,
+      "h2hEloProb": 58.295332158611245,
       "h2hEloHomeOdds": 1.5,
       "h2hEloAwayOdds": 2.5,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI077170926",
@@ -6877,22 +10525,44 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -6900,30 +10570,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.633370640814775,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
+      "h2hPoissonProb": 65.42740225617035,
+      "h2hPoissonHomeOdds": 1.3,
+      "h2hPoissonAwayOdds": 2.7,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331966,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
+      "h2hEloProb": 65.94144122675823,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI078170926",
@@ -6939,57 +10618,80 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "ZEUS"
+        },
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
+      "ouPoissonProb": 64.83092137419813,
+      "ouPoissonOverOdds": 1.4,
+      "ouPoissonUnderOdds": 2.4,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "ouEloProb": 70.93924477521227,
+      "ouEloOverOdds": 1.4,
+      "ouEloUnderOdds": 2.4,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 61.475053157227144,
+      "h2hPoissonHomeOdds": 2.6,
+      "h2hPoissonAwayOdds": 1.4,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
+      "h2hEloProb": 63.661796470913124,
+      "h2hEloHomeOdds": 2.6,
+      "h2hEloAwayOdds": 1.4,
+      "ouPoissonPairAcc": 33.33333333333333,
+      "ouPoissonPairBets": 3,
       "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
       "ouEloPairCorrect": 1,
       "h2hPoissonPairAcc": 0,
       "h2hPoissonPairBets": 1,
       "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI079170926",
@@ -7009,24 +10711,47 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "HAPPY HOUR",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "HAPPY HOUR"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ODYSSEY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -7042,11 +10767,11 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.40906615053833,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
+      "h2hEloProb": 54.5982927200974,
+      "h2hEloHomeOdds": 2.4,
+      "h2hEloAwayOdds": 1.6,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
       "h2hEloPairCorrect": 1
     },
     {
@@ -7062,9 +10787,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -7072,17 +10802,35 @@ const dashboardData = {
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
-      "h2hFavored": "GRIMACE",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 2.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "GRIMACE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -7102,10 +10850,7 @@ const dashboardData = {
       "h2hEloPick": null,
       "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0
+      "h2hEloAwayOdds": 1.83
     },
     {
       "externalId": "FI081170926",
@@ -7120,28 +10865,51 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "D",
         "W",
         "D",
-        "L"
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "CASTLE",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 3.1666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
         },
         {
-          "matchWinner": "DRAW"
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "ORACLE"
+        },
+        {
+          "matchWinner": "CASTLE"
         }
       ],
       "h2hHistoryOU": [
@@ -7149,25 +10917,40 @@ const dashboardData = {
           "matchOU": "UNDER"
         },
         {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 63.85612904654444,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": null,
       "ouEloProb": null,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
+      "h2hPoissonPick": "CASTLE",
+      "h2hPoissonProb": 67.94797880985419,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "ORACLE",
-      "h2hEloProb": 57.4495222360664,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 50,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 0,
+      "ouEloPairBets": 1,
+      "ouEloPairCorrect": 0
     },
     {
       "externalId": "FI082170926",
@@ -7187,53 +10970,76 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "h2hFavored": "ASSASSIN",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 3,
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "ASSASSIN"
+        },
+        {
+          "matchWinner": "DOMINATOR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 64.78427966207806,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
+      "ouPoissonProb": 66.58525029142987,
+      "ouPoissonOverOdds": 1.5,
+      "ouPoissonUnderOdds": 2.3,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.68991125722517,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
+      "ouEloProb": 62.96581117917358,
+      "ouEloOverOdds": 1.5,
+      "ouEloUnderOdds": 2.3,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 60.193874928946656,
+      "h2hEloProb": 53.36445932909818,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 50,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 66.66666666666666,
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 2
     },
     {
       "externalId": "FI083170926",
@@ -7253,17 +11059,29 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "h2hFavored": "NAVY",
       "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
+        {
+          "matchWinner": "NAVY"
+        },
         {
           "matchWinner": "NAVY"
         }
@@ -7271,30 +11089,33 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 68.91236700659218,
+      "ouPoissonProb": 70.33251249827323,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 64.05632767850776,
+      "ouEloProb": 66.21996338537407,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.93979745066365,
+      "h2hEloHomeOdds": 1.6,
+      "h2hEloAwayOdds": 2.4,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2
     },
     {
       "externalId": "FI084170926",
@@ -7314,22 +11135,141 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "MARS",
+      "h2hWinrate": 33.33333333333333,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "MARS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.45137382358631,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": null,
+      "ouEloProb": null,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "MARS",
+      "h2hEloProb": 52.110088111358266,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1
+    },
+    {
+      "externalId": "FI085170926",
+      "startDate": "2026-09-17T05:23:00Z",
+      "isCancelled": false,
+      "teamAName": "ATLETICO DE MADRID",
+      "teamBName": "SSC NAPOLI",
+      "participantAName": "INFERNO",
+      "participantBName": "CASTLE",
+      "streamName": "Esoccer 1",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ],
+      "awayRecent": [
+        "D",
+        "W",
+        "D",
+        "L",
+        "W",
+        "L",
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "h2hFavored": "INFERNO",
+      "h2hWinrate": 80,
+      "h2hAvgGoals": 3.8,
+      "h2hHistory": [
+        {
+          "matchWinner": "CASTLE"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -7346,75 +11286,16 @@ const dashboardData = {
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "MARS",
-      "h2hEloProb": 52.88336009818278,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
-    },
-    {
-      "externalId": "FI085170926",
-      "startDate": "2026-09-17T05:23:00Z",
-      "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "SSC NAPOLI",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloProb": 64.4739387687384,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 80,
+      "h2hEloPairBets": 5,
+      "h2hEloPairCorrect": 4
     },
     {
       "externalId": "FI086170926",
@@ -7433,22 +11314,38 @@ const dashboardData = {
       "awayStyle": "Defensive",
       "homeRecent": [
         "W",
+        "D",
+        "D",
+        "L",
+        "W",
+        "L",
         "D"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 2,
+      "h2hFavored": "ZEUS",
+      "h2hWinrate": 50,
+      "h2hAvgGoals": 1.5,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "ZEUS"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "UNDER"
         }
@@ -7458,20 +11355,23 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 61.89595921274511,
-      "ouEloOverOdds": 1.5,
-      "ouEloUnderOdds": 2.3,
+      "ouEloProb": 60.827005225493025,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "ASSASSIN",
-      "h2hEloProb": 59.693080441539024,
-      "h2hEloHomeOdds": 1.6,
-      "h2hEloAwayOdds": 2.4,
+      "h2hEloProb": 57.47139784562929,
+      "h2hEloHomeOdds": 1.5,
+      "h2hEloAwayOdds": 2.5,
       "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 0,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 1,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI087170926",
@@ -7491,48 +11391,66 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
         "W"
       ],
       "awayRecent": [
         "W",
         "W",
-        "L"
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
-      "h2hFavored": "ODYSSEY",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 6,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 5,
       "h2hHistory": [
         {
           "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "NAVY"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.55636554792666,
+      "ouPoissonProb": 70.3837559482303,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 69.90133936685132,
+      "ouEloProb": 71.75394796718476,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": null,
-      "h2hEloProb": null,
-      "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83,
+      "h2hEloPick": "NAVY",
+      "h2hEloProb": 52.63060814831593,
+      "h2hEloHomeOdds": 1.4,
+      "h2hEloAwayOdds": 2.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 2,
+      "ouPoissonPairCorrect": 2,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 2,
+      "ouEloPairCorrect": 2,
+      "h2hEloPairAcc": 0,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 0
     },
     {
       "externalId": "FI088170926",
@@ -7547,9 +11465,14 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D",
         "W",
         "W",
         "L"
@@ -7557,19 +11480,30 @@ const dashboardData = {
       "awayRecent": [
         "L",
         "D",
+        "W",
+        "D",
+        "D",
+        "L",
+        "L",
         "W"
       ],
-      "h2hFavored": "MARS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hFavored": "DRAW",
+      "h2hWinrate": 0,
+      "h2hAvgGoals": 3.5,
       "h2hHistory": [
         {
           "matchWinner": "MARS"
+        },
+        {
+          "matchWinner": "GRIMACE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
@@ -7585,12 +11519,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "GRIMACE",
-      "h2hEloProb": 53.77778548253338,
+      "h2hEloProb": 56.22885570880285,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI089170926",
@@ -7605,22 +11539,44 @@ const dashboardData = {
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
-      "homeStyle": "Defensive",
+      "homeStyle": "Aggressive",
       "awayStyle": "Defensive",
       "homeRecent": [
         "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "D",
         "W",
         "W"
       ],
       "awayRecent": [
         "D",
         "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "L",
         "L"
       ],
       "h2hFavored": "INFERNO",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 1,
+      "h2hWinrate": 75,
+      "h2hAvgGoals": 2.75,
       "h2hHistory": [
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "INFERNO"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
         {
           "matchWinner": "INFERNO"
         }
@@ -7628,30 +11584,39 @@ const dashboardData = {
       "h2hHistoryOU": [
         {
           "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": null,
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 59.136260925571825,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 54.633370640814775,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
+      "h2hPoissonProb": 65.42740225617035,
+      "h2hPoissonHomeOdds": 1.3,
+      "h2hPoissonAwayOdds": 2.7,
       "h2hEloPick": "INFERNO",
-      "h2hEloProb": 56.05839137331966,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
+      "h2hEloProb": 65.94144122675823,
+      "h2hEloHomeOdds": 1.3,
+      "h2hEloAwayOdds": 2.7,
       "h2hPoissonPairAcc": 100,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 1,
+      "h2hPoissonPairBets": 2,
+      "h2hPoissonPairCorrect": 2,
       "h2hEloPairAcc": 100,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairBets": 3,
+      "h2hEloPairCorrect": 3
     },
     {
       "externalId": "FI090170926",
@@ -7667,51 +11632,78 @@ const dashboardData = {
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Aggressive",
+      "awayStyle": "Defensive",
       "homeRecent": [
         "L",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.6666666666666665,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "DOMINATOR"
+        },
+        {
+          "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 70.1548248923092,
+      "ouPoissonProb": 69.69442139717542,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.32361756968855,
+      "ouEloProb": 72.77306765074962,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 65.18126716610169,
+      "h2hPoissonHomeOdds": 2.4,
+      "h2hPoissonAwayOdds": 1.6,
       "h2hEloPick": "FORCE",
-      "h2hEloProb": 59.11972016680933,
+      "h2hEloProb": 59.73382132790732,
       "h2hEloHomeOdds": 2.4,
       "h2hEloAwayOdds": 1.6,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI091170926",
@@ -7731,22 +11723,45 @@ const dashboardData = {
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "L",
         "W",
-        "D"
+        "D",
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
-      "h2hAvgGoals": 4,
+      "h2hAvgGoals": 3.3333333333333335,
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "HAPPY HOUR"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -7756,7 +11771,7 @@ const dashboardData = {
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
       "ouEloPick": "UNDER",
-      "ouEloProb": 61.490382572634886,
+      "ouEloProb": 59.58631310067092,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
       "h2hPoissonPick": null,
@@ -7764,12 +11779,15 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "HAPPY HOUR",
-      "h2hEloProb": 54.3608156830486,
+      "h2hEloProb": 54.90564294887772,
       "h2hEloHomeOdds": 1.5,
       "h2hEloAwayOdds": 2.5,
-      "ouEloPairAcc": 0,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 0
+      "ouEloPairAcc": 33.33333333333333,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 1,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI092170926",
@@ -7789,12 +11807,24 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "D",
-        "D"
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
       ],
       "awayRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "D",
+        "D",
+        "L",
+        "W",
+        "W",
+        "W"
       ],
       "h2hFavored": "DRAW",
       "h2hWinrate": 0,
@@ -7802,9 +11832,21 @@ const dashboardData = {
       "h2hHistory": [
         {
           "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "THREAT"
+        },
+        {
+          "matchWinner": "UNLEASHED"
         }
       ],
       "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
         {
           "matchOU": "OVER"
         }
@@ -7822,9 +11864,12 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "UNLEASHED",
-      "h2hEloProb": 57.18770081042949,
+      "h2hEloProb": 60.02651222409301,
       "h2hEloHomeOdds": 1.83,
-      "h2hEloAwayOdds": 1.83
+      "h2hEloAwayOdds": 1.83,
+      "h2hEloPairAcc": 50,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 1
     },
     {
       "externalId": "FI093170926",
@@ -7857,11 +11902,11 @@ const dashboardData = {
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": "LAVA",
-      "h2hPoissonProb": 57.53521750046245,
+      "h2hPoissonProb": 58.57689454191413,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "LAVA",
-      "h2hEloProb": 55.563617574717526,
+      "h2hEloProb": 58.07538366951338,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83
     },
@@ -7900,289 +11945,686 @@ const dashboardData = {
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
       "h2hEloPick": "BUTCHER",
-      "h2hEloProb": 56.66127952201828,
+      "h2hEloProb": 61.43400115855459,
       "h2hEloHomeOdds": 1.83,
       "h2hEloAwayOdds": 1.83
     }
   ],
-  "h2hData": [],
-  "otherH2hData": [],
+  "h2hData": [
+    {
+      "matchup": "CASTLE vs INFERNO",
+      "matches": 5,
+      "dominantPlayer": "INFERNO",
+      "winRate": 80,
+      "breakdown": "CASTLE: 1W | INFERNO: 4W | Draws: 0",
+      "avgGoals": 3.8,
+      "recentForm": [
+        "CASTLE",
+        "INFERNO",
+        "INFERNO",
+        "INFERNO",
+        "INFERNO"
+      ]
+    },
+    {
+      "matchup": "INFERNO vs ORACLE",
+      "matches": 4,
+      "dominantPlayer": "INFERNO",
+      "winRate": 75,
+      "breakdown": "INFERNO: 3W | ORACLE: 0W | Draws: 1",
+      "avgGoals": 2.75,
+      "recentForm": [
+        "INFERNO",
+        "INFERNO",
+        "DRAW",
+        "INFERNO"
+      ]
+    },
+    {
+      "matchup": "ODYSSEY vs PILLAR",
+      "matches": 3,
+      "dominantPlayer": "PILLAR",
+      "winRate": 66.66666666666666,
+      "breakdown": "ODYSSEY: 1W | PILLAR: 2W | Draws: 0",
+      "avgGoals": 4,
+      "recentForm": [
+        "PILLAR",
+        "ODYSSEY",
+        "PILLAR"
+      ]
+    },
+    {
+      "matchup": "GRIMACE vs THREAT",
+      "matches": 3,
+      "dominantPlayer": "GRIMACE",
+      "winRate": 66.66666666666666,
+      "breakdown": "GRIMACE: 2W | THREAT: 1W | Draws: 0",
+      "avgGoals": 6.666666666666667,
+      "recentForm": [
+        "GRIMACE",
+        "THREAT",
+        "GRIMACE"
+      ]
+    },
+    {
+      "matchup": "ASSASSIN vs FORCE",
+      "matches": 3,
+      "dominantPlayer": "FORCE",
+      "winRate": 66.66666666666666,
+      "breakdown": "ASSASSIN: 0W | FORCE: 2W | Draws: 1",
+      "avgGoals": 3,
+      "recentForm": [
+        "FORCE",
+        "DRAW",
+        "FORCE"
+      ]
+    },
+    {
+      "matchup": "HAPPY HOUR vs NAVY",
+      "matches": 3,
+      "dominantPlayer": "NAVY",
+      "winRate": 66.66666666666666,
+      "breakdown": "HAPPY HOUR: 1W | NAVY: 2W | Draws: 0",
+      "avgGoals": 3,
+      "recentForm": [
+        "NAVY",
+        "HAPPY HOUR",
+        "NAVY"
+      ]
+    },
+    {
+      "matchup": "MARS vs UNLEASHED",
+      "matches": 3,
+      "dominantPlayer": "UNLEASHED",
+      "winRate": 66.66666666666666,
+      "breakdown": "MARS: 0W | UNLEASHED: 2W | Draws: 1",
+      "avgGoals": 1,
+      "recentForm": [
+        "UNLEASHED",
+        "DRAW",
+        "UNLEASHED"
+      ]
+    },
+    {
+      "matchup": "ASSASSIN vs DOMINATOR",
+      "matches": 3,
+      "dominantPlayer": "ASSASSIN",
+      "winRate": 66.66666666666666,
+      "breakdown": "ASSASSIN: 2W | DOMINATOR: 1W | Draws: 0",
+      "avgGoals": 3.6666666666666665,
+      "recentForm": [
+        "ASSASSIN",
+        "ASSASSIN",
+        "DOMINATOR"
+      ]
+    }
+  ],
+  "otherH2hData": [
+    {
+      "matchup": "CASTLE vs ORACLE",
+      "matches": 6,
+      "dominantPlayer": "CASTLE",
+      "winRate": 50,
+      "breakdown": "CASTLE: 3W | ORACLE: 1W | Draws: 2",
+      "avgGoals": 3.1666666666666665,
+      "recentForm": [
+        "DRAW",
+        "CASTLE",
+        "CASTLE",
+        "ORACLE",
+        "CASTLE"
+      ]
+    },
+    {
+      "matchup": "MARS vs THREAT",
+      "matches": 3,
+      "dominantPlayer": "MARS",
+      "winRate": 33.33333333333333,
+      "breakdown": "MARS: 1W | THREAT: 0W | Draws: 2",
+      "avgGoals": 3.6666666666666665,
+      "recentForm": [
+        "DRAW",
+        "DRAW",
+        "MARS"
+      ]
+    }
+  ],
   "totalsParlay": [
     {
-      "externalId": "FI320160926",
-      "startDate": "2026-09-16T20:12:00Z",
+      "externalId": "FI361160926",
+      "startDate": "2026-09-16T22:46:00Z",
       "isCancelled": false,
-      "teamAName": "FRANCE",
-      "teamBName": "PORTUGAL",
-      "participantAName": "ZEUS",
-      "participantBName": "FORCE",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "W",
-        "D"
-      ],
-      "awayRecent": [
-        "W",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
-      "h2hHistory": [
-        {
-          "matchWinner": "ZEUS"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI008170926",
-      "startDate": "2026-09-17T00:27:00Z",
-      "isCancelled": false,
-      "teamAName": "SSC NAPOLI",
-      "teamBName": "LIVERPOOL",
-      "participantAName": "ZEUS",
-      "participantBName": "FORCE",
-      "streamName": "Esoccer 2",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Aggressive",
-      "homeRecent": [
-        "W",
-        "D"
-      ],
-      "awayRecent": [
-        "W",
-        "L",
-        "D"
-      ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
-      "h2hAvgGoals": 4,
-      "h2hHistory": [
-        {
-          "matchWinner": "ZEUS"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
-      "ouPoissonOverOdds": 1.3,
-      "ouPoissonUnderOdds": 2.6,
-      "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
-      "ouEloOverOdds": 1.3,
-      "ouEloUnderOdds": 2.6,
-      "h2hPoissonPick": null,
-      "h2hPoissonProb": null,
-      "h2hPoissonHomeOdds": 1.83,
-      "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 2.5,
-      "h2hEloAwayOdds": 1.5,
-      "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
-      "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
-      "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
-    },
-    {
-      "externalId": "FI032170926",
-      "startDate": "2026-09-17T01:57:00Z",
-      "isCancelled": false,
-      "teamAName": "LIVERPOOL",
+      "teamAName": "ATLETICO DE MADRID",
       "teamBName": "SSC NAPOLI",
-      "participantAName": "FORCE",
-      "participantBName": "ZEUS",
-      "streamName": "Esoccer 2",
+      "participantAName": "ODYSSEY",
+      "participantBName": "PILLAR",
+      "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
-        "W",
         "L",
-        "D"
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayRecent": [
         "W",
-        "D"
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
+      "h2hFavored": "PILLAR",
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
         {
-          "matchWinner": "ZEUS"
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "PILLAR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
+      "ouPoissonProb": 68.20853015553516,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
+      "ouEloProb": 73.20791386246232,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1
     },
     {
-      "externalId": "FI054170926",
-      "startDate": "2026-09-17T03:27:00Z",
+      "externalId": "FI001170926",
+      "startDate": "2026-09-17T00:01:00Z",
       "isCancelled": false,
       "teamAName": "REAL MADRID",
       "teamBName": "FC BAYERN MUNCHEN",
-      "participantAName": "FORCE",
-      "participantBName": "ZEUS",
-      "streamName": "Esoccer 2",
+      "participantAName": "PILLAR",
+      "participantBName": "ODYSSEY",
+      "streamName": "Esoccer 3",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
       "teamBScore": null,
       "homeStyle": "Aggressive",
-      "awayStyle": "Defensive",
+      "awayStyle": "Aggressive",
       "homeRecent": [
         "W",
         "L",
-        "D"
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
       ],
       "awayRecent": [
+        "L",
+        "L",
         "W",
-        "D"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
-      "h2hFavored": "ZEUS",
-      "h2hWinrate": 100,
+      "h2hFavored": "PILLAR",
+      "h2hWinrate": 66.66666666666666,
       "h2hAvgGoals": 4,
       "h2hHistory": [
         {
-          "matchWinner": "ZEUS"
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "PILLAR"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
         }
       ],
       "ouPoissonPick": "OVER",
-      "ouPoissonProb": 66.72982502836255,
+      "ouPoissonProb": 68.20853015553516,
       "ouPoissonOverOdds": 1.3,
       "ouPoissonUnderOdds": 2.6,
       "ouEloPick": "OVER",
-      "ouEloProb": 72.49797000714639,
+      "ouEloProb": 73.20791386246232,
       "ouEloOverOdds": 1.3,
       "ouEloUnderOdds": 2.6,
       "h2hPoissonPick": null,
       "h2hPoissonProb": null,
       "h2hPoissonHomeOdds": 1.83,
       "h2hPoissonAwayOdds": 1.83,
-      "h2hEloPick": "FORCE",
-      "h2hEloProb": 58.61470307733754,
-      "h2hEloHomeOdds": 1.5,
-      "h2hEloAwayOdds": 2.5,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
       "ouPoissonPairAcc": 100,
-      "ouPoissonPairBets": 1,
-      "ouPoissonPairCorrect": 1,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
       "ouEloPairAcc": 100,
-      "ouEloPairBets": 1,
-      "ouEloPairCorrect": 1,
-      "h2hPoissonPairAcc": 0,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
       "h2hPoissonPairBets": 1,
-      "h2hPoissonPairCorrect": 0,
-      "h2hEloPairAcc": 0,
-      "h2hEloPairBets": 1,
-      "h2hEloPairCorrect": 0
+      "h2hPoissonPairCorrect": 1
+    },
+    {
+      "externalId": "FI025170926",
+      "startDate": "2026-09-17T01:31:00Z",
+      "isCancelled": false,
+      "teamAName": "FC BAYERN MUNCHEN",
+      "teamBName": "REAL MADRID",
+      "participantAName": "ODYSSEY",
+      "participantBName": "PILLAR",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "awayRecent": [
+        "W",
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "h2hFavored": "PILLAR",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 4,
+      "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "PILLAR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
+    },
+    {
+      "externalId": "FI052170926",
+      "startDate": "2026-09-17T03:16:00Z",
+      "isCancelled": false,
+      "teamAName": "ENGLAND",
+      "teamBName": "SPAIN",
+      "participantAName": "ODYSSEY",
+      "participantBName": "PILLAR",
+      "streamName": "Esoccer 3",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Aggressive",
+      "awayStyle": "Aggressive",
+      "homeRecent": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "awayRecent": [
+        "W",
+        "L",
+        "D",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "h2hFavored": "PILLAR",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 4,
+      "h2hHistory": [
+        {
+          "matchWinner": "PILLAR"
+        },
+        {
+          "matchWinner": "ODYSSEY"
+        },
+        {
+          "matchWinner": "PILLAR"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": "OVER",
+      "ouPoissonProb": 68.20853015553516,
+      "ouPoissonOverOdds": 1.3,
+      "ouPoissonUnderOdds": 2.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 73.20791386246232,
+      "ouEloOverOdds": 1.3,
+      "ouEloUnderOdds": 2.6,
+      "h2hPoissonPick": null,
+      "h2hPoissonProb": null,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": null,
+      "h2hEloProb": null,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 3,
+      "ouPoissonPairCorrect": 3,
+      "ouEloPairAcc": 100,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 3,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1
     }
   ],
   "winnerParlay": [
     {
-      "externalId": "FI023170926",
-      "startDate": "2026-09-17T01:23:00Z",
+      "externalId": "FI004170926",
+      "startDate": "2026-09-17T00:12:00Z",
       "isCancelled": false,
-      "teamAName": "NEWCASTLE UTD",
+      "teamAName": "LIVERPOOL",
+      "teamBName": "ATLETICO DE MADRID",
+      "participantAName": "FORCE",
+      "participantBName": "ASSASSIN",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "h2hFavored": "FORCE",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
+      "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "FORCE"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 65.61331593233484,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243555,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.45390570061078,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI070170926",
+      "startDate": "2026-09-17T04:27:00Z",
+      "isCancelled": false,
+      "teamAName": "REAL MADRID",
+      "teamBName": "MANCHESTER CITY",
+      "participantAName": "FORCE",
+      "participantBName": "ASSASSIN",
+      "streamName": "Esoccer 2",
+      "tournamentName": "Esoccer H2H GG League",
+      "matchStatus": null,
+      "teamAScore": null,
+      "teamBScore": null,
+      "homeStyle": "Defensive",
+      "awayStyle": "Defensive",
+      "homeRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
+      ],
+      "awayRecent": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "h2hFavored": "FORCE",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
+      "h2hHistory": [
+        {
+          "matchWinner": "FORCE"
+        },
+        {
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "FORCE"
+        }
+      ],
+      "h2hHistoryOU": [
+        {
+          "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
+        },
+        {
+          "matchOU": "OVER"
+        }
+      ],
+      "ouPoissonPick": null,
+      "ouPoissonProb": null,
+      "ouPoissonOverOdds": 1.6,
+      "ouPoissonUnderOdds": 1.6,
+      "ouEloPick": "OVER",
+      "ouEloProb": 65.61331593233484,
+      "ouEloOverOdds": 1.6,
+      "ouEloUnderOdds": 1.6,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243555,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.45390570061078,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
+      "h2hEloPairBets": 2,
+      "h2hEloPairCorrect": 2
+    },
+    {
+      "externalId": "FI356160926",
+      "startDate": "2026-09-16T22:27:00Z",
+      "isCancelled": false,
+      "teamAName": "ARSENAL",
       "teamBName": "ASTON VILLA",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
+      "participantAName": "ASSASSIN",
+      "participantBName": "FORCE",
+      "streamName": "Esoccer 2",
       "tournamentName": "Esoccer H2H GG League",
       "matchStatus": null,
       "teamAScore": null,
@@ -8192,93 +12634,44 @@ const dashboardData = {
       "homeRecent": [
         "L",
         "W",
-        "W"
-      ],
-      "awayRecent": [
+        "D",
         "D",
         "W",
-        "D",
+        "L",
+        "L",
         "L"
       ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
-      "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
-    },
-    {
-      "externalId": "FI047170926",
-      "startDate": "2026-09-17T02:53:00Z",
-      "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "SSC NAPOLI",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
+      "awayRecent": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "W",
         "L",
         "W",
+        "D",
         "W"
       ],
-      "awayRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
+      "h2hFavored": "FORCE",
+      "h2hWinrate": 66.66666666666666,
+      "h2hAvgGoals": 3,
       "h2hHistory": [
         {
-          "matchWinner": "CASTLE"
+          "matchWinner": "FORCE"
         },
         {
-          "matchWinner": "INFERNO"
+          "matchWinner": "DRAW"
+        },
+        {
+          "matchWinner": "FORCE"
         }
       ],
       "h2hHistoryOU": [
         {
           "matchOU": "OVER"
+        },
+        {
+          "matchOU": "UNDER"
         },
         {
           "matchOU": "OVER"
@@ -8288,130 +12681,74 @@ const dashboardData = {
       "ouPoissonProb": null,
       "ouPoissonOverOdds": 1.6,
       "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
+      "ouEloPick": "OVER",
+      "ouEloProb": 65.61331593233484,
       "ouEloOverOdds": 1.6,
       "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
-      "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
+      "h2hPoissonPick": "FORCE",
+      "h2hPoissonProb": 73.42480907243552,
+      "h2hPoissonHomeOdds": 1.83,
+      "h2hPoissonAwayOdds": 1.83,
+      "h2hEloPick": "FORCE",
+      "h2hEloProb": 56.4539057006108,
+      "h2hEloHomeOdds": 1.83,
+      "h2hEloAwayOdds": 1.83,
+      "ouPoissonPairAcc": 100,
+      "ouPoissonPairBets": 1,
+      "ouPoissonPairCorrect": 1,
+      "ouEloPairAcc": 66.66666666666666,
+      "ouEloPairBets": 3,
+      "ouEloPairCorrect": 2,
+      "h2hPoissonPairAcc": 100,
+      "h2hPoissonPairBets": 1,
+      "h2hPoissonPairCorrect": 1,
+      "h2hEloPairAcc": 100,
       "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
-    },
-    {
-      "externalId": "FI073170926",
-      "startDate": "2026-09-17T04:38:00Z",
-      "isCancelled": false,
-      "teamAName": "ATLETICO DE MADRID",
-      "teamBName": "SSC NAPOLI",
-      "participantAName": "INFERNO",
-      "participantBName": "CASTLE",
-      "streamName": "Esoccer 1",
-      "tournamentName": "Esoccer H2H GG League",
-      "matchStatus": null,
-      "teamAScore": null,
-      "teamBScore": null,
-      "homeStyle": "Defensive",
-      "awayStyle": "Defensive",
-      "homeRecent": [
-        "L",
-        "W",
-        "W"
-      ],
-      "awayRecent": [
-        "D",
-        "W",
-        "D",
-        "L"
-      ],
-      "h2hFavored": "DRAW",
-      "h2hWinrate": 0,
-      "h2hAvgGoals": 3.5,
-      "h2hHistory": [
-        {
-          "matchWinner": "CASTLE"
-        },
-        {
-          "matchWinner": "INFERNO"
-        }
-      ],
-      "h2hHistoryOU": [
-        {
-          "matchOU": "OVER"
-        },
-        {
-          "matchOU": "OVER"
-        }
-      ],
-      "ouPoissonPick": null,
-      "ouPoissonProb": null,
-      "ouPoissonOverOdds": 1.6,
-      "ouPoissonUnderOdds": 1.6,
-      "ouEloPick": null,
-      "ouEloProb": null,
-      "ouEloOverOdds": 1.6,
-      "ouEloUnderOdds": 1.6,
-      "h2hPoissonPick": "INFERNO",
-      "h2hPoissonProb": 66.64124438413896,
-      "h2hPoissonHomeOdds": 1.4,
-      "h2hPoissonAwayOdds": 2.6,
-      "h2hEloPick": "INFERNO",
-      "h2hEloProb": 63.26838152782229,
-      "h2hEloHomeOdds": 1.4,
-      "h2hEloAwayOdds": 2.6,
-      "h2hEloPairAcc": 50,
-      "h2hEloPairBets": 2,
-      "h2hEloPairCorrect": 1
+      "h2hEloPairCorrect": 2
     }
   ],
   "extraModelPerformance": {
     "ouPoisson": {
-      "bets": 3537,
-      "wins": 2286,
-      "wr": 64.63104325699746,
-      "profit": -1372.75,
-      "cov": 21.316217682155127
+      "bets": 3524,
+      "wins": 2278,
+      "wr": 64.64245175936436,
+      "profit": -1358.25,
+      "cov": 21.23787139155065
     },
     "ouElo": {
-      "bets": 6609,
-      "wins": 4248,
-      "wr": 64.275987290059,
-      "profit": -2354,
-      "cov": 39.830048815765686
+      "bets": 6618,
+      "wins": 4254,
+      "wr": 64.27923844061651,
+      "profit": -2352,
+      "cov": 39.88428855541493
     },
     "h2hPoisson": {
-      "bets": 3991,
-      "wins": 2419,
-      "wr": 60.611375595088944,
-      "profit": -76.35000000000447,
-      "cov": 24.052311215572832
+      "bets": 1978,
+      "wins": 1239,
+      "wr": 62.639029322548026,
+      "profit": 332.59999999999144,
+      "cov": 11.920689447357319
     },
     "h2hElo": {
-      "bets": 9128,
-      "wins": 5203,
-      "wr": 57.00043821209465,
-      "profit": -1470.9499999999707,
-      "cov": 55.0111492798168
+      "bets": 10023,
+      "wins": 5704,
+      "wr": 56.90910904918687,
+      "profit": -1464.9499999999675,
+      "cov": 60.40499005604774
     },
     "rotation": {
       "ouPoisson": {
-        "bets": 7,
-        "wins": 7,
-        "wr": 100,
-        "profit": 14.5,
-        "cov": 31.818181818181817,
+        "bets": 22,
+        "wins": 19,
+        "wr": 86.36363636363636,
+        "profit": 29.75,
+        "cov": 34.375,
         "over": {
-          "bets": 7,
-          "wins": 7,
-          "wr": 100,
-          "profit": 14.5,
-          "cov": 31.818181818181817
+          "bets": 22,
+          "wins": 19,
+          "wr": 86.36363636363636,
+          "profit": 29.75,
+          "cov": 34.375
         },
         "under": {
           "bets": 0,
@@ -8422,63 +12759,63 @@ const dashboardData = {
         }
       },
       "ouElo": {
-        "bets": 10,
-        "wins": 8,
-        "wr": 80,
-        "profit": 6.5,
-        "cov": 45.45454545454545,
+        "bets": 31,
+        "wins": 21,
+        "wr": 67.74193548387096,
+        "profit": -3.7499999999999973,
+        "cov": 48.4375,
         "over": {
-          "bets": 8,
-          "wins": 7,
-          "wr": 87.5,
-          "profit": 9.5,
-          "cov": 36.36363636363637
+          "bets": 25,
+          "wins": 19,
+          "wr": 76,
+          "profit": 11.25,
+          "cov": 39.0625
         },
         "under": {
-          "bets": 2,
-          "wins": 1,
-          "wr": 50,
-          "profit": -3.0000000000000004,
-          "cov": 9.090909090909092
+          "bets": 6,
+          "wins": 2,
+          "wr": 33.33333333333333,
+          "profit": -15,
+          "cov": 9.375
         }
       },
       "h2hPoisson": {
-        "bets": 7,
-        "wins": 2,
-        "wr": 28.57142857142857,
-        "profit": -18.35,
-        "cov": 31.818181818181817
+        "bets": 10,
+        "wins": 8,
+        "wr": 80,
+        "profit": 19.6,
+        "cov": 15.625
       },
       "h2hElo": {
-        "bets": 10,
-        "wins": 6,
-        "wr": 60,
-        "profit": 4.300000000000001,
-        "cov": 45.45454545454545
+        "bets": 36,
+        "wins": 22,
+        "wr": 61.111111111111114,
+        "profit": 14.500000000000004,
+        "cov": 56.25
       }
     },
     "segments": [
       {
         "label": "4am – 8am",
         "h2hPoisson": {
-          "profit": -18.35,
-          "bets": 7,
-          "wr": 28.57142857142857
-        },
-        "h2hElo": {
-          "profit": 4.300000000000001,
-          "bets": 10,
-          "wr": 60
-        },
-        "ouPoisson": {
-          "profit": 14.5,
-          "bets": 7,
-          "wr": 100
-        },
-        "ouElo": {
-          "profit": 6.5,
+          "profit": 19.6,
           "bets": 10,
           "wr": 80
+        },
+        "h2hElo": {
+          "profit": 2.350000000000003,
+          "bets": 34,
+          "wr": 58.82352941176471
+        },
+        "ouPoisson": {
+          "profit": 29.75,
+          "bets": 22,
+          "wr": 86.36363636363636
+        },
+        "ouElo": {
+          "profit": 1.2500000000000029,
+          "bets": 30,
+          "wr": 70
         }
       },
       {
@@ -8489,9 +12826,9 @@ const dashboardData = {
           "wr": 0
         },
         "h2hElo": {
-          "profit": 0,
-          "bets": 0,
-          "wr": 0
+          "profit": 12.15,
+          "bets": 2,
+          "wr": 100
         },
         "ouPoisson": {
           "profit": 0,
@@ -8499,8 +12836,8 @@ const dashboardData = {
           "wr": 0
         },
         "ouElo": {
-          "profit": 0,
-          "bets": 0,
+          "profit": -5,
+          "bets": 1,
           "wr": 0
         }
       },
@@ -8529,5 +12866,5 @@ const dashboardData = {
       }
     ]
   },
-  "backtestOutput": "🧪 Poisson/Elo Prediction Models — Live 45-Day Performance (All-Time)\n  OU·Poisson    Bets: 3537 | 2286W/1251L | WR: 64.6% | Profit: $-1372.75 | Coverage: 21.3%\n  OU·Elo        Bets: 6609 | 4248W/2361L | WR: 64.3% | Profit: $-2354.00 | Coverage: 39.8%\n  H2H·Poisson   Bets: 3991 | 2419W/1572L | WR: 60.6% | Profit: $-76.35 | Coverage: 24.1%\n  H2H·Elo       Bets: 9128 | 5203W/3925L | WR: 57.0% | Profit: $-1470.95 | Coverage: 55.0%\n\n====================================\n📊 This Rotation\n  OU·Poisson    Bets: 7 | 7W/0L | WR: 100.0% | Profit: $14.50 | Coverage: 31.8%\n  OU·Elo        Bets: 10 | 8W/2L | WR: 80.0% | Profit: $6.50 | Coverage: 45.5%\n  H2H·Poisson   Bets: 7 | 2W/5L | WR: 28.6% | Profit: $-18.35 | Coverage: 31.8%\n  H2H·Elo       Bets: 10 | 6W/4L | WR: 60.0% | Profit: $4.30 | Coverage: 45.5%\n\n  Over 2.5  — Poisson: $14.50 | Elo: $9.50 | Total: $24.00\n  Under 2.5 — Poisson: $0.00 | Elo: $-3.00 | Total: $-3.00\n\n====================================\n📊 GRAND TOTAL (This Rotation)\nTotal Profit: $6.95"
+  "backtestOutput": "🧪 Poisson/Elo Prediction Models — Live 45-Day Performance (All-Time)\n  OU·Poisson    Bets: 3524 | 2278W/1246L | WR: 64.6% | Profit: $-1358.25 | Coverage: 21.2%\n  OU·Elo        Bets: 6618 | 4254W/2364L | WR: 64.3% | Profit: $-2352.00 | Coverage: 39.9%\n  H2H·Poisson   Bets: 1978 | 1239W/739L | WR: 62.6% | Profit: $332.60 | Coverage: 11.9%\n  H2H·Elo       Bets: 10023 | 5704W/4319L | WR: 56.9% | Profit: $-1464.95 | Coverage: 60.4%\n\n====================================\n📊 This Rotation\n  OU·Poisson    Bets: 22 | 19W/3L | WR: 86.4% | Profit: $29.75 | Coverage: 34.4%\n  OU·Elo        Bets: 31 | 21W/10L | WR: 67.7% | Profit: $-3.75 | Coverage: 48.4%\n  H2H·Poisson   Bets: 10 | 8W/2L | WR: 80.0% | Profit: $19.60 | Coverage: 15.6%\n  H2H·Elo       Bets: 36 | 22W/14L | WR: 61.1% | Profit: $14.50 | Coverage: 56.3%\n\n  Over 2.5  — Poisson: $29.75 | Elo: $11.25 | Total: $41.00\n  Under 2.5 — Poisson: $0.00 | Elo: $-15.00 | Total: $-15.00\n\n====================================\n📊 GRAND TOTAL (This Rotation)\nTotal Profit: $60.10"
 };
